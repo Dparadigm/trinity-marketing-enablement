@@ -73,6 +73,13 @@
  .cohorts th,.cohorts td{padding:.5rem .65rem}
  .cohorts td.num{text-align:right;font-variant-numeric:tabular-nums}
  .cohorts .note-tag{font-size:.72rem;color:var(--warn)}
+
+ .trail{display:flex;flex-wrap:wrap;gap:.4rem;margin:.6rem 0 0}
+ .trail .tcell{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:.45rem .6rem;min-width:4.5rem}
+ .trail .tcell .k{font-size:.68rem;color:var(--muted);text-transform:uppercase}
+ .trail .tcell .v{font-size:1.05rem;font-weight:600}
+ .trail .tcell.partial{opacity:.7}
+ .trail-label{font-size:.8rem;color:var(--muted);margin:.75rem 0 .25rem}
 </style>
 </head>
 <body>
@@ -121,6 +128,14 @@
  matchMedia('(prefers-color-scheme: light)').addEventListener('change',()=>{if((localStorage.getItem(key)||'system')==='system')apply('system')});
 
  function dash(v){return v===null||v===undefined?'n/a':v}
+ 
+ function weekTrail(w){
+ const trail=(w.funnel_week&&w.funnel_week.weekly_trail)||[];
+ if(!trail.length) return '';
+ const cells=trail.map(t=>`<div class="tcell${t.incomplete?' partial':''}"><div class="k">${t.label}${t.incomplete?' · partial':''}</div><div class="v">${t.sessions}</div></div>`).join('');
+ return `<div class="trail-label">Sessions by week (this cohort’s Published URLs)</div><div class="trail">${cells}</div>`;
+ }
+
  function numCell(v){
  if(v===null||v===undefined) return '<span class="empty">n/a</span>';
  return String(v);
@@ -187,7 +202,7 @@
  <div class="fcell"><div class="k">Sessions since publish</div><div class="v">${numCell(w.funnel_week.brief_shipped_sessions_since_publish)}</div></div>
  <div class="fcell"><div class="k">Brief-linked MQLs</div><div class="v">${numCell(w.funnel_week.brief_assisted_mqls != null ? w.funnel_week.brief_assisted_mqls : w.funnel_week.leads_mqls)}</div></div>
  </div>
- <p class="muted" style="font-size:.85rem;margin:.35rem 0 0">${w.funnel_week.brief_shipped_note||'Sessions on this week’s Published URLs only — the brief signal.'}</p>
+ ${weekTrail(w)}
  <h3 style="margin:1.5rem 0 .35rem;color:var(--muted)">Week context (sitewide / ads - not brief-attributed)</h3>
  <div class="funnel" style="grid-template-columns:repeat(4,1fr)">
  <div class="fcell"><div class="k">Sitewide sessions</div><div class="v">${numCell(w.funnel_week.sessions)}</div></div>
