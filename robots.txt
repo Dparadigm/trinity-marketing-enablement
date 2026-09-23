@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+# Trinity marketing enablement — internal draft only. Do not index.
