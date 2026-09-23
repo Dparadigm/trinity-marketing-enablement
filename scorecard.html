@@ -83,7 +83,7 @@
   <div class="navlinks"><a href="./">Enablement guide</a> · <span class="muted" id="updated"></span></div>
 </header>
 
-<div class="banner">
+<div class="banner"><div id="briefImpact" class="card" style="display:none;margin-bottom:.75rem"></div>
   <div class="card">
     <div class="pill">Operating draft</div>
     <p style="margin:0" id="attr"></p>
@@ -181,6 +181,15 @@
     data=d;
     document.getElementById('updated').textContent='Updated '+d.meta.updated;
     document.getElementById('attr').textContent=d.meta.attribution;
+    if(d.meta.brief_impact){
+      const bi=d.meta.brief_impact;
+      const el=document.getElementById('briefImpact');
+      if(el){
+        el.style.display='block';
+        el.innerHTML='<span class="pill">Brief impact · '+bi.verdict+'</span><strong>'+bi.headline+'</strong><p class="muted" style="margin:.4rem 0 0">'+
+          bi.layers.map(l=>l.layer.replace(/_/g,' ')+': '+l.call).join(' · ')+'</p>';
+      }
+    }
     const tabs=document.getElementById('tabs');
     // default to first week that has ships
     active=Math.max(0, d.weeks.findIndex(w=>w.counts.shipped>0));
