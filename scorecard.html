@@ -93,7 +93,56 @@
 <div class="weeks" id="tabs" role="tablist"></div>
 
 <main id="main">
-  <p class="muted" style="font-size:.85rem;margin:.35rem 0 0">${sitewideMqlNote(w.funnel_week)}</p>
+  <p class="muted">Loading…</p>
+</main>
+
+<section class="howto" style="max-width:1100px;margin:0 auto 3rem;padding:0 1.5rem" id="howto"></section>
+
+<script>
+(function(){
+  const root=document.documentElement;
+  const key='trinity-scorecard-theme';
+  const buttons=[...document.querySelectorAll('[data-theme-choice]')];
+  function systemTheme(){return matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'}
+  function apply(choice){
+    root.setAttribute('data-theme', choice==='system'?systemTheme():choice);
+    buttons.forEach(b=>b.setAttribute('aria-pressed', b.getAttribute('data-theme-choice')===choice?'true':'false'));
+  }
+  let choice=localStorage.getItem(key)||'system';
+  apply(choice);
+  buttons.forEach(b=>b.addEventListener('click',()=>{choice=b.getAttribute('data-theme-choice');localStorage.setItem(key,choice);apply(choice)}));
+  matchMedia('(prefers-color-scheme: light)').addEventListener('change',()=>{if((localStorage.getItem(key)||'system')==='system')apply('system')});
+
+  function dash(v){return v===null||v===undefined?'—':v}
+  function impactClass(c){
+    if(c==='yes'||c==='ok')return 'ok';
+    if(c==='mixed'||c==='unscored'||c==='example_only')return 'warn';
+    return 'bad';
+  }
+  function impactLabel(c){
+    return ({yes:'Impact: Yes',mixed:'Impact: Mixed',no:'Impact: No',unscored:'Impact: Unscored — fill funnel Friday',example_only:'Examples only',no_ships:'No site ships'})[c]||c;
+  }
+  function numCell(v){
+    if(v===null||v===undefined) return '<span class="empty">fill</span>';
+    return String(v);
+  }
+
+  
+  function sitewideMqlNote(f){
+    if(!f) return '';
+    var note = f.note || '';
+    if(f.week_mqls_sitewide==null) return note;
+    return 'Week sitewide MQLs (not brief-attributed): ' + f.week_mqls_sitewide + '. ' + note;
+  }
+
+  let data=null; let active=0;
+
+  function render(){
+    const w=data.weeks[active];
+    const c=w.counts;
+    document.getElementById('main').innerHTML=`
+      <h2 style="margin:0 0 .25rem">${w.label}</h2>
+      <p class="muted" style="margin:0 0 .75rem"><strong>THE ONE THING:</strong> ${w.one_thing}<br/>Owners: ${w.owners}</p>
       <div class="stats">
         <div class="stat"><div class="n">${dash(c.surfaced)}</div><div class="l">Surfaced</div></div>
         <div class="stat"><div class="n">${dash(c.done)}</div><div class="l">Done</div></div>
@@ -113,7 +162,7 @@
         <div class="fcell"><div class="k">CTR</div><div class="v">${numCell(w.funnel_week.ctr)}</div></div>
         <div class="fcell"><div class="k">Brief-linked MQLs</div><div class="v">${numCell(w.funnel_week.leads_mqls)}</div></div>
       </div>
-      <p class="muted" style="font-size:.85rem;margin:.35rem 0 0">${w.funnel_week.week_mqls_sitewide!=null?('Week sitewide MQLs (not brief-attributed): '+w.funnel_week.week_mqls_sitewide+'. ':'')}${w.funnel_week.note||''}</p>
+      <p class="muted" style="font-size:.85rem;margin:.35rem 0 0">${sitewideMqlNote(w.funnel_week)}</p>
       <h3 style="margin:1.5rem 0 .35rem;color:var(--accent)">Work tied to this week</h3>
       ${w.items.length?`<table>
         <thead><tr><th>Item</th><th>Status</th><th>Live URL</th><th>Funnel</th><th>Call</th></tr></thead>
@@ -158,11 +207,11 @@
       render();
     }));
     document.getElementById('howto').innerHTML=`
-      <div class="card"><h3>How this drives results</h3><ol style="margin:0;padding-left:1.1rem">${(d.meta.how_to_use||[]).map(x=>`<li>${x}</li>`).join('')}</ol></div>
+      <div class="card"><h3>How this drives results</h3><ol style="margin:0;padding-left:1.1rem">${d.meta.how_to_use.map(x=>`<li>${x}</li>`).join('')}</ol></div>
       <div class="card"><h3>What’s real today</h3><p class="muted" style="margin:0">Live URLs and dates come from the paradigmlife.net sitemap. Week funnel now carries GA4 sessions (via CMO Marketing Summary), Google Ads clicks/CTR (Metricool), and Brief-linked MQLs only (sitewide MQLs are note context, not brief credit). Page-level sessions still thin until Gauge landing-page pulls settle. Done/Dead columns are CMO synthesis-state done/dead (there is no Accept/Defer/Kill vote). Surfaced stays blank until brief item counts are logged. This is the operating board, not a memo.</p></div>`;
     render();
   }).catch(e=>{
-    document.getElementById('main').innerHTML='<p class="muted">Could not load scorecard-data.json: '+(e&&e.message?e.message:e)+'</p>';
+    document.getElementById('main').innerHTML='<p class="muted">Could not load scorecard-data.json</p>';
     console.error(e);
   });
 })();
