@@ -1,17 +1,17 @@
 {
   "meta": {
     "title": "Trinity Marketing Scorecard",
-    "subtitle": "Synthesis Brief impact: done (CMO state) → ship on paradigmlife.net → did the funnel move?",
+    "subtitle": "Done (CMO state) → Published on paradigmlife.net → brief impact on those URLs",
     "updated": "2026-09-23",
     "status": "draft",
     "how_to_use": [
-      "Monday: mark Synthesis items done / dead / leave open in CMO state (there is no Accept/Defer/Kill vote today).",
-      "When a done item ships, paste the live paradigmlife.net URL (match by topic/slug — not UTM).",
-      "Friday: fill funnel cells for those URLs and set Impact Yes / Mixed / No + next change.",
-      "Judge the Brief on done→ship and time-to-ship first; sessions/clicks second; MQLs only when brief-linked.",
-      "Week funnel MQLs = brief-linked only. Sitewide MQLs are context in the note — not brief credit."
+      "Monday: mark Synthesis items done / dead / leave open in CMO state.",
+      "When a done item ships, paste the live paradigmlife.net URL.",
+      "Friday: for each Published URL, set Call to Keep, Change, or Kill — with one sentence why. Leave blank until someone actually decides.",
+      "Brief impact = sessions on that week’s Published URLs (ship week + since publish) + brief-linked MQLs only.",
+      "Sitewide sessions, ads, and sitewide MQLs are context under the week — never brief credit."
     ],
-    "attribution": "Brief impact is three layers: (1) done marks in CMO synthesis-state, (2) ships on paradigmlife.net, (3) brief-linked funnel movement. Weekly funnel shows Sessions, Clicks, CTR, and Brief-linked MQLs only. Sitewide HubSpot MQLs are context in the note — never counted as brief-attributed unless first/last URL or trinity_brief_* proves it (currently 0).",
+    "attribution": "Brief impact is sessions and MQLs on URLs this board Published. Sitewide traffic and MQLs are context only. A Call is Keep / Change / Kill after Friday review — blank means no decision yet.",
     "sources": [
       "CMO report a91c0260 (252 rows): no Accept/Defer/Kill vocab (using done/dead); 46 unique done / 0 dead / 0 defer / 79 unknown; all 10 THE ONE THING still open; done≠shipped",
       "Ava/CMO synthesis-state.json _history (2026-07-20→09-21): 47→done, 1→dead; no L10 Accept event; decisions-deferred.json empty",
@@ -221,12 +221,12 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn. paradigmlife. net paid LPs). Since publish (2026-09-18→today): 7 sessions.",
+            "note": "Since publish: 7 sessions on this URL.",
             "sessions_90d": 10,
             "sessions_since_publish": 7
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         },
         {
           "kind": "site_ship",
@@ -244,12 +244,12 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn. paradigmlife. net paid LPs). Since publish (2026-09-16→today): 11 sessions.",
+            "note": "Since publish: 11 sessions on this URL.",
             "sessions_90d": 65,
             "sessions_since_publish": 11
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         },
         {
           "kind": "site_ship",
@@ -267,12 +267,12 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn. paradigmlife. net paid LPs). Since publish (2026-09-16→today): 6 sessions.",
+            "note": "Since publish: 6 sessions on this URL.",
             "sessions_90d": 43,
             "sessions_since_publish": 6
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         },
         {
           "kind": "site_ship",
@@ -290,12 +290,12 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn. paradigmlife. net paid LPs). Since publish (2026-09-16→today): 7 sessions.",
+            "note": "Since publish: 7 sessions on this URL.",
             "sessions_90d": 77,
             "sessions_since_publish": 7
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         },
         {
           "kind": "site_ship",
@@ -313,12 +313,12 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn. paradigmlife. net paid LPs). Since publish (2026-09-16→today): 3 sessions.",
+            "note": "Since publish: 3 sessions on this URL.",
             "sessions_90d": 8,
             "sessions_since_publish": 3
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         },
         {
           "kind": "site_ship",
@@ -336,12 +336,12 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn. paradigmlife. net paid LPs). Since publish (2026-09-16→today): 8 sessions.",
+            "note": "Since publish: 8 sessions on this URL.",
             "sessions_90d": 41,
             "sessions_since_publish": 8
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         }
       ]
     },
@@ -389,10 +389,10 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+            "note": ""
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         },
         {
           "kind": "site_ship",
@@ -410,10 +410,10 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+            "note": ""
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         },
         {
           "kind": "site_ship",
@@ -431,10 +431,10 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+            "note": ""
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         },
         {
           "kind": "site_ship",
@@ -452,10 +452,10 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+            "note": ""
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         },
         {
           "kind": "site_ship",
@@ -473,10 +473,10 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+            "note": ""
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         },
         {
           "kind": "site_ship",
@@ -494,10 +494,10 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+            "note": ""
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         },
         {
           "kind": "site_ship",
@@ -515,10 +515,10 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+            "note": ""
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         },
         {
           "kind": "site_ship",
@@ -536,10 +536,10 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+            "note": ""
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         },
         {
           "kind": "site_ship",
@@ -557,10 +557,10 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+            "note": ""
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         },
         {
           "kind": "site_ship",
@@ -578,10 +578,10 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+            "note": ""
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         }
       ]
     },
@@ -629,10 +629,10 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+            "note": ""
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         }
       ]
     },
@@ -680,10 +680,10 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+            "note": ""
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         }
       ]
     },
@@ -818,10 +818,10 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+            "note": ""
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         },
         {
           "kind": "site_ship",
@@ -839,10 +839,10 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+            "note": ""
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         },
         {
           "kind": "site_ship",
@@ -860,10 +860,10 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+            "note": ""
           },
-          "impact": "mixed",
-          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
+          "impact": "",
+          "next_change": ""
         }
       ]
     }
