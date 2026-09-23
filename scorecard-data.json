@@ -12,6 +12,8 @@
     ],
     "attribution": "Brief impact is three layers: (1) did THE ONE THING / content items get Accepted, (2) did Accepts ship on paradigmlife.net, (3) did those ships move sessions or MQLs. Primary proof for (2) is brief topic \u2194 live URL. First/last HubSpot URL will not credit mid-path blog ships; UTMs (trinity_brief_*) are an optional assist and currently read 0.",
     "sources": [
+      "Gauge GA4 property 256670786 pagePath+sitewide sessions for 21 ships \u00d7 9 week Mondays (Sep 21 partial)",
+      "Pulse HubSpot MQL weekly rollup 2026-07-27\u219209-20: 496 MQLs; path tops=learn.paradigmlife.net paid LPs; Synthesis ship URL matches=0",
       "Synthesis Briefs (Drive, dtorsak): weekly force-rank Jul 20\u2013Sep 21 2026 \u2014 THE ONE THING is usually paid/SDR; content/SEO items mid-list",
       "Brief\u2192ship map (60d): content recommendations recur; matching paradigmlife.net lastmods land within ~1\u20133 weeks for several SEO/title/cluster items",
       "HubSpot MQLs sample ~300 contacts Jul 27\u2013Sep 23 window: 0 first/last URL on scorecard ships; learn.paradigmlife.net paid LPs dominate; trinity_brief_* UTMs = 0",
@@ -23,12 +25,11 @@
       "brief_assisted_mqls: utm_campaign prefix trinity_brief_ (none yet \u2192 0)",
       "GA4 pagePath sessions via Gauge mcp-ga4 property 256670786 (ruby-drive-access SA)"
     ],
-    "funnel_as_of": "2026-09-23 ~3:30 PM MT",
+    "funnel_as_of": "2026-09-23 ~3:20 PM MT",
     "blockers": [
-      "Accept / Defer / Kill ritual not logged in scorecard counts (null) \u2014 cannot score Brief compliance without Monday Accepts",
-      "HubSpot first/last URL never credits mid-funnel blog ships; need path/session stitching or UTMs for MQL proof",
-      "Week sitewide sessions still from CMO Weekly Marketing Summary; pagePath from Gauge mcp-ga4 property 256670786",
-      "Gauge still owed full 8-week pagePath matrix for all 21 ships (Sep 14 six-path sum=48 filled)"
+      "Accept / Defer / Kill ritual not logged \u2014 cannot score Brief compliance",
+      "HubSpot first/last URL never credits mid-funnel blog ships (Pulse confirmed 0 matches across 496 MQLs)",
+      "Metricool Google Ads clicks only filled for recent weeks (Sep 14, Sep 21 partial)"
     ],
     "brief_impact": {
       "verdict": "mixed",
@@ -55,14 +56,17 @@
         "Log Monday Accept/Defer/Kill against Brief #s (unlocks layer 1).",
         "Keep shipping Accepts with live URLs (strengthens layer 2).",
         "Add mid-path or trinity_brief_* capture before calling MQL impact (unlocks layer 3)."
-      ]
+      ],
+      "pulse_mqls_8wk": 496,
+      "pulse_ship_url_matches": 0,
+      "gauge_ship_sessions_note": "21 paths \u00d7 9 weeks filled from Gauge; Sep 14 six-ship week pagePath sum now from full matrix"
     }
   },
   "weeks": [
     {
       "week_start": "2026-09-21",
-      "label": "Sep 21 \u2013 Sep 27, 2026",
-      "one_thing": "\u2014 (no Accept ritual logged yet)",
+      "label": "Sep 21 \u2013 Sep 27, 2026 (partial)",
+      "one_thing": "Pause life Insurance | Search + WealthScore campaigns (Brief THE ONE THING)",
       "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
@@ -73,21 +77,21 @@
         "still_draft": null
       },
       "funnel_week": {
-        "sessions": null,
+        "sessions": 785,
         "clicks": 123,
         "ctr": "9.1%",
-        "leads_mqls": 24,
-        "brief_assisted_mqls": 0,
-        "note": "Partial week through Wed Sep 23 MT. Sessions: null \u2014 Weekly Marketing Summary not published yet (GA4 via reports@). Clicks/CTR: Google Ads Metricool Mon\u2013Wed (123 clicks / 1,352 impr). MQLs: HubSpot entered-MQL stage 24 (as-of 2026-09-23 ~2:15 PM MT). Brief-assisted: 0 (no utm_campaign=trinity_brief_*). Meta Ads Metricool same window: 380 clicks (assist only; not in CTR cell)."
+        "leads_mqls": null,
+        "brief_assisted_mqls": null,
+        "note": "Sessions: Gauge GA4 property 256670786 sitewide (Denver Mon\u2013Sun) \u2014 PARTIAL week. Pulse rollup ends 2026-09-20; this cell left null for partial week. Google Ads clicks/CTR: Metricool prior fill (123/9.1%). Ship pagePath sum=0."
       },
       "impact_call": "no_ships",
-      "impact_note": "No site publishes this window yet. Sep 21 Brief THE ONE THING is Google Ads cap; content #4 rebuild /non-correlated-assets/ was already lastmod Sep 16 (prior week). Accept ritual not logged.",
+      "impact_note": "Partial week (through ~Wed Sep 23 MT). No new sitemap ships. Gauge sitewide sessions partial=785. Pulse MQL window ended Sun Sep 20.",
       "items": []
     },
     {
       "week_start": "2026-09-14",
       "label": "Sep 14 \u2013 Sep 20, 2026",
-      "one_thing": "Infinite Banking Works. It\u2019s Also Incomplete.",
+      "one_thing": "Pause Infinite (Broad); hold Google Ads cap (Brief THE ONE THING)",
       "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
@@ -98,15 +102,15 @@
         "still_draft": null
       },
       "funnel_week": {
-        "sessions": 2872,
+        "sessions": 2977,
         "clicks": 300,
         "ctr": "8.1%",
         "leads_mqls": 68,
         "brief_assisted_mqls": 0,
-        "note": "Sessions: 2,872 GA4 site sessions (CMO Weekly Marketing Summary Week of Sep 14, Mon\u2013Sun). Clicks/CTR: Google Ads Metricool 300 / 3,704 impr = 8.1% (matches Summary). MQLs: HubSpot entered-MQL 68 (Pulse def; Summary goal-board MQL was 63 \u2014 different taxonomy). Brief-assisted: 0. Meta Ads Metricool week: 795 clicks (assist). Page-level GA4 not in Mira path \u2014 item funnel left null. Brief\u2192ship: topic match yes for this set; MQL URL match 0/68."
+        "note": "Sessions: Gauge GA4 property 256670786 sitewide (Denver Mon\u2013Sun). MQLs: Pulse 68 enter-MQL. Pulse weekly enter-MQL. Path tops are learn.paradigmlife.net paid LPs (infinite-banking-1, -meta-2, -google-2, thank-you). Synthesis ship paths: 0 first/last hits. Google Ads clicks/CTR: Metricool prior fill (300/8.1%). Ship pagePath sum=48."
       },
       "impact_call": "mixed",
-      "impact_note": "Brief impact (this week): 6 ships live; pagePath sessions sum=48 (Gauge). Sitewide sessions 2,872; HubSpot MQLs 68; brief-assisted MQLs 0; 0 MQL first/last URL hits on these ships. Content recommendations from prior briefs (title/meta, generational wealth, recognition loans, non-correlated assets) align with this ship set \u2014 operating yes, MQL attribution no.",
+      "impact_note": "6 ship(s); pagePath sessions sum=48 vs sitewide 2977 (Gauge). MQLs=68 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
@@ -116,16 +120,17 @@
           "owner": "\u2014",
           "url": "https://paradigmlife.net/infinite-banking-concept/",
           "shipped_on": "2026-09-18",
-          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
           "funnel": {
             "sessions": 10,
             "clicks": null,
             "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "GA4 pagePath via Gauge mcp-ga4, property 256670786 (America/Denver Mon\u2013Sun). activeUsers=8, screenPageViews=22. 12493780 is the GA4 Account ID \u2014 do not use as property."
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
           },
-          "impact": "unscored",
+          "impact": "mixed",
           "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
         },
         {
@@ -136,16 +141,17 @@
           "owner": "\u2014",
           "url": "https://paradigmlife.net/generational-wealth/",
           "shipped_on": "2026-09-16",
-          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
           "funnel": {
             "sessions": 11,
             "clicks": null,
             "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "GA4 pagePath via Gauge mcp-ga4, property 256670786 (America/Denver Mon\u2013Sun). activeUsers=7, screenPageViews=22. 12493780 is the GA4 Account ID \u2014 do not use as property."
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
           },
-          "impact": "unscored",
+          "impact": "mixed",
           "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
         },
         {
@@ -156,16 +162,17 @@
           "owner": "\u2014",
           "url": "https://paradigmlife.net/spouse-term-riders/",
           "shipped_on": "2026-09-16",
-          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
           "funnel": {
             "sessions": 5,
             "clicks": null,
             "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "GA4 pagePath via Gauge mcp-ga4, property 256670786 (America/Denver Mon\u2013Sun). activeUsers=4, screenPageViews=8. 12493780 is the GA4 Account ID \u2014 do not use as property."
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
           },
-          "impact": "unscored",
+          "impact": "mixed",
           "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
         },
         {
@@ -176,16 +183,17 @@
           "owner": "\u2014",
           "url": "https://paradigmlife.net/non-correlated-assets/",
           "shipped_on": "2026-09-16",
-          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
           "funnel": {
             "sessions": 9,
             "clicks": null,
             "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "GA4 pagePath via Gauge mcp-ga4, property 256670786 (America/Denver Mon\u2013Sun). activeUsers=8, screenPageViews=16. 12493780 is the GA4 Account ID \u2014 do not use as property."
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
           },
-          "impact": "unscored",
+          "impact": "mixed",
           "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
         },
         {
@@ -196,16 +204,17 @@
           "owner": "\u2014",
           "url": "https://paradigmlife.net/how-to-build-generational-wealth-and-protect-your-financial-legacy/",
           "shipped_on": "2026-09-16",
-          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
           "funnel": {
             "sessions": 3,
             "clicks": null,
             "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "GA4 pagePath via Gauge mcp-ga4, property 256670786 (America/Denver Mon\u2013Sun). activeUsers=2, screenPageViews=8. 12493780 is the GA4 Account ID \u2014 do not use as property."
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
           },
-          "impact": "unscored",
+          "impact": "mixed",
           "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
         },
         {
@@ -216,16 +225,17 @@
           "owner": "\u2014",
           "url": "https://paradigmlife.net/direct-vs-non-direct-recognition-loans/",
           "shipped_on": "2026-09-16",
-          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
           "funnel": {
             "sessions": 10,
             "clicks": null,
             "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "GA4 pagePath via Gauge mcp-ga4, property 256670786 (America/Denver Mon\u2013Sun). activeUsers=10, screenPageViews=28. 12493780 is the GA4 Account ID \u2014 do not use as property."
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
           },
-          "impact": "unscored",
+          "impact": "mixed",
           "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
         }
       ]
@@ -233,7 +243,7 @@
     {
       "week_start": "2026-09-07",
       "label": "Sep 7 \u2013 Sep 13, 2026",
-      "one_thing": "You Became Your Own Banker. Why Are You Still Dependent on Your Income?",
+      "one_thing": "Cap/pause Infinite & BYOB Search (Brief THE ONE THING)",
       "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
@@ -244,15 +254,15 @@
         "still_draft": null
       },
       "funnel_week": {
-        "sessions": 2301,
+        "sessions": 2286,
         "clicks": 331,
         "ctr": "9.5%",
         "leads_mqls": 63,
         "brief_assisted_mqls": 0,
-        "note": "Sessions: 2,301 GA4 (CMO Weekly Marketing Summary Week of Sep 7). Clicks/CTR: Google Ads Metricool 331 / 3,469 = 9.54%. MQLs: HubSpot entered-MQL 63 (Summary goal-board MQL 70 \u2014 SF/goal taxonomy). Brief-assisted: 0. Meta Ads Metricool week: 781 clicks (assist). Item funnel null \u2014 no page-level GA4 export for ships."
+        "note": "Sessions: Gauge GA4 property 256670786 sitewide (Denver Mon\u2013Sun). MQLs: Pulse 63 enter-MQL. Pulse weekly enter-MQL. Path tops are learn.paradigmlife.net paid LPs (infinite-banking-1, -meta-2, -google-2, thank-you). Synthesis ship paths: 0 first/last hits. Google Ads clicks/CTR: Metricool prior fill (331/9.5%). Ship pagePath sum=120."
       },
-      "impact_call": "unscored",
-      "impact_note": "10 live URL(s) on paradigmlife.net this week (sitemap lastmod verified). Week rollup filled: sessions=2301, Google Ads clicks=331 (CTR 9.5%), HubSpot MQLs=63, brief-assisted=0. Impact Yes/Mixed/No still unscored \u2014 no page-level GA4 for ship URLs yet (Gauge/CMO pull needed). Brief content items (IBC intercept, family banking depth, rate-of-return title, cash-flow pillar) map to several Sep 7 lastmods; Accept ritual still unlogged.",
+      "impact_call": "mixed",
+      "impact_note": "10 ship(s); pagePath sessions sum=120 vs sitewide 2286 (Gauge). MQLs=63 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
@@ -262,16 +272,17 @@
           "owner": "\u2014",
           "url": "https://paradigmlife.net/ibc-vs-perpetual-wealth-strategy/",
           "shipped_on": "2026-09-10",
-          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
           "funnel": {
-            "sessions": null,
+            "sessions": 10,
             "clicks": null,
             "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
           },
-          "impact": "unscored",
+          "impact": "mixed",
           "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
         },
         {
@@ -282,16 +293,17 @@
           "owner": "\u2014",
           "url": "https://paradigmlife.net/family-banking-guide/",
           "shipped_on": "2026-09-10",
-          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
           "funnel": {
-            "sessions": null,
+            "sessions": 10,
             "clicks": null,
             "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
           },
-          "impact": "unscored",
+          "impact": "mixed",
           "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
         },
         {
@@ -302,16 +314,17 @@
           "owner": "\u2014",
           "url": "https://paradigmlife.net/paid-additions-pua-life-insurance/",
           "shipped_on": "2026-09-09",
-          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
           "funnel": {
-            "sessions": null,
+            "sessions": 9,
             "clicks": null,
             "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
           },
-          "impact": "unscored",
+          "impact": "mixed",
           "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
         },
         {
@@ -322,16 +335,17 @@
           "owner": "\u2014",
           "url": "https://paradigmlife.net/best-assets-that-produce-cash-flow/",
           "shipped_on": "2026-09-09",
-          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
           "funnel": {
-            "sessions": null,
+            "sessions": 22,
             "clicks": null,
             "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
           },
-          "impact": "unscored",
+          "impact": "mixed",
           "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
         },
         {
@@ -342,16 +356,17 @@
           "owner": "\u2014",
           "url": "https://paradigmlife.net/bank-owned-life-insurance-boli-explained/",
           "shipped_on": "2026-09-09",
-          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
           "funnel": {
-            "sessions": null,
+            "sessions": 13,
             "clicks": null,
             "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
           },
-          "impact": "unscored",
+          "impact": "mixed",
           "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
         },
         {
@@ -362,16 +377,17 @@
           "owner": "\u2014",
           "url": "https://paradigmlife.net/an-introduction-to-using-life-insurance-as-a-bank/",
           "shipped_on": "2026-09-09",
-          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
           "funnel": {
-            "sessions": null,
+            "sessions": 12,
             "clicks": null,
             "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
           },
-          "impact": "unscored",
+          "impact": "mixed",
           "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
         },
         {
@@ -382,16 +398,17 @@
           "owner": "\u2014",
           "url": "https://paradigmlife.net/guaranteed-cash-value-whole-life-insurance/",
           "shipped_on": "2026-09-09",
-          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
           "funnel": {
-            "sessions": null,
+            "sessions": 11,
             "clicks": null,
             "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
           },
-          "impact": "unscored",
+          "impact": "mixed",
           "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
         },
         {
@@ -402,16 +419,17 @@
           "owner": "\u2014",
           "url": "https://paradigmlife.net/infinite-banking-works-its-also-incomplete/",
           "shipped_on": "2026-09-08",
-          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
           "funnel": {
-            "sessions": null,
+            "sessions": 6,
             "clicks": null,
             "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
           },
-          "impact": "unscored",
+          "impact": "mixed",
           "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
         },
         {
@@ -422,16 +440,17 @@
           "owner": "\u2014",
           "url": "https://paradigmlife.net/rate-of-return-during-retirement/",
           "shipped_on": "2026-09-08",
-          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
           "funnel": {
-            "sessions": null,
+            "sessions": 3,
             "clicks": null,
             "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
           },
-          "impact": "unscored",
+          "impact": "mixed",
           "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
         },
         {
@@ -442,64 +461,25 @@
           "owner": "\u2014",
           "url": "https://paradigmlife.net/how-to-calculate-short-term-disability-benefits-premiums-and-rates/",
           "shipped_on": "2026-09-08",
-          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
           "funnel": {
-            "sessions": null,
+            "sessions": 24,
             "clicks": null,
             "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
           },
-          "impact": "unscored",
+          "impact": "mixed",
           "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
-        },
-        {
-          "kind": "brief_item",
-          "title": "Cap or Pause Infinite and BYOB Search",
-          "slug": "cap-pause-infinite-byob",
-          "decision": "example",
-          "owner": "John",
-          "url": null,
-          "shipped_on": null,
-          "projected_outcome": "Blended paid-search CPA under prior-week target",
-          "funnel": {
-            "sessions": null,
-            "clicks": null,
-            "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "Paid media Accept \u2014 score in Ads, not as a blog URL."
-          },
-          "impact": "unscored",
-          "next_change": "Replace EXAMPLE with real Accept disposition when ritual is live."
-        },
-        {
-          "kind": "brief_item",
-          "title": "Fix Placeholder Creative Live Meta Ad",
-          "slug": "fix-meta-placeholder-creative",
-          "decision": "example",
-          "owner": "John",
-          "url": null,
-          "shipped_on": null,
-          "projected_outcome": "Broken Meta creative corrected or paused same day",
-          "funnel": {
-            "sessions": null,
-            "clicks": null,
-            "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "Ad ops Accept \u2014 verify in Ads Manager."
-          },
-          "impact": "unscored",
-          "next_change": "Replace EXAMPLE with real Accept disposition when ritual is live."
         }
       ]
     },
     {
       "week_start": "2026-08-31",
       "label": "Aug 31 \u2013 Sep 6, 2026",
-      "one_thing": "The Market Fluctuates And You Could Lose Everything Heres The Retirement Design Built Around A Guarantee Not A Guess",
+      "one_thing": "MQL\u2192SQL conversion gap (Brief THE ONE THING)",
       "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
@@ -510,15 +490,15 @@
         "still_draft": null
       },
       "funnel_week": {
-        "sessions": 2289,
+        "sessions": 2274,
         "clicks": 272,
         "ctr": "10.0%",
         "leads_mqls": 60,
         "brief_assisted_mqls": 0,
-        "note": "Sessions: 2,289 GA4 (CMO Weekly Marketing Summary Week of Aug 31). Clicks/CTR: Google Ads Metricool 272 / 2,719 = 10.0% (matches Summary). MQLs: HubSpot entered-MQL 60 (Summary goal-board MQL 56 \u2014 different taxonomy). Brief-assisted: 0. Meta Ads Metricool week: 877 clicks (assist). Item funnel null."
+        "note": "Sessions: Gauge GA4 property 256670786 sitewide (Denver Mon\u2013Sun). MQLs: Pulse 60 enter-MQL. Pulse weekly enter-MQL. Path tops are learn.paradigmlife.net paid LPs (infinite-banking-1, -meta-2, -google-2, thank-you). Synthesis ship paths: 0 first/last hits. Google Ads clicks/CTR: Metricool prior fill (272/10.0%). Ship pagePath sum=7."
       },
-      "impact_call": "unscored",
-      "impact_note": "1 live URL(s) on paradigmlife.net this week (sitemap lastmod verified). Week rollup filled: sessions=2289, Google Ads clicks=272 (CTR 10.0%), HubSpot MQLs=60, brief-assisted=0. Impact Yes/Mixed/No still unscored \u2014 no page-level GA4 for ship URLs yet (Gauge/CMO pull needed).",
+      "impact_call": "mixed",
+      "impact_note": "1 ship(s); pagePath sessions sum=7 vs sitewide 2274 (Gauge). MQLs=60 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
@@ -528,16 +508,228 @@
           "owner": "\u2014",
           "url": "https://paradigmlife.net/the-market-fluctuates-and-you-could-lose-everything-heres-the-retirement-design-built-around-a-guarantee-not-a-guess/",
           "shipped_on": "2026-09-04",
-          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
           "funnel": {
-            "sessions": null,
+            "sessions": 7,
             "clicks": null,
             "ctr": null,
-            "leads_mqls": null,
-            "brief_assisted_mqls": null,
-            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
           },
-          "impact": "unscored",
+          "impact": "mixed",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        }
+      ]
+    },
+    {
+      "week_start": "2026-08-24",
+      "label": "Aug 24 \u2013 Aug 30, 2026",
+      "one_thing": "SDR technique gap \u2014 shadow Hallie (Brief THE ONE THING)",
+      "owners": "Rachel \u00b7 John",
+      "counts": {
+        "surfaced": null,
+        "accepted": null,
+        "deferred": null,
+        "killed": null,
+        "shipped": 1,
+        "still_draft": null
+      },
+      "funnel_week": {
+        "sessions": 2513,
+        "clicks": null,
+        "ctr": null,
+        "leads_mqls": 67,
+        "brief_assisted_mqls": 0,
+        "note": "Sessions: Gauge GA4 property 256670786 sitewide (Denver Mon\u2013Sun). MQLs: Pulse 67 enter-MQL. Pulse weekly enter-MQL. Path tops are learn.paradigmlife.net paid LPs (infinite-banking-1, -meta-2, -google-2, thank-you). Synthesis ship paths: 0 first/last hits. Google Ads clicks: not filled for this week. Ship pagePath sum=8."
+      },
+      "impact_call": "mixed",
+      "impact_note": "1 ship(s); pagePath sessions sum=8 vs sitewide 2513 (Gauge). MQLs=67 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
+      "items": [
+        {
+          "kind": "site_ship",
+          "title": "Student Loan Overpayment",
+          "slug": "student-loan-overpayment",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/student-loan-overpayment/",
+          "shipped_on": "2026-08-25",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
+          "funnel": {
+            "sessions": 8,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+          },
+          "impact": "mixed",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        }
+      ]
+    },
+    {
+      "week_start": "2026-08-17",
+      "label": "Aug 17 \u2013 Aug 23, 2026",
+      "one_thing": "SDR\u2192SQL handoff audit (Brief THE ONE THING)",
+      "owners": "Rachel \u00b7 John",
+      "counts": {
+        "surfaced": null,
+        "accepted": null,
+        "deferred": null,
+        "killed": null,
+        "shipped": 0,
+        "still_draft": null
+      },
+      "funnel_week": {
+        "sessions": 2486,
+        "clicks": null,
+        "ctr": null,
+        "leads_mqls": 77,
+        "brief_assisted_mqls": 0,
+        "note": "Sessions: Gauge GA4 property 256670786 sitewide (Denver Mon\u2013Sun). MQLs: Pulse 77 enter-MQL. Pulse: hs_v2_date_entered_marketingqualifiedlead. Top paths: learn.paradigmlife.net infinite-banking-* LPs \u2014 0 ship-path matches. Google Ads clicks: not filled for this week. Ship pagePath sum=0."
+      },
+      "impact_call": "no_ships",
+      "impact_note": "No sitemap ships this week. Sitewide sessions=2486 (Gauge). MQLs=77 (Pulse). Brief THE ONE THING was ops/SDR/paid \u2014 content items may still be carry-overs.",
+      "items": []
+    },
+    {
+      "week_start": "2026-08-10",
+      "label": "Aug 10 \u2013 Aug 16, 2026",
+      "one_thing": "SDR PWS calibration (Brief THE ONE THING)",
+      "owners": "Rachel \u00b7 John",
+      "counts": {
+        "surfaced": null,
+        "accepted": null,
+        "deferred": null,
+        "killed": null,
+        "shipped": 0,
+        "still_draft": null
+      },
+      "funnel_week": {
+        "sessions": 2352,
+        "clicks": null,
+        "ctr": null,
+        "leads_mqls": 53,
+        "brief_assisted_mqls": 0,
+        "note": "Sessions: Gauge GA4 property 256670786 sitewide (Denver Mon\u2013Sun). MQLs: Pulse 53 enter-MQL. Pulse: hs_v2_date_entered_marketingqualifiedlead. Top paths: learn.paradigmlife.net infinite-banking-* LPs \u2014 0 ship-path matches. Google Ads clicks: not filled for this week. Ship pagePath sum=0."
+      },
+      "impact_call": "no_ships",
+      "impact_note": "No sitemap ships this week. Sitewide sessions=2352 (Gauge). MQLs=53 (Pulse). Brief THE ONE THING was ops/SDR/paid \u2014 content items may still be carry-overs.",
+      "items": []
+    },
+    {
+      "week_start": "2026-08-03",
+      "label": "Aug 3 \u2013 Aug 9, 2026",
+      "one_thing": "SDR qualification workshop (Brief THE ONE THING)",
+      "owners": "Rachel \u00b7 John",
+      "counts": {
+        "surfaced": null,
+        "accepted": null,
+        "deferred": null,
+        "killed": null,
+        "shipped": 0,
+        "still_draft": null
+      },
+      "funnel_week": {
+        "sessions": 3093,
+        "clicks": null,
+        "ctr": null,
+        "leads_mqls": 60,
+        "brief_assisted_mqls": 0,
+        "note": "Sessions: Gauge GA4 property 256670786 sitewide (Denver Mon\u2013Sun). MQLs: Pulse 60 enter-MQL. Pulse: hs_v2_date_entered_marketingqualifiedlead. Top paths: learn.paradigmlife.net infinite-banking-* LPs \u2014 0 ship-path matches. Google Ads clicks: not filled for this week. Ship pagePath sum=0."
+      },
+      "impact_call": "no_ships",
+      "impact_note": "No sitemap ships this week. Sitewide sessions=3093 (Gauge). MQLs=60 (Pulse). Brief THE ONE THING was ops/SDR/paid \u2014 content items may still be carry-overs.",
+      "items": []
+    },
+    {
+      "week_start": "2026-07-27",
+      "label": "Jul 27 \u2013 Aug 2, 2026",
+      "one_thing": "\u2014 (brief on file; Accept ritual not logged)",
+      "owners": "Rachel \u00b7 John",
+      "counts": {
+        "surfaced": null,
+        "accepted": null,
+        "deferred": null,
+        "killed": null,
+        "shipped": 3,
+        "still_draft": null
+      },
+      "funnel_week": {
+        "sessions": 3733,
+        "clicks": null,
+        "ctr": null,
+        "leads_mqls": 48,
+        "brief_assisted_mqls": 0,
+        "note": "Sessions: Gauge GA4 property 256670786 sitewide (Denver Mon\u2013Sun). MQLs: Pulse 48 enter-MQL. Pulse weekly enter-MQL. Path tops are learn.paradigmlife.net paid LPs (infinite-banking-1, -meta-2, -google-2, thank-you). Synthesis ship paths: 0 first/last hits. Google Ads clicks: not filled for this week. Ship pagePath sum=46."
+      },
+      "impact_call": "mixed",
+      "impact_note": "3 ship(s); pagePath sessions sum=46 vs sitewide 3733 (Gauge). MQLs=48 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
+      "items": [
+        {
+          "kind": "site_ship",
+          "title": "Your Estate Plan Coordinates What Youve Built But Whats It Built On",
+          "slug": "your-estate-plan-coordinates-what-youve-built-but-whats-it-built-on",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/your-estate-plan-coordinates-what-youve-built-but-whats-it-built-on/",
+          "shipped_on": "2026-07-31",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
+          "funnel": {
+            "sessions": 9,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+          },
+          "impact": "mixed",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        },
+        {
+          "kind": "site_ship",
+          "title": "Family Banking Capital Architecture",
+          "slug": "family-banking-capital-architecture",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/family-banking-capital-architecture/",
+          "shipped_on": "2026-07-29",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
+          "funnel": {
+            "sessions": 8,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+          },
+          "impact": "mixed",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        },
+        {
+          "kind": "site_ship",
+          "title": "Great American Banking Families",
+          "slug": "great-american-banking-families",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/great-american-banking-families/",
+          "shipped_on": "2026-07-29",
+          "projected_outcome": "Sessions + assisted MQLs from this live URL",
+          "brief_link": "topic/path match to Synthesis content items where applicable",
+          "funnel": {
+            "sessions": 29,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": 0,
+            "brief_assisted_mqls": 0,
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon\u2013Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs)."
+          },
+          "impact": "mixed",
           "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
         }
       ]
