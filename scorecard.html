@@ -68,6 +68,15 @@
   @media(max-width:600px){
     .stats,.funnel{grid-template-columns:1fr 1fr}
   }
+
+  .cohorts{max-width:1100px;margin:0 auto 1rem;padding:0 1.5rem}
+  .cohorts .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1rem 1.25rem}
+  .cohorts h2{margin:0 0 .35rem;font-size:1.15rem;color:var(--accent)}
+  .cohorts .cap{color:var(--muted);font-size:.85rem;margin:0 0 .75rem}
+  .cohorts table{margin-top:0;font-size:.88rem}
+  .cohorts th,.cohorts td{padding:.5rem .65rem}
+  .cohorts td.num{text-align:right;font-variant-numeric:tabular-nums}
+  .cohorts .note-tag{font-size:.72rem;color:var(--warn)}
 </style>
 </head>
 <body>
@@ -89,6 +98,15 @@
     <p style="margin:0" id="attr"></p>
   </div>
 </div>
+
+
+<section class="cohorts" id="cohortsStrip" aria-label="Brief-shipped cohorts">
+  <div class="card">
+    <h2>Brief-shipped cohorts</h2>
+    <p class="cap">Sessions on that week’s Published URLs only — not sitewide. 30d / 90d / all-time start at each URL’s publish date.</p>
+    <div id="cohortsTable"><p class="muted">Loading cohorts…</p></div>
+  </div>
+</section>
 
 <div class="weeks" id="tabs" role="tablist"></div>
 
@@ -125,6 +143,39 @@
     var note = f.note || '';
     if(f.week_mqls_sitewide==null) return note;
     return 'Week sitewide MQLs (not brief-attributed): ' + f.week_mqls_sitewide + '. ' + note;
+  }
+
+
+  function renderCohorts(d){
+    const block=d.cohorts;
+    const el=document.getElementById('cohortsTable');
+    if(!el) return;
+    if(!block||!block.cohorts||!block.cohorts.length){
+      el.innerHTML='<p class="muted">No Published ship cohorts yet.</p>';
+      return;
+    }
+    const rows=block.cohorts.map(c=>{
+      const notes=c.notes||'';
+      const noteHtml=notes&&notes!=='Windows complete'
+        ?`<span class="note-tag">${notes}</span>`
+        :`<span class="muted" style="font-size:.72rem">${notes||'—'}</span>`;
+      return `<tr>
+        <td>${c.label||c.week_start}</td>
+        <td class="num">${c.published_count}</td>
+        <td class="num">${c.sessions_ship_week}</td>
+        <td class="num">${c.sessions_30d}</td>
+        <td class="num">${c.sessions_90d}</td>
+        <td class="num">${c.sessions_all_time}</td>
+        <td>${noteHtml}</td>
+      </tr>`;
+    }).join('');
+    el.innerHTML=`<table>
+      <thead><tr>
+        <th>Ship week</th><th>Published</th><th>Ship week sess</th>
+        <th>30d</th><th>90d</th><th>All-time</th><th>Notes</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
   }
 
   let data=null; let active=0;
