@@ -17,14 +17,14 @@
       "GA4 site sessions via CMO Weekly Marketing Summary (reports@ → Drive) for completed weeks",
       "Google Ads clicks/CTR via Metricool brand Paradigm Life (week-matched)",
       "HubSpot MCP: contacts hs_v2_date_entered_marketingqualifiedlead (America/Denver Mon–Sun)",
-      "brief_assisted_mqls: utm_campaign prefix trinity_brief_ (none yet → 0)"
+      "brief_assisted_mqls: utm_campaign prefix trinity_brief_ (none yet → 0)",
+      "GA4 pagePath sessions via Gauge mcp-ga4 property 256670786 (ruby-drive-access SA)"
     ],
-    "funnel_as_of": "2026-09-23 ~2:15 PM MT",
+    "funnel_as_of": "2026-09-23 ~3:15 PM MT",
     "blockers": [
-      "Direct GA4 API / data/ga4/ pulls not on this box — Gauge owns reports@ pulls; Mira consumed Summary Docs",
+      "Week sitewide sessions still from CMO Weekly Marketing Summary; pagePath ship sessions from Gauge mcp-ga4 property 256670786",
       "Metricool website network returns 0 — not a GA4 substitute",
-      "Semrush traffic_overview MCP errored (no structured content)",
-      "Page-level sessions for ship URLs require GA4 landing-page export Gauge can attach"
+      "Semrush traffic_overview MCP errored (no structured content)"
     ]
   },
   "weeks": [
@@ -75,7 +75,7 @@
         "note": "Sessions: 2,872 GA4 site sessions (CMO Weekly Marketing Summary Week of Sep 14, Mon–Sun). Clicks/CTR: Google Ads Metricool 300 / 3,704 impr = 8.1% (matches Summary). MQLs: HubSpot entered-MQL 68 (Pulse def; Summary goal-board MQL was 63 — different taxonomy). Brief-assisted: 0. Meta Ads Metricool week: 795 clicks (assist). Page-level GA4 not in Mira path — item funnel left null."
       },
       "impact_call": "unscored",
-      "impact_note": "6 live URL(s) on paradigmlife.net this week (sitemap lastmod verified). Week rollup filled: sessions=2872, Google Ads clicks=300 (CTR 8.1%), HubSpot MQLs=68, brief-assisted=0. Impact Yes/Mixed/No still unscored — no page-level GA4 for ship URLs yet (Gauge/CMO pull needed).",
+      "impact_note": "6 live URL(s) this week. Week rollup: sessions=2872 (sitewide CMO Summary), Google Ads clicks=300 (CTR 8.1%), HubSpot MQLs=68, brief-assisted=0. Page-level GA4 sessions now filled from Gauge mcp-ga4 property 256670786 (six-path sum=48). Impact Yes/Mixed/No still unscored — Friday call.",
       "items": [
         {
           "kind": "site_ship",
@@ -87,12 +87,12 @@
           "shipped_on": "2026-09-18",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
           "funnel": {
-            "sessions": null,
+            "sessions": 10,
             "clicks": null,
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
+            "note": "GA4 pagePath via Gauge mcp-ga4, property 256670786 (America/Denver Mon–Sun). activeUsers=8, screenPageViews=22. 12493780 is the GA4 Account ID — do not use as property."
           },
           "impact": "unscored",
           "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
@@ -107,12 +107,12 @@
           "shipped_on": "2026-09-16",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
           "funnel": {
-            "sessions": null,
+            "sessions": 11,
             "clicks": null,
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
+            "note": "GA4 pagePath via Gauge mcp-ga4, property 256670786 (America/Denver Mon–Sun). activeUsers=7, screenPageViews=22. 12493780 is the GA4 Account ID — do not use as property."
           },
           "impact": "unscored",
           "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
@@ -127,12 +127,12 @@
           "shipped_on": "2026-09-16",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
           "funnel": {
-            "sessions": null,
+            "sessions": 5,
             "clicks": null,
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
+            "note": "GA4 pagePath via Gauge mcp-ga4, property 256670786 (America/Denver Mon–Sun). activeUsers=4, screenPageViews=8. 12493780 is the GA4 Account ID — do not use as property."
           },
           "impact": "unscored",
           "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
@@ -147,12 +147,12 @@
           "shipped_on": "2026-09-16",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
           "funnel": {
-            "sessions": null,
+            "sessions": 9,
             "clicks": null,
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
+            "note": "GA4 pagePath via Gauge mcp-ga4, property 256670786 (America/Denver Mon–Sun). activeUsers=8, screenPageViews=16. 12493780 is the GA4 Account ID — do not use as property."
           },
           "impact": "unscored",
           "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
@@ -167,12 +167,12 @@
           "shipped_on": "2026-09-16",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
           "funnel": {
-            "sessions": null,
+            "sessions": 3,
             "clicks": null,
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
+            "note": "GA4 pagePath via Gauge mcp-ga4, property 256670786 (America/Denver Mon–Sun). activeUsers=2, screenPageViews=8. 12493780 is the GA4 Account ID — do not use as property."
           },
           "impact": "unscored",
           "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
@@ -187,12 +187,12 @@
           "shipped_on": "2026-09-16",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
           "funnel": {
-            "sessions": null,
+            "sessions": 10,
             "clicks": null,
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
+            "note": "GA4 pagePath via Gauge mcp-ga4, property 256670786 (America/Denver Mon–Sun). activeUsers=10, screenPageViews=28. 12493780 is the GA4 Account ID — do not use as property."
           },
           "impact": "unscored",
           "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
