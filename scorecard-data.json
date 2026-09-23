@@ -1,18 +1,18 @@
 {
   "meta": {
     "title": "Trinity Marketing Scorecard",
-    "subtitle": "Synthesis Brief impact: Accept \u2192 ship on paradigmlife.net \u2192 did the funnel move?",
+    "subtitle": "Synthesis Brief impact: done (CMO state) \u2192 ship on paradigmlife.net \u2192 did the funnel move?",
     "updated": "2026-09-23",
     "status": "draft",
     "how_to_use": [
-      "Monday: log Surfaced / Accept / Defer / Kill from the Synthesis Brief into that week (this is the missing Accept ritual).",
-      "When an Accept ships, paste the live paradigmlife.net URL (match by topic/slug \u2014 not UTM).",
+      "Monday: mark Synthesis items done / dead / leave open in CMO state (there is no Accept/Defer/Kill vote today).",
+      "When a done item ships, paste the live paradigmlife.net URL (match by topic/slug \u2014 not UTM).",
       "Friday: fill funnel cells for those URLs and set Impact Yes / Mixed / No + next change.",
-      "Judge the Brief on Accept\u2192Ship rate and time-to-ship first; page sessions second; MQLs only with honest attribution limits."
+      "Judge the Brief on done\u2192ship rate and time-to-ship first; page sessions second; MQLs only with honest attribution limits."
     ],
-    "attribution": "Brief impact is three layers: (1) did THE ONE THING / content items get Accepted, (2) did Accepts ship on paradigmlife.net, (3) did those ships move sessions or MQLs. Primary proof for (2) is brief topic \u2194 live URL. First/last HubSpot URL will not credit mid-path blog ships; UTMs (trinity_brief_*) are an optional assist and currently read 0.",
+    "attribution": "Brief impact is three layers: (1) did THE ONE THING / content items get marked done in CMO synthesis-state, (2) did those dones ship on paradigmlife.net, (3) did those ships move sessions or MQLs. CMO has no Accept/Defer/Kill vocabulary \u2014 scorecard columns are Done / Deferred (unused) / Dead. Primary proof for (2) is brief topic \u2194 live URL. First/last HubSpot URL will not credit mid-path blog ships; UTMs (trinity_brief_*) are an optional assist and currently read 0.",
     "sources": [
-      "CMO report a91c0260 (252 rows): no Accept/Defer/Kill vocab; 46 unique done / 0 dead / 0 defer / 79 unknown; all 10 THE ONE THING still open; done\u2260shipped",
+      "CMO report a91c0260 (252 rows): no Accept/Defer/Kill vocab (using done/dead); 46 unique done / 0 dead / 0 defer / 79 unknown; all 10 THE ONE THING still open; done\u2260shipped",
       "Ava/CMO synthesis-state.json _history (2026-07-20\u219209-21): 47\u2192done, 1\u2192dead; no L10 Accept event; decisions-deferred.json empty",
       "Gauge GA4 property 256670786 pagePath+sitewide sessions for 21 ships \u00d7 9 week Mondays (Sep 21 partial)",
       "Pulse HubSpot MQL weekly rollup 2026-07-27\u219209-20: 496 MQLs; path tops=learn.paradigmlife.net paid LPs; Synthesis ship URL matches=0",
@@ -29,23 +29,23 @@
     ],
     "funnel_as_of": "2026-09-23 ~3:30 PM MT",
     "blockers": [
-      "No Accept/Defer/Kill log \u2014 only open/in_progress/done/dead; no Accept-at-start field",
-      "All 10 THE ONE THING items Jul 20\u2013Sep 21 still open",
+      "No Accept/Defer/Kill log \u2014 scorecard uses CMO done/dead (open/in_progress = not done)",
+      "All 10 THE ONE THING items Jul 20\u2013Sep 21 still open (never marked done)",
       "done \u2260 shipped (CMO has no live-URL verification)",
       "HubSpot first/last URL never credits mid-funnel blog ships (Pulse: 0/496)"
     ],
     "brief_impact": {
       "verdict": "mixed",
       "as_of": "2026-09-23",
-      "headline": "Ops closes many mid-list content items (46 unique done). Every THE ONE THING for Jul 20\u2013Sep 21 is still open \u2014 never Accept-marked. No formal Defer log. Live-site ship is not verified inside CMO state.",
+      "headline": "Ops marks many mid-list content items done (46 unique). Every THE ONE THING for Jul 20\u2013Sep 21 is still open \u2014 never marked done. No formal Defer log. Live-site ship is not verified inside CMO state.",
       "layers": [
         {
-          "layer": "1_priority_to_accept",
+          "layer": "1_priority_to_done",
           "call": "partial_proxy",
-          "note": "CMO has no Accept/Defer/Kill vocabulary. Substitute: data/synthesis-state.json open|in_progress|done|dead. Window Jul 20\u2013Sep 21: 125 unique items \u2192 46 done (Accept proxy), 0 currently dead (Kill), 0 formal Defer (decisions-deferred.json always empty), 79 Unknown (66 open + 13 in_progress). Appearance-level across 252 brief listings: 79 done / 173 Unknown. Source report: a91c0260-31ea-408d-bd24-65c2d381854c (ignore b95b2fdd placeholder). No field records who Accepted at start \u2014 only who later marked done. Named closers: John Keever ~56 of 74; never Rachel."
+          "note": "CMO has no Accept/Defer/Kill (unused) vocabulary. Substitute: data/synthesis-state.json open|in_progress|done|dead. Window Jul 20\u2013Sep 21: 125 unique items \u2192 46 done (done), 0 currently dead (Kill), 0 formal Defer (decisions-deferred.json always empty), 79 Unknown (66 open + 13 in_progress). Appearance-level across 252 brief listings: 79 done / 173 Unknown. Source report: a91c0260-31ea-408d-bd24-65c2d381854c (ignore b95b2fdd placeholder). No field records who started work \u2014 only who later marked done. Named closers: John Keever ~56 of 74; never Rachel."
         },
         {
-          "layer": "2_accept_to_ship",
+          "layer": "2_done_to_ship",
           "call": "unverified_in_cmo",
           "note": "CMO state does not track paradigmlife.net URLs. Scorecard still maps done topics \u2192 sitemap lastmods externally (leaning yes for many content items). Explicit counterexample in CMO notes: IBC query re-route marked done twice without the page shipping. Generational-wealth refresh partial/unconfirmed. Treat done \u2260 shipped."
         },
@@ -56,7 +56,7 @@
         }
       ],
       "what_would_change_the_call": [
-        "Monday ritual: Accept/Defer/Kill THE ONE THING + content items at brief time (separate from later done).",
+        "Monday ritual: explicitly decide THE ONE THING + content items (and log done/dead \u2014 or add a real Accept field).",
         "Wire done \u2192 live URL (slug) so ship is verified, not inferred.",
         "Use decisions-deferred.json when something is consciously parked.",
         "Mid-path or trinity_brief_* for MQL proof."
@@ -79,7 +79,7 @@
         "window": "2026-07-20 to 2026-09-21",
         "weeks": 10,
         "any_accepted": false,
-        "note": "All 10 still open. Budget-increase ask flipped to budget-cap/pause by September; neither version Accept-marked.",
+        "note": "All 10 still open. Budget-increase ask flipped to budget-cap/pause by September; neither version marked done in synthesis-state.",
         "items": [
           {
             "week": "2026-07-20",
@@ -131,10 +131,12 @@
             "one_thing": "Pause 3 lowest-yield search campaigns",
             "status": "open"
           }
-        ]
+        ],
+        "any_done": false
       },
       "caveats": [
-        "done \u2260 Accept-at-publish; no Accept moment is logged.",
+        "Scorecard \"Done\" = CMO synthesis-state done (not an Accept vote).",
+        "done \u2260 done-at-publish; no done moment is logged.",
         "done \u2260 shipped on paradigmlife.net.",
         "Tax Strategy Q3 social was dead then reopened same day \u2192 now in_progress/Unknown, not Kill.",
         "Rachel never appears as changed_by."
@@ -149,9 +151,9 @@
       "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
-        "accepted": 0,
+        "done": 0,
         "deferred": 0,
-        "killed": 0,
+        "dead": 0,
         "shipped": 0,
         "still_draft": null
       },
@@ -164,7 +166,7 @@
         "note": "Sessions: Gauge GA4 property 256670786 sitewide (Denver Mon\u2013Sun) \u2014 PARTIAL week. Pulse rollup ends 2026-09-20; this cell left null for partial week. Google Ads clicks/CTR: Metricool prior fill (123/9.1%). Ship pagePath sum=0."
       },
       "impact_call": "no_ships",
-      "impact_note": "THE ONE THING still open (never Accept-marked in synthesis-state). CMO proxy (not L10 Accept): 0 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Partial week (through ~Wed Sep 23 MT). No new sitemap ships. Gauge sitewide sessions partial=785. Pulse MQL window ended Sun Sep 20.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead \u2014 not a Monday Accept ritual): 0 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Partial week (through ~Wed Sep 23 MT). No new sitemap ships. Gauge sitewide sessions partial=785. Pulse MQL window ended Sun Sep 20.",
       "items": []
     },
     {
@@ -174,9 +176,9 @@
       "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
-        "accepted": 3,
+        "done": 3,
         "deferred": 0,
-        "killed": 0,
+        "dead": 0,
         "shipped": 6,
         "still_draft": null
       },
@@ -189,7 +191,7 @@
         "note": "Sessions: Gauge GA4 property 256670786 sitewide (Denver Mon\u2013Sun). MQLs: Pulse 68 enter-MQL. Pulse weekly enter-MQL. Path tops are learn.paradigmlife.net paid LPs (infinite-banking-1, -meta-2, -google-2, thank-you). Synthesis ship paths: 0 first/last hits. Google Ads clicks/CTR: Metricool prior fill (300/8.1%). Ship pagePath sum=48."
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never Accept-marked in synthesis-state). CMO proxy (not L10 Accept): 3 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples \u2014 Done: Rewrite titles/meta on five high-impression zero-click pages; Done: Build a dedicated IBC explainer page; Done: Refresh generational wealth page with definition block. 6 ship(s); pagePath sessions sum=48 vs sitewide 2977 (Gauge). MQLs=68 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead \u2014 not a Monday Accept ritual): 3 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples \u2014 Done: Rewrite titles/meta on five high-impression zero-click pages; Done: Build a dedicated IBC explainer page; Done: Refresh generational wealth page with definition block. 6 ship(s); pagePath sessions sum=48 vs sitewide 2977 (Gauge). MQLs=68 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
@@ -326,9 +328,9 @@
       "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
-        "accepted": 8,
+        "done": 8,
         "deferred": 0,
-        "killed": 0,
+        "dead": 0,
         "shipped": 10,
         "still_draft": null
       },
@@ -341,7 +343,7 @@
         "note": "Sessions: Gauge GA4 property 256670786 sitewide (Denver Mon\u2013Sun). MQLs: Pulse 63 enter-MQL. Pulse weekly enter-MQL. Path tops are learn.paradigmlife.net paid LPs (infinite-banking-1, -meta-2, -google-2, thank-you). Synthesis ship paths: 0 first/last hits. Google Ads clicks/CTR: Metricool prior fill (331/9.5%). Ship pagePath sum=120."
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never Accept-marked in synthesis-state). CMO proxy (not L10 Accept): 8 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples \u2014 Done: Content Depth Expansion on Family Banking Guide; Done: Consolidate Cash-Flow Asset Pages (again); Done: Title Refresh on five worst low-CTR pages; Done: Generational Wealth Content Cluster Optimization. 10 ship(s); pagePath sessions sum=120 vs sitewide 2286 (Gauge). MQLs=63 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead \u2014 not a Monday Accept ritual): 8 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples \u2014 Done: Content Depth Expansion on Family Banking Guide; Done: Consolidate Cash-Flow Asset Pages (again); Done: Title Refresh on five worst low-CTR pages; Done: Generational Wealth Content Cluster Optimization. 10 ship(s); pagePath sessions sum=120 vs sitewide 2286 (Gauge). MQLs=63 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
@@ -562,9 +564,9 @@
       "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
-        "accepted": 4,
+        "done": 4,
         "deferred": 0,
-        "killed": 0,
+        "dead": 0,
         "shipped": 1,
         "still_draft": null
       },
@@ -577,7 +579,7 @@
         "note": "Sessions: Gauge GA4 property 256670786 sitewide (Denver Mon\u2013Sun). MQLs: Pulse 60 enter-MQL. Pulse weekly enter-MQL. Path tops are learn.paradigmlife.net paid LPs (infinite-banking-1, -meta-2, -google-2, thank-you). Synthesis ship paths: 0 first/last hits. Google Ads clicks/CTR: Metricool prior fill (272/10.0%). Ship pagePath sum=7."
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never Accept-marked in synthesis-state). CMO proxy (not L10 Accept): 4 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples \u2014 Done: Address Certainty Seeker Content Gap; Done: Counter-Position Against IBC Practitioners; Done: Google Ads Account Structure Cleanup; Done: Family Guardian Content Development. 1 ship(s); pagePath sessions sum=7 vs sitewide 2274 (Gauge). MQLs=60 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead \u2014 not a Monday Accept ritual): 4 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples \u2014 Done: Address Certainty Seeker Content Gap; Done: Counter-Position Against IBC Practitioners; Done: Google Ads Account Structure Cleanup; Done: Family Guardian Content Development. 1 ship(s); pagePath sessions sum=7 vs sitewide 2274 (Gauge). MQLs=60 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
@@ -609,9 +611,9 @@
       "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
-        "accepted": 4,
+        "done": 4,
         "deferred": 0,
-        "killed": 0,
+        "dead": 0,
         "shipped": 1,
         "still_draft": null
       },
@@ -624,7 +626,7 @@
         "note": "Sessions: Gauge GA4 property 256670786 sitewide (Denver Mon\u2013Sun). MQLs: Pulse 67 enter-MQL. Pulse weekly enter-MQL. Path tops are learn.paradigmlife.net paid LPs (infinite-banking-1, -meta-2, -google-2, thank-you). Synthesis ship paths: 0 first/last hits. Google Ads clicks: not filled for this week. Ship pagePath sum=8."
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never Accept-marked in synthesis-state). CMO proxy (not L10 Accept): 4 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples \u2014 Done: Email deliverability audit; Done: How to be your own bank quick win; Done: Student Loan Overpayment Page Title/Meta Refresh; Done: Counter-Position Fisher Investments Tax-Strategy Blitz. 1 ship(s); pagePath sessions sum=8 vs sitewide 2513 (Gauge). MQLs=67 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead \u2014 not a Monday Accept ritual): 4 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples \u2014 Done: Email deliverability audit; Done: How to be your own bank quick win; Done: Student Loan Overpayment Page Title/Meta Refresh; Done: Counter-Position Fisher Investments Tax-Strategy Blitz. 1 ship(s); pagePath sessions sum=8 vs sitewide 2513 (Gauge). MQLs=67 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
@@ -656,9 +658,9 @@
       "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
-        "accepted": 7,
+        "done": 7,
         "deferred": 0,
-        "killed": 0,
+        "dead": 0,
         "shipped": 0,
         "still_draft": null
       },
@@ -671,7 +673,7 @@
         "note": "Sessions: Gauge GA4 property 256670786 sitewide (Denver Mon\u2013Sun). MQLs: Pulse 77 enter-MQL. Pulse: hs_v2_date_entered_marketingqualifiedlead. Top paths: learn.paradigmlife.net infinite-banking-* LPs \u2014 0 ship-path matches. Google Ads clicks: not filled for this week. Ship pagePath sum=0."
       },
       "impact_call": "no_ships",
-      "impact_note": "THE ONE THING still open (never Accept-marked in synthesis-state). CMO proxy (not L10 Accept): 7 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples \u2014 Done: Generational wealth content positioning; Done: Diagnose Email Open Rate Collapse; Done: Add Negative Keywords from 172 Zero-Conversion Search Terms; Done: Counter-Position Against Codie Sanchez's Sovereign CEO Audience. No sitemap ships this week. Sitewide sessions=2486 (Gauge). MQLs=77 (Pulse). Brief THE ONE THING was ops/SDR/paid \u2014 content items may still be carry-overs.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead \u2014 not a Monday Accept ritual): 7 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples \u2014 Done: Generational wealth content positioning; Done: Diagnose Email Open Rate Collapse; Done: Add Negative Keywords from 172 Zero-Conversion Search Terms; Done: Counter-Position Against Codie Sanchez's Sovereign CEO Audience. No sitemap ships this week. Sitewide sessions=2486 (Gauge). MQLs=77 (Pulse). Brief THE ONE THING was ops/SDR/paid \u2014 content items may still be carry-overs.",
       "items": []
     },
     {
@@ -681,9 +683,9 @@
       "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
-        "accepted": 5,
+        "done": 5,
         "deferred": 0,
-        "killed": 0,
+        "dead": 0,
         "shipped": 0,
         "still_draft": null
       },
@@ -696,7 +698,7 @@
         "note": "Sessions: Gauge GA4 property 256670786 sitewide (Denver Mon\u2013Sun). MQLs: Pulse 53 enter-MQL. Pulse: hs_v2_date_entered_marketingqualifiedlead. Top paths: learn.paradigmlife.net infinite-banking-* LPs \u2014 0 ship-path matches. Google Ads clicks: not filled for this week. Ship pagePath sum=0."
       },
       "impact_call": "no_ships",
-      "impact_note": "THE ONE THING still open (never Accept-marked in synthesis-state). CMO proxy (not L10 Accept): 5 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples \u2014 Done: Zero-Conversion Keyword Cleanup ($2,913 Wasted Spend); Done: Optimize High-Traffic Organic Pages for Conversion (CTA Gaps); Done: Title Refresh on /great-american-banking-families/; Done: Title Refresh on /rate-of-return-during-retirement/. No sitemap ships this week. Sitewide sessions=2352 (Gauge). MQLs=53 (Pulse). Brief THE ONE THING was ops/SDR/paid \u2014 content items may still be carry-overs.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead \u2014 not a Monday Accept ritual): 5 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples \u2014 Done: Zero-Conversion Keyword Cleanup ($2,913 Wasted Spend); Done: Optimize High-Traffic Organic Pages for Conversion (CTA Gaps); Done: Title Refresh on /great-american-banking-families/; Done: Title Refresh on /rate-of-return-during-retirement/. No sitemap ships this week. Sitewide sessions=2352 (Gauge). MQLs=53 (Pulse). Brief THE ONE THING was ops/SDR/paid \u2014 content items may still be carry-overs.",
       "items": []
     },
     {
@@ -706,9 +708,9 @@
       "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
-        "accepted": 2,
+        "done": 2,
         "deferred": 0,
-        "killed": 0,
+        "dead": 0,
         "shipped": 0,
         "still_draft": null
       },
@@ -721,7 +723,7 @@
         "note": "Sessions: Gauge GA4 property 256670786 sitewide (Denver Mon\u2013Sun). MQLs: Pulse 60 enter-MQL. Pulse: hs_v2_date_entered_marketingqualifiedlead. Top paths: learn.paradigmlife.net infinite-banking-* LPs \u2014 0 ship-path matches. Google Ads clicks: not filled for this week. Ship pagePath sum=0."
       },
       "impact_call": "no_ships",
-      "impact_note": "THE ONE THING still open (never Accept-marked in synthesis-state). CMO proxy (not L10 Accept): 2 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples \u2014 Done: Family Guardian Content Sprint; Done: Expand Family Banking Guide to Capture Packages Intent. No sitemap ships this week. Sitewide sessions=3093 (Gauge). MQLs=60 (Pulse). Brief THE ONE THING was ops/SDR/paid \u2014 content items may still be carry-overs.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead \u2014 not a Monday Accept ritual): 2 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples \u2014 Done: Family Guardian Content Sprint; Done: Expand Family Banking Guide to Capture Packages Intent. No sitemap ships this week. Sitewide sessions=3093 (Gauge). MQLs=60 (Pulse). Brief THE ONE THING was ops/SDR/paid \u2014 content items may still be carry-overs.",
       "items": []
     },
     {
@@ -731,9 +733,9 @@
       "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
-        "accepted": 14,
+        "done": 14,
         "deferred": 0,
-        "killed": 1,
+        "dead": 1,
         "shipped": 3,
         "still_draft": null
       },
@@ -746,7 +748,7 @@
         "note": "Sessions: Gauge GA4 property 256670786 sitewide (Denver Mon\u2013Sun). MQLs: Pulse 48 enter-MQL. Pulse weekly enter-MQL. Path tops are learn.paradigmlife.net paid LPs (infinite-banking-1, -meta-2, -google-2, thank-you). Synthesis ship paths: 0 first/last hits. Google Ads clicks: not filled for this week. Ship pagePath sum=46."
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never Accept-marked in synthesis-state). CMO proxy (not L10 Accept): 14 marked done, 1 dead (synthesis-state _history; mostly John Keever via Slack). Examples \u2014 Done: Cash flow assets SEO cluster consolidation; Done: Title A/B on /great-american-banking-families/; Done: Title A/B on /rate-of-return-during-retirement/; Done: Title A/B on /student-loan-overpayment/. Folded CMO week 2026-07-20 into this board week (9 done, 1 dead). 3 ship(s); pagePath sessions sum=46 vs sitewide 3733 (Gauge). MQLs=48 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead \u2014 not a Monday Accept ritual): 14 marked done, 1 dead (synthesis-state _history; mostly John Keever via Slack). Examples \u2014 Done: Cash flow assets SEO cluster consolidation; Done: Title A/B on /great-american-banking-families/; Done: Title A/B on /rate-of-return-during-retirement/; Done: Title A/B on /student-loan-overpayment/. Folded CMO week 2026-07-20 into this board week (9 done, 1 dead). 3 ship(s); pagePath sessions sum=46 vs sitewide 3733 (Gauge). MQLs=48 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
