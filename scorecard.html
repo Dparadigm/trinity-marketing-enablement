@@ -190,7 +190,7 @@
     }));
     document.getElementById('howto').innerHTML=`
       <div class="card"><h3>How this drives results</h3><ol style="margin:0;padding-left:1.1rem">${d.meta.how_to_use.map(x=>`<li>${x}</li>`).join('')}</ol></div>
-      <div class="card"><h3>What’s real today</h3><p class="muted" style="margin:0">Live URLs and dates come from the paradigmlife.net sitemap. Surfaced/Accept counts and funnel cells are ready to fill — they are blank on purpose until Monday Accept ritual + GA4/HubSpot are wired. This is the operating board, not a memo.</p></div>`;
+      <div class="card"><h3>What’s real today</h3><p class="muted" style="margin:0">Live URLs and dates come from the paradigmlife.net sitemap. Week funnel now carries GA4 sessions (via CMO Marketing Summary), Google Ads clicks/CTR (Metricool), and HubSpot MQLs where sourced — page-level still blank until Gauge GA4 landing-page pulls. Surfaced/Accept counts wait on Monday ritual. This is the operating board, not a memo.</p></div>`;
     render();
   }).catch(e=>{
     document.getElementById('main').innerHTML='<p class="muted">Could not load scorecard-data.json</p>';
