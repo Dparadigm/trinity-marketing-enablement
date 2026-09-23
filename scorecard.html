@@ -140,10 +140,10 @@
         <div class="stat"><div class="n">${dash(c.done)}</div><div class="l">Done</div></div>
         <div class="stat"><div class="n">${dash(c.deferred)}</div><div class="l">Deferred*</div></div>
         <div class="stat"><div class="n">${dash(c.dead)}</div><div class="l">Dead</div></div>
-        <div class="stat"><div class="n">${c.shipped}</div><div class="l">Live on site</div></div>
+        <div class="stat"><div class="n">${c.shipped}</div><div class="l">Published</div></div>
         <div class="stat"><div class="n">${dash(c.still_draft)}</div><div class="l">Still draft</div></div>
       </div>
-      <h3 style="margin:1.25rem 0 .35rem;color:var(--accent)">Brief-related week funnel</h3>
+      <h3 style="margin:1.25rem 0 .35rem;color:var(--accent)">Week funnel (sitewide / ads — not brief-attributed)</h3>
       <div class="funnel" style="grid-template-columns:repeat(4,1fr)">
         <div class="fcell"><div class="k">Sessions</div><div class="v">${numCell(w.funnel_week.sessions)}</div></div>
         <div class="fcell"><div class="k">Clicks</div><div class="v">${numCell(w.funnel_week.clicks)}</div></div>
@@ -188,7 +188,7 @@
     const tabs=document.getElementById('tabs');
     // default to first week that has ships
     active=Math.max(0, d.weeks.findIndex(w=>w.counts.shipped>0));
-    tabs.innerHTML=d.weeks.map((w,i)=>`<button type="button" class="week-tab" role="tab" aria-selected="${i===active}" data-i="${i}">${w.label.split(',')[0]} · ${w.counts.shipped} live</button>`).join('');
+    tabs.innerHTML=d.weeks.map((w,i)=>`<button type="button" class="week-tab" role="tab" aria-selected="${i===active}" data-i="${i}">${w.label.split(',')[0]} · ${w.counts.shipped} published</button>`).join('');
     tabs.querySelectorAll('.week-tab').forEach(btn=>btn.addEventListener('click',()=>{
       active=+btn.dataset.i;
       tabs.querySelectorAll('.week-tab').forEach(b=>b.setAttribute('aria-selected', b===btn?'true':'false'));
