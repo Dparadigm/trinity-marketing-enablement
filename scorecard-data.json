@@ -1,0 +1,504 @@
+{
+  "meta": {
+    "title": "Trinity Marketing Scorecard",
+    "subtitle": "Accept \u2192 live on paradigmlife.net \u2192 did the funnel move?",
+    "updated": "2026-09-23",
+    "status": "draft",
+    "how_to_use": [
+      "Monday: log Surfaced / Accept / Defer / Kill from Synthesis into that week.",
+      "When something ships, paste the live paradigmlife.net URL (match by topic/slug \u2014 not UTM).",
+      "Friday: fill funnel cells for those URLs and set Impact Yes / Mixed / No + next change.",
+      "UTMs are optional for paid/email assist. Site ships are visible without them."
+    ],
+    "attribution": "Primary proof is brief topic \u2194 live page on paradigmlife.net. UTMs help paid/email assist; they are not the scorecard.",
+    "sources": [
+      "paradigmlife.net post sitemap lastmod (verified 2026-09-23)",
+      "Sep 7 Synthesis brief examples (marked example)"
+    ]
+  },
+  "weeks": [
+    {
+      "week_start": "2026-09-21",
+      "label": "Sep 21 \u2013 Sep 27, 2026",
+      "one_thing": "\u2014 (no Accept ritual logged yet)",
+      "owners": "Rachel \u00b7 John",
+      "counts": {
+        "surfaced": null,
+        "accepted": null,
+        "deferred": null,
+        "killed": null,
+        "shipped": 0,
+        "still_draft": null
+      },
+      "funnel_week": {
+        "sessions": null,
+        "clicks": null,
+        "ctr": null,
+        "leads_mqls": null,
+        "brief_assisted_mqls": null,
+        "note": "Week rollup from GA4 + HubSpot \u2014 wire next."
+      },
+      "impact_call": "no_ships",
+      "impact_note": "No site publishes in this window.",
+      "items": []
+    },
+    {
+      "week_start": "2026-09-14",
+      "label": "Sep 14 \u2013 Sep 20, 2026",
+      "one_thing": "Infinite Banking Works. It\u2019s Also Incomplete.",
+      "owners": "Rachel \u00b7 John",
+      "counts": {
+        "surfaced": null,
+        "accepted": null,
+        "deferred": null,
+        "killed": null,
+        "shipped": 6,
+        "still_draft": null
+      },
+      "funnel_week": {
+        "sessions": null,
+        "clicks": null,
+        "ctr": null,
+        "leads_mqls": null,
+        "brief_assisted_mqls": null,
+        "note": "Week rollup from GA4 + HubSpot \u2014 wire next."
+      },
+      "impact_call": "unscored",
+      "impact_note": "6 live URL(s) on paradigmlife.net this week (sitemap lastmod verified). Funnel cells empty until analytics wired \u2014 the card still forces a Keep/Change/Kill once numbers land.",
+      "items": [
+        {
+          "kind": "site_ship",
+          "title": "Infinite Banking Works. It\u2019s Also Incomplete.",
+          "slug": "infinite-banking-concept",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/infinite-banking-concept/",
+          "shipped_on": "2026-09-18",
+          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Null until GA4/HubSpot wired for this URL."
+          },
+          "impact": "unscored",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        },
+        {
+          "kind": "site_ship",
+          "title": "What Is Generational Wealth? Definition, Examples, and Why It\u2019s More Than Money",
+          "slug": "generational-wealth",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/generational-wealth/",
+          "shipped_on": "2026-09-16",
+          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Null until GA4/HubSpot wired for this URL."
+          },
+          "impact": "unscored",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        },
+        {
+          "kind": "site_ship",
+          "title": "Which Is True About a Spouse Term Rider?",
+          "slug": "spouse-term-riders",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/spouse-term-riders/",
+          "shipped_on": "2026-09-16",
+          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Null until GA4/HubSpot wired for this URL."
+          },
+          "impact": "unscored",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        },
+        {
+          "kind": "site_ship",
+          "title": "The Capital That Holds When Your Portfolio Can\u2019t",
+          "slug": "non-correlated-assets",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/non-correlated-assets/",
+          "shipped_on": "2026-09-16",
+          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Null until GA4/HubSpot wired for this URL."
+          },
+          "impact": "unscored",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        },
+        {
+          "kind": "site_ship",
+          "title": "How to Build Generational Wealth and Protect Your Financial Legacy",
+          "slug": "how-to-build-generational-wealth-and-protect-your-financial-legacy",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/how-to-build-generational-wealth-and-protect-your-financial-legacy/",
+          "shipped_on": "2026-09-16",
+          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Null until GA4/HubSpot wired for this URL."
+          },
+          "impact": "unscored",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        },
+        {
+          "kind": "site_ship",
+          "title": "Direct vs Non-Direct Recognition Loans: What They Mean for Your Policy",
+          "slug": "direct-vs-non-direct-recognition-loans",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/direct-vs-non-direct-recognition-loans/",
+          "shipped_on": "2026-09-16",
+          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Null until GA4/HubSpot wired for this URL."
+          },
+          "impact": "unscored",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        }
+      ]
+    },
+    {
+      "week_start": "2026-09-07",
+      "label": "Sep 7 \u2013 Sep 13, 2026",
+      "one_thing": "You Became Your Own Banker. Why Are You Still Dependent on Your Income?",
+      "owners": "Rachel \u00b7 John",
+      "counts": {
+        "surfaced": null,
+        "accepted": null,
+        "deferred": null,
+        "killed": null,
+        "shipped": 10,
+        "still_draft": null
+      },
+      "funnel_week": {
+        "sessions": null,
+        "clicks": null,
+        "ctr": null,
+        "leads_mqls": null,
+        "brief_assisted_mqls": null,
+        "note": "Week rollup from GA4 + HubSpot \u2014 wire next."
+      },
+      "impact_call": "unscored",
+      "impact_note": "10 live URL(s) on paradigmlife.net this week (sitemap lastmod verified). Funnel cells empty until analytics wired \u2014 the card still forces a Keep/Change/Kill once numbers land.",
+      "items": [
+        {
+          "kind": "site_ship",
+          "title": "You Became Your Own Banker. Why Are You Still Dependent on Your Income?",
+          "slug": "ibc-vs-perpetual-wealth-strategy",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/ibc-vs-perpetual-wealth-strategy/",
+          "shipped_on": "2026-09-10",
+          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Null until GA4/HubSpot wired for this URL."
+          },
+          "impact": "unscored",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        },
+        {
+          "kind": "site_ship",
+          "title": "The Guide Gives You the System. Now Find Out Whether Your Current Foundation is Ready to Run it.",
+          "slug": "family-banking-guide",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/family-banking-guide/",
+          "shipped_on": "2026-09-10",
+          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Null until GA4/HubSpot wired for this URL."
+          },
+          "impact": "unscored",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        },
+        {
+          "kind": "site_ship",
+          "title": "What Are Paid Up Additions (PUA) In Life Insurance?",
+          "slug": "paid-additions-pua-life-insurance",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/paid-additions-pua-life-insurance/",
+          "shipped_on": "2026-09-09",
+          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Null until GA4/HubSpot wired for this URL."
+          },
+          "impact": "unscored",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        },
+        {
+          "kind": "site_ship",
+          "title": "Your Labor Is a Depleting Asset. These Aren\u2019t.",
+          "slug": "best-assets-that-produce-cash-flow",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/best-assets-that-produce-cash-flow/",
+          "shipped_on": "2026-09-09",
+          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Null until GA4/HubSpot wired for this URL."
+          },
+          "impact": "unscored",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        },
+        {
+          "kind": "site_ship",
+          "title": "BOLI: The Balance Sheet Strategy Banks Use on Themselves",
+          "slug": "bank-owned-life-insurance-boli-explained",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/bank-owned-life-insurance-boli-explained/",
+          "shipped_on": "2026-09-09",
+          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Null until GA4/HubSpot wired for this URL."
+          },
+          "impact": "unscored",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        },
+        {
+          "kind": "site_ship",
+          "title": "An Introduction to Using Life Insurance as a Bank",
+          "slug": "an-introduction-to-using-life-insurance-as-a-bank",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/an-introduction-to-using-life-insurance-as-a-bank/",
+          "shipped_on": "2026-09-09",
+          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Null until GA4/HubSpot wired for this URL."
+          },
+          "impact": "unscored",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        },
+        {
+          "kind": "site_ship",
+          "title": "Guaranteed Cash Value Whole Life Insurance",
+          "slug": "guaranteed-cash-value-whole-life-insurance",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/guaranteed-cash-value-whole-life-insurance/",
+          "shipped_on": "2026-09-09",
+          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Null until GA4/HubSpot wired for this URL."
+          },
+          "impact": "unscored",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        },
+        {
+          "kind": "site_ship",
+          "title": "Infinite Banking Works Its Also Incomplete",
+          "slug": "infinite-banking-works-its-also-incomplete",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/infinite-banking-works-its-also-incomplete/",
+          "shipped_on": "2026-09-08",
+          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Null until GA4/HubSpot wired for this URL."
+          },
+          "impact": "unscored",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        },
+        {
+          "kind": "site_ship",
+          "title": "Rate Of Return During Retirement",
+          "slug": "rate-of-return-during-retirement",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/rate-of-return-during-retirement/",
+          "shipped_on": "2026-09-08",
+          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Null until GA4/HubSpot wired for this URL."
+          },
+          "impact": "unscored",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        },
+        {
+          "kind": "site_ship",
+          "title": "How To Calculate Short Term Disability Benefits Premiums And Rates",
+          "slug": "how-to-calculate-short-term-disability-benefits-premiums-and-rates",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/how-to-calculate-short-term-disability-benefits-premiums-and-rates/",
+          "shipped_on": "2026-09-08",
+          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Null until GA4/HubSpot wired for this URL."
+          },
+          "impact": "unscored",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        },
+        {
+          "kind": "brief_item",
+          "title": "Cap or Pause Infinite and BYOB Search",
+          "slug": "cap-pause-infinite-byob",
+          "decision": "example",
+          "owner": "John",
+          "url": null,
+          "shipped_on": null,
+          "projected_outcome": "Blended paid-search CPA under prior-week target",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Paid media Accept \u2014 score in Ads, not as a blog URL."
+          },
+          "impact": "unscored",
+          "next_change": "Replace EXAMPLE with real Accept disposition when ritual is live."
+        },
+        {
+          "kind": "brief_item",
+          "title": "Fix Placeholder Creative Live Meta Ad",
+          "slug": "fix-meta-placeholder-creative",
+          "decision": "example",
+          "owner": "John",
+          "url": null,
+          "shipped_on": null,
+          "projected_outcome": "Broken Meta creative corrected or paused same day",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Ad ops Accept \u2014 verify in Ads Manager."
+          },
+          "impact": "unscored",
+          "next_change": "Replace EXAMPLE with real Accept disposition when ritual is live."
+        }
+      ]
+    },
+    {
+      "week_start": "2026-08-31",
+      "label": "Aug 31 \u2013 Sep 6, 2026",
+      "one_thing": "The Market Fluctuates And You Could Lose Everything Heres The Retirement Design Built Around A Guarantee Not A Guess",
+      "owners": "Rachel \u00b7 John",
+      "counts": {
+        "surfaced": null,
+        "accepted": null,
+        "deferred": null,
+        "killed": null,
+        "shipped": 1,
+        "still_draft": null
+      },
+      "funnel_week": {
+        "sessions": null,
+        "clicks": null,
+        "ctr": null,
+        "leads_mqls": null,
+        "brief_assisted_mqls": null,
+        "note": "Week rollup from GA4 + HubSpot \u2014 wire next."
+      },
+      "impact_call": "unscored",
+      "impact_note": "1 live URL(s) on paradigmlife.net this week (sitemap lastmod verified). Funnel cells empty until analytics wired \u2014 the card still forces a Keep/Change/Kill once numbers land.",
+      "items": [
+        {
+          "kind": "site_ship",
+          "title": "The Market Fluctuates And You Could Lose Everything Heres The Retirement Design Built Around A Guarantee Not A Guess",
+          "slug": "the-market-fluctuates-and-you-could-lose-everything-heres-the-retirement-design-built-around-a-guarantee-not-a-guess",
+          "decision": "shipped",
+          "owner": "\u2014",
+          "url": "https://paradigmlife.net/the-market-fluctuates-and-you-could-lose-everything-heres-the-retirement-design-built-around-a-guarantee-not-a-guess/",
+          "shipped_on": "2026-09-04",
+          "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
+          "funnel": {
+            "sessions": null,
+            "clicks": null,
+            "ctr": null,
+            "leads_mqls": null,
+            "brief_assisted_mqls": null,
+            "note": "Null until GA4/HubSpot wired for this URL."
+          },
+          "impact": "unscored",
+          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+        }
+      ]
+    }
+  ]
+}
