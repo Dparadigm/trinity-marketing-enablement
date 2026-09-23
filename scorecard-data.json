@@ -142,7 +142,8 @@
         "Tax Strategy Q3 social was dead then reopened same day → now in_progress/Unknown, not Kill.",
         "Rachel never appears as changed_by."
       ]
-    }
+    },
+    "operating_model": "Brief impact = traffic and MQLs on URLs the brief Published. Primary: sessions in the ship week + sessions since publish on those URLs; Brief-linked MQLs. Sitewide week funnel is context only. Trailing 90d is not used as the headline metric."
   },
   "weeks": [
     {
@@ -164,7 +165,7 @@
         "ctr": "9.1%",
         "leads_mqls": null,
         "brief_assisted_mqls": null,
-        "note": "Brief-related funnel: Sessions = sitewide GA4 (Gauge); Clicks/CTR = Google Ads (Metricool) for the same week as context next to the brief. Brief-linked MQLs = not scored (partial week). Ship pagePath sessions sum = 0.",
+        "note": "Context only (not brief-attributed): sitewide GA4 sessions + Google Ads clicks/CTR for the week. Use Brief-shipped traffic above for brief impact.",
         "week_mqls_sitewide": null
       },
       "impact_call": "no_ships",
@@ -190,11 +191,12 @@
         "ctr": "8.1%",
         "leads_mqls": 0,
         "brief_assisted_mqls": 0,
-        "note": "Brief-related funnel: Sessions = sitewide GA4 (Gauge); Clicks/CTR = Google Ads (Metricool) for the same week as context next to the brief. Brief-linked MQLs = 0 (no ship URL as HubSpot first/last touch; no trinity_brief_* UTMs). Week sitewide MQLs (NOT brief-attributed) = 68 — shown only as context. Ship pagePath sessions sum = 48.",
+        "note": "Context only (not brief-attributed): sitewide GA4 sessions + Google Ads clicks/CTR for the week. Week sitewide MQLs = 68 (not brief credit). Use Brief-shipped traffic above for brief impact.",
         "week_mqls_sitewide": 68,
         "brief_shipped_sessions_since_publish": 42,
         "brief_shipped_sessions_90d": 244,
-        "brief_shipped_note": "Brief-shipped traffic = GA4 sessions on this week’s Published URLs only. Since publish sum=42; trailing 90d sum=244. 90d can include pre-brief history on older paths; since-publish is the cleaner brief-shipped window. Not the same as sitewide week sessions."
+        "brief_shipped_note": "Primary brief signal: GA4 sessions on this week’s Published URLs only. In the ship week = 48; since publish = 42. Brief-linked MQLs require HubSpot first/last on those URLs (or trinity_brief_* UTMs). Sitewide sessions/clicks/CTR below are context, not brief credit.",
+        "brief_shipped_sessions_week": 48
       },
       "impact_call": "yes_ops",
       "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead — not a Monday Accept ritual): 3 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples — Done: Rewrite titles/meta on five high-impression zero-click pages; Done: Build a dedicated IBC explainer page; Done: Refresh generational wealth page with definition block. 6 ship(s); pagePath sessions sum=48 vs sitewide 2977 (Gauge). MQLs=68 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
@@ -215,7 +217,7 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs). Since publish (2026-09-18→today): 7 sessions. Trailing 90d on this path: 10.",
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn. paradigmlife. net paid LPs). Since publish (2026-09-18→today): 7 sessions.",
             "sessions_90d": 10,
             "sessions_since_publish": 7
           },
@@ -238,7 +240,7 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs). Since publish (2026-09-16→today): 11 sessions. Trailing 90d on this path: 65.",
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn. paradigmlife. net paid LPs). Since publish (2026-09-16→today): 11 sessions.",
             "sessions_90d": 65,
             "sessions_since_publish": 11
           },
@@ -261,7 +263,7 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs). Since publish (2026-09-16→today): 6 sessions. Trailing 90d on this path: 43.",
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn. paradigmlife. net paid LPs). Since publish (2026-09-16→today): 6 sessions.",
             "sessions_90d": 43,
             "sessions_since_publish": 6
           },
@@ -284,7 +286,7 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs). Since publish (2026-09-16→today): 7 sessions. Trailing 90d on this path: 77.",
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn. paradigmlife. net paid LPs). Since publish (2026-09-16→today): 7 sessions.",
             "sessions_90d": 77,
             "sessions_since_publish": 7
           },
@@ -307,7 +309,7 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs). Since publish (2026-09-16→today): 3 sessions. Trailing 90d on this path: 8.",
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn. paradigmlife. net paid LPs). Since publish (2026-09-16→today): 3 sessions.",
             "sessions_90d": 8,
             "sessions_since_publish": 3
           },
@@ -330,7 +332,7 @@
             "ctr": null,
             "leads_mqls": 0,
             "brief_assisted_mqls": 0,
-            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn.paradigmlife.net paid LPs). Since publish (2026-09-16→today): 8 sessions. Trailing 90d on this path: 41.",
+            "note": "GA4 pagePath sessions via Gauge property 256670786 (Denver Mon–Sun). HubSpot first/last URL match to this ship: 0 (Pulse path tops are learn. paradigmlife. net paid LPs). Since publish (2026-09-16→today): 8 sessions.",
             "sessions_90d": 41,
             "sessions_since_publish": 8
           },
@@ -358,7 +360,7 @@
         "ctr": "9.5%",
         "leads_mqls": 0,
         "brief_assisted_mqls": 0,
-        "note": "Brief-related funnel: Sessions = sitewide GA4 (Gauge); Clicks/CTR = Google Ads (Metricool) for the same week as context next to the brief. Brief-linked MQLs = 0 (no ship URL as HubSpot first/last touch; no trinity_brief_* UTMs). Week sitewide MQLs (NOT brief-attributed) = 63 — shown only as context. Ship pagePath sessions sum = 120.",
+        "note": "Context only (not brief-attributed): sitewide GA4 sessions + Google Ads clicks/CTR for the week. Week sitewide MQLs = 63 (not brief credit). Use Brief-shipped traffic above for brief impact.",
         "week_mqls_sitewide": 63
       },
       "impact_call": "yes_ops",
@@ -595,7 +597,7 @@
         "ctr": "10.0%",
         "leads_mqls": 0,
         "brief_assisted_mqls": 0,
-        "note": "Brief-related funnel: Sessions = sitewide GA4 (Gauge); Clicks/CTR = Google Ads (Metricool) for the same week as context next to the brief. Brief-linked MQLs = 0 (no ship URL as HubSpot first/last touch; no trinity_brief_* UTMs). Week sitewide MQLs (NOT brief-attributed) = 60 — shown only as context. Ship pagePath sessions sum = 7.",
+        "note": "Context only (not brief-attributed): sitewide GA4 sessions + Google Ads clicks/CTR for the week. Week sitewide MQLs = 60 (not brief credit). Use Brief-shipped traffic above for brief impact.",
         "week_mqls_sitewide": 60
       },
       "impact_call": "yes_ops",
@@ -643,7 +645,7 @@
         "ctr": null,
         "leads_mqls": 0,
         "brief_assisted_mqls": 0,
-        "note": "Brief-related funnel: Sessions = sitewide GA4 (Gauge); Clicks/CTR = Google Ads (Metricool) for the same week as context next to the brief. Brief-linked MQLs = 0 (no ship URL as HubSpot first/last touch; no trinity_brief_* UTMs). Week sitewide MQLs (NOT brief-attributed) = 67 — shown only as context. Ship pagePath sessions sum = 8.",
+        "note": "Context only (not brief-attributed): sitewide GA4 sessions + Google Ads clicks/CTR for the week. Week sitewide MQLs = 67 (not brief credit). Use Brief-shipped traffic above for brief impact.",
         "week_mqls_sitewide": 67
       },
       "impact_call": "yes_ops",
@@ -691,7 +693,7 @@
         "ctr": null,
         "leads_mqls": 0,
         "brief_assisted_mqls": 0,
-        "note": "Brief-related funnel: Sessions = sitewide GA4 (Gauge); Clicks/CTR = Google Ads (Metricool) for the same week as context next to the brief. Brief-linked MQLs = 0 (no ship URL as HubSpot first/last touch; no trinity_brief_* UTMs). Week sitewide MQLs (NOT brief-attributed) = 77 — shown only as context. Ship pagePath sessions sum = 0.",
+        "note": "Context only (not brief-attributed): sitewide GA4 sessions + Google Ads clicks/CTR for the week. Week sitewide MQLs = 77 (not brief credit). Use Brief-shipped traffic above for brief impact.",
         "week_mqls_sitewide": 77
       },
       "impact_call": "no_ships",
@@ -717,7 +719,7 @@
         "ctr": null,
         "leads_mqls": 0,
         "brief_assisted_mqls": 0,
-        "note": "Brief-related funnel: Sessions = sitewide GA4 (Gauge); Clicks/CTR = Google Ads (Metricool) for the same week as context next to the brief. Brief-linked MQLs = 0 (no ship URL as HubSpot first/last touch; no trinity_brief_* UTMs). Week sitewide MQLs (NOT brief-attributed) = 53 — shown only as context. Ship pagePath sessions sum = 0.",
+        "note": "Context only (not brief-attributed): sitewide GA4 sessions + Google Ads clicks/CTR for the week. Week sitewide MQLs = 53 (not brief credit). Use Brief-shipped traffic above for brief impact.",
         "week_mqls_sitewide": 53
       },
       "impact_call": "no_ships",
@@ -743,7 +745,7 @@
         "ctr": null,
         "leads_mqls": 0,
         "brief_assisted_mqls": 0,
-        "note": "Brief-related funnel: Sessions = sitewide GA4 (Gauge); Clicks/CTR = Google Ads (Metricool) for the same week as context next to the brief. Brief-linked MQLs = 0 (no ship URL as HubSpot first/last touch; no trinity_brief_* UTMs). Week sitewide MQLs (NOT brief-attributed) = 60 — shown only as context. Ship pagePath sessions sum = 0.",
+        "note": "Context only (not brief-attributed): sitewide GA4 sessions + Google Ads clicks/CTR for the week. Week sitewide MQLs = 60 (not brief credit). Use Brief-shipped traffic above for brief impact.",
         "week_mqls_sitewide": 60
       },
       "impact_call": "no_ships",
@@ -769,7 +771,7 @@
         "ctr": null,
         "leads_mqls": 0,
         "brief_assisted_mqls": 0,
-        "note": "Brief-related funnel: Sessions = sitewide GA4 (Gauge); Clicks/CTR = Google Ads (Metricool) for the same week as context next to the brief. Brief-linked MQLs = 0 (no ship URL as HubSpot first/last touch; no trinity_brief_* UTMs). Week sitewide MQLs (NOT brief-attributed) = 48 — shown only as context. Ship pagePath sessions sum = 46.",
+        "note": "Context only (not brief-attributed): sitewide GA4 sessions + Google Ads clicks/CTR for the week. Week sitewide MQLs = 48 (not brief credit). Use Brief-shipped traffic above for brief impact.",
         "week_mqls_sitewide": 48
       },
       "impact_call": "yes_ops",
