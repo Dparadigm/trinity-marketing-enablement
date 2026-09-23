@@ -79,7 +79,7 @@
 
 <header>
   <h1>Trinity Marketing Scorecard</h1>
-  <p class="sub">Done (CMO state) → live on paradigmlife.net → did the funnel move?</p>
+  <p class="sub">Done (CMO state) → Published on paradigmlife.net → brief impact on those URLs</p>
   <div class="navlinks"><a href="./">Enablement guide</a> · <span class="muted" id="updated"></span></div>
 </header>
 
@@ -143,21 +143,21 @@
         <div class="stat"><div class="n">${c.shipped}</div><div class="l">Published</div></div>
         <div class="stat"><div class="n">${dash(c.still_draft)}</div><div class="l">Still draft</div></div>
       </div>
-      <h3 style="margin:1.25rem 0 .35rem;color:var(--accent)">Week funnel (sitewide / ads — not brief-attributed)</h3>
-      <div class="funnel" style="grid-template-columns:repeat(4,1fr)">
-        <div class="fcell"><div class="k">Sessions</div><div class="v">${numCell(w.funnel_week.sessions)}</div></div>
-        <div class="fcell"><div class="k">Clicks</div><div class="v">${numCell(w.funnel_week.clicks)}</div></div>
-        <div class="fcell"><div class="k">CTR</div><div class="v">${numCell(w.funnel_week.ctr)}</div></div>
+      <h3 style="margin:1.25rem 0 .35rem;color:var(--accent)">Brief impact (Published URLs only)</h3>
+      <div class="funnel" style="grid-template-columns:repeat(3,1fr)">
+        <div class="fcell"><div class="k">Sessions in ship week</div><div class="v">${numCell(w.funnel_week.brief_shipped_sessions_week)}</div></div>
+        <div class="fcell"><div class="k">Sessions since publish</div><div class="v">${numCell(w.funnel_week.brief_shipped_sessions_since_publish)}</div></div>
         <div class="fcell"><div class="k">Brief-linked MQLs</div><div class="v">${numCell(w.funnel_week.leads_mqls)}</div></div>
+      </div>
+      <p class="muted" style="font-size:.85rem;margin:.35rem 0 0">${w.funnel_week.brief_shipped_note||'GA4 sessions on this week’s Published URLs only — the brief signal.'}</p>
+      <h3 style="margin:1.5rem 0 .35rem;color:var(--muted)">Week context (sitewide / ads — not brief-attributed)</h3>
+      <div class="funnel" style="grid-template-columns:repeat(4,1fr)">
+        <div class="fcell"><div class="k">Sitewide sessions</div><div class="v">${numCell(w.funnel_week.sessions)}</div></div>
+        <div class="fcell"><div class="k">Ad clicks</div><div class="v">${numCell(w.funnel_week.clicks)}</div></div>
+        <div class="fcell"><div class="k">Ad CTR</div><div class="v">${numCell(w.funnel_week.ctr)}</div></div>
+        <div class="fcell"><div class="k">Sitewide MQLs</div><div class="v">${numCell(w.funnel_week.week_mqls_sitewide)}</div></div>
       </div>
       <p class="muted" style="font-size:.85rem;margin:.35rem 0 0">${sitewideMqlNote(w.funnel_week)}</p>
-      <h3 style="margin:1.5rem 0 .35rem;color:var(--accent)">Brief-shipped traffic (these Published URLs)</h3>
-      <div class="funnel" style="grid-template-columns:repeat(3,1fr)">
-        <div class="fcell"><div class="k">Sessions since publish</div><div class="v">${numCell(w.funnel_week.brief_shipped_sessions_since_publish)}</div></div>
-        <div class="fcell"><div class="k">Sessions · trailing 90d</div><div class="v">${numCell(w.funnel_week.brief_shipped_sessions_90d)}</div></div>
-        <div class="fcell"><div class="k">Brief-linked MQLs</div><div class="v">${numCell(w.funnel_week.leads_mqls)}</div></div>
-      </div>
-      <p class="muted" style="font-size:.85rem;margin:.35rem 0 0">${w.funnel_week.brief_shipped_note||'GA4 sessions on this week’s Published URLs only — not sitewide.'}</p>
       <h3 style="margin:1.5rem 0 .35rem;color:var(--accent)">Work tied to this week</h3>
       ${w.items.length?`<table>
         <thead><tr><th>Item</th><th>Status</th><th>Live URL</th><th>Funnel</th><th>Call</th></tr></thead>
@@ -168,7 +168,7 @@
               <td><span class="tag ${it.decision}">${it.decision}</span>${it.shipped_on?`<div class="muted" style="font-size:.75rem;margin-top:.25rem">${it.shipped_on}</div>`:''}</td>
               <td>${it.url?`<a href="${it.url}" target="_blank" rel="noopener">Open on site</a>`:'<span class="muted">— not a site ship</span>'}</td>
               <td style="font-size:.82rem">
-                Week sess ${numCell(it.funnel.sessions)} · Since publish ${numCell(it.funnel.sessions_since_publish)} · 90d ${numCell(it.funnel.sessions_90d)}<br/>
+                Ship-week sess ${numCell(it.funnel.sessions)} · Since publish ${numCell(it.funnel.sessions_since_publish)}<br/>
                 Page MQLs ${numCell(it.funnel.leads_mqls)} · Brief-linked ${numCell(it.funnel.brief_assisted_mqls)}
                 <div class="muted">${it.funnel.note||''}</div>
               </td>
@@ -203,7 +203,7 @@
     }));
     document.getElementById('howto').innerHTML=`
       <div class="card"><h3>How this drives results</h3><ol style="margin:0;padding-left:1.1rem">${d.meta.how_to_use.map(x=>`<li>${x}</li>`).join('')}</ol></div>
-      <div class="card"><h3>What’s real today</h3><p class="muted" style="margin:0">Live URLs and dates come from the paradigmlife.net sitemap. Week funnel now carries GA4 sessions (via CMO Marketing Summary), Google Ads clicks/CTR (Metricool), and Brief-linked MQLs only (sitewide MQLs are note context, not brief credit). Page-level sessions still thin until Gauge landing-page pulls settle. Done/Dead columns are CMO synthesis-state done/dead (there is no Accept/Defer/Kill vote). Surfaced stays blank until brief item counts are logged. This is the operating board, not a memo.</p></div>`;
+      <div class="card"><h3>What’s real today</h3><p class="muted" style="margin:0">Live URLs and dates come from the paradigmlife.net sitemap. Brief impact is sessions on Published URLs (ship week + since publish) and Brief-linked MQLs. Sitewide sessions/ads/MQLs are context only. Trailing 90d is not the headline. Done/Dead columns are CMO synthesis-state done/dead (there is no Accept/Defer/Kill vote). Surfaced stays blank until brief item counts are logged. This is the operating board, not a memo.</p></div>`;
     render();
   }).catch(e=>{
     document.getElementById('main').innerHTML='<p class="muted">Could not load scorecard-data.json</p>';
