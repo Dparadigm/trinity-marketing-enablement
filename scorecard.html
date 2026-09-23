@@ -151,6 +151,13 @@
         <div class="fcell"><div class="k">Brief-linked MQLs</div><div class="v">${numCell(w.funnel_week.leads_mqls)}</div></div>
       </div>
       <p class="muted" style="font-size:.85rem;margin:.35rem 0 0">${sitewideMqlNote(w.funnel_week)}</p>
+      <h3 style="margin:1.5rem 0 .35rem;color:var(--accent)">Brief-shipped traffic (these Published URLs)</h3>
+      <div class="funnel" style="grid-template-columns:repeat(3,1fr)">
+        <div class="fcell"><div class="k">Sessions since publish</div><div class="v">${numCell(w.funnel_week.brief_shipped_sessions_since_publish)}</div></div>
+        <div class="fcell"><div class="k">Sessions · trailing 90d</div><div class="v">${numCell(w.funnel_week.brief_shipped_sessions_90d)}</div></div>
+        <div class="fcell"><div class="k">Brief-linked MQLs</div><div class="v">${numCell(w.funnel_week.leads_mqls)}</div></div>
+      </div>
+      <p class="muted" style="font-size:.85rem;margin:.35rem 0 0">${w.funnel_week.brief_shipped_note||'GA4 sessions on this week’s Published URLs only — not sitewide.'}</p>
       <h3 style="margin:1.5rem 0 .35rem;color:var(--accent)">Work tied to this week</h3>
       ${w.items.length?`<table>
         <thead><tr><th>Item</th><th>Status</th><th>Live URL</th><th>Funnel</th><th>Call</th></tr></thead>
@@ -161,7 +168,7 @@
               <td><span class="tag ${it.decision}">${it.decision}</span>${it.shipped_on?`<div class="muted" style="font-size:.75rem;margin-top:.25rem">${it.shipped_on}</div>`:''}</td>
               <td>${it.url?`<a href="${it.url}" target="_blank" rel="noopener">Open on site</a>`:'<span class="muted">— not a site ship</span>'}</td>
               <td style="font-size:.82rem">
-                Sess ${numCell(it.funnel.sessions)} · Clicks ${numCell(it.funnel.clicks)} · CTR ${numCell(it.funnel.ctr)}<br/>
+                Week sess ${numCell(it.funnel.sessions)} · Since publish ${numCell(it.funnel.sessions_since_publish)} · 90d ${numCell(it.funnel.sessions_90d)}<br/>
                 Page MQLs ${numCell(it.funnel.leads_mqls)} · Brief-linked ${numCell(it.funnel.brief_assisted_mqls)}
                 <div class="muted">${it.funnel.note||''}</div>
               </td>
