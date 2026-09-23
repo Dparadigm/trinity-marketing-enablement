@@ -55,11 +55,8 @@
  [data-theme="light"] .tag.shipped{background:#d8efda;color:#1e5a28}
  [data-theme="light"] .tag.example{background:#f3e4d2;color:#7a4a12}
  .muted{color:var(--muted)}
- .howto{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:1.5rem}
- .howto .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:.9rem 1rem}
- .howto h3{margin:.1rem 0 .5rem;font-size:1rem;color:var(--accent)}
  @media(max-width:900px){
- .stats,.funnel,.howto{grid-template-columns:1fr 1fr}
+ .stats,.funnel{grid-template-columns:1fr 1fr}
  }
  @media(max-width:600px){
  .stats,.funnel{grid-template-columns:1fr 1fr}
@@ -110,7 +107,6 @@
  <p class="muted">Loading…</p>
 </main>
 
-<section class="howto" style="max-width:1100px;margin:0 auto 3rem;padding:0 1.5rem" id="howto"></section>
 
 <script>
 (function(){
@@ -217,19 +213,15 @@
  <p class="muted" style="font-size:.85rem;margin:.35rem 0 0">${sitewideMqlNote(w.funnel_week)}</p>
  <h3 style="margin:1.5rem 0 .35rem;color:var(--accent)">Work tied to this week</h3>
  ${w.items.length?`<table>
- <thead><tr><th>Item</th><th>Status</th><th>Live URL</th><th>Brief funnel</th><th>Call (Keep / Change / Kill)</th></tr></thead>
+ <thead><tr><th>Item</th><th>Status</th><th>Live URL</th><th>Ship-week sessions</th><th>Total sessions</th></tr></thead>
  <tbody>
  ${w.items.map(it=>`
  <tr>
- <td><strong>${it.title}</strong><div class="muted" style="font-size:.8rem">${it.owner?('Owner: '+it.owner):''}${it.projected_outcome?(' · '+it.projected_outcome):''}</div></td>
+ <td><strong>${it.title}</strong>${it.owner?`<div class="muted" style="font-size:.8rem">Owner: ${it.owner}</div>`:''}</td>
  <td><span class="tag ${it.decision}">${it.decision}</span>${it.shipped_on?`<div class="muted" style="font-size:.75rem;margin-top:.25rem">${it.shipped_on}</div>`:''}</td>
  <td>${it.url?`<a href="${it.url}" target="_blank" rel="noopener">Open on site</a>`:'<span class="muted">not a site ship</span>'}</td>
- <td style="font-size:.82rem">
- Ship-week sess ${numCell(it.funnel.sessions)} · Since publish ${numCell(it.funnel.sessions_since_publish)}<br/>
- Brief-linked MQLs ${numCell(it.funnel.brief_assisted_mqls)}
- ${it.funnel.note?`<div class="muted">${it.funnel.note}</div>`:''}
- </td>
- <td>${(it.impact||it.next_change)?`<strong>${({keep:'Keep',change:'Change',kill:'Kill',mixed:'Change',yes:'Keep',no:'Kill',yes_ops:'Keep'}[(it.impact||'').toLowerCase()]||it.impact)}</strong>${it.next_change?`<div class="muted" style="font-size:.8rem">${it.next_change}</div>`:''}`:'<span class="muted">Pending Friday call</span>'}</td>
+ <td>${it.url?numCell(it.funnel.sessions):'<span class="muted">n/a</span>'}</td>
+ <td>${it.url?numCell(it.funnel.sessions_since_publish):'<span class="muted">n/a</span>'}</td>
  </tr>`).join('')}
  </tbody>
  </table>`:'<p class="muted">No ships or Done marks logged for this week yet.</p>'}
@@ -249,9 +241,6 @@
  tabs.querySelectorAll('.week-tab').forEach(b=>b.setAttribute('aria-selected', b===btn?'true':'false'));
  render();
  }));
- document.getElementById('howto').innerHTML=`
- <div class="card"><h3>How this drives results</h3><ol style="margin:0;padding-left:1.1rem">${d.meta.how_to_use.map(x=>`<li>${x}</li>`).join('')}</ol></div>
- <div class="card"><h3>What’s real today</h3><p class="muted" style="margin:0">Live URLs and dates come from the paradigmlife.net sitemap. Brief impact is sessions on Published URLs (ship week + since publish) and brief-linked MQLs. Sitewide sessions, ads, and MQLs are context only — not brief credit. Call means Keep, Change, or Kill after Friday review; blank means no decision yet. Done/Dead are CMO synthesis-state (not an Accept vote). This is the operating board, not a memo.</p></div>`;
  render();
  }).catch(e=>{
  document.getElementById('main').innerHTML='<p class="muted">Could not load scorecard-data.json</p>';
