@@ -79,7 +79,7 @@
 
 <header>
   <h1>Trinity Marketing Scorecard</h1>
-  <p class="sub">Accept → live on paradigmlife.net → did the funnel move?</p>
+  <p class="sub">Done (CMO state) → live on paradigmlife.net → did the funnel move?</p>
   <div class="navlinks"><a href="./">Enablement guide</a> · <span class="muted" id="updated"></span></div>
 </header>
 
@@ -137,9 +137,9 @@
       <p class="muted" style="margin:0 0 .75rem"><strong>THE ONE THING:</strong> ${w.one_thing}<br/>Owners: ${w.owners}</p>
       <div class="stats">
         <div class="stat"><div class="n">${dash(c.surfaced)}</div><div class="l">Surfaced</div></div>
-        <div class="stat"><div class="n">${dash(c.accepted)}</div><div class="l">Accepted</div></div>
-        <div class="stat"><div class="n">${dash(c.deferred)}</div><div class="l">Deferred</div></div>
-        <div class="stat"><div class="n">${dash(c.killed)}</div><div class="l">Killed</div></div>
+        <div class="stat"><div class="n">${dash(c.done)}</div><div class="l">Done</div></div>
+        <div class="stat"><div class="n">${dash(c.deferred)}</div><div class="l">Deferred*</div></div>
+        <div class="stat"><div class="n">${dash(c.dead)}</div><div class="l">Dead</div></div>
         <div class="stat"><div class="n">${c.shipped}</div><div class="l">Live on site</div></div>
         <div class="stat"><div class="n">${dash(c.still_draft)}</div><div class="l">Still draft</div></div>
       </div>
@@ -173,7 +173,7 @@
               <td><strong>${it.impact}</strong><div class="muted" style="font-size:.8rem">${it.next_change||''}</div></td>
             </tr>`).join('')}
         </tbody>
-      </table>`:'<p class="muted">No ships or Accepts logged for this week yet.</p>'}
+      </table>`:'<p class="muted">No ships or Done marks logged for this week yet.</p>'}
     `;
   }
 
@@ -201,7 +201,7 @@
     }));
     document.getElementById('howto').innerHTML=`
       <div class="card"><h3>How this drives results</h3><ol style="margin:0;padding-left:1.1rem">${d.meta.how_to_use.map(x=>`<li>${x}</li>`).join('')}</ol></div>
-      <div class="card"><h3>What’s real today</h3><p class="muted" style="margin:0">Live URLs and dates come from the paradigmlife.net sitemap. Week funnel now carries GA4 sessions (via CMO Marketing Summary), Google Ads clicks/CTR (Metricool), and HubSpot MQLs where sourced — page-level still blank until Gauge GA4 landing-page pulls. Accepted/Killed now come from CMO synthesis-state done/dead marks (proxy — no Monday L10 Accept vote). Surfaced stays blank until brief item counts are logged. This is the operating board, not a memo.</p></div>`;
+      <div class="card"><h3>What’s real today</h3><p class="muted" style="margin:0">Live URLs and dates come from the paradigmlife.net sitemap. Week funnel now carries GA4 sessions (via CMO Marketing Summary), Google Ads clicks/CTR (Metricool), and HubSpot MQLs where sourced — page-level still blank until Gauge GA4 landing-page pulls. Done/Dead columns are CMO synthesis-state done/dead (there is no Accept/Defer/Kill vote). Surfaced stays blank until brief item counts are logged. This is the operating board, not a memo.</p></div>`;
     render();
   }).catch(e=>{
     document.getElementById('main').innerHTML='<p class="muted">Could not load scorecard-data.json</p>';
