@@ -29,10 +29,6 @@
  header h1{margin:0 0 .35rem;font-size:1.6rem}
  header .sub{color:var(--muted);margin:0}
  .navlinks{margin-top:.75rem;font-size:.9rem}
- .banner{max-width:1100px;margin:0 auto 1rem;padding:0 1.5rem}
- .banner .card{background:linear-gradient(135deg,#2a3520,var(--panel));border:1px solid #3d4a30;border-radius:12px;padding:1rem 1.25rem}
- [data-theme="light"] .banner .card{background:linear-gradient(135deg,#e8f0dc,var(--panel));border-color:#c5d6a8}
- .pill{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;background:var(--warn);color:#1a1208;padding:.15rem .5rem;border-radius:999px;margin-bottom:.5rem}
  .weeks{display:flex;gap:.5rem;flex-wrap:wrap;max-width:1100px;margin:0 auto;padding:0 1.5rem 1rem}
  .week-tab{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;padding:.4rem .85rem;cursor:pointer;font:inherit;font-size:.88rem}
  .week-tab[aria-selected="true"]{background:var(--accent);color:var(--chip-fg);border-color:var(--accent);font-weight:600}
@@ -91,13 +87,6 @@
  <p class="sub">Done (CMO state) → Published on paradigmlife.net → brief impact on those URLs</p>
  <div class="navlinks"><a href="./">Enablement guide</a> · <span class="muted" id="updated"></span></div>
 </header>
-
-<div class="banner"><div id="briefImpact" class="card" style="display:none;margin-bottom:.75rem"></div>
- <div class="card">
- <div class="pill">Operating draft</div>
- <p style="margin:0" id="attr"></p>
- </div>
-</div>
 
 
 <section class="cohorts" id="cohortsStrip" aria-label="Brief-shipped cohorts">
@@ -231,16 +220,7 @@
  fetch('./scorecard-data.json?t='+Date.now()).then(r=>r.json()).then(d=>{
  data=d;
  document.getElementById('updated').textContent='Updated '+d.meta.updated;
- document.getElementById('attr').textContent=d.meta.attribution;
- if(d.meta.brief_impact){
- const bi=d.meta.brief_impact;
- const el=document.getElementById('briefImpact');
- if(el){
- el.style.display='block';
- el.innerHTML='<span class="pill">Brief impact · '+bi.verdict+'</span><strong>'+bi.headline+'</strong><p class="muted" style="margin:.4rem 0 0">'+
- bi.layers.filter(l=>l&&l.layer).map(l=>l.layer.replace(/_/g,' ')+': '+l.call).join(' · ')+'</p>';
- }
- }
+
  const tabs=document.getElementById('tabs');
  // default to first week that has ships
  active=Math.max(0, d.weeks.findIndex(w=>w.counts.shipped>0));
