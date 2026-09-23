@@ -26,9 +26,10 @@
       "Google Ads clicks/CTR via Metricool brand Paradigm Life (week-matched)",
       "HubSpot MCP: contacts hs_v2_date_entered_marketingqualifiedlead (America/Denver Mon–Sun)",
       "brief_assisted_mqls: utm_campaign prefix trinity_brief_ (none yet → 0)",
-      "GA4 pagePath sessions via Gauge mcp-ga4 property 256670786 (ruby-drive-access SA)"
+      "GA4 pagePath sessions via Gauge mcp-ga4 property 256670786 (ruby-drive-access SA)",
+      "GA4 pagePath daily series (property 256670786) for Brief-shipped cohorts strip — 21 paths Jul 27–Sep 23"
     ],
-    "funnel_as_of": "2026-09-23 ~3:30 PM MT",
+    "funnel_as_of": "2026-09-23 ~4:30 PM MT",
     "blockers": [
       "No Accept/Defer/Kill log — scorecard uses CMO done/dead (open/in_progress = not done)",
       "All 10 THE ONE THING items Jul 20–Sep 21 still open (never marked done)",
@@ -842,5 +843,335 @@
         }
       ]
     }
-  ]
+  ],
+  "cohorts": {
+    "updated": "2026-09-23",
+    "as_of": "2026-09-23",
+    "definition": "Each row is a ship-week cohort: Published URLs from that brief week. Metrics are GA4 sessions on those paths only — not sitewide. Ship week = Mon–Sun of the cohort week. 30d/90d/all-time = from each URL shipped_on through min(today, window end).",
+    "property_id": "256670786",
+    "cohorts": [
+      {
+        "week_start": "2026-09-14",
+        "label": "Sep 14 – Sep 20, 2026",
+        "published_count": 6,
+        "sessions_ship_week": 48,
+        "sessions_30d": 42,
+        "sessions_90d": 42,
+        "sessions_all_time": 42,
+        "window_30d_complete": false,
+        "window_90d_complete": false,
+        "notes": "30d incomplete; 90d incomplete",
+        "ships": [
+          {
+            "title": "Infinite Banking Works. It’s Also Incomplete.",
+            "path": "/infinite-banking-concept/",
+            "url": "https://paradigmlife.net/infinite-banking-concept/",
+            "shipped_on": "2026-09-18",
+            "sessions_ship_week": 10,
+            "sessions_30d": 7,
+            "sessions_90d": 7,
+            "sessions_all_time": 7,
+            "window_30d_complete": false,
+            "window_90d_complete": false
+          },
+          {
+            "title": "What Is Generational Wealth? Definition, Examples, and Why It’s More Than Money",
+            "path": "/generational-wealth/",
+            "url": "https://paradigmlife.net/generational-wealth/",
+            "shipped_on": "2026-09-16",
+            "sessions_ship_week": 11,
+            "sessions_30d": 11,
+            "sessions_90d": 11,
+            "sessions_all_time": 11,
+            "window_30d_complete": false,
+            "window_90d_complete": false
+          },
+          {
+            "title": "Which Is True About a Spouse Term Rider?",
+            "path": "/spouse-term-riders/",
+            "url": "https://paradigmlife.net/spouse-term-riders/",
+            "shipped_on": "2026-09-16",
+            "sessions_ship_week": 5,
+            "sessions_30d": 6,
+            "sessions_90d": 6,
+            "sessions_all_time": 6,
+            "window_30d_complete": false,
+            "window_90d_complete": false
+          },
+          {
+            "title": "The Capital That Holds When Your Portfolio Can’t",
+            "path": "/non-correlated-assets/",
+            "url": "https://paradigmlife.net/non-correlated-assets/",
+            "shipped_on": "2026-09-16",
+            "sessions_ship_week": 9,
+            "sessions_30d": 7,
+            "sessions_90d": 7,
+            "sessions_all_time": 7,
+            "window_30d_complete": false,
+            "window_90d_complete": false
+          },
+          {
+            "title": "How to Build Generational Wealth and Protect Your Financial Legacy",
+            "path": "/how-to-build-generational-wealth-and-protect-your-financial-legacy/",
+            "url": "https://paradigmlife.net/how-to-build-generational-wealth-and-protect-your-financial-legacy/",
+            "shipped_on": "2026-09-16",
+            "sessions_ship_week": 3,
+            "sessions_30d": 3,
+            "sessions_90d": 3,
+            "sessions_all_time": 3,
+            "window_30d_complete": false,
+            "window_90d_complete": false
+          },
+          {
+            "title": "Direct vs Non-Direct Recognition Loans: What They Mean for Your Policy",
+            "path": "/direct-vs-non-direct-recognition-loans/",
+            "url": "https://paradigmlife.net/direct-vs-non-direct-recognition-loans/",
+            "shipped_on": "2026-09-16",
+            "sessions_ship_week": 10,
+            "sessions_30d": 8,
+            "sessions_90d": 8,
+            "sessions_all_time": 8,
+            "window_30d_complete": false,
+            "window_90d_complete": false
+          }
+        ]
+      },
+      {
+        "week_start": "2026-09-07",
+        "label": "Sep 7 – Sep 13, 2026",
+        "published_count": 10,
+        "sessions_ship_week": 121,
+        "sessions_30d": 235,
+        "sessions_90d": 235,
+        "sessions_all_time": 235,
+        "window_30d_complete": false,
+        "window_90d_complete": false,
+        "notes": "30d incomplete; 90d incomplete",
+        "ships": [
+          {
+            "title": "You Became Your Own Banker. Why Are You Still Dependent on Your Income?",
+            "path": "/ibc-vs-perpetual-wealth-strategy/",
+            "url": "https://paradigmlife.net/ibc-vs-perpetual-wealth-strategy/",
+            "shipped_on": "2026-09-10",
+            "sessions_ship_week": 10,
+            "sessions_30d": 13,
+            "sessions_90d": 13,
+            "sessions_all_time": 13,
+            "window_30d_complete": false,
+            "window_90d_complete": false
+          },
+          {
+            "title": "The Guide Gives You the System. Now Find Out Whether Your Current Foundation is Ready to Run it.",
+            "path": "/family-banking-guide/",
+            "url": "https://paradigmlife.net/family-banking-guide/",
+            "shipped_on": "2026-09-10",
+            "sessions_ship_week": 10,
+            "sessions_30d": 28,
+            "sessions_90d": 28,
+            "sessions_all_time": 28,
+            "window_30d_complete": false,
+            "window_90d_complete": false
+          },
+          {
+            "title": "What Are Paid Up Additions (PUA) In Life Insurance?",
+            "path": "/paid-additions-pua-life-insurance/",
+            "url": "https://paradigmlife.net/paid-additions-pua-life-insurance/",
+            "shipped_on": "2026-09-09",
+            "sessions_ship_week": 9,
+            "sessions_30d": 18,
+            "sessions_90d": 18,
+            "sessions_all_time": 18,
+            "window_30d_complete": false,
+            "window_90d_complete": false
+          },
+          {
+            "title": "Your Labor Is a Depleting Asset. These Aren’t.",
+            "path": "/best-assets-that-produce-cash-flow/",
+            "url": "https://paradigmlife.net/best-assets-that-produce-cash-flow/",
+            "shipped_on": "2026-09-09",
+            "sessions_ship_week": 22,
+            "sessions_30d": 38,
+            "sessions_90d": 38,
+            "sessions_all_time": 38,
+            "window_30d_complete": false,
+            "window_90d_complete": false
+          },
+          {
+            "title": "BOLI: The Balance Sheet Strategy Banks Use on Themselves",
+            "path": "/bank-owned-life-insurance-boli-explained/",
+            "url": "https://paradigmlife.net/bank-owned-life-insurance-boli-explained/",
+            "shipped_on": "2026-09-09",
+            "sessions_ship_week": 13,
+            "sessions_30d": 20,
+            "sessions_90d": 20,
+            "sessions_all_time": 20,
+            "window_30d_complete": false,
+            "window_90d_complete": false
+          },
+          {
+            "title": "An Introduction to Using Life Insurance as a Bank",
+            "path": "/an-introduction-to-using-life-insurance-as-a-bank/",
+            "url": "https://paradigmlife.net/an-introduction-to-using-life-insurance-as-a-bank/",
+            "shipped_on": "2026-09-09",
+            "sessions_ship_week": 12,
+            "sessions_30d": 14,
+            "sessions_90d": 14,
+            "sessions_all_time": 14,
+            "window_30d_complete": false,
+            "window_90d_complete": false
+          },
+          {
+            "title": "Guaranteed Cash Value Whole Life Insurance",
+            "path": "/guaranteed-cash-value-whole-life-insurance/",
+            "url": "https://paradigmlife.net/guaranteed-cash-value-whole-life-insurance/",
+            "shipped_on": "2026-09-09",
+            "sessions_ship_week": 11,
+            "sessions_30d": 16,
+            "sessions_90d": 16,
+            "sessions_all_time": 16,
+            "window_30d_complete": false,
+            "window_90d_complete": false
+          },
+          {
+            "title": "Infinite Banking Works Its Also Incomplete",
+            "path": "/infinite-banking-works-its-also-incomplete/",
+            "url": "https://paradigmlife.net/infinite-banking-works-its-also-incomplete/",
+            "shipped_on": "2026-09-08",
+            "sessions_ship_week": 6,
+            "sessions_30d": 16,
+            "sessions_90d": 16,
+            "sessions_all_time": 16,
+            "window_30d_complete": false,
+            "window_90d_complete": false
+          },
+          {
+            "title": "Rate Of Return During Retirement",
+            "path": "/rate-of-return-during-retirement/",
+            "url": "https://paradigmlife.net/rate-of-return-during-retirement/",
+            "shipped_on": "2026-09-08",
+            "sessions_ship_week": 3,
+            "sessions_30d": 6,
+            "sessions_90d": 6,
+            "sessions_all_time": 6,
+            "window_30d_complete": false,
+            "window_90d_complete": false
+          },
+          {
+            "title": "How To Calculate Short Term Disability Benefits Premiums And Rates",
+            "path": "/how-to-calculate-short-term-disability-benefits-premiums-and-rates/",
+            "url": "https://paradigmlife.net/how-to-calculate-short-term-disability-benefits-premiums-and-rates/",
+            "shipped_on": "2026-09-08",
+            "sessions_ship_week": 25,
+            "sessions_30d": 66,
+            "sessions_90d": 66,
+            "sessions_all_time": 66,
+            "window_30d_complete": false,
+            "window_90d_complete": false
+          }
+        ]
+      },
+      {
+        "week_start": "2026-08-31",
+        "label": "Aug 31 – Sep 6, 2026",
+        "published_count": 1,
+        "sessions_ship_week": 7,
+        "sessions_30d": 20,
+        "sessions_90d": 20,
+        "sessions_all_time": 20,
+        "window_30d_complete": false,
+        "window_90d_complete": false,
+        "notes": "30d incomplete; 90d incomplete",
+        "ships": [
+          {
+            "title": "The Market Fluctuates And You Could Lose Everything Heres The Retirement Design Built Around A Guarantee Not A Guess",
+            "path": "/the-market-fluctuates-and-you-could-lose-everything-heres-the-retirement-design-built-around-a-guarantee-not-a-guess/",
+            "url": "https://paradigmlife.net/the-market-fluctuates-and-you-could-lose-everything-heres-the-retirement-design-built-around-a-guarantee-not-a-guess/",
+            "shipped_on": "2026-09-04",
+            "sessions_ship_week": 7,
+            "sessions_30d": 20,
+            "sessions_90d": 20,
+            "sessions_all_time": 20,
+            "window_30d_complete": false,
+            "window_90d_complete": false
+          }
+        ]
+      },
+      {
+        "week_start": "2026-08-24",
+        "label": "Aug 24 – Aug 30, 2026",
+        "published_count": 1,
+        "sessions_ship_week": 8,
+        "sessions_30d": 29,
+        "sessions_90d": 29,
+        "sessions_all_time": 29,
+        "window_30d_complete": false,
+        "window_90d_complete": false,
+        "notes": "30d incomplete; 90d incomplete",
+        "ships": [
+          {
+            "title": "Student Loan Overpayment",
+            "path": "/student-loan-overpayment/",
+            "url": "https://paradigmlife.net/student-loan-overpayment/",
+            "shipped_on": "2026-08-25",
+            "sessions_ship_week": 8,
+            "sessions_30d": 29,
+            "sessions_90d": 29,
+            "sessions_all_time": 29,
+            "window_30d_complete": false,
+            "window_90d_complete": false
+          }
+        ]
+      },
+      {
+        "week_start": "2026-07-27",
+        "label": "Jul 27 – Aug 2, 2026",
+        "published_count": 3,
+        "sessions_ship_week": 46,
+        "sessions_30d": 180,
+        "sessions_90d": 313,
+        "sessions_all_time": 313,
+        "window_30d_complete": true,
+        "window_90d_complete": false,
+        "notes": "90d incomplete",
+        "ships": [
+          {
+            "title": "Your Estate Plan Coordinates What Youve Built But Whats It Built On",
+            "path": "/your-estate-plan-coordinates-what-youve-built-but-whats-it-built-on/",
+            "url": "https://paradigmlife.net/your-estate-plan-coordinates-what-youve-built-but-whats-it-built-on/",
+            "shipped_on": "2026-07-31",
+            "sessions_ship_week": 9,
+            "sessions_30d": 22,
+            "sessions_90d": 29,
+            "sessions_all_time": 29,
+            "window_30d_complete": true,
+            "window_90d_complete": false
+          },
+          {
+            "title": "Family Banking Capital Architecture",
+            "path": "/family-banking-capital-architecture/",
+            "url": "https://paradigmlife.net/family-banking-capital-architecture/",
+            "shipped_on": "2026-07-29",
+            "sessions_ship_week": 8,
+            "sessions_30d": 32,
+            "sessions_90d": 45,
+            "sessions_all_time": 45,
+            "window_30d_complete": true,
+            "window_90d_complete": false
+          },
+          {
+            "title": "Great American Banking Families",
+            "path": "/great-american-banking-families/",
+            "url": "https://paradigmlife.net/great-american-banking-families/",
+            "shipped_on": "2026-07-29",
+            "sessions_ship_week": 29,
+            "sessions_30d": 126,
+            "sessions_90d": 239,
+            "sessions_all_time": 239,
+            "window_30d_complete": true,
+            "window_90d_complete": false
+          }
+        ]
+      }
+    ]
+  }
 }
