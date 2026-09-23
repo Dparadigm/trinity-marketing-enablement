@@ -6,7 +6,7 @@
 <title>Trinity CMO + Copywriter — Marketing Enablement</title>
 <meta name="robots" content="noindex,nofollow"/>
 <style>
-  :root {
+  :root, [data-theme="dark"] {
     --bg: #0f1419;
     --panel: #1a222c;
     --panel2: #232d3a;
@@ -16,8 +16,31 @@
     --accent2: #6b9ac4;
     --warn: #e0a86a;
     --line: #2c3948;
+    --banner-from: #2a3520;
+    --banner-border: #3d4a30;
+    --code-bg: #0c1015;
+    --code-text: #c5e0a8;
+    --pre-text: #c9d6e3;
+    --step-fg: #15200c;
     --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     --sans: "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  [data-theme="light"] {
+    --bg: #f4f6f8;
+    --panel: #ffffff;
+    --panel2: #eef1f4;
+    --text: #15202b;
+    --muted: #5a6a7a;
+    --accent: #5f7d3a;
+    --accent2: #2f6f9f;
+    --warn: #b06a1e;
+    --line: #d5dde6;
+    --banner-from: #e8f0dc;
+    --banner-border: #c5d6a8;
+    --code-bg: #eef2f6;
+    --code-text: #3d5a1f;
+    --pre-text: #243040;
+    --step-fg: #ffffff;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -33,7 +56,18 @@
     padding: 1.25rem 1rem 2rem;
   }
   nav .brand { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.25rem; }
-  nav .sub { color: var(--muted); font-size: 0.8rem; margin-bottom: 1.25rem; }
+  nav .sub { color: var(--muted); font-size: 0.8rem; margin-bottom: 1rem; }
+  .theme-row {
+    display: flex; gap: 0.35rem; margin-bottom: 1.25rem; flex-wrap: wrap;
+  }
+  .theme-btn {
+    font: inherit; font-size: 0.75rem; cursor: pointer;
+    border: 1px solid var(--line); background: var(--panel2); color: var(--text);
+    border-radius: 999px; padding: 0.25rem 0.55rem;
+  }
+  .theme-btn[aria-pressed="true"] {
+    border-color: var(--accent); background: var(--accent); color: var(--step-fg); font-weight: 600;
+  }
   nav a {
     display: block; text-decoration: none; color: var(--muted);
     padding: 0.35rem 0.5rem; border-radius: 6px; font-size: 0.88rem;
@@ -41,8 +75,8 @@
   nav a:hover, nav a.active { background: var(--panel2); color: var(--text); }
   main { padding: 2rem 2.5rem 4rem; max-width: 920px; }
   .banner {
-    background: linear-gradient(135deg, #2a3520, #1a222c);
-    border: 1px solid #3d4a30; border-radius: 12px;
+    background: linear-gradient(135deg, var(--banner-from), var(--panel));
+    border: 1px solid var(--banner-border); border-radius: 12px;
     padding: 1.25rem 1.5rem; margin-bottom: 1.75rem;
   }
   .banner h1 { margin: 0 0 0.5rem; font-size: 1.55rem; }
@@ -52,7 +86,7 @@
     font-size: 1.35rem;
   }
   h3 { margin-top: 1.5rem; font-size: 1.08rem; color: var(--accent); }
-  p, li { color: #d5dee8; }
+  p, li { color: var(--text); }
   .muted { color: var(--muted); }
   table {
     width: 100%; border-collapse: collapse; font-size: 0.9rem;
@@ -61,13 +95,13 @@
   th, td { text-align: left; padding: 0.55rem 0.7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
   th { background: var(--panel2); color: var(--accent); font-weight: 600; }
   code, .mono {
-    font-family: var(--mono); font-size: 0.86em; background: #0c1015;
-    padding: 0.1rem 0.35rem; border-radius: 4px; color: #c5e0a8;
+    font-family: var(--mono); font-size: 0.86em; background: var(--code-bg);
+    padding: 0.1rem 0.35rem; border-radius: 4px; color: var(--code-text);
   }
   pre {
-    background: #0c1015; border: 1px solid var(--line); border-radius: 8px;
+    background: var(--code-bg); border: 1px solid var(--line); border-radius: 8px;
     padding: 0.9rem 1rem; overflow: auto; font-family: var(--mono); font-size: 0.82rem;
-    color: #c9d6e3;
+    color: var(--pre-text);
   }
   .card {
     background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
@@ -79,6 +113,10 @@
     padding: 0.75rem 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0;
   }
   .callout.warn { border-left-color: var(--warn); }
+  .footnote {
+    font-size: 0.88rem; color: var(--muted);
+    border-top: 1px dashed var(--line); margin-top: 1.25rem; padding-top: 0.85rem;
+  }
   ol.walk { counter-reset: step; list-style: none; padding: 0; }
   ol.walk li {
     counter-increment: step; position: relative;
@@ -88,7 +126,7 @@
   ol.walk li::before {
     content: counter(step); position: absolute; left: 0.85rem; top: 0.85rem;
     width: 1.6rem; height: 1.6rem; border-radius: 50%;
-    background: var(--accent); color: #15200c; font-weight: 700;
+    background: var(--accent); color: var(--step-fg); font-weight: 700;
     display: flex; align-items: center; justify-content: center; font-size: 0.85rem;
   }
   @media (max-width: 900px) {
@@ -104,32 +142,36 @@
 <nav>
   <div class="brand">Trinity Enablement</div>
   <div class="sub">CMO + Copywriter for marketing</div>
+  <div class="theme-row" role="group" aria-label="Color theme">
+    <button type="button" class="theme-btn" data-theme-choice="system" aria-pressed="true">System</button>
+    <button type="button" class="theme-btn" data-theme-choice="dark" aria-pressed="false">Dark</button>
+    <button type="button" class="theme-btn" data-theme-choice="light" aria-pressed="false">Light</button>
+  </div>
   <a href="#purpose">1. Why this matters</a>
   <a href="#tools">2. What each tool does</a>
-  <a href="#week">3. The weekly rhythm</a>
+  <a href="#week">3. Weekly rhythm</a>
   <a href="#decisions">4. Accept / Defer / Kill</a>
-  <a href="#utm">5. UTM on brief-driven work</a>
+  <a href="#roles">5. Who owns what</a>
   <a href="#outcomes">6. How impact is measured</a>
-  <a href="#roles">7. Who owns what</a>
-  <a href="#rock">8. Q4 rock alignment</a>
+  <a href="#rock">7. Q4 rock alignment</a>
 </nav>
 <main>
   <div class="banner">
     <h1>How marketing runs the week with Trinity CMO + Copywriter</h1>
-    <p>A practical guide for Growth and content execution: what to open, when to use each agent, how to ship, and how to prove the work moved the funnel.</p>
+    <p>A practical guide for Growth and content execution: what to open, what to Accept, what to ship, and how to see whether Synthesis-driven work moved the funnel.</p>
   </div>
 
   <section id="purpose">
     <h2>1. Why this matters</h2>
-    <p>Marketing already gets a steady stream of intelligence and briefs from Trinity. The gap is not “more reports.” It is a clear operating habit:</p>
+    <p>Trinity already surfaces intelligence and force-ranked work. The operating gap is turning that into shipped marketing and knowing whether it worked.</p>
     <ul>
-      <li>Pick the work that matters this week.</li>
-      <li>Route writing through Copywriter only after a brief is accepted.</li>
-      <li>Stamp traffic so HubSpot can show brief-assisted pipeline.</li>
-      <li>Close the loop on publish and outcomes — not just “brief finished.”</li>
+      <li>Accept the work that matters this week.</li>
+      <li>Route writing through Copywriter only after a brief is Accepted.</li>
+      <li>Ship with human gate — draft is not done.</li>
+      <li>See funnel movement on that work, then keep or change course.</li>
     </ul>
     <div class="callout">
-      <strong>Operating principle:</strong> CMO decides what matters. Copywriter drafts the assets. Marketing accepts, stamps UTM, ships, and proves the outcome.
+      <strong>Operating principle:</strong> CMO decides what matters. Copywriter drafts the assets. Marketing accepts, ships, and judges impact from funnel outcomes — not from opening reports.
     </div>
   </section>
 
@@ -145,17 +187,17 @@
         </tr>
         <tr>
           <td><strong>Copywriter</strong></td>
-          <td>Turning an <strong>accepted</strong> brief into drafts for human review before anything goes live</td>
+          <td>Turning an <strong>Accepted</strong> brief into drafts for human review before anything goes live</td>
           <td>Choosing strategy, picking THE ONE THING, or publishing without human approval</td>
         </tr>
       </tbody>
     </table>
-    <p class="muted">Other Trinity agents (for example social/video) are outside this enablement unless leadership expands scope. Treat Drive materials that still say “Ruby” against copy briefs as legacy naming until clarified — marketing writing authority for this scorecard is Copywriter.</p>
+    <p class="muted">Other Trinity agents (for example social/video) are outside this enablement unless leadership expands scope. Treat older Drive materials that still say “Ruby” against copy briefs as legacy naming — writing authority for this guide is Copywriter.</p>
   </section>
 
   <section id="week">
-    <h2>3. The weekly rhythm</h2>
-    <h3>What shows up in the inbox</h3>
+    <h2>3. Weekly rhythm</h2>
+    <h3>What shows up</h3>
     <ul>
       <li><strong>Daily Pulse</strong> on weekdays — a short health check, not a full replan.</li>
       <li><strong>Monday pack</strong> — Ads Audit, Competitor, Trends, SEO, Marketing Summary, SDR, Sales, Strategic Analysis, and the <strong>Synthesis Brief</strong> (the force-ranked work plan).</li>
@@ -168,7 +210,7 @@
         <tr>
           <td>Monday · 30–45 min</td>
           <td>Synthesis Brief</td>
-          <td>Accept / Defer / Kill each ranked item. Lock THE ONE THING. Assign owners and due days. Require a testable outcome on every Accept.</td>
+          <td>Accept / Defer / Kill each ranked item. Lock THE ONE THING. Assign owners and due days. Require a testable funnel outcome on every Accept.</td>
         </tr>
         <tr>
           <td>Mid-week · ~15 min</td>
@@ -177,8 +219,8 @@
         </tr>
         <tr>
           <td>Friday · ~15 min</td>
-          <td>That week’s Accept log</td>
-          <td>For each Accept: shipped? Did the metric move? Carry forward with a reason, or Kill.</td>
+          <td>That week’s Accept log + outcome read</td>
+          <td>For each Accept: shipped? Did traffic, clicks, CTR, leads, or engagement move? Keep, change, or Kill — and feed that back into next week’s Synthesis.</td>
         </tr>
       </tbody>
     </table>
@@ -192,13 +234,13 @@
     <table>
       <thead><tr><th>Decision</th><th>Meaning</th><th>Required</th></tr></thead>
       <tbody>
-        <tr><td><strong>Accept</strong></td><td>Execute in this window</td><td>Owner + due day + testable outcome + UTM slug if the work can create or re-enter an MQL</td></tr>
+        <tr><td><strong>Accept</strong></td><td>Execute in this window</td><td>Owner + due day + testable funnel outcome (what should move: traffic, clicks, CTR, leads/MQLs, engagement)</td></tr>
         <tr><td><strong>Defer</strong></td><td>Valid, not this week</td><td>Why + earliest reopen week</td></tr>
         <tr><td><strong>Kill</strong></td><td>Wrong, stale, or un-actionable</td><td>One-line why (feeds “improve the brief machine”)</td></tr>
       </tbody>
     </table>
     <ol class="walk">
-      <li>No Accept without a projected outcome. Activity is not done.</li>
+      <li>No Accept without a projected funnel outcome. Activity is not done.</li>
       <li>THE ONE THING should be completable by Wednesday; if not, Friday notes why.</li>
       <li>Carry-overs older than two weeks get Killed or re-scoped — no infinite roll.</li>
       <li>If two reports disagree, treat it as a judgment call: do not scale spend until resolved.</li>
@@ -206,57 +248,14 @@
     </ol>
   </section>
 
-  <section id="utm">
-    <h2>5. UTM on brief-driven work</h2>
-    <p>HubSpot cannot tag a contact to a Trinity brief ID today. UTMs are the bridge so brief-driven pushes can be measured against MQLs and speed-to-lead.</p>
-    <pre>utm_campaign=trinity_brief_&lt;slug&gt;   ← required on brief-driven pushes
-utm_source=meta | google | linkedin | email | website | youtube | other
-utm_medium=paid | organic | email | nurture | enablement | ppc | paid_social
-utm_content=&lt;creative-or-variant&gt;     ← optional, no spaces</pre>
-    <ul>
-      <li>Build the slug from the accepted brief title (kebab-case). Keep it stable for the life of that Accept.</li>
-      <li>Use the same campaign on every creative for that brief.</li>
-      <li>Blank UTM counts in the overall book only — it will not show up as brief-assisted.</li>
-    </ul>
-    <h3>Example (Meta paid)</h3>
-    <pre>?utm_source=meta&amp;utm_medium=paid&amp;utm_campaign=trinity_brief_infinite-banking-investing&amp;utm_content=lead_investing-interest</pre>
-  </section>
-
-  <section id="outcomes">
-    <h2>6. How impact is measured</h2>
-    <p>The scorecard weights <strong>outcomes and brief execution</strong> over raw “opened a report.” Usage without movement in the funnel is a coaching signal, not a win.</p>
-    <table>
-      <thead><tr><th>Lens</th><th>Weight (guide)</th><th>What marketing should care about</th></tr></thead>
-      <tbody>
-        <tr>
-          <td>Enablement / habit</td>
-          <td>~20%</td>
-          <td>Can the team reach CMO and Copywriter? Was Synthesis opened? Did drafts reach human review?</td>
-        </tr>
-        <tr>
-          <td>Synthesis execution</td>
-          <td>~30%</td>
-          <td>Items claimed · time to first draft · time to <strong>published</strong> · reopen rate</td>
-        </tr>
-        <tr>
-          <td>Funnel outcomes</td>
-          <td>~50%</td>
-          <td>Brief-assisted MQLs · High vs Standard intent · first-CALL rate · hours to CALL · SLA · SDR coverage</td>
-        </tr>
-      </tbody>
-    </table>
-    <h3>Outcome ladder</h3>
-    <p>L1 spend efficiency → L2 traffic / landing conversion → L3 MQL quality → L4 speed and SLA → L5 SQL → L6 revenue. Intermediate steps matter; vanity opens do not.</p>
-  </section>
-
   <section id="roles">
-    <h2>7. Who owns what (marketing seats)</h2>
+    <h2>5. Who owns what</h2>
     <table>
       <thead><tr><th>Seat</th><th>Focus</th></tr></thead>
       <tbody>
         <tr>
           <td><strong>Growth / marketing strategy</strong> (Rachel Glaittli)</td>
-          <td>Operating owner for how CMO is used: THE ONE THING, Accept/Defer/Kill quality, rock alignment, strategy calls.</td>
+          <td>Operating owner for how CMO is used: THE ONE THING, Accept/Defer/Kill quality, rock alignment, strategy calls, and reading whether Synthesis work moved the funnel.</td>
         </tr>
         <tr>
           <td><strong>Copy / content execution</strong> (John Keever)</td>
@@ -267,8 +266,58 @@ utm_content=&lt;creative-or-variant&gt;     ← optional, no spaces</pre>
     <p>Both seats share Friday close-loop discipline. Publishing without a human gate is out of bounds for either seat.</p>
   </section>
 
+  <section id="outcomes">
+    <h2>6. How impact is measured</h2>
+    <p>Impact is not “opened Synthesis” or “used the tools.” Impact is whether <strong>Accepted brief work that shipped</strong> moved marketing funnel outcomes — and whether the team can see that clearly enough to keep going or change course with AI.</p>
+
+    <h3>The chain we need visibility on</h3>
+    <ol class="walk">
+      <li><strong>Surfaced</strong> — What Synthesis recommended this week (and what marketing Accepted).</li>
+      <li><strong>Shipped</strong> — What went live from those Accepts (page, ad, email, creative).</li>
+      <li><strong>Funnel movement</strong> — Traffic, clicks, click-through rate, leads/MQLs, and engagement tied to that work.</li>
+      <li><strong>Call</strong> — Making impact → continue. Not making impact → change the brief, the offer, the creative, or Kill — and work the change with AI for the next cycle.</li>
+    </ol>
+
+    <h3>What counts (funnel outcomes)</h3>
+    <table>
+      <thead><tr><th>Outcome</th><th>Why it matters for Synthesis execution</th></tr></thead>
+      <tbody>
+        <tr><td>Traffic to the Accepted destination</td><td>Did the push get seen?</td></tr>
+        <tr><td>Clicks and CTR</td><td>Did the creative/message earn engagement?</td></tr>
+        <tr><td>Leads / MQLs (and intent split when available)</td><td>Did engagement become pipeline input?</td></tr>
+        <tr><td>Downstream speed (first CALL, SLA) when the Accept aimed there</td><td>Did marketing handoff convert into sales motion?</td></tr>
+      </tbody>
+    </table>
+    <div class="callout">
+      <strong>Scorecard stance:</strong> Funnel outcomes from brief execution are the weight. Enablement and habit are hygiene — useful to notice if the machine is stalled, not a grade that substitutes for leads, traffic, clicks, or engagement.
+    </div>
+
+    <h3>What marketing should be able to answer every Friday</h3>
+    <div class="grid2">
+      <div class="card">
+        <strong>From Synthesis this week</strong>
+        <p class="muted" style="margin:0.4rem 0 0">What did we Accept? What shipped? What is still draft-only?</p>
+      </div>
+      <div class="card">
+        <strong>On the funnel</strong>
+        <p class="muted" style="margin:0.4rem 0 0">For those ships: traffic, clicks/CTR, leads/MQLs, engagement — up, flat, or down vs the outcome we named on Accept?</p>
+      </div>
+    </div>
+    <p>If the answer is flat or down, that is not a failure of “using Trinity.” It is a signal to change the recommended work or the execution — and bring that change back into next Monday’s Synthesis.</p>
+
+    <div class="footnote" id="utm-note">
+      <strong>Attribution note (UTM):</strong> HubSpot cannot tag a contact to a Trinity brief ID today. To connect funnel outcomes to a specific Accept, stamp brief-driven pushes with a stable campaign so traffic, clicks, and MQLs can be read as brief-assisted — not mixed into the overall book.
+      <pre style="margin-top:0.65rem">utm_campaign=trinity_brief_&lt;slug&gt;   ← required on brief-driven pushes
+utm_source=meta | google | linkedin | email | website | youtube | other
+utm_medium=paid | organic | email | nurture | enablement | ppc | paid_social
+utm_content=&lt;creative-or-variant&gt;     ← optional, no spaces</pre>
+      <p style="margin:0.5rem 0 0">Slug = kebab from the Accepted brief title; keep it stable for the life of that Accept. Same campaign on every creative for that brief. Blank UTM still counts in the overall book — it will not show as brief-assisted. Example (Meta paid):</p>
+      <pre style="margin-top:0.5rem">?utm_source=meta&amp;utm_medium=paid&amp;utm_campaign=trinity_brief_infinite-banking-investing&amp;utm_content=lead_investing-interest</pre>
+    </div>
+  </section>
+
   <section id="rock">
-    <h2>8. Q4 rock alignment</h2>
+    <h2>7. Q4 rock alignment</h2>
     <p>The monthly content rock (ICP → CMO topic cards → Zoom polls → lock → publish → measure) is the north star for Q4. Weekly CMO and Copywriter usage should <strong>serve that rock</strong>, not compete with it for bandwidth — especially through content-lock weeks.</p>
   </section>
 
@@ -276,15 +325,49 @@ utm_content=&lt;creative-or-variant&gt;     ← optional, no spaces</pre>
 </main>
 </div>
 <script>
-  const links = [...document.querySelectorAll('nav a')];
-  const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
-  const onScroll = () => {
-    let cur = sections[0];
-    for (const s of sections) if (s.getBoundingClientRect().top <= 120) cur = s;
-    links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur.id));
-  };
-  document.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  (function () {
+    const root = document.documentElement;
+    const buttons = [...document.querySelectorAll('[data-theme-choice]')];
+    const key = 'trinity-enablement-theme';
+
+    function systemTheme() {
+      return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    }
+
+    function apply(choice) {
+      const resolved = choice === 'system' ? systemTheme() : choice;
+      root.setAttribute('data-theme', resolved);
+      buttons.forEach(btn => {
+        btn.setAttribute('aria-pressed', btn.getAttribute('data-theme-choice') === choice ? 'true' : 'false');
+      });
+    }
+
+    let choice = localStorage.getItem(key) || 'system';
+    if (!['system', 'light', 'dark'].includes(choice)) choice = 'system';
+    apply(choice);
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        choice = btn.getAttribute('data-theme-choice');
+        localStorage.setItem(key, choice);
+        apply(choice);
+      });
+    });
+
+    window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', () => {
+      if ((localStorage.getItem(key) || 'system') === 'system') apply('system');
+    });
+
+    const links = [...document.querySelectorAll('nav a[href^="#"]')];
+    const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+    const onScroll = () => {
+      let cur = sections[0];
+      for (const s of sections) if (s.getBoundingClientRect().top <= 120) cur = s;
+      links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur.id));
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
 </script>
 </body>
 </html>
