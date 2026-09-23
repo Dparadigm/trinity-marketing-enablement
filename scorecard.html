@@ -114,14 +114,6 @@
   matchMedia('(prefers-color-scheme: light)').addEventListener('change',()=>{if((localStorage.getItem(key)||'system')==='system')apply('system')});
 
   function dash(v){return v===null||v===undefined?'—':v}
-  function impactClass(c){
-    if(c==='yes'||c==='ok')return 'ok';
-    if(c==='mixed'||c==='unscored'||c==='example_only')return 'warn';
-    return 'bad';
-  }
-  function impactLabel(c){
-    return ({yes:'Impact: Yes',mixed:'Impact: Mixed',no:'Impact: No',unscored:'Impact: Unscored — fill funnel Friday',example_only:'Examples only',no_ships:'No site ships'})[c]||c;
-  }
   function numCell(v){
     if(v===null||v===undefined) return '<span class="empty">fill</span>';
     return String(v);
@@ -150,10 +142,6 @@
         <div class="stat"><div class="n">${dash(c.dead)}</div><div class="l">Dead</div></div>
         <div class="stat"><div class="n">${c.shipped}</div><div class="l">Live on site</div></div>
         <div class="stat"><div class="n">${dash(c.still_draft)}</div><div class="l">Still draft</div></div>
-      </div>
-      <div class="call ${impactClass(w.impact_call)}">
-        <strong>${impactLabel(w.impact_call)}</strong>
-        <div style="margin-top:.35rem">${w.impact_note}</div>
       </div>
       <h3 style="margin:1.25rem 0 .35rem;color:var(--accent)">Brief-related week funnel</h3>
       <div class="funnel" style="grid-template-columns:repeat(4,1fr)">
