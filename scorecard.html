@@ -187,7 +187,7 @@
       if(el){
         el.style.display='block';
         el.innerHTML='<span class="pill">Brief impact · '+bi.verdict+'</span><strong>'+bi.headline+'</strong><p class="muted" style="margin:.4rem 0 0">'+
-          bi.layers.map(l=>l.layer.replace(/_/g,' ')+': '+l.call).join(' · ')+'</p>';
+          bi.layers.filter(l=>l&&l.layer).map(l=>l.layer.replace(/_/g,' ')+': '+l.call).join(' · ')+'</p>';
       }
     }
     const tabs=document.getElementById('tabs');
