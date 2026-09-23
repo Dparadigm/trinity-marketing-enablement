@@ -51,8 +51,7 @@
           "layer": "3_ship_to_funnel",
           "call": "no_proof",
           "note": "HubSpot sample through paging (~300 MQLs in window): 0 first-URL and 0 last-URL matches to scorecard ships. Hosts are ~90%+ learn.paradigmlife.net paid LPs (/infinite-banking-1/, etc.). Brief-assisted UTMs = 0. Page sessions on ships exist but are a thin slice of sitewide (~48 vs ~2,872 for Sep 14)."
-        },
-        {}
+        }
       ],
       "what_would_change_the_call": [
         "Optional: true Monday Accept at brief time (separate from later done).",
