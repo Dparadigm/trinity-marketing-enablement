@@ -132,8 +132,12 @@
  function weekTrail(w){
  const trail=(w.funnel_week&&w.funnel_week.weekly_trail)||[];
  if(!trail.length) return '';
- const cells=trail.map(t=>`<div class="tcell${t.incomplete?' partial':''}"><div class="k">${t.label}${t.incomplete?' · partial':''}</div><div class="v">${t.sessions}</div></div>`).join('');
- return `<div class="trail-label">Sessions by week (this cohort’s Published URLs)</div><div class="trail">${cells}</div>`;
+ const cells=trail.map(t=>{
+  const when=t.date_label||'';
+  const partial=t.incomplete?' · partial':'';
+  return `<div class="tcell${t.incomplete?' partial':''}"><div class="k">${t.label}${when?' · '+when:''}${partial}</div><div class="v">${t.sessions}</div></div>`;
+ }).join('');
+ return `<div class="trail-label">Sessions by week after publish (same Published URLs)</div><div class="trail">${cells}</div>`;
  }
 
  function numCell(v){
@@ -199,7 +203,7 @@
  <h3 style="margin:1.25rem 0 .35rem;color:var(--accent)">Brief impact (Published URLs only)</h3>
  <div class="funnel" style="grid-template-columns:repeat(3,1fr)">
  <div class="fcell"><div class="k">Sessions in ship week</div><div class="v">${numCell(w.funnel_week.brief_shipped_sessions_week)}</div></div>
- <div class="fcell"><div class="k">Sessions since publish</div><div class="v">${numCell(w.funnel_week.brief_shipped_sessions_since_publish)}</div></div>
+ <div class="fcell"><div class="k">Sessions since publish (sum of weeks)</div><div class="v">${numCell(w.funnel_week.brief_shipped_sessions_since_publish)}</div></div>
  <div class="fcell"><div class="k">Brief-linked MQLs</div><div class="v">${numCell(w.funnel_week.brief_assisted_mqls != null ? w.funnel_week.brief_assisted_mqls : w.funnel_week.leads_mqls)}</div></div>
  </div>
  ${weekTrail(w)}
