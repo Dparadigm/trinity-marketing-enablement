@@ -167,10 +167,13 @@
         "leads_mqls": null,
         "brief_assisted_mqls": null,
         "note": "Context only (not brief-attributed): sitewide GA4 sessions + Google Ads clicks/CTR for the week. Use Brief-shipped traffic above for brief impact.",
-        "week_mqls_sitewide": null
+        "week_mqls_sitewide": null,
+        "brief_shipped_sessions_week": null,
+        "brief_shipped_sessions_since_publish": null,
+        "brief_shipped_note": "No Published URLs this week, so no brief-shipped sessions."
       },
       "impact_call": "no_ships",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead — not a Monday Accept ritual): 0 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Partial week (through ~Wed Sep 23 MT). No new sitemap ships. Gauge sitewide sessions partial=785. Pulse MQL window ended Sun Sep 20.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 0 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Partial week (through ~Wed Sep 23 MT). No new sitemap ships. Gauge sitewide sessions partial=785. Pulse MQL window ended Sun Sep 20.",
       "items": []
     },
     {
@@ -196,11 +199,11 @@
         "week_mqls_sitewide": 68,
         "brief_shipped_sessions_since_publish": 42,
         "brief_shipped_sessions_90d": 244,
-        "brief_shipped_note": "Primary brief signal: GA4 sessions on this week’s Published URLs only. In the ship week = 48; since publish = 42. Brief-linked MQLs require HubSpot first/last on those URLs (or trinity_brief_* UTMs). Sitewide sessions/clicks/CTR below are context, not brief credit.",
+        "brief_shipped_note": "GA4 sessions on this week's 6 Published URLs only (the brief signal). Ship week 48; since publish 42. 30d still open; 90d still open.",
         "brief_shipped_sessions_week": 48
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead — not a Monday Accept ritual): 3 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples — Done: Rewrite titles/meta on five high-impression zero-click pages; Done: Build a dedicated IBC explainer page; Done: Refresh generational wealth page with definition block. 6 ship(s); pagePath sessions sum=48 vs sitewide 2977 (Gauge). MQLs=68 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 3 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Rewrite titles/meta on five high-impression zero-click pages; Done: Build a dedicated IBC explainer page; Done: Refresh generational wealth page with definition block. 6 ship(s); pagePath sessions sum=48 vs sitewide 2977 (Gauge). MQLs=68 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
@@ -362,10 +365,13 @@
         "leads_mqls": 0,
         "brief_assisted_mqls": 0,
         "note": "Context only (not brief-attributed): sitewide GA4 sessions + Google Ads clicks/CTR for the week. Week sitewide MQLs = 63 (not brief credit). Use Brief-shipped traffic above for brief impact.",
-        "week_mqls_sitewide": 63
+        "week_mqls_sitewide": 63,
+        "brief_shipped_sessions_week": 121,
+        "brief_shipped_sessions_since_publish": 235,
+        "brief_shipped_note": "GA4 sessions on this week's 10 Published URLs only (the brief signal). Ship week 121; since publish 235. 30d still open; 90d still open."
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead — not a Monday Accept ritual): 8 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples — Done: Content Depth Expansion on Family Banking Guide; Done: Consolidate Cash-Flow Asset Pages (again); Done: Title Refresh on five worst low-CTR pages; Done: Generational Wealth Content Cluster Optimization. 10 ship(s); pagePath sessions sum=120 vs sitewide 2286 (Gauge). MQLs=63 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 8 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Content Depth Expansion on Family Banking Guide; Done: Consolidate Cash-Flow Asset Pages (again); Done: Title Refresh on five worst low-CTR pages; Done: Generational Wealth Content Cluster Optimization. 10 ship(s); pagePath sessions sum=120 vs sitewide 2286 (Gauge). MQLs=63 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
@@ -599,10 +605,13 @@
         "leads_mqls": 0,
         "brief_assisted_mqls": 0,
         "note": "Context only (not brief-attributed): sitewide GA4 sessions + Google Ads clicks/CTR for the week. Week sitewide MQLs = 60 (not brief credit). Use Brief-shipped traffic above for brief impact.",
-        "week_mqls_sitewide": 60
+        "week_mqls_sitewide": 60,
+        "brief_shipped_sessions_week": 7,
+        "brief_shipped_sessions_since_publish": 20,
+        "brief_shipped_note": "GA4 sessions on this week's 1 Published URLs only (the brief signal). Ship week 7; since publish 20. 30d still open; 90d still open."
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead — not a Monday Accept ritual): 4 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples — Done: Address Certainty Seeker Content Gap; Done: Counter-Position Against IBC Practitioners; Done: Google Ads Account Structure Cleanup; Done: Family Guardian Content Development. 1 ship(s); pagePath sessions sum=7 vs sitewide 2274 (Gauge). MQLs=60 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 4 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Address Certainty Seeker Content Gap; Done: Counter-Position Against IBC Practitioners; Done: Google Ads Account Structure Cleanup; Done: Family Guardian Content Development. 1 ship(s); pagePath sessions sum=7 vs sitewide 2274 (Gauge). MQLs=60 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
@@ -647,10 +656,13 @@
         "leads_mqls": 0,
         "brief_assisted_mqls": 0,
         "note": "Context only (not brief-attributed): sitewide GA4 sessions + Google Ads clicks/CTR for the week. Week sitewide MQLs = 67 (not brief credit). Use Brief-shipped traffic above for brief impact.",
-        "week_mqls_sitewide": 67
+        "week_mqls_sitewide": 67,
+        "brief_shipped_sessions_week": 8,
+        "brief_shipped_sessions_since_publish": 29,
+        "brief_shipped_note": "GA4 sessions on this week's 1 Published URLs only (the brief signal). Ship week 8; since publish 29. 30d still open; 90d still open."
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead — not a Monday Accept ritual): 4 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples — Done: Email deliverability audit; Done: How to be your own bank quick win; Done: Student Loan Overpayment Page Title/Meta Refresh; Done: Counter-Position Fisher Investments Tax-Strategy Blitz. 1 ship(s); pagePath sessions sum=8 vs sitewide 2513 (Gauge). MQLs=67 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 4 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Email deliverability audit; Done: How to be your own bank quick win; Done: Student Loan Overpayment Page Title/Meta Refresh; Done: Counter-Position Fisher Investments Tax-Strategy Blitz. 1 ship(s); pagePath sessions sum=8 vs sitewide 2513 (Gauge). MQLs=67 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
@@ -695,10 +707,13 @@
         "leads_mqls": 0,
         "brief_assisted_mqls": 0,
         "note": "Context only (not brief-attributed): sitewide GA4 sessions + Google Ads clicks/CTR for the week. Week sitewide MQLs = 77 (not brief credit). Use Brief-shipped traffic above for brief impact.",
-        "week_mqls_sitewide": 77
+        "week_mqls_sitewide": 77,
+        "brief_shipped_sessions_week": null,
+        "brief_shipped_sessions_since_publish": null,
+        "brief_shipped_note": "No Published URLs this week, so no brief-shipped sessions."
       },
       "impact_call": "no_ships",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead — not a Monday Accept ritual): 7 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples — Done: Generational wealth content positioning; Done: Diagnose Email Open Rate Collapse; Done: Add Negative Keywords from 172 Zero-Conversion Search Terms; Done: Counter-Position Against Codie Sanchez's Sovereign CEO Audience. No sitemap ships this week. Sitewide sessions=2486 (Gauge). MQLs=77 (Pulse). Brief THE ONE THING was ops/SDR/paid — content items may still be carry-overs.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 7 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Generational wealth content positioning; Done: Diagnose Email Open Rate Collapse; Done: Add Negative Keywords from 172 Zero-Conversion Search Terms; Done: Counter-Position Against Codie Sanchez's Sovereign CEO Audience. No sitemap ships this week. Sitewide sessions=2486 (Gauge). MQLs=77 (Pulse). Brief THE ONE THING was ops/SDR/paid  -  content items may still be carry-overs.",
       "items": []
     },
     {
@@ -721,10 +736,13 @@
         "leads_mqls": 0,
         "brief_assisted_mqls": 0,
         "note": "Context only (not brief-attributed): sitewide GA4 sessions + Google Ads clicks/CTR for the week. Week sitewide MQLs = 53 (not brief credit). Use Brief-shipped traffic above for brief impact.",
-        "week_mqls_sitewide": 53
+        "week_mqls_sitewide": 53,
+        "brief_shipped_sessions_week": null,
+        "brief_shipped_sessions_since_publish": null,
+        "brief_shipped_note": "No Published URLs this week, so no brief-shipped sessions."
       },
       "impact_call": "no_ships",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead — not a Monday Accept ritual): 5 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples — Done: Zero-Conversion Keyword Cleanup ($2,913 Wasted Spend); Done: Optimize High-Traffic Organic Pages for Conversion (CTA Gaps); Done: Title Refresh on /great-american-banking-families/; Done: Title Refresh on /rate-of-return-during-retirement/. No sitemap ships this week. Sitewide sessions=2352 (Gauge). MQLs=53 (Pulse). Brief THE ONE THING was ops/SDR/paid — content items may still be carry-overs.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 5 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Zero-Conversion Keyword Cleanup ($2,913 Wasted Spend); Done: Optimize High-Traffic Organic Pages for Conversion (CTA Gaps); Done: Title Refresh on /great-american-banking-families/; Done: Title Refresh on /rate-of-return-during-retirement/. No sitemap ships this week. Sitewide sessions=2352 (Gauge). MQLs=53 (Pulse). Brief THE ONE THING was ops/SDR/paid  -  content items may still be carry-overs.",
       "items": []
     },
     {
@@ -747,10 +765,13 @@
         "leads_mqls": 0,
         "brief_assisted_mqls": 0,
         "note": "Context only (not brief-attributed): sitewide GA4 sessions + Google Ads clicks/CTR for the week. Week sitewide MQLs = 60 (not brief credit). Use Brief-shipped traffic above for brief impact.",
-        "week_mqls_sitewide": 60
+        "week_mqls_sitewide": 60,
+        "brief_shipped_sessions_week": null,
+        "brief_shipped_sessions_since_publish": null,
+        "brief_shipped_note": "No Published URLs this week, so no brief-shipped sessions."
       },
       "impact_call": "no_ships",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead — not a Monday Accept ritual): 2 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples — Done: Family Guardian Content Sprint; Done: Expand Family Banking Guide to Capture Packages Intent. No sitemap ships this week. Sitewide sessions=3093 (Gauge). MQLs=60 (Pulse). Brief THE ONE THING was ops/SDR/paid — content items may still be carry-overs.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 2 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Family Guardian Content Sprint; Done: Expand Family Banking Guide to Capture Packages Intent. No sitemap ships this week. Sitewide sessions=3093 (Gauge). MQLs=60 (Pulse). Brief THE ONE THING was ops/SDR/paid  -  content items may still be carry-overs.",
       "items": []
     },
     {
@@ -773,10 +794,13 @@
         "leads_mqls": 0,
         "brief_assisted_mqls": 0,
         "note": "Context only (not brief-attributed): sitewide GA4 sessions + Google Ads clicks/CTR for the week. Week sitewide MQLs = 48 (not brief credit). Use Brief-shipped traffic above for brief impact.",
-        "week_mqls_sitewide": 48
+        "week_mqls_sitewide": 48,
+        "brief_shipped_sessions_week": 46,
+        "brief_shipped_sessions_since_publish": 313,
+        "brief_shipped_note": "GA4 sessions on this week's 3 Published URLs only (the brief signal). Ship week 46; since publish 313. 90d still open."
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead — not a Monday Accept ritual): 14 marked done, 1 dead (synthesis-state _history; mostly John Keever via Slack). Examples — Done: Cash flow assets SEO cluster consolidation; Done: Title A/B on /great-american-banking-families/; Done: Title A/B on /rate-of-return-during-retirement/; Done: Title A/B on /student-loan-overpayment/. Folded CMO week 2026-07-20 into this board week (9 done, 1 dead). 3 ship(s); pagePath sessions sum=46 vs sitewide 3733 (Gauge). MQLs=48 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 14 marked done, 1 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Cash flow assets SEO cluster consolidation; Done: Title A/B on /great-american-banking-families/; Done: Title A/B on /rate-of-return-during-retirement/; Done: Title A/B on /student-loan-overpayment/. Folded CMO week 2026-07-20 into this board week (9 done, 1 dead). 3 ship(s); pagePath sessions sum=46 vs sitewide 3733 (Gauge). MQLs=48 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
@@ -847,7 +871,7 @@
   "cohorts": {
     "updated": "2026-09-23",
     "as_of": "2026-09-23",
-    "definition": "Each row is a ship-week cohort: Published URLs from that brief week. Metrics are GA4 sessions on those paths only — not sitewide. Ship week = Mon–Sun of the cohort week. 30d/90d/all-time = from each URL shipped_on through min(today, window end).",
+    "definition": "Each row is a ship-week cohort: Published URLs from that brief week. Metrics are GA4 sessions on those paths only  -  not sitewide. Ship week = Mon-Sun of the cohort week. 30d/90d/all-time = from each URL shipped_on through min(today, window end).",
     "property_id": "256670786",
     "cohorts": [
       {
