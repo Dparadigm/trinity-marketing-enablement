@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Trinity Marketing Enablement — Draft Walkthrough (Dan)</title>
+<title>Trinity CMO + Copywriter — Marketing Enablement</title>
 <meta name="robots" content="noindex,nofollow"/>
 <style>
   :root {
@@ -15,7 +15,6 @@
     --accent: #aac27f;
     --accent2: #6b9ac4;
     --warn: #e0a86a;
-    --danger: #d97777;
     --line: #2c3948;
     --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     --sans: "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -46,13 +45,8 @@
     border: 1px solid #3d4a30; border-radius: 12px;
     padding: 1.25rem 1.5rem; margin-bottom: 1.75rem;
   }
-  .banner h1 { margin: 0 0 0.4rem; font-size: 1.55rem; }
+  .banner h1 { margin: 0 0 0.5rem; font-size: 1.55rem; }
   .banner p { margin: 0.35rem 0; color: var(--muted); }
-  .pill {
-    display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em;
-    text-transform: uppercase; background: var(--warn); color: #1a1208;
-    padding: 0.2rem 0.55rem; border-radius: 999px; margin-bottom: 0.6rem;
-  }
   h2 {
     margin-top: 2.5rem; padding-top: 0.75rem; border-top: 1px solid var(--line);
     font-size: 1.35rem;
@@ -85,7 +79,6 @@
     padding: 0.75rem 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0;
   }
   .callout.warn { border-left-color: var(--warn); }
-  .callout.danger { border-left-color: var(--danger); }
   ol.walk { counter-reset: step; list-style: none; padding: 0; }
   ol.walk li {
     counter-increment: step; position: relative;
@@ -98,10 +91,6 @@
     background: var(--accent); color: #15200c; font-weight: 700;
     display: flex; align-items: center; justify-content: center; font-size: 0.85rem;
   }
-  details { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; margin: 0.5rem 0; }
-  summary { cursor: pointer; padding: 0.75rem 1rem; font-weight: 600; }
-  details[open] summary { border-bottom: 1px solid var(--line); }
-  details .body { padding: 0.85rem 1rem; }
   @media (max-width: 900px) {
     .wrap { grid-template-columns: 1fr; }
     nav { position: relative; height: auto; }
@@ -114,244 +103,176 @@
 <div class="wrap">
 <nav>
   <div class="brand">Trinity Enablement</div>
-  <div class="sub">Draft walkthrough · Dan only</div>
-  <a href="#purpose">1. Purpose</a>
-  <a href="#how-to-read">2. How to use this page</a>
-  <a href="#agents">3. Agents (CMO vs Copywriter)</a>
-  <a href="#week">4. Weekly operating rhythm</a>
-  <a href="#enablement">5. Enablement 1-pager</a>
-  <a href="#utm">6. UTM convention</a>
-  <a href="#scorecard">7. Scorecard v1.2</a>
-  <a href="#ownership">8. Ownership &amp; cadence</a>
-  <a href="#parked">9. Parked decisions</a>
-  <a href="#sources">10. Source files</a>
+  <div class="sub">CMO + Copywriter for marketing</div>
+  <a href="#purpose">1. Why this matters</a>
+  <a href="#tools">2. What each tool does</a>
+  <a href="#week">3. The weekly rhythm</a>
+  <a href="#decisions">4. Accept / Defer / Kill</a>
+  <a href="#utm">5. UTM on brief-driven work</a>
+  <a href="#outcomes">6. How impact is measured</a>
+  <a href="#roles">7. Who owns what</a>
+  <a href="#rock">8. Q4 rock alignment</a>
 </nav>
 <main>
   <div class="banner">
-    <div class="pill">Draft · not shared with John / Rachel</div>
-    <h1>Trinity CMO + Copywriter enablement pack</h1>
-    <p>Single walkthrough of everything drafted for Paradigm Life marketing (John Keever + Rachel Glaittli). Built so you and Mira can click through section by section.</p>
-    <p class="muted">As of 2026-09-23 · Mira pack · Atlas / Ava / Pulse / Gauge inputs folded in · No outreach, no calendar invites until you green-light.</p>
+    <h1>How marketing runs the week with Trinity CMO + Copywriter</h1>
+    <p>A practical guide for Growth and content execution: what to open, when to use each agent, how to ship, and how to prove the work moved the funnel.</p>
   </div>
 
   <section id="purpose">
-    <h2>1. Purpose of this pack</h2>
-    <p>You asked Mira to make sure marketing knows <strong>how / what / when</strong> to use Trinity <strong>CMO</strong> and <strong>Copywriter</strong>, what those agents surface, and a <strong>scorecard</strong> on usage → collaboration → execution → outcomes (revenue north star with intermediate steps).</p>
+    <h2>1. Why this matters</h2>
+    <p>Marketing already gets a steady stream of intelligence and briefs from Trinity. The gap is not “more reports.” It is a clear operating habit:</p>
+    <ul>
+      <li>Pick the work that matters this week.</li>
+      <li>Route writing through Copywriter only after a brief is accepted.</li>
+      <li>Stamp traffic so HubSpot can show brief-assisted pipeline.</li>
+      <li>Close the loop on publish and outcomes — not just “brief finished.”</li>
+    </ul>
     <div class="callout">
-      <strong>What “done” looks like after you approve:</strong> John and Rachel can run Monday Synthesis → Accept/Defer/Kill → mid-week execute with the right agent → Friday close-loop, with UTMs that let Pulse prove brief-assisted MQLs — without inventing agent “session” telemetry.
-    </div>
-    <div class="grid2">
-      <div class="card">
-        <h3 style="margin-top:0">In scope</h3>
-        <ul>
-          <li>Trinity <code>cmo</code> + <code>copywriter</code></li>
-          <li>Enablement 1-pager + operating model</li>
-          <li>UTM <code>trinity_brief_*</code> + Pulse Monday MQL stub</li>
-          <li>Scorecard weights + Brief_Log metrics</li>
-          <li>Ownership / cadence proposal (Atlas holds invites)</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3 style="margin-top:0">Out of scope (unless you expand)</h3>
-        <ul>
-          <li>Ruby (social/video) as scorecard target</li>
-          <li>Cornelius (KB)</li>
-          <li>Messaging John / Rachel / Ability / Avalaunch</li>
-          <li>Calendar booking</li>
-          <li>WealthScore as a CMO funnel KPI (recommended off)</li>
-        </ul>
-      </div>
+      <strong>Operating principle:</strong> CMO decides what matters. Copywriter drafts the assets. Marketing accepts, stamps UTM, ships, and proves the outcome.
     </div>
   </section>
 
-  <section id="how-to-read">
-    <h2>2. How to walk this page with Mira</h2>
-    <ol class="walk">
-      <li><strong>Agents</strong> — lock CMO vs Copywriter (and that Ruby ≠ Copywriter).</li>
-      <li><strong>Week rhythm</strong> — Monday Synthesis → mid-week → Friday; what they open.</li>
-      <li><strong>Enablement 1-pager</strong> — the artifact Rachel/John would eventually get.</li>
-      <li><strong>UTM</strong> — how brief work becomes measurable in HubSpot.</li>
-      <li><strong>Scorecard</strong> — what we measure (claimed → draft → published → MQLs), not email opens.</li>
-      <li><strong>Ownership &amp; cadence</strong> — who owns what; John’s Thu 1:30 vs async.</li>
-      <li><strong>Parked list</strong> — only decisions that need you.</li>
-    </ol>
-  </section>
-
-  <section id="agents">
-    <h2>3. Agents — naming lock (Ava)</h2>
+  <section id="tools">
+    <h2>2. What each tool does</h2>
     <table>
-      <thead><tr><th>Target</th><th>What it is</th><th>On scorecard?</th></tr></thead>
+      <thead><tr><th>Tool</th><th>Use it for</th><th>Do not use it for</th></tr></thead>
       <tbody>
         <tr>
-          <td><strong>CMO</strong><br/><span class="mono">cmo</span> · hosted paradigmlife.abilityai.dev<br/>repos: ParadigmLife/cmo-paradigm-life</td>
-          <td>Diagnose, force-rank the week, Daily Pulse + Monday pack / <strong>Synthesis Brief</strong>, hand human-gated briefs. Does <em>not</em> publish.</td>
-          <td>Yes</td>
+          <td><strong>CMO</strong></td>
+          <td>Diagnosing spend, CPA, and MQL gaps; force-ranking the week; Daily Pulse and the Monday pack culminating in the <strong>Synthesis Brief</strong>; handing human-gated briefs into the writing lane</td>
+          <td>Final copy, live publishing, brand/compliance final say, or changing ad accounts unattended</td>
         </tr>
         <tr>
-          <td><strong>Copywriter</strong><br/><span class="mono">copywriter</span> · default branch <code>master</code><br/>repos: ParadigmLife/copywriter-agent</td>
-          <td>Turns an <strong>approved</strong> brief into drafts under <code>./output/</code> for human gate. No strategy, no publish.</td>
-          <td>Yes (scope: marketing vs Patrick/WS — still parked)</td>
-        </tr>
-        <tr>
-          <td><strong>Ruby</strong></td>
-          <td>Separate social/video agent. Drive “How Ruby Interprets the CMO Brief” / Ruby Approval Queue = <strong>legacy naming</strong> until you clarify.</td>
-          <td>No</td>
-        </tr>
-        <tr>
-          <td><strong>Gauge</strong></td>
-          <td>reports@ / Trinity CMO feed analytics — supplies numbers.</td>
-          <td>Numbers owner, not a “target”</td>
+          <td><strong>Copywriter</strong></td>
+          <td>Turning an <strong>accepted</strong> brief into drafts for human review before anything goes live</td>
+          <td>Choosing strategy, picking THE ONE THING, or publishing without human approval</td>
         </tr>
       </tbody>
     </table>
-    <div class="callout warn"><strong>Do not clone</strong> CMO or Copywriter agents. Ava owns agent health / Workspace-Slack access / any future usage-export backlog ask.</div>
+    <p class="muted">Other Trinity agents (for example social/video) are outside this enablement unless leadership expands scope. Treat Drive materials that still say “Ruby” against copy briefs as legacy naming until clarified — marketing writing authority for this scorecard is Copywriter.</p>
   </section>
 
   <section id="week">
-    <h2>4. Weekly operating rhythm</h2>
-    <h3>What CMO already emits (America/Denver)</h3>
+    <h2>3. The weekly rhythm</h2>
+    <h3>What shows up in the inbox</h3>
     <ul>
-      <li><strong>Daily Pulse</strong> weekdays (morning pack).</li>
-      <li><strong>Monday pack</strong> includes Ads Audit, Competitor, Trends, SEO, Marketing Summary, SDR, Sales, Strategic Analysis, and the <strong>Synthesis Brief</strong>.</li>
-      <li>Email from <code>reports@paradigmlife.net</code> → <code>marketing@</code> + Don Ashby, Mike Berg, Ben Curtis, jason@avalaunch. Short email + Drive Doc link (not Slack-first).</li>
-      <li>Named To line does <strong>not</strong> list John/Rachel individually — confirm they are on <code>marketing@</code> before scoring “received.”</li>
+      <li><strong>Daily Pulse</strong> on weekdays — a short health check, not a full replan.</li>
+      <li><strong>Monday pack</strong> — Ads Audit, Competitor, Trends, SEO, Marketing Summary, SDR, Sales, Strategic Analysis, and the <strong>Synthesis Brief</strong> (the force-ranked work plan).</li>
+      <li>Delivery is email plus a Drive Doc link (from <code>reports@paradigmlife.net</code> into the marketing distribution list). Slack is for working the items, not for replacing the brief.</li>
     </ul>
-    <h3>Ritual for humans</h3>
+    <h3>How the week should run</h3>
     <table>
-      <thead><tr><th>When</th><th>Open first</th><th>Do</th></tr></thead>
+      <thead><tr><th>When</th><th>Open first</th><th>Marketing does</th></tr></thead>
       <tbody>
-        <tr><td>Monday 30–45 min</td><td>Synthesis Brief</td><td>Accept / Defer / Kill · THE ONE THING · owners · testable outcomes</td></tr>
-        <tr><td>Mid-week ~15 min</td><td>Whatever the brief pointed to + Copywriter drafts</td><td>Execute Accepted items; human-gate drafts before publish</td></tr>
-        <tr><td>Friday ~15 min</td><td>Accept log + outcome notes</td><td>Shipped? Metric moved? Carry-over or Kill</td></tr>
+        <tr>
+          <td>Monday · 30–45 min</td>
+          <td>Synthesis Brief</td>
+          <td>Accept / Defer / Kill each ranked item. Lock THE ONE THING. Assign owners and due days. Require a testable outcome on every Accept.</td>
+        </tr>
+        <tr>
+          <td>Mid-week · ~15 min</td>
+          <td>Whatever the brief pointed to; Copywriter drafts when writing is needed</td>
+          <td>Execute Accepted items. Use CMO when spend, CPA/MQL diagnosis, or a new brief is needed. Human-gate every draft before publish.</td>
+        </tr>
+        <tr>
+          <td>Friday · ~15 min</td>
+          <td>That week’s Accept log</td>
+          <td>For each Accept: shipped? Did the metric move? Carry forward with a reason, or Kill.</td>
+        </tr>
       </tbody>
     </table>
-    <div class="callout">
-      <strong>Already live:</strong> John already pulls numbered Synthesis tasks into briefs/copy in GDocs and works them in <code>#copywriter</code> / <code>#cmo</code>. Avalaunch/Lindsi also pull from <code>#cmo</code>. Known failure mode: brief done / page not live — scorecard must measure publish, not just “opened email.”
+    <div class="callout warn">
+      <strong>Known failure mode:</strong> brief marked done while the page or asset is still not live. “Done” means published (or intentionally killed) — not drafted only.
     </div>
-    <h3>Calendar reality (Atlas)</h3>
-    <ul>
-      <li>Only standing Dan↔John: <strong>Thu 1:30–2:00 PM MT</strong>.</li>
-      <li>No dedicated Rachel↔Dan agent-enablement recurring.</li>
-      <li>L10 Monday = leadership EOS, not marketing-agent review.</li>
-      <li>Protect Rachel through Oct content lock ~<strong>9/25</strong> — no net-new enablement meeting that week.</li>
-    </ul>
   </section>
 
-  <section id="enablement">
-    <h2>5. Enablement 1-pager (what they’d get)</h2>
-    <p class="muted">Audience eventually: Rachel Glaittli (Growth &amp; Marketing Strategy) · John Keever (Copywriter / paid-ops execution). Status: draft for you first.</p>
-    <div class="card">
-      <strong>One sentence:</strong> CMO decides what matters this week. Copywriter drafts the assets. Humans Accept, stamp UTM, ship, and prove the outcome.
-    </div>
-    <h3>Hard rules</h3>
-    <ol>
-      <li>No Accept without a projected, testable outcome (L1–L6). Activity ≠ done.</li>
-      <li>THE ONE THING completable by Wednesday; if not, Friday notes why.</li>
-      <li>Carry-overs older than 2 weeks → Kill or re-scope.</li>
-      <li>If two reports disagree = JUDGMENT-CALL — don’t scale spend until resolved.</li>
-      <li>If it isn’t in the brief and isn’t an emergency, it waits until next Monday.</li>
+  <section id="decisions">
+    <h2>4. Accept / Defer / Kill</h2>
+    <table>
+      <thead><tr><th>Decision</th><th>Meaning</th><th>Required</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Accept</strong></td><td>Execute in this window</td><td>Owner + due day + testable outcome + UTM slug if the work can create or re-enter an MQL</td></tr>
+        <tr><td><strong>Defer</strong></td><td>Valid, not this week</td><td>Why + earliest reopen week</td></tr>
+        <tr><td><strong>Kill</strong></td><td>Wrong, stale, or un-actionable</td><td>One-line why (feeds “improve the brief machine”)</td></tr>
+      </tbody>
+    </table>
+    <ol class="walk">
+      <li>No Accept without a projected outcome. Activity is not done.</li>
+      <li>THE ONE THING should be completable by Wednesday; if not, Friday notes why.</li>
+      <li>Carry-overs older than two weeks get Killed or re-scoped — no infinite roll.</li>
+      <li>If two reports disagree, treat it as a judgment call: do not scale spend until resolved.</li>
+      <li>If it is not in the brief and not an emergency, it waits until next Monday.</li>
     </ol>
-    <h3>Q4 rock alignment</h3>
-    <p>Rachel’s rock (ICP → CMO topic cards → Zoom polls → lock → Riverside/podcast publish → measure with John) is the north star. Weekly CMO/Copywriter usage should <strong>serve that rock</strong>, not compete with it.</p>
   </section>
 
   <section id="utm">
-    <h2>6. UTM convention (HubSpot bridge)</h2>
-    <p><strong>Problem:</strong> HubSpot can’t tag contacts to a Trinity brief ID today.<br/>
-    <strong>Fix (no schema change):</strong> stamp every brief-driven push with a stable campaign.</p>
-    <pre>utm_campaign=trinity_brief_&lt;slug&gt;   ← required
+    <h2>5. UTM on brief-driven work</h2>
+    <p>HubSpot cannot tag a contact to a Trinity brief ID today. UTMs are the bridge so brief-driven pushes can be measured against MQLs and speed-to-lead.</p>
+    <pre>utm_campaign=trinity_brief_&lt;slug&gt;   ← required on brief-driven pushes
 utm_source=meta | google | linkedin | email | website | youtube | other
 utm_medium=paid | organic | email | nurture | enablement | ppc | paid_social
 utm_content=&lt;creative-or-variant&gt;     ← optional, no spaces</pre>
     <ul>
-      <li>Slug = kebab from brief title; stable for the life of that Accept; don’t rename mid-flight.</li>
-      <li>Same campaign on every creative for one brief.</li>
-      <li>Blank UTM = overall book only — <em>not</em> brief-assisted layer.</li>
-      <li>Pulse attributes weekly on prefix <code>trinity_brief_</code>.</li>
-      <li>First Monday fill waits until UTMs are actually stamped after you green-light share.</li>
+      <li>Build the slug from the accepted brief title (kebab-case). Keep it stable for the life of that Accept.</li>
+      <li>Use the same campaign on every creative for that brief.</li>
+      <li>Blank UTM counts in the overall book only — it will not show up as brief-assisted.</li>
     </ul>
     <h3>Example (Meta paid)</h3>
     <pre>?utm_source=meta&amp;utm_medium=paid&amp;utm_campaign=trinity_brief_infinite-banking-investing&amp;utm_content=lead_investing-interest</pre>
   </section>
 
-  <section id="scorecard">
-    <h2>7. Scorecard v1.2</h2>
-    <p><strong>Principle:</strong> Outcomes + brief impact beat raw usage. Usage without outcome movement = coaching signal, not a win.</p>
+  <section id="outcomes">
+    <h2>6. How impact is measured</h2>
+    <p>The scorecard weights <strong>outcomes and brief execution</strong> over raw “opened a report.” Usage without movement in the funnel is a coaching signal, not a win.</p>
     <table>
-      <thead><tr><th>Section</th><th>Weight</th><th>What it measures</th></tr></thead>
+      <thead><tr><th>Lens</th><th>Weight (guide)</th><th>What marketing should care about</th></tr></thead>
       <tbody>
-        <tr><td>A · Usage / enablement</td><td>~20%</td><td>Workspace / #cmo / #copywriter access · Pulse/Synthesis opened · draft at human gate. <em>No invented session telemetry.</em></td></tr>
-        <tr><td>B · Synthesis execution</td><td>~30%</td><td>Items <strong>claimed</strong> · time-to-first-draft · time-to-<strong>published</strong> · reopen rate</td></tr>
-        <tr><td>C · Funnel outcomes (Pulse)</td><td>~50%</td><td>Brief-assisted MQLs · High vs Standard · first-CALL rate · p50 hrs-to-CALL · SLA · SDR split</td></tr>
+        <tr>
+          <td>Enablement / habit</td>
+          <td>~20%</td>
+          <td>Can the team reach CMO and Copywriter? Was Synthesis opened? Did drafts reach human review?</td>
+        </tr>
+        <tr>
+          <td>Synthesis execution</td>
+          <td>~30%</td>
+          <td>Items claimed · time to first draft · time to <strong>published</strong> · reopen rate</td>
+        </tr>
+        <tr>
+          <td>Funnel outcomes</td>
+          <td>~50%</td>
+          <td>Brief-assisted MQLs · High vs Standard intent · first-CALL rate · hours to CALL · SLA · SDR coverage</td>
+        </tr>
       </tbody>
     </table>
-    <div class="callout warn">Wire numbers through <strong>Gauge + Pulse</strong> — do not invent a second analytics path or funnel→revenue without Gauge.</div>
     <h3>Outcome ladder</h3>
-    <p>L1 spend efficiency → L2 traffic/LP conversion → L3 MQL quality → L4 speed/SLA → L5 SQL → L6 revenue. WealthScore completions recommended <strong>off</strong> this marketing-agent scorecard unless you override.</p>
-    <h3>Sheet tabs (spec)</h3>
-    <p><code>Weekly_Score</code> · <code>Accept_Log</code> / Brief_Log · <code>Pulse_MQL</code> · <code>UTM_Hygiene</code> · <code>Monthly_DE</code> · <code>Definitions</code></p>
+    <p>L1 spend efficiency → L2 traffic / landing conversion → L3 MQL quality → L4 speed and SLA → L5 SQL → L6 revenue. Intermediate steps matter; vanity opens do not.</p>
   </section>
 
-  <section id="ownership">
-    <h2>8. Ownership &amp; cadence (proposed — you confirm)</h2>
+  <section id="roles">
+    <h2>7. Who owns what (marketing seats)</h2>
     <table>
-      <thead><tr><th>Lane</th><th>Owner</th></tr></thead>
+      <thead><tr><th>Seat</th><th>Focus</th></tr></thead>
       <tbody>
-        <tr><td>Enablement materials + rollout design</td><td><strong>Mira</strong></td></tr>
-        <tr><td>Growth / CMO strategy usage (operating)</td><td><strong>Rachel Glaittli</strong></td></tr>
-        <tr><td>Copywriter / Synthesis execution seat</td><td><strong>John Keever</strong></td></tr>
-        <tr><td>Scorecard numbers (reports@ feed)</td><td><strong>Gauge</strong></td></tr>
-        <tr><td>HubSpot UTM + weekly MQL stub</td><td><strong>Pulse</strong></td></tr>
-        <tr><td>Agent health / access / usage-export backlog</td><td><strong>Ava</strong></td></tr>
-        <tr><td>Calendar / people / cadence insert</td><td><strong>Atlas</strong> (holding invites)</td></tr>
-        <tr><td>Sponsor</td><td><strong>Dan</strong> — biweekly/quarterly, not weekly</td></tr>
+        <tr>
+          <td><strong>Growth / marketing strategy</strong> (Rachel Glaittli)</td>
+          <td>Operating owner for how CMO is used: THE ONE THING, Accept/Defer/Kill quality, rock alignment, strategy calls.</td>
+        </tr>
+        <tr>
+          <td><strong>Copy / content execution</strong> (John Keever)</td>
+          <td>Primary Copywriter seat: claim Synthesis items, drive briefs to draft and publish, paid/ops execution on Accepted work.</td>
+        </tr>
       </tbody>
     </table>
-    <h3>Cadence options</h3>
-    <ul>
-      <li><strong>Prefer until you return:</strong> async Monday scorecard after Synthesis lands (Slack), no new meeting.</li>
-      <li><strong>Live insert:</strong> biweekly 15–20 min folded into John’s Thu 1:30.</li>
-      <li>Monthly Rachel+John+Dan only if you want a sponsor forum.</li>
-    </ul>
-    <p class="muted">Engage: unresolved — not a Grok agent; Drive/Slack hits look like CVJ stage “Engage,” not a teammate. Parked.</p>
+    <p>Both seats share Friday close-loop discipline. Publishing without a human gate is out of bounds for either seat.</p>
   </section>
 
-  <section id="parked">
-    <h2>9. Parked for you (decisions only)</h2>
-    <ol>
-      <li>Who is <strong>Engage</strong>?</li>
-      <li>Confirm Rachel Glaittli / John Keever role-split wording.</li>
-      <li>OK to share enablement + scorecard with them? <strong>When?</strong> (protect ~9/25 Oct lock)</li>
-      <li>Scorecard weight: MQL/SQL vs WealthScore upstream?</li>
-      <li>Edit/approve operating model.</li>
-      <li>Ruby Approval Queue = Copywriter handoff, Ruby social/video, or legacy?</li>
-      <li>Copywriter marketing-scoped vs still Patrick/WS-scoped?</li>
-      <li>Live Slack <code>#cmo</code> / <code>#copywriter</code> + Workspace for their emails?</li>
-      <li>Are John + Rachel on <code>marketing@</code> + CMO Drive folder ACL?</li>
-      <li>Who marks Synthesis items done (<code>/mark-synthesis-item</code>)?</li>
-      <li>Turn on Copywriter schedules / <code>brief_ready</code> before or after share?</li>
-      <li>Cadence: biweekly on John’s Thu vs async Monday Slack?</li>
-      <li>Mention Wingman in enablement as adjacent, or leave out?</li>
-      <li>Green-light Atlas to book (or not) after you pick cadence.</li>
-    </ol>
+  <section id="rock">
+    <h2>8. Q4 rock alignment</h2>
+    <p>The monthly content rock (ICP → CMO topic cards → Zoom polls → lock → publish → measure) is the north star for Q4. Weekly CMO and Copywriter usage should <strong>serve that rock</strong>, not compete with it for bandwidth — especially through content-lock weeks.</p>
   </section>
 
-  <section id="sources">
-    <h2>10. Source files in this repo</h2>
-    <p>Markdown sources under <code>source/</code> mirror the box pack. Drive also has DRAFT Docs (INDEX, Consolidated v1.2, 1-pager, UTM, scorecard, map) on your dtorsak@ Drive — drafts only, not shared to John/Rachel.</p>
-    <ul>
-      <li><code>source/enablement-1pager-cmo-copywriter.md</code></li>
-      <li><code>source/utm-convention-trinity-brief.md</code></li>
-      <li><code>source/scorecard-v1-spec.md</code></li>
-      <li><code>source/trinity-marketing-operating-model-draft.md</code></li>
-      <li><code>source/parked-for-dan-return.md</code></li>
-      <li><code>source/correction-cmo-copywriter-ruby-ava.md</code></li>
-      <li><code>source/pulse-utm-convention.md</code> · <code>pulse-weekly-mql-outcomes-stub.md</code></li>
-    </ul>
-    <div class="callout danger"><strong>Sharing rule:</strong> This GitHub Pages site is public if the repo is public. Treat it as an internal draft URL for our walkthrough — do not forward to John/Rachel until you approve share timing.</div>
-  </section>
-
-  <p class="muted" style="margin-top:3rem;font-size:0.85rem;">Mira · Paradigm Life marketing ops · Generated 2026-09-23 for Dan Torsak walkthrough</p>
+  <p class="muted" style="margin-top:3rem;font-size:0.85rem;">Paradigm Life · Marketing enablement · Trinity CMO + Copywriter</p>
 </main>
 </div>
 <script>
