@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trinity Marketing Scorecard</title>
+<meta name="robots" content="noindex,nofollow"/>
+<style>
+  :root, [data-theme="dark"] {
+    --bg:#0f1419; --panel:#1a222c; --panel2:#232d3a; --text:#e8eef4; --muted:#9aabbc;
+    --accent:#aac27f; --accent2:#6b9ac4; --warn:#e0a86a; --bad:#d97777; --ok:#7bc47f;
+    --line:#2c3948; --chip-fg:#15200c;
+  }
+  [data-theme="light"] {
+    --bg:#f4f6f8; --panel:#fff; --panel2:#eef1f4; --text:#15202b; --muted:#5a6a7a;
+    --accent:#5f7d3a; --accent2:#2f6f9f; --warn:#b06a1e; --bad:#b54a4a; --ok:#2f7a3e;
+    --line:#d5dde6; --chip-fg:#fff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+  a{color:var(--accent2)}
+  .theme-toggle{position:fixed;top:.85rem;right:.85rem;z-index:50;display:flex;gap:.2rem;padding:.2rem;background:var(--panel);border:1px solid var(--line);border-radius:999px}
+  .theme-toggle button{width:2rem;height:2rem;border:0;border-radius:999px;background:transparent;color:var(--muted);cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+  .theme-toggle button[aria-pressed="true"]{background:var(--accent);color:var(--chip-fg)}
+  .theme-toggle svg{width:1rem;height:1rem}
+  header{padding:2rem 1.5rem 1rem;max-width:1100px;margin:0 auto}
+  header h1{margin:0 0 .35rem;font-size:1.6rem}
+  header .sub{color:var(--muted);margin:0}
+  .navlinks{margin-top:.75rem;font-size:.9rem}
+  .banner{max-width:1100px;margin:0 auto 1rem;padding:0 1.5rem}
+  .banner .card{background:linear-gradient(135deg,#2a3520,var(--panel));border:1px solid #3d4a30;border-radius:12px;padding:1rem 1.25rem}
+  [data-theme="light"] .banner .card{background:linear-gradient(135deg,#e8f0dc,var(--panel));border-color:#c5d6a8}
+  .pill{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;background:var(--warn);color:#1a1208;padding:.15rem .5rem;border-radius:999px;margin-bottom:.5rem}
+  .weeks{display:flex;gap:.5rem;flex-wrap:wrap;max-width:1100px;margin:0 auto;padding:0 1.5rem 1rem}
+  .week-tab{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;padding:.4rem .85rem;cursor:pointer;font:inherit;font-size:.88rem}
+  .week-tab[aria-selected="true"]{background:var(--accent);color:var(--chip-fg);border-color:var(--accent);font-weight:600}
+  main{max-width:1100px;margin:0 auto;padding:0 1.5rem 3rem}
+  .stats{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:1rem 0}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:.7rem .8rem;text-align:center}
+  .stat .n{font-size:1.35rem;font-weight:700}
+  .stat .l{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
+  .call{border-left:3px solid var(--accent);background:var(--panel);padding:.85rem 1rem;border-radius:0 10px 10px 0;margin:1rem 0}
+  .call.bad{border-left-color:var(--bad)}
+  .call.warn{border-left-color:var(--warn)}
+  .call.ok{border-left-color:var(--ok)}
+  .funnel{display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem;margin:1rem 0}
+  .fcell{background:var(--panel2);border-radius:8px;padding:.65rem .7rem}
+  .fcell .k{font-size:.72rem;color:var(--muted);text-transform:uppercase}
+  .fcell .v{font-size:1.1rem;font-weight:600;margin-top:.15rem}
+  .fcell .empty{color:var(--muted);font-weight:500;font-size:.95rem}
+  table{width:100%;border-collapse:collapse;background:var(--panel);border-radius:10px;overflow:hidden;font-size:.9rem;margin-top:1rem}
+  th,td{text-align:left;padding:.65rem .75rem;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--panel2);color:var(--accent);font-weight:600}
+  .tag{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;padding:.12rem .4rem;border-radius:4px;background:var(--panel2);color:var(--muted)}
+  .tag.shipped{background:#2a4030;color:#b6e0b8}
+  .tag.example{background:#403528;color:#e0c0a0}
+  [data-theme="light"] .tag.shipped{background:#d8efda;color:#1e5a28}
+  [data-theme="light"] .tag.example{background:#f3e4d2;color:#7a4a12}
+  .muted{color:var(--muted)}
+  .howto{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:1.5rem}
+  .howto .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:.9rem 1rem}
+  .howto h3{margin:.1rem 0 .5rem;font-size:1rem;color:var(--accent)}
+  @media(max-width:900px){
+    .stats,.funnel,.howto{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:600px){
+    .stats,.funnel{grid-template-columns:1fr 1fr}
+  }
+</style>
+</head>
+<body>
+<div class="theme-toggle" role="group" aria-label="Color theme">
+  <button type="button" data-theme-choice="light" aria-label="Light" title="Light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button>
+  <button type="button" data-theme-choice="system" aria-label="System" title="System" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></button>
+  <button type="button" data-theme-choice="dark" aria-label="Dark" title="Dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3 7 7 0 0 0 21 14.5z"/></svg></button>
+</div>
+
+<header>
+  <h1>Trinity Marketing Scorecard</h1>
+  <p class="sub">Accept → live on paradigmlife.net → did the funnel move?</p>
+  <div class="navlinks"><a href="./">Enablement guide</a> · <span class="muted" id="updated"></span></div>
+</header>
+
+<div class="banner">
+  <div class="card">
+    <div class="pill">Operating draft</div>
+    <p style="margin:0" id="attr"></p>
+  </div>
+</div>
+
+<div class="weeks" id="tabs" role="tablist"></div>
+
+<main id="main">
+  <p class="muted">Loading…</p>
+</main>
+
+<section class="howto" style="max-width:1100px;margin:0 auto 3rem;padding:0 1.5rem" id="howto"></section>
+
+<script>
+(function(){
+  const root=document.documentElement;
+  const key='trinity-scorecard-theme';
+  const buttons=[...document.querySelectorAll('[data-theme-choice]')];
+  function systemTheme(){return matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'}
+  function apply(choice){
+    root.setAttribute('data-theme', choice==='system'?systemTheme():choice);
+    buttons.forEach(b=>b.setAttribute('aria-pressed', b.getAttribute('data-theme-choice')===choice?'true':'false'));
+  }
+  let choice=localStorage.getItem(key)||'system';
+  apply(choice);
+  buttons.forEach(b=>b.addEventListener('click',()=>{choice=b.getAttribute('data-theme-choice');localStorage.setItem(key,choice);apply(choice)}));
+  matchMedia('(prefers-color-scheme: light)').addEventListener('change',()=>{if((localStorage.getItem(key)||'system')==='system')apply('system')});
+
+  function dash(v){return v===null||v===undefined?'—':v}
+  function impactClass(c){
+    if(c==='yes'||c==='ok')return 'ok';
+    if(c==='mixed'||c==='unscored'||c==='example_only')return 'warn';
+    return 'bad';
+  }
+  function impactLabel(c){
+    return ({yes:'Impact: Yes',mixed:'Impact: Mixed',no:'Impact: No',unscored:'Impact: Unscored — fill funnel Friday',example_only:'Examples only',no_ships:'No site ships'})[c]||c;
+  }
+  function numCell(v){
+    if(v===null||v===undefined) return '<span class="empty">fill</span>';
+    return String(v);
+  }
+
+  let data=null; let active=0;
+
+  function render(){
+    const w=data.weeks[active];
+    const c=w.counts;
+    document.getElementById('main').innerHTML=`
+      <h2 style="margin:0 0 .25rem">${w.label}</h2>
+      <p class="muted" style="margin:0 0 .75rem"><strong>THE ONE THING:</strong> ${w.one_thing}<br/>Owners: ${w.owners}</p>
+      <div class="stats">
+        <div class="stat"><div class="n">${dash(c.surfaced)}</div><div class="l">Surfaced</div></div>
+        <div class="stat"><div class="n">${dash(c.accepted)}</div><div class="l">Accepted</div></div>
+        <div class="stat"><div class="n">${dash(c.deferred)}</div><div class="l">Deferred</div></div>
+        <div class="stat"><div class="n">${dash(c.killed)}</div><div class="l">Killed</div></div>
+        <div class="stat"><div class="n">${c.shipped}</div><div class="l">Live on site</div></div>
+        <div class="stat"><div class="n">${dash(c.still_draft)}</div><div class="l">Still draft</div></div>
+      </div>
+      <div class="call ${impactClass(w.impact_call)}">
+        <strong>${impactLabel(w.impact_call)}</strong>
+        <div style="margin-top:.35rem">${w.impact_note}</div>
+      </div>
+      <h3 style="margin:1.25rem 0 .35rem;color:var(--accent)">Week funnel</h3>
+      <div class="funnel">
+        <div class="fcell"><div class="k">Sessions</div><div class="v">${numCell(w.funnel_week.sessions)}</div></div>
+        <div class="fcell"><div class="k">Clicks</div><div class="v">${numCell(w.funnel_week.clicks)}</div></div>
+        <div class="fcell"><div class="k">CTR</div><div class="v">${numCell(w.funnel_week.ctr)}</div></div>
+        <div class="fcell"><div class="k">Leads / MQLs</div><div class="v">${numCell(w.funnel_week.leads_mqls)}</div></div>
+        <div class="fcell"><div class="k">Brief-assisted</div><div class="v">${numCell(w.funnel_week.brief_assisted_mqls)}</div></div>
+      </div>
+      <p class="muted" style="font-size:.85rem;margin:0">${w.funnel_week.note||''}</p>
+      <h3 style="margin:1.5rem 0 .35rem;color:var(--accent)">Work tied to this week</h3>
+      ${w.items.length?`<table>
+        <thead><tr><th>Item</th><th>Status</th><th>Live URL</th><th>Funnel</th><th>Call</th></tr></thead>
+        <tbody>
+          ${w.items.map(it=>`
+            <tr>
+              <td><strong>${it.title}</strong><div class="muted" style="font-size:.8rem">${it.owner?('Owner: '+it.owner):''}${it.projected_outcome?(' · '+it.projected_outcome):''}</div></td>
+              <td><span class="tag ${it.decision}">${it.decision}</span>${it.shipped_on?`<div class="muted" style="font-size:.75rem;margin-top:.25rem">${it.shipped_on}</div>`:''}</td>
+              <td>${it.url?`<a href="${it.url}" target="_blank" rel="noopener">Open on site</a>`:'<span class="muted">— not a site ship</span>'}</td>
+              <td style="font-size:.82rem">
+                Sess ${numCell(it.funnel.sessions)} · Clicks ${numCell(it.funnel.clicks)} · CTR ${numCell(it.funnel.ctr)}<br/>
+                MQLs ${numCell(it.funnel.leads_mqls)} · Assisted ${numCell(it.funnel.brief_assisted_mqls)}
+                <div class="muted">${it.funnel.note||''}</div>
+              </td>
+              <td><strong>${it.impact}</strong><div class="muted" style="font-size:.8rem">${it.next_change||''}</div></td>
+            </tr>`).join('')}
+        </tbody>
+      </table>`:'<p class="muted">No ships or Accepts logged for this week yet.</p>'}
+    `;
+  }
+
+  fetch('./scorecard-data.json?t='+Date.now()).then(r=>r.json()).then(d=>{
+    data=d;
+    document.getElementById('updated').textContent='Updated '+d.meta.updated;
+    document.getElementById('attr').textContent=d.meta.attribution;
+    const tabs=document.getElementById('tabs');
+    // default to first week that has ships
+    active=Math.max(0, d.weeks.findIndex(w=>w.counts.shipped>0));
+    tabs.innerHTML=d.weeks.map((w,i)=>`<button type="button" class="week-tab" role="tab" aria-selected="${i===active}" data-i="${i}">${w.label.split(',')[0]} · ${w.counts.shipped} live</button>`).join('');
+    tabs.querySelectorAll('.week-tab').forEach(btn=>btn.addEventListener('click',()=>{
+      active=+btn.dataset.i;
+      tabs.querySelectorAll('.week-tab').forEach(b=>b.setAttribute('aria-selected', b===btn?'true':'false'));
+      render();
+    }));
+    document.getElementById('howto').innerHTML=`
+      <div class="card"><h3>How this drives results</h3><ol style="margin:0;padding-left:1.1rem">${d.meta.how_to_use.map(x=>`<li>${x}</li>`).join('')}</ol></div>
+      <div class="card"><h3>What’s real today</h3><p class="muted" style="margin:0">Live URLs and dates come from the paradigmlife.net sitemap. Surfaced/Accept counts and funnel cells are ready to fill — they are blank on purpose until Monday Accept ritual + GA4/HubSpot are wired. This is the operating board, not a memo.</p></div>`;
+    render();
+  }).catch(e=>{
+    document.getElementById('main').innerHTML='<p class="muted">Could not load scorecard-data.json</p>';
+    console.error(e);
+  });
+})();
+</script>
+</body>
+</html>
