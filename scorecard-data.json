@@ -1,27 +1,38 @@
 {
   "meta": {
     "title": "Trinity Marketing Scorecard",
-    "subtitle": "Accept \u2192 live on paradigmlife.net \u2192 did the funnel move?",
+    "subtitle": "Accept → live on paradigmlife.net → did the funnel move?",
     "updated": "2026-09-23",
     "status": "draft",
     "how_to_use": [
       "Monday: log Surfaced / Accept / Defer / Kill from Synthesis into that week.",
-      "When something ships, paste the live paradigmlife.net URL (match by topic/slug \u2014 not UTM).",
+      "When something ships, paste the live paradigmlife.net URL (match by topic/slug — not UTM).",
       "Friday: fill funnel cells for those URLs and set Impact Yes / Mixed / No + next change.",
       "UTMs are optional for paid/email assist. Site ships are visible without them."
     ],
-    "attribution": "Primary proof is brief topic \u2194 live page on paradigmlife.net. UTMs help paid/email assist; they are not the scorecard.",
+    "attribution": "Primary proof is brief topic ↔ live page on paradigmlife.net. UTMs help paid/email assist; they are not the scorecard.",
     "sources": [
       "paradigmlife.net post sitemap lastmod (verified 2026-09-23)",
-      "Sep 7 Synthesis brief examples (marked example)"
+      "Sep 7 Synthesis brief examples (marked example)",
+      "GA4 site sessions via CMO Weekly Marketing Summary (reports@ → Drive) for completed weeks",
+      "Google Ads clicks/CTR via Metricool brand Paradigm Life (week-matched)",
+      "HubSpot MCP: contacts hs_v2_date_entered_marketingqualifiedlead (America/Denver Mon–Sun)",
+      "brief_assisted_mqls: utm_campaign prefix trinity_brief_ (none yet → 0)"
+    ],
+    "funnel_as_of": "2026-09-23 ~2:15 PM MT",
+    "blockers": [
+      "Direct GA4 API / data/ga4/ pulls not on this box — Gauge owns reports@ pulls; Mira consumed Summary Docs",
+      "Metricool website network returns 0 — not a GA4 substitute",
+      "Semrush traffic_overview MCP errored (no structured content)",
+      "Page-level sessions for ship URLs require GA4 landing-page export Gauge can attach"
     ]
   },
   "weeks": [
     {
       "week_start": "2026-09-21",
-      "label": "Sep 21 \u2013 Sep 27, 2026",
-      "one_thing": "\u2014 (no Accept ritual logged yet)",
-      "owners": "Rachel \u00b7 John",
+      "label": "Sep 21 – Sep 27, 2026",
+      "one_thing": "— (no Accept ritual logged yet)",
+      "owners": "Rachel · John",
       "counts": {
         "surfaced": null,
         "accepted": null,
@@ -32,21 +43,21 @@
       },
       "funnel_week": {
         "sessions": null,
-        "clicks": null,
-        "ctr": null,
-        "leads_mqls": null,
-        "brief_assisted_mqls": null,
-        "note": "Week rollup from GA4 + HubSpot \u2014 wire next."
+        "clicks": 123,
+        "ctr": "9.1%",
+        "leads_mqls": 24,
+        "brief_assisted_mqls": 0,
+        "note": "Partial week through Wed Sep 23 MT. Sessions: null — Weekly Marketing Summary not published yet (GA4 via reports@). Clicks/CTR: Google Ads Metricool Mon–Wed (123 clicks / 1,352 impr). MQLs: HubSpot entered-MQL stage 24 (as-of 2026-09-23 ~2:15 PM MT). Brief-assisted: 0 (no utm_campaign=trinity_brief_*). Meta Ads Metricool same window: 380 clicks (assist only; not in CTR cell)."
       },
       "impact_call": "no_ships",
-      "impact_note": "No site publishes in this window.",
+      "impact_note": "No site publishes in this window. Week funnel partially filled (HubSpot MQLs + Google Ads clicks); GA4 sessions wait on next Monday Summary.",
       "items": []
     },
     {
       "week_start": "2026-09-14",
-      "label": "Sep 14 \u2013 Sep 20, 2026",
-      "one_thing": "Infinite Banking Works. It\u2019s Also Incomplete.",
-      "owners": "Rachel \u00b7 John",
+      "label": "Sep 14 – Sep 20, 2026",
+      "one_thing": "Infinite Banking Works. It’s Also Incomplete.",
+      "owners": "Rachel · John",
       "counts": {
         "surfaced": null,
         "accepted": null,
@@ -56,22 +67,22 @@
         "still_draft": null
       },
       "funnel_week": {
-        "sessions": null,
-        "clicks": null,
-        "ctr": null,
-        "leads_mqls": null,
-        "brief_assisted_mqls": null,
-        "note": "Week rollup from GA4 + HubSpot \u2014 wire next."
+        "sessions": 2872,
+        "clicks": 300,
+        "ctr": "8.1%",
+        "leads_mqls": 68,
+        "brief_assisted_mqls": 0,
+        "note": "Sessions: 2,872 GA4 site sessions (CMO Weekly Marketing Summary Week of Sep 14, Mon–Sun). Clicks/CTR: Google Ads Metricool 300 / 3,704 impr = 8.1% (matches Summary). MQLs: HubSpot entered-MQL 68 (Pulse def; Summary goal-board MQL was 63 — different taxonomy). Brief-assisted: 0. Meta Ads Metricool week: 795 clicks (assist). Page-level GA4 not in Mira path — item funnel left null."
       },
       "impact_call": "unscored",
-      "impact_note": "6 live URL(s) on paradigmlife.net this week (sitemap lastmod verified). Funnel cells empty until analytics wired \u2014 the card still forces a Keep/Change/Kill once numbers land.",
+      "impact_note": "6 live URL(s) on paradigmlife.net this week (sitemap lastmod verified). Week rollup filled: sessions=2872, Google Ads clicks=300 (CTR 8.1%), HubSpot MQLs=68, brief-assisted=0. Impact Yes/Mixed/No still unscored — no page-level GA4 for ship URLs yet (Gauge/CMO pull needed).",
       "items": [
         {
           "kind": "site_ship",
-          "title": "Infinite Banking Works. It\u2019s Also Incomplete.",
+          "title": "Infinite Banking Works. It’s Also Incomplete.",
           "slug": "infinite-banking-concept",
           "decision": "shipped",
-          "owner": "\u2014",
+          "owner": "—",
           "url": "https://paradigmlife.net/infinite-banking-concept/",
           "shipped_on": "2026-09-18",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
@@ -81,17 +92,17 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Null until GA4/HubSpot wired for this URL."
+            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
           },
           "impact": "unscored",
-          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
         },
         {
           "kind": "site_ship",
-          "title": "What Is Generational Wealth? Definition, Examples, and Why It\u2019s More Than Money",
+          "title": "What Is Generational Wealth? Definition, Examples, and Why It’s More Than Money",
           "slug": "generational-wealth",
           "decision": "shipped",
-          "owner": "\u2014",
+          "owner": "—",
           "url": "https://paradigmlife.net/generational-wealth/",
           "shipped_on": "2026-09-16",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
@@ -101,17 +112,17 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Null until GA4/HubSpot wired for this URL."
+            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
           },
           "impact": "unscored",
-          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
         },
         {
           "kind": "site_ship",
           "title": "Which Is True About a Spouse Term Rider?",
           "slug": "spouse-term-riders",
           "decision": "shipped",
-          "owner": "\u2014",
+          "owner": "—",
           "url": "https://paradigmlife.net/spouse-term-riders/",
           "shipped_on": "2026-09-16",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
@@ -121,17 +132,17 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Null until GA4/HubSpot wired for this URL."
+            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
           },
           "impact": "unscored",
-          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
         },
         {
           "kind": "site_ship",
-          "title": "The Capital That Holds When Your Portfolio Can\u2019t",
+          "title": "The Capital That Holds When Your Portfolio Can’t",
           "slug": "non-correlated-assets",
           "decision": "shipped",
-          "owner": "\u2014",
+          "owner": "—",
           "url": "https://paradigmlife.net/non-correlated-assets/",
           "shipped_on": "2026-09-16",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
@@ -141,17 +152,17 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Null until GA4/HubSpot wired for this URL."
+            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
           },
           "impact": "unscored",
-          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
         },
         {
           "kind": "site_ship",
           "title": "How to Build Generational Wealth and Protect Your Financial Legacy",
           "slug": "how-to-build-generational-wealth-and-protect-your-financial-legacy",
           "decision": "shipped",
-          "owner": "\u2014",
+          "owner": "—",
           "url": "https://paradigmlife.net/how-to-build-generational-wealth-and-protect-your-financial-legacy/",
           "shipped_on": "2026-09-16",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
@@ -161,17 +172,17 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Null until GA4/HubSpot wired for this URL."
+            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
           },
           "impact": "unscored",
-          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
         },
         {
           "kind": "site_ship",
           "title": "Direct vs Non-Direct Recognition Loans: What They Mean for Your Policy",
           "slug": "direct-vs-non-direct-recognition-loans",
           "decision": "shipped",
-          "owner": "\u2014",
+          "owner": "—",
           "url": "https://paradigmlife.net/direct-vs-non-direct-recognition-loans/",
           "shipped_on": "2026-09-16",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
@@ -181,18 +192,18 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Null until GA4/HubSpot wired for this URL."
+            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
           },
           "impact": "unscored",
-          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
         }
       ]
     },
     {
       "week_start": "2026-09-07",
-      "label": "Sep 7 \u2013 Sep 13, 2026",
+      "label": "Sep 7 – Sep 13, 2026",
       "one_thing": "You Became Your Own Banker. Why Are You Still Dependent on Your Income?",
-      "owners": "Rachel \u00b7 John",
+      "owners": "Rachel · John",
       "counts": {
         "surfaced": null,
         "accepted": null,
@@ -202,22 +213,22 @@
         "still_draft": null
       },
       "funnel_week": {
-        "sessions": null,
-        "clicks": null,
-        "ctr": null,
-        "leads_mqls": null,
-        "brief_assisted_mqls": null,
-        "note": "Week rollup from GA4 + HubSpot \u2014 wire next."
+        "sessions": 2301,
+        "clicks": 331,
+        "ctr": "9.5%",
+        "leads_mqls": 63,
+        "brief_assisted_mqls": 0,
+        "note": "Sessions: 2,301 GA4 (CMO Weekly Marketing Summary Week of Sep 7). Clicks/CTR: Google Ads Metricool 331 / 3,469 = 9.54%. MQLs: HubSpot entered-MQL 63 (Summary goal-board MQL 70 — SF/goal taxonomy). Brief-assisted: 0. Meta Ads Metricool week: 781 clicks (assist). Item funnel null — no page-level GA4 export for ships."
       },
       "impact_call": "unscored",
-      "impact_note": "10 live URL(s) on paradigmlife.net this week (sitemap lastmod verified). Funnel cells empty until analytics wired \u2014 the card still forces a Keep/Change/Kill once numbers land.",
+      "impact_note": "10 live URL(s) on paradigmlife.net this week (sitemap lastmod verified). Week rollup filled: sessions=2301, Google Ads clicks=331 (CTR 9.5%), HubSpot MQLs=63, brief-assisted=0. Impact Yes/Mixed/No still unscored — no page-level GA4 for ship URLs yet (Gauge/CMO pull needed).",
       "items": [
         {
           "kind": "site_ship",
           "title": "You Became Your Own Banker. Why Are You Still Dependent on Your Income?",
           "slug": "ibc-vs-perpetual-wealth-strategy",
           "decision": "shipped",
-          "owner": "\u2014",
+          "owner": "—",
           "url": "https://paradigmlife.net/ibc-vs-perpetual-wealth-strategy/",
           "shipped_on": "2026-09-10",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
@@ -227,17 +238,17 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Null until GA4/HubSpot wired for this URL."
+            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
           },
           "impact": "unscored",
-          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
         },
         {
           "kind": "site_ship",
           "title": "The Guide Gives You the System. Now Find Out Whether Your Current Foundation is Ready to Run it.",
           "slug": "family-banking-guide",
           "decision": "shipped",
-          "owner": "\u2014",
+          "owner": "—",
           "url": "https://paradigmlife.net/family-banking-guide/",
           "shipped_on": "2026-09-10",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
@@ -247,17 +258,17 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Null until GA4/HubSpot wired for this URL."
+            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
           },
           "impact": "unscored",
-          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
         },
         {
           "kind": "site_ship",
           "title": "What Are Paid Up Additions (PUA) In Life Insurance?",
           "slug": "paid-additions-pua-life-insurance",
           "decision": "shipped",
-          "owner": "\u2014",
+          "owner": "—",
           "url": "https://paradigmlife.net/paid-additions-pua-life-insurance/",
           "shipped_on": "2026-09-09",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
@@ -267,17 +278,17 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Null until GA4/HubSpot wired for this URL."
+            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
           },
           "impact": "unscored",
-          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
         },
         {
           "kind": "site_ship",
-          "title": "Your Labor Is a Depleting Asset. These Aren\u2019t.",
+          "title": "Your Labor Is a Depleting Asset. These Aren’t.",
           "slug": "best-assets-that-produce-cash-flow",
           "decision": "shipped",
-          "owner": "\u2014",
+          "owner": "—",
           "url": "https://paradigmlife.net/best-assets-that-produce-cash-flow/",
           "shipped_on": "2026-09-09",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
@@ -287,17 +298,17 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Null until GA4/HubSpot wired for this URL."
+            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
           },
           "impact": "unscored",
-          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
         },
         {
           "kind": "site_ship",
           "title": "BOLI: The Balance Sheet Strategy Banks Use on Themselves",
           "slug": "bank-owned-life-insurance-boli-explained",
           "decision": "shipped",
-          "owner": "\u2014",
+          "owner": "—",
           "url": "https://paradigmlife.net/bank-owned-life-insurance-boli-explained/",
           "shipped_on": "2026-09-09",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
@@ -307,17 +318,17 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Null until GA4/HubSpot wired for this URL."
+            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
           },
           "impact": "unscored",
-          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
         },
         {
           "kind": "site_ship",
           "title": "An Introduction to Using Life Insurance as a Bank",
           "slug": "an-introduction-to-using-life-insurance-as-a-bank",
           "decision": "shipped",
-          "owner": "\u2014",
+          "owner": "—",
           "url": "https://paradigmlife.net/an-introduction-to-using-life-insurance-as-a-bank/",
           "shipped_on": "2026-09-09",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
@@ -327,17 +338,17 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Null until GA4/HubSpot wired for this URL."
+            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
           },
           "impact": "unscored",
-          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
         },
         {
           "kind": "site_ship",
           "title": "Guaranteed Cash Value Whole Life Insurance",
           "slug": "guaranteed-cash-value-whole-life-insurance",
           "decision": "shipped",
-          "owner": "\u2014",
+          "owner": "—",
           "url": "https://paradigmlife.net/guaranteed-cash-value-whole-life-insurance/",
           "shipped_on": "2026-09-09",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
@@ -347,17 +358,17 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Null until GA4/HubSpot wired for this URL."
+            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
           },
           "impact": "unscored",
-          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
         },
         {
           "kind": "site_ship",
           "title": "Infinite Banking Works Its Also Incomplete",
           "slug": "infinite-banking-works-its-also-incomplete",
           "decision": "shipped",
-          "owner": "\u2014",
+          "owner": "—",
           "url": "https://paradigmlife.net/infinite-banking-works-its-also-incomplete/",
           "shipped_on": "2026-09-08",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
@@ -367,17 +378,17 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Null until GA4/HubSpot wired for this URL."
+            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
           },
           "impact": "unscored",
-          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
         },
         {
           "kind": "site_ship",
           "title": "Rate Of Return During Retirement",
           "slug": "rate-of-return-during-retirement",
           "decision": "shipped",
-          "owner": "\u2014",
+          "owner": "—",
           "url": "https://paradigmlife.net/rate-of-return-during-retirement/",
           "shipped_on": "2026-09-08",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
@@ -387,17 +398,17 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Null until GA4/HubSpot wired for this URL."
+            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
           },
           "impact": "unscored",
-          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
         },
         {
           "kind": "site_ship",
           "title": "How To Calculate Short Term Disability Benefits Premiums And Rates",
           "slug": "how-to-calculate-short-term-disability-benefits-premiums-and-rates",
           "decision": "shipped",
-          "owner": "\u2014",
+          "owner": "—",
           "url": "https://paradigmlife.net/how-to-calculate-short-term-disability-benefits-premiums-and-rates/",
           "shipped_on": "2026-09-08",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
@@ -407,10 +418,10 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Null until GA4/HubSpot wired for this URL."
+            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
           },
           "impact": "unscored",
-          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
         },
         {
           "kind": "brief_item",
@@ -427,7 +438,7 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Paid media Accept \u2014 score in Ads, not as a blog URL."
+            "note": "Paid media Accept — score in Ads, not as a blog URL."
           },
           "impact": "unscored",
           "next_change": "Replace EXAMPLE with real Accept disposition when ritual is live."
@@ -447,7 +458,7 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Ad ops Accept \u2014 verify in Ads Manager."
+            "note": "Ad ops Accept — verify in Ads Manager."
           },
           "impact": "unscored",
           "next_change": "Replace EXAMPLE with real Accept disposition when ritual is live."
@@ -456,9 +467,9 @@
     },
     {
       "week_start": "2026-08-31",
-      "label": "Aug 31 \u2013 Sep 6, 2026",
+      "label": "Aug 31 – Sep 6, 2026",
       "one_thing": "The Market Fluctuates And You Could Lose Everything Heres The Retirement Design Built Around A Guarantee Not A Guess",
-      "owners": "Rachel \u00b7 John",
+      "owners": "Rachel · John",
       "counts": {
         "surfaced": null,
         "accepted": null,
@@ -468,22 +479,22 @@
         "still_draft": null
       },
       "funnel_week": {
-        "sessions": null,
-        "clicks": null,
-        "ctr": null,
-        "leads_mqls": null,
-        "brief_assisted_mqls": null,
-        "note": "Week rollup from GA4 + HubSpot \u2014 wire next."
+        "sessions": 2289,
+        "clicks": 272,
+        "ctr": "10.0%",
+        "leads_mqls": 60,
+        "brief_assisted_mqls": 0,
+        "note": "Sessions: 2,289 GA4 (CMO Weekly Marketing Summary Week of Aug 31). Clicks/CTR: Google Ads Metricool 272 / 2,719 = 10.0% (matches Summary). MQLs: HubSpot entered-MQL 60 (Summary goal-board MQL 56 — different taxonomy). Brief-assisted: 0. Meta Ads Metricool week: 877 clicks (assist). Item funnel null."
       },
       "impact_call": "unscored",
-      "impact_note": "1 live URL(s) on paradigmlife.net this week (sitemap lastmod verified). Funnel cells empty until analytics wired \u2014 the card still forces a Keep/Change/Kill once numbers land.",
+      "impact_note": "1 live URL(s) on paradigmlife.net this week (sitemap lastmod verified). Week rollup filled: sessions=2289, Google Ads clicks=272 (CTR 10.0%), HubSpot MQLs=60, brief-assisted=0. Impact Yes/Mixed/No still unscored — no page-level GA4 for ship URLs yet (Gauge/CMO pull needed).",
       "items": [
         {
           "kind": "site_ship",
           "title": "The Market Fluctuates And You Could Lose Everything Heres The Retirement Design Built Around A Guarantee Not A Guess",
           "slug": "the-market-fluctuates-and-you-could-lose-everything-heres-the-retirement-design-built-around-a-guarantee-not-a-guess",
           "decision": "shipped",
-          "owner": "\u2014",
+          "owner": "—",
           "url": "https://paradigmlife.net/the-market-fluctuates-and-you-could-lose-everything-heres-the-retirement-design-built-around-a-guarantee-not-a-guess/",
           "shipped_on": "2026-09-04",
           "projected_outcome": "Sessions, engagement, and assisted MQLs from this live URL",
@@ -493,10 +504,10 @@
             "ctr": null,
             "leads_mqls": null,
             "brief_assisted_mqls": null,
-            "note": "Null until GA4/HubSpot wired for this URL."
+            "note": "Page-level GA4 not available to Mira (no data/ga4 pull; Metricool website connector returns zeros). Week rollup only."
           },
           "impact": "unscored",
-          "next_change": "Friday: Keep if moving \u00b7 Change angle if flat \u00b7 Kill if dead."
+          "next_change": "Friday: Keep if moving · Change angle if flat · Kill if dead."
         }
       ]
     }
