@@ -29,11 +29,15 @@
  header h1{margin:0 0 .35rem;font-size:1.6rem}
  header .sub{color:var(--muted);margin:0}
  .navlinks{margin-top:.75rem;font-size:.9rem}
+ .board-switch{display:flex;gap:.5rem;flex-wrap:wrap;max-width:1100px;margin:0 auto;padding:0 1.5rem .75rem}
+ .board-tab{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:10px;padding:.55rem 1rem;cursor:pointer;font:inherit;font-size:.92rem}
+ .board-tab[aria-selected="true"]{background:var(--accent2);color:#fff;border-color:var(--accent2);font-weight:600}
  .weeks{display:flex;gap:.5rem;flex-wrap:wrap;max-width:1100px;margin:0 auto;padding:0 1.5rem 1rem}
  .week-tab{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;padding:.4rem .85rem;cursor:pointer;font:inherit;font-size:.88rem}
  .week-tab[aria-selected="true"]{background:var(--accent);color:var(--chip-fg);border-color:var(--accent);font-weight:600}
  main{max-width:1100px;margin:0 auto;padding:0 1.5rem 3rem}
  .stats{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:1rem 0}
+ .stats.four{grid-template-columns:repeat(4,1fr)}
  .stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:.7rem .8rem;text-align:center}
  .stat .n{font-size:1.35rem;font-weight:700}
  .stat .l{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
@@ -49,17 +53,25 @@
  table{width:100%;border-collapse:collapse;background:var(--panel);border-radius:10px;overflow:hidden;font-size:.9rem;margin-top:1rem}
  th,td{text-align:left;padding:.65rem .75rem;border-bottom:1px solid var(--line);vertical-align:top}
  th{background:var(--panel2);color:var(--accent);font-weight:600}
+ td.num{text-align:right;font-variant-numeric:tabular-nums}
  .tag{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;padding:.12rem .4rem;border-radius:4px;background:var(--panel2);color:var(--muted)}
  .tag.shipped{background:#2a4030;color:#b6e0b8}
  .tag.example{background:#403528;color:#e0c0a0}
+ .tag.sub{background:#2a3548;color:#a8c0e0}
  [data-theme="light"] .tag.shipped{background:#d8efda;color:#1e5a28}
  [data-theme="light"] .tag.example{background:#f3e4d2;color:#7a4a12}
+ [data-theme="light"] .tag.sub{background:#d9e6f5;color:#1e4a7a}
  .muted{color:var(--muted)}
+ .caveat{font-size:.85rem;color:var(--muted);margin:1rem 0 0;padding:.85rem 1rem;background:var(--panel);border:1px solid var(--line);border-radius:10px}
+ .caveat ul{margin:.35rem 0 0;padding-left:1.15rem}
+ .sort-bar{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin:1rem 0 .25rem}
+ .sort-bar button{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;padding:.3rem .7rem;cursor:pointer;font:inherit;font-size:.82rem}
+ .sort-bar button[aria-pressed="true"]{background:var(--accent);color:var(--chip-fg);border-color:var(--accent)}
  @media(max-width:900px){
- .stats,.funnel{grid-template-columns:1fr 1fr}
+ .stats,.funnel,.stats.four{grid-template-columns:1fr 1fr}
  }
  @media(max-width:600px){
- .stats,.funnel{grid-template-columns:1fr 1fr}
+ .stats,.funnel,.stats.four{grid-template-columns:1fr 1fr}
  }
 
  .cohorts{max-width:1100px;margin:0 auto 1rem;padding:0 1.5rem}
@@ -77,6 +89,7 @@
  .trail .tcell .v{font-size:1.05rem;font-weight:600}
  .trail .tcell.partial{opacity:.7}
  .trail-label{font-size:.8rem;color:var(--muted);margin:.75rem 0 .25rem}
+ .hidden{display:none !important}
 </style>
 </head>
 <body>
@@ -88,10 +101,14 @@
 
 <header>
  <h1>Trinity Marketing Scorecard</h1>
- <p class="sub">Done (CMO state) → Published on paradigmlife.net → brief impact on those URLs</p>
+ <p class="sub" id="headerSub">Done (CMO state) → Published on paradigmlife.net → brief impact on those URLs</p>
  <div class="navlinks"><a href="./">Enablement guide</a> · <span class="muted" id="updated"></span></div>
 </header>
 
+<div class="board-switch" id="boardSwitch" role="tablist" aria-label="Scorecard board">
+ <button type="button" class="board-tab" role="tab" data-board="briefs" aria-selected="true">Brief weeks</button>
+ <button type="button" class="board-tab" role="tab" data-board="organic" aria-selected="false">Organic → MQLs</button>
+</div>
 
 <section class="cohorts" id="cohortsStrip" aria-label="Brief-shipped cohorts">
  <div class="card">
@@ -124,7 +141,11 @@
  matchMedia('(prefers-color-scheme: light)').addEventListener('change',()=>{if((localStorage.getItem(key)||'system')==='system')apply('system')});
 
  function dash(v){return v===null||v===undefined?'n/a':v}
- 
+ function fmt(n){
+  if(n===null||n===undefined) return 'n/a';
+  return Number(n).toLocaleString('en-US');
+ }
+
  function weekTrail(w){
  const trail=(w.funnel_week&&w.funnel_week.weekly_trail)||[];
  if(!trail.length) return '';
@@ -141,7 +162,7 @@
  return String(v);
  }
 
- 
+
  function sitewideMqlNote(f){
  if(!f || f.week_mqls_sitewide==null) return 'Sitewide numbers are context only — not brief credit.';
  return 'Sitewide MQLs this week (not brief credit): ' + f.week_mqls_sitewide + '.';
@@ -180,9 +201,9 @@
  </table>`;
  }
 
- let data=null; let active=0;
+ let data=null; let active=0; let board='briefs'; let organicSort='sessions';
 
- function render(){
+ function renderBriefWeek(){
  const w=data.weeks[active];
  const c=w.counts;
  document.getElementById('main').innerHTML=`
@@ -228,9 +249,91 @@
  `;
  }
 
+ function renderOrganic(){
+ const o=data.organic_mql;
+ if(!o){
+  document.getElementById('main').innerHTML='<p class="muted">No organic → MQL data in scorecard-data.json yet.</p>';
+  return;
+ }
+ const s=o.summary;
+ const pages=[...(o.pages||[])];
+ if(organicSort==='mqls'){
+  pages.sort((a,b)=> (b.mqls_first_or_last-a.mqls_first_or_last) || (b.organic_sessions-a.organic_sessions));
+ } else {
+  pages.sort((a,b)=> (b.organic_sessions-a.organic_sessions) || (b.mqls_first_or_last-a.mqls_first_or_last));
+ }
+ const srcBits=Object.entries(s.mql_by_source||{}).map(([k,v])=>`${k} ${v}`).join(' · ');
+ const caveats=(o.definitions&&o.definitions.caveats)||[];
+ const incl=(o.definitions&&o.definitions.ga4_channels_included||[]).join(', ');
+ const hsOrg=(o.definitions&&o.definitions.hubspot_organic_sources||[]).join(', ');
+
+ document.getElementById('main').innerHTML=`
+ <h2 style="margin:0 0 .25rem">Organic content → MQLs</h2>
+ <p class="muted" style="margin:0 0 .75rem">Which non-paid site landings drive traffic, and which content URLs show up as HubSpot first or last touch on MQLs. <strong>${o.window.label}</strong>.</p>
+ <div class="stats four">
+  <div class="stat"><div class="n">${fmt(s.organic_sessions)}</div><div class="l">Organic sessions</div></div>
+  <div class="stat"><div class="n">${fmt(s.organic_mqls)}</div><div class="l">Organic MQLs</div></div>
+  <div class="stat"><div class="n">${fmt(s.content_attributed_mqls)}</div><div class="l">Content-attributed MQLs</div></div>
+  <div class="stat"><div class="n">${fmt(s.paid_mqls_excluded)}</div><div class="l">Paid MQLs excluded</div></div>
+ </div>
+ <p class="muted" style="font-size:.85rem;margin:.25rem 0 0">GA4 non-paid channels: ${incl}. HubSpot organic sources: ${hsOrg}. Window total MQLs: ${fmt(s.total_mqls_in_window)} (${srcBits}).</p>
+ <div class="sort-bar">
+  <span class="muted" style="font-size:.82rem">Rank table by</span>
+  <button type="button" data-osort="sessions" aria-pressed="${organicSort==='sessions'}">Organic sessions</button>
+  <button type="button" data-osort="mqls" aria-pressed="${organicSort==='mqls'}">MQL attribution</button>
+ </div>
+ <table>
+  <thead><tr>
+   <th>Page</th>
+   <th class="num">Organic sessions</th>
+   <th class="num">Organic users</th>
+   <th class="num">MQLs (first or last)</th>
+   <th>Primary organic channel mix</th>
+  </tr></thead>
+  <tbody>
+  ${pages.map(p=>{
+   const sub=p.subdomain_label?`<span class="tag sub">${p.subdomain_label}</span> `: '';
+   return `<tr>
+    <td>${sub}<a href="${p.url}" target="_blank" rel="noopener">${p.title||p.path}</a><div class="muted" style="font-size:.75rem">${p.path}</div></td>
+    <td class="num">${fmt(p.organic_sessions)}</td>
+    <td class="num">${fmt(p.organic_users)}</td>
+    <td class="num">${fmt(p.mqls_first_or_last)}</td>
+    <td class="muted" style="font-size:.82rem">${p.channel_mix_label||'—'}</td>
+   </tr>`;
+  }).join('')}
+  </tbody>
+ </table>
+ <div class="caveat"><strong>Caveats</strong><ul>${caveats.map(c=>`<li>${c}</li>`).join('')}</ul></div>
+ `;
+ document.querySelectorAll('[data-osort]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+   organicSort=btn.getAttribute('data-osort');
+   renderOrganic();
+  });
+ });
+ }
+
+ function setBoard(next){
+  board=next;
+  document.querySelectorAll('#boardSwitch .board-tab').forEach(b=>{
+   b.setAttribute('aria-selected', b.getAttribute('data-board')===board?'true':'false');
+  });
+  const briefEls=[document.getElementById('cohortsStrip'), document.getElementById('tabs')];
+  if(board==='briefs'){
+   briefEls.forEach(el=>el && el.classList.remove('hidden'));
+   document.getElementById('headerSub').textContent='Done (CMO state) → Published on paradigmlife.net → brief impact on those URLs';
+   renderBriefWeek();
+  } else {
+   briefEls.forEach(el=>el && el.classList.add('hidden'));
+   document.getElementById('headerSub').textContent='Non-paid traffic → which content URLs show up on MQLs (first/last touch)';
+   renderOrganic();
+  }
+ }
+
  fetch('./scorecard-data.json?t='+Date.now()).then(r=>r.json()).then(d=>{
  data=d;
  document.getElementById('updated').textContent='Updated '+d.meta.updated;
+ renderCohorts(d);
 
  const tabs=document.getElementById('tabs');
  // default to first week that has ships
@@ -239,9 +342,17 @@
  tabs.querySelectorAll('.week-tab').forEach(btn=>btn.addEventListener('click',()=>{
  active=+btn.dataset.i;
  tabs.querySelectorAll('.week-tab').forEach(b=>b.setAttribute('aria-selected', b===btn?'true':'false'));
- render();
+ if(board==='briefs') renderBriefWeek();
  }));
- render();
+
+ document.querySelectorAll('#boardSwitch .board-tab').forEach(btn=>{
+  btn.addEventListener('click',()=>setBoard(btn.getAttribute('data-board')));
+ });
+
+ // deep-link ?board=organic
+ const q=new URLSearchParams(location.search).get('board');
+ if(q==='organic' && d.organic_mql) setBoard('organic');
+ else setBoard('briefs');
  }).catch(e=>{
  document.getElementById('main').innerHTML='<p class="muted">Could not load scorecard-data.json</p>';
  console.error(e);
