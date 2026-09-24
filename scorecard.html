@@ -280,6 +280,14 @@
   if(/^\/infinite-banking-(google|meta|fb|facebook|youtube)-\d+\/$/.test(pl)) return true;
   return false;
  }
+ function isExcludedHost(host){
+  if(!host) return false;
+  const h=String(host).toLowerCase();
+  // Paid ad landers + LMS — not organic site content
+  if(h==='learn.paradigmlife.net'||h.startsWith('learn.')) return true;
+  if(h==='academy.paradigmlife.net'||h.startsWith('academy.')) return true;
+  return false;
+ }
  function subdomainLabel(host){
   if(!host||host==='paradigmlife.net') return null;
   if(host.endsWith('.paradigmlife.net')) return host.split('.')[0];
@@ -358,6 +366,7 @@
    else otherNot++;
    [[m.fh,m.fp],[m.lh,m.lp]].forEach(([host,path])=>{
     if(!path||!host||!String(host).includes('paradigmlife')) return;
+    if(isExcludedHost(host)) return;
     if(String(host).includes('portal')||String(host).startsWith('uat-')) return;
     if(isNoisePath(path)) return;
     contentPaths.add(path);
@@ -368,8 +377,8 @@
 
   rangeMqls.forEach(m=>{
    const touched=new Set();
-   if(m.fp&&contentPaths.has(m.fp)){pageStats[m.fp].mql_first++; touched.add(m.fp);}
-   if(m.lp&&contentPaths.has(m.lp)){pageStats[m.lp].mql_last++; touched.add(m.lp);}
+   if(m.fp&&contentPaths.has(m.fp)&&!isExcludedHost(m.fh)){pageStats[m.fp].mql_first++; touched.add(m.fp);}
+   if(m.lp&&contentPaths.has(m.lp)&&!isExcludedHost(m.lh)){pageStats[m.lp].mql_last++; touched.add(m.lp);}
    touched.forEach(path=>{
     pageStats[path].mql_either++;
     const src=m.src||'(none)';
@@ -380,8 +389,9 @@
   let contentAttr=0, orgContentAttr=0;
   rangeMqls.forEach(m=>{
    if(paid.has(m.src||'')) return;
-   const hit=(m.fp&&contentPaths.has(m.fp))||(m.lp&&contentPaths.has(m.lp));
-   if(!hit) return;
+   const firstOk=m.fp&&contentPaths.has(m.fp)&&!isExcludedHost(m.fh);
+   const lastOk=m.lp&&contentPaths.has(m.lp)&&!isExcludedHost(m.lh);
+   if(!firstOk&&!lastOk) return;
    contentAttr++;
    if(org.has(m.src||'')) orgContentAttr++;
   });
@@ -392,6 +402,7 @@
    if(!st.sessions&&!st.mql_either) return;
    const hostEntries=Object.entries(st.hosts||{}).sort((a,b)=>b[1]-a[1]);
    const host=hostEntries.length?hostEntries[0][0]:'paradigmlife.net';
+   if(isExcludedHost(host)) return;
    const mix=Object.entries(st.mix||{}).sort((a,b)=>b[1]-a[1]).map(([channel,sessions])=>({channel,sessions}));
    pages.push({
     path, title:titleFromPath(path), url:'https://'+host+path, host,
@@ -463,7 +474,7 @@
   return;
  }
  const s=o.summary;
- const pages=[...(o.pages||[])];
+ const pages=[...(o.pages||[])].filter(p=>!isExcludedHost(p.host));
  if(organicSort==='mqls'){
   pages.sort((a,b)=> (b.mqls_first_or_last-a.mqls_first_or_last) || (b.organic_sessions-a.organic_sessions));
  } else {
@@ -520,7 +531,11 @@
   }).join('')}
   </tbody>
  </table>
- <div class="caveat"><strong>Caveats</strong><ul>${caveats.map(c=>`<li>${c}</li>`).join('')}</ul></div>
+ <details class="caveat" style="margin-top:1.25rem">
+  <summary style="cursor:pointer;font-weight:600">Caveats &amp; method notes</summary>
+  <ul>${caveats.map(c=>`<li>${c}</li>`).join('')}</ul>
+  <p class="muted" style="font-size:.82rem;margin:.5rem 0 0">learn.* (paid landers) and academy.* (LMS) are excluded from this board.</p>
+ </details>
  `;
  document.querySelectorAll('[data-osort]').forEach(btn=>{
   btn.addEventListener('click',()=>{
