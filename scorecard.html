@@ -123,7 +123,7 @@
 <section class="cohorts" id="cohortsStrip" aria-label="Brief-shipped cohorts">
  <div class="card">
  <h2>Brief-shipped cohorts</h2>
- <p class="cap">Sessions on that week’s Published URLs only — not sitewide. 30d / 60d / 90d / all-time start at each URL’s publish date. Recent weeks often match across columns until those windows complete.</p>
+ <p class="cap">Sessions on that week’s Published URLs only — not sitewide. Columns are nested windows on the same URLs from each publish date: 30d is inside 60d, which is inside 90d, which is inside all-time. They are not separate weeks added together. Young posts show the same number in every column until enough days pass for the windows to differ.</p>
  <div id="cohortsTable"><p class="muted">Loading cohorts…</p></div>
  </div>
 </section>
@@ -161,8 +161,7 @@
  if(!trail.length) return '';
  const cells=trail.map(t=>{
   const when=t.date_label||'';
-  const partial=t.incomplete?' · partial':'';
-  return `<div class="tcell${t.incomplete?' partial':''}"><div class="k">${t.label}${when?' · '+when:''}${partial}</div><div class="v">${t.sessions}</div></div>`;
+  return `<div class="tcell${t.incomplete?' partial':''}"><div class="k">${t.label}${when?' · '+when:''}</div><div class="v">${t.sessions}</div></div>`;
  }).join('');
  return `<div class="trail-label">Sessions by week after publish (same Published URLs)</div><div class="trail">${cells}</div>`;
  }
@@ -190,16 +189,12 @@
  const asOf=block.as_of||'';
  const rows=block.cohorts.map(c=>{
  const s60=c.sessions_60d!=null?c.sessions_60d:'—';
- const mark=(flag,label)=>{
-  if(flag===false) return ` <span class="note-tag" title="${label} window not complete yet">partial</span>`;
-  return '';
- };
  return `<tr>
  <td>${c.label||c.week_start}</td>
  <td class="num">${c.published_count ?? '—'}</td>
- <td class="num">${c.sessions_30d ?? '—'}${mark(c.window_30d_complete,'30d')}</td>
- <td class="num">${s60}${mark(c.window_60d_complete,'60d')}</td>
- <td class="num">${c.sessions_90d ?? '—'}${mark(c.window_90d_complete,'90d')}</td>
+ <td class="num">${c.sessions_30d ?? '—'}</td>
+ <td class="num">${s60}</td>
+ <td class="num">${c.sessions_90d ?? '—'}</td>
  <td class="num">${c.sessions_all_time ?? '—'}</td>
  </tr>`;
  }).join('');
@@ -218,7 +213,7 @@
  </tr></thead>
  <tbody>${rows}</tbody>
  </table>
- <p class="muted" style="font-size:.78rem;margin:.4rem 0 0">As of ${asOf||'—'}. “partial” means that window hasn’t fully elapsed since publish — so 30d can equal 60d/90d/all-time until enough days pass.</p>`;
+ <p class="muted" style="font-size:.78rem;margin:.4rem 0 0">As of ${asOf||'—'}. Example: Sep 14 ships have only been live a few days, so their 30d / 60d / 90d / all-time are the same total so far (42) — not three separate weeks of 42.</p>`;
  }
 
  let data=null; let organicRaw=null; let active=0; let board='briefs'; let organicSort='sessions';
