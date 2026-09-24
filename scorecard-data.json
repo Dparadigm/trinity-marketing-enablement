@@ -1949,39 +1949,6 @@
         "hs_sources": {}
       },
       {
-        "path": "/perpetual-wealth-strategy/",
-        "title": "Perpetual Wealth Strategy",
-        "url": "https://learn.paradigmlife.net/perpetual-wealth-strategy/",
-        "host": "learn.paradigmlife.net",
-        "subdomain_label": "learn",
-        "organic_sessions": 70,
-        "organic_users": 58,
-        "mqls_first_or_last": 15,
-        "mqls_as_first": 1,
-        "mqls_as_last": 14,
-        "channel_mix": [
-          {
-            "channel": "Direct",
-            "sessions": 37
-          },
-          {
-            "channel": "Organic Search",
-            "sessions": 31
-          },
-          {
-            "channel": "Organic Social",
-            "sessions": 2
-          }
-        ],
-        "channel_mix_label": "Direct 37, Organic Search 31, Organic Social 2",
-        "hs_sources": {
-          "ORGANIC_SEARCH": 2,
-          "PAID_SEARCH": 4,
-          "PAID_SOCIAL": 7,
-          "DIRECT_TRAFFIC": 2
-        }
-      },
-      {
         "path": "/paid-additions-pua-life-insurance/",
         "title": "Paid Additions Pua Life Insurance",
         "url": "https://paradigmlife.net/paid-additions-pua-life-insurance/",
@@ -2250,34 +2217,6 @@
         ],
         "channel_mix_label": "Organic Search 29, Direct 13",
         "hs_sources": {}
-      },
-      {
-        "path": "/whole-life-insurance/",
-        "title": "Whole Life Insurance",
-        "url": "https://learn.paradigmlife.net/whole-life-insurance/",
-        "host": "learn.paradigmlife.net",
-        "subdomain_label": "learn",
-        "organic_sessions": 41,
-        "organic_users": 38,
-        "mqls_first_or_last": 47,
-        "mqls_as_first": 39,
-        "mqls_as_last": 21,
-        "channel_mix": [
-          {
-            "channel": "Direct",
-            "sessions": 30
-          },
-          {
-            "channel": "Organic Search",
-            "sessions": 11
-          }
-        ],
-        "channel_mix_label": "Direct 30, Organic Search 11",
-        "hs_sources": {
-          "PAID_SEARCH": 40,
-          "PAID_SOCIAL": 6,
-          "ORGANIC_SEARCH": 1
-        }
       },
       {
         "path": "/7-secrets-keeping-wealth-stealth/",
@@ -2585,32 +2524,6 @@
         ],
         "channel_mix_label": "Organic Search 15, Direct 14",
         "hs_sources": {}
-      },
-      {
-        "path": "/limitless-2026-a/",
-        "title": "Limitless 2026 A",
-        "url": "https://learn.paradigmlife.net/limitless-2026-a/",
-        "host": "learn.paradigmlife.net",
-        "subdomain_label": "learn",
-        "organic_sessions": 28,
-        "organic_users": 24,
-        "mqls_first_or_last": 6,
-        "mqls_as_first": 6,
-        "mqls_as_last": 6,
-        "channel_mix": [
-          {
-            "channel": "Direct",
-            "sessions": 27
-          },
-          {
-            "channel": "Organic Search",
-            "sessions": 1
-          }
-        ],
-        "channel_mix_label": "Direct 27, Organic Search 1",
-        "hs_sources": {
-          "DIRECT_TRAFFIC": 6
-        }
       },
       {
         "path": "/disability-insurance/",
@@ -3162,32 +3075,6 @@
         "hs_sources": {}
       },
       {
-        "path": "/free-audiobook/",
-        "title": "Free Audiobook",
-        "url": "https://learn.paradigmlife.net/free-audiobook/",
-        "host": "learn.paradigmlife.net",
-        "subdomain_label": "learn",
-        "organic_sessions": 11,
-        "organic_users": 11,
-        "mqls_first_or_last": 1,
-        "mqls_as_first": 0,
-        "mqls_as_last": 1,
-        "channel_mix": [
-          {
-            "channel": "Direct",
-            "sessions": 7
-          },
-          {
-            "channel": "Organic Social",
-            "sessions": 4
-          }
-        ],
-        "channel_mix_label": "Direct 7, Organic Social 4",
-        "hs_sources": {
-          "PAID_SEARCH": 1
-        }
-      },
-      {
         "path": "/infinite-banking-system/",
         "title": "Infinite Banking System",
         "url": "https://paradigmlife.net/infinite-banking-system/",
@@ -3236,32 +3123,6 @@
         }
       },
       {
-        "path": "/be-your-own-bank/",
-        "title": "Be Your Own Bank",
-        "url": "https://learn.paradigmlife.net/be-your-own-bank/",
-        "host": "learn.paradigmlife.net",
-        "subdomain_label": "learn",
-        "organic_sessions": 7,
-        "organic_users": 7,
-        "mqls_first_or_last": 32,
-        "mqls_as_first": 29,
-        "mqls_as_last": 28,
-        "channel_mix": [
-          {
-            "channel": "Direct",
-            "sessions": 4
-          },
-          {
-            "channel": "Organic Search",
-            "sessions": 3
-          }
-        ],
-        "channel_mix_label": "Direct 4, Organic Search 3",
-        "hs_sources": {
-          "PAID_SEARCH": 32
-        }
-      },
-      {
         "path": "/how-to-write-a-business-plan/",
         "title": "How To Write A Business Plan",
         "url": "https://paradigmlife.net/how-to-write-a-business-plan/",
@@ -3285,34 +3146,6 @@
         "channel_mix_label": "Direct 4, Organic Search 2",
         "hs_sources": {
           "PAID_SOCIAL": 1
-        }
-      },
-      {
-        "path": "/limitless-2026-b/",
-        "title": "Limitless 2026 B",
-        "url": "https://learn.paradigmlife.net/limitless-2026-b/",
-        "host": "learn.paradigmlife.net",
-        "subdomain_label": "learn",
-        "organic_sessions": 4,
-        "organic_users": 4,
-        "mqls_first_or_last": 21,
-        "mqls_as_first": 20,
-        "mqls_as_last": 20,
-        "channel_mix": [
-          {
-            "channel": "Direct",
-            "sessions": 3
-          },
-          {
-            "channel": "Organic Search",
-            "sessions": 1
-          }
-        ],
-        "channel_mix_label": "Direct 3, Organic Search 1",
-        "hs_sources": {
-          "OFFLINE": 18,
-          "PAID_SOCIAL": 1,
-          "DIRECT_TRAFFIC": 2
         }
       },
       {
@@ -3342,32 +3175,6 @@
         }
       },
       {
-        "path": "/perpetual-wealth-strategy-launch/",
-        "title": "Perpetual Wealth Strategy Launch",
-        "url": "https://learn.paradigmlife.net/perpetual-wealth-strategy-launch/",
-        "host": "learn.paradigmlife.net",
-        "subdomain_label": "learn",
-        "organic_sessions": 3,
-        "organic_users": 3,
-        "mqls_first_or_last": 1,
-        "mqls_as_first": 0,
-        "mqls_as_last": 1,
-        "channel_mix": [
-          {
-            "channel": "Direct",
-            "sessions": 2
-          },
-          {
-            "channel": "Organic Social",
-            "sessions": 1
-          }
-        ],
-        "channel_mix_label": "Direct 2, Organic Social 1",
-        "hs_sources": {
-          "PAID_SOCIAL": 1
-        }
-      },
-      {
         "path": "/faq-category/paradigm-life-about/",
         "title": "Paradigm Life About",
         "url": "https://paradigmlife.net/faq-category/paradigm-life-about/",
@@ -3390,86 +3197,6 @@
         }
       },
       {
-        "path": "/perpetual-wealth-strategy-real-estate/",
-        "title": "Perpetual Wealth Strategy Real Estate",
-        "url": "https://learn.paradigmlife.net/perpetual-wealth-strategy-real-estate/",
-        "host": "learn.paradigmlife.net",
-        "subdomain_label": "learn",
-        "organic_sessions": 1,
-        "organic_users": 1,
-        "mqls_first_or_last": 2,
-        "mqls_as_first": 0,
-        "mqls_as_last": 2,
-        "channel_mix": [
-          {
-            "channel": "Organic Search",
-            "sessions": 1
-          }
-        ],
-        "channel_mix_label": "Organic Search 1",
-        "hs_sources": {
-          "PAID_SEARCH": 1,
-          "PAID_SOCIAL": 1
-        }
-      },
-      {
-        "path": "/or-perpetual-wealth-introduction-course-page/",
-        "title": "Or Perpetual Wealth Introduction Course Page",
-        "url": "https://learn.paradigmlife.net/or-perpetual-wealth-introduction-course-page/",
-        "host": "learn.paradigmlife.net",
-        "subdomain_label": "learn",
-        "organic_sessions": 1,
-        "organic_users": 1,
-        "mqls_first_or_last": 1,
-        "mqls_as_first": 0,
-        "mqls_as_last": 1,
-        "channel_mix": [
-          {
-            "channel": "Organic Search",
-            "sessions": 1
-          }
-        ],
-        "channel_mix_label": "Organic Search 1",
-        "hs_sources": {
-          "PAID_SEARCH": 1
-        }
-      },
-      {
-        "path": "/perpetual-wealth-strategy-financial-foundation/",
-        "title": "Perpetual Wealth Strategy Financial Foundation",
-        "url": "https://learn.paradigmlife.net/perpetual-wealth-strategy-financial-foundation/",
-        "host": "learn.paradigmlife.net",
-        "subdomain_label": "learn",
-        "organic_sessions": 0,
-        "organic_users": 0,
-        "mqls_first_or_last": 6,
-        "mqls_as_first": 0,
-        "mqls_as_last": 6,
-        "channel_mix": [],
-        "channel_mix_label": "—",
-        "hs_sources": {
-          "PAID_SOCIAL": 4,
-          "PAID_SEARCH": 2
-        }
-      },
-      {
-        "path": "/path-player/",
-        "title": "Path Player",
-        "url": "https://academy.paradigmlife.net/path-player/",
-        "host": "academy.paradigmlife.net",
-        "subdomain_label": "academy",
-        "organic_sessions": 0,
-        "organic_users": 0,
-        "mqls_first_or_last": 4,
-        "mqls_as_first": 2,
-        "mqls_as_last": 2,
-        "channel_mix": [],
-        "channel_mix_label": "—",
-        "hs_sources": {
-          "OFFLINE": 4
-        }
-      },
-      {
         "path": "/faq-category/additional-policy-options/",
         "title": "Additional Policy Options",
         "url": "https://paradigmlife.net/faq-category/additional-policy-options/",
@@ -3484,125 +3211,6 @@
         "channel_mix_label": "—",
         "hs_sources": {
           "PAID_SOCIAL": 3
-        }
-      },
-      {
-        "path": "/course/business-owners-guide-to-wealth/",
-        "title": "Business Owners Guide To Wealth",
-        "url": "https://academy.paradigmlife.net/course/business-owners-guide-to-wealth/",
-        "host": "academy.paradigmlife.net",
-        "subdomain_label": "academy",
-        "organic_sessions": 0,
-        "organic_users": 0,
-        "mqls_first_or_last": 1,
-        "mqls_as_first": 1,
-        "mqls_as_last": 0,
-        "channel_mix": [],
-        "channel_mix_label": "—",
-        "hs_sources": {
-          "OFFLINE": 1
-        }
-      },
-      {
-        "path": "/course/mastering-wealth/",
-        "title": "Mastering Wealth",
-        "url": "https://academy.paradigmlife.net/course/mastering-wealth/",
-        "host": "academy.paradigmlife.net",
-        "subdomain_label": "academy",
-        "organic_sessions": 0,
-        "organic_users": 0,
-        "mqls_first_or_last": 1,
-        "mqls_as_first": 0,
-        "mqls_as_last": 1,
-        "channel_mix": [],
-        "channel_mix_label": "—",
-        "hs_sources": {
-          "OFFLINE": 1
-        }
-      },
-      {
-        "path": "/course/the-perpetual-wealth-strategy-masterclass/",
-        "title": "The Perpetual Wealth Strategy Masterclass",
-        "url": "https://academy.paradigmlife.net/course/the-perpetual-wealth-strategy-masterclass/",
-        "host": "academy.paradigmlife.net",
-        "subdomain_label": "academy",
-        "organic_sessions": 0,
-        "organic_users": 0,
-        "mqls_first_or_last": 1,
-        "mqls_as_first": 0,
-        "mqls_as_last": 1,
-        "channel_mix": [],
-        "channel_mix_label": "—",
-        "hs_sources": {
-          "OFFLINE": 1
-        }
-      },
-      {
-        "path": "/june-newsletter-2025/",
-        "title": "June Newsletter 2025",
-        "url": "https://learn.paradigmlife.net/june-newsletter-2025/",
-        "host": "learn.paradigmlife.net",
-        "subdomain_label": "learn",
-        "organic_sessions": 0,
-        "organic_users": 0,
-        "mqls_first_or_last": 1,
-        "mqls_as_first": 0,
-        "mqls_as_last": 1,
-        "channel_mix": [],
-        "channel_mix_label": "—",
-        "hs_sources": {
-          "OFFLINE": 1
-        }
-      },
-      {
-        "path": "/live-stream-registration-06-13-24-0/",
-        "title": "Live Stream Registration 06 13 24 0",
-        "url": "https://learn.paradigmlife.net/live-stream-registration-06-13-24-0/",
-        "host": "learn.paradigmlife.net",
-        "subdomain_label": "learn",
-        "organic_sessions": 0,
-        "organic_users": 0,
-        "mqls_first_or_last": 1,
-        "mqls_as_first": 1,
-        "mqls_as_last": 0,
-        "channel_mix": [],
-        "channel_mix_label": "—",
-        "hs_sources": {
-          "OFFLINE": 1
-        }
-      },
-      {
-        "path": "/or-lib-consultation-request/",
-        "title": "Or Lib Consultation Request",
-        "url": "https://learn.paradigmlife.net/or-lib-consultation-request/",
-        "host": "learn.paradigmlife.net",
-        "subdomain_label": "learn",
-        "organic_sessions": 0,
-        "organic_users": 0,
-        "mqls_first_or_last": 1,
-        "mqls_as_first": 0,
-        "mqls_as_last": 1,
-        "channel_mix": [],
-        "channel_mix_label": "—",
-        "hs_sources": {
-          "PAID_SEARCH": 1
-        }
-      },
-      {
-        "path": "/perpetual-wealth-strategy-the-step/",
-        "title": "Perpetual Wealth Strategy The Step",
-        "url": "https://learn.paradigmlife.net/perpetual-wealth-strategy-the-step/",
-        "host": "learn.paradigmlife.net",
-        "subdomain_label": "learn",
-        "organic_sessions": 0,
-        "organic_users": 0,
-        "mqls_first_or_last": 1,
-        "mqls_as_first": 0,
-        "mqls_as_last": 1,
-        "channel_mix": [],
-        "channel_mix_label": "—",
-        "hs_sources": {
-          "OTHER_CAMPAIGNS": 1
         }
       },
       {
@@ -3714,54 +3322,6 @@
     ],
     "top_by_mql_attribution": [
       {
-        "path": "/whole-life-insurance/",
-        "title": "Whole Life Insurance",
-        "url": "https://learn.paradigmlife.net/whole-life-insurance/",
-        "sessions": 41,
-        "mqls": 47,
-        "host": "learn.paradigmlife.net"
-      },
-      {
-        "path": "/be-your-own-bank/",
-        "title": "Be Your Own Bank",
-        "url": "https://learn.paradigmlife.net/be-your-own-bank/",
-        "sessions": 7,
-        "mqls": 32,
-        "host": "learn.paradigmlife.net"
-      },
-      {
-        "path": "/limitless-2026-b/",
-        "title": "Limitless 2026 B",
-        "url": "https://learn.paradigmlife.net/limitless-2026-b/",
-        "sessions": 4,
-        "mqls": 21,
-        "host": "learn.paradigmlife.net"
-      },
-      {
-        "path": "/perpetual-wealth-strategy/",
-        "title": "Perpetual Wealth Strategy",
-        "url": "https://learn.paradigmlife.net/perpetual-wealth-strategy/",
-        "sessions": 70,
-        "mqls": 15,
-        "host": "learn.paradigmlife.net"
-      },
-      {
-        "path": "/limitless-2026-a/",
-        "title": "Limitless 2026 A",
-        "url": "https://learn.paradigmlife.net/limitless-2026-a/",
-        "sessions": 28,
-        "mqls": 6,
-        "host": "learn.paradigmlife.net"
-      },
-      {
-        "path": "/perpetual-wealth-strategy-financial-foundation/",
-        "title": "Perpetual Wealth Strategy Financial Foundation",
-        "url": "https://learn.paradigmlife.net/perpetual-wealth-strategy-financial-foundation/",
-        "sessions": 0,
-        "mqls": 6,
-        "host": "learn.paradigmlife.net"
-      },
-      {
         "path": "/premium-financing/",
         "title": "Premium Financing",
         "url": "https://paradigmlife.net/premium-financing/",
@@ -3776,14 +3336,6 @@
         "sessions": 33,
         "mqls": 4,
         "host": "paradigmlife.net"
-      },
-      {
-        "path": "/path-player/",
-        "title": "Path Player",
-        "url": "https://academy.paradigmlife.net/path-player/",
-        "sessions": 0,
-        "mqls": 4,
-        "host": "academy.paradigmlife.net"
       },
       {
         "path": "/faq-category/additional-policy-options/",
