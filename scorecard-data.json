@@ -1,55 +1,55 @@
 {
   "meta": {
     "title": "Trinity Marketing Scorecard",
-    "subtitle": "Done (CMO state) → Published on paradigmlife.net → brief impact on those URLs",
-    "updated": "2026-09-23",
+    "subtitle": "Done (CMO state) \u2192 Published on paradigmlife.net \u2192 brief impact on those URLs",
+    "updated": "2026-09-24",
     "status": "draft",
     "how_to_use": [
       "Monday: mark Synthesis items done / dead / leave open in CMO state.",
       "When a done item ships, paste the live paradigmlife.net URL.",
-      "Friday: for each Published URL, set Call to Keep, Change, or Kill — with one sentence why. Leave blank until someone actually decides.",
-      "Brief impact = sessions on that week’s Published URLs (ship week + since publish) + brief-linked MQLs only.",
-      "Sitewide sessions, ads, and sitewide MQLs are context under the week — never brief credit."
+      "Friday: for each Published URL, set Call to Keep, Change, or Kill \u2014 with one sentence why. Leave blank until someone actually decides.",
+      "Brief impact = sessions on that week\u2019s Published URLs (ship week + since publish) + brief-linked MQLs only.",
+      "Sitewide sessions, ads, and sitewide MQLs are context under the week \u2014 never brief credit."
     ],
-    "attribution": "Brief impact is sessions and MQLs on URLs this board Published. Sitewide traffic and MQLs are context only. A Call is Keep / Change / Kill after Friday review — blank means no decision yet.",
+    "attribution": "Brief impact is sessions and MQLs on URLs this board Published. Sitewide traffic and MQLs are context only. A Call is Keep / Change / Kill after Friday review \u2014 blank means no decision yet.",
     "sources": [
-      "CMO report a91c0260 (252 rows): no Accept/Defer/Kill vocab (using done/dead); 46 unique done / 0 dead / 0 defer / 79 unknown; all 10 THE ONE THING still open; done≠shipped",
-      "Ava/CMO synthesis-state.json _history (2026-07-20→09-21): 47→done, 1→dead; no L10 Accept event; decisions-deferred.json empty",
-      "Gauge GA4 property 256670786 pagePath+sitewide sessions for 21 ships × 9 week Mondays (Sep 21 partial)",
-      "Pulse HubSpot MQL weekly rollup 2026-07-27→09-20: 496 MQLs; path tops=learn.paradigmlife.net paid LPs; Synthesis ship URL matches=0",
-      "Synthesis Briefs (Drive, dtorsak): weekly force-rank Jul 20–Sep 21 2026 — THE ONE THING is usually paid/SDR; content/SEO items mid-list",
-      "Brief→ship map (60d): content recommendations recur; matching paradigmlife.net lastmods land within ~1–3 weeks for several SEO/title/cluster items",
-      "HubSpot MQLs sample ~300 contacts Jul 27–Sep 23 window: 0 first/last URL on scorecard ships; learn.paradigmlife.net paid LPs dominate; trinity_brief_* UTMs = 0",
+      "CMO report a91c0260 (252 rows): no Accept/Defer/Kill vocab (using done/dead); 46 unique done / 0 dead / 0 defer / 79 unknown; all 10 THE ONE THING still open; done\u2260shipped",
+      "Ava/CMO synthesis-state.json _history (2026-07-20\u219209-21): 47\u2192done, 1\u2192dead; no L10 Accept event; decisions-deferred.json empty",
+      "Gauge GA4 property 256670786 pagePath+sitewide sessions for 21 ships \u00d7 9 week Mondays (Sep 21 partial)",
+      "Pulse HubSpot MQL weekly rollup 2026-07-27\u219209-20: 496 MQLs; path tops=learn.paradigmlife.net paid LPs; Synthesis ship URL matches=0",
+      "Synthesis Briefs (Drive, dtorsak): weekly force-rank Jul 20\u2013Sep 21 2026 \u2014 THE ONE THING is usually paid/SDR; content/SEO items mid-list",
+      "Brief\u2192ship map (60d): content recommendations recur; matching paradigmlife.net lastmods land within ~1\u20133 weeks for several SEO/title/cluster items",
+      "HubSpot MQLs sample ~300 contacts Jul 27\u2013Sep 23 window: 0 first/last URL on scorecard ships; learn.paradigmlife.net paid LPs dominate; trinity_brief_* UTMs = 0",
       "paradigmlife.net post sitemap lastmod (verified 2026-09-23)",
       "Sep 7 Synthesis brief examples (marked example)",
-      "GA4 site sessions via CMO Weekly Marketing Summary (reports@ → Drive) for completed weeks",
+      "GA4 site sessions via CMO Weekly Marketing Summary (reports@ \u2192 Drive) for completed weeks",
       "Google Ads clicks/CTR via Metricool brand Paradigm Life (week-matched)",
-      "HubSpot MCP: contacts hs_v2_date_entered_marketingqualifiedlead (America/Denver Mon–Sun)",
-      "brief_assisted_mqls: utm_campaign prefix trinity_brief_ (none yet → 0)",
+      "HubSpot MCP: contacts hs_v2_date_entered_marketingqualifiedlead (America/Denver Mon\u2013Sun)",
+      "brief_assisted_mqls: utm_campaign prefix trinity_brief_ (none yet \u2192 0)",
       "GA4 pagePath sessions via Gauge mcp-ga4 property 256670786 (ruby-drive-access SA)",
-      "GA4 pagePath daily series (property 256670786) for Brief-shipped cohorts strip — 21 paths Jul 27–Sep 23"
+      "GA4 pagePath daily series (property 256670786) for Brief-shipped cohorts strip \u2014 21 paths Jul 27\u2013Sep 23"
     ],
     "funnel_as_of": "2026-09-23 ~4:30 PM MT",
     "blockers": [
-      "No Accept/Defer/Kill log — scorecard uses CMO done/dead (open/in_progress = not done)",
-      "All 10 THE ONE THING items Jul 20–Sep 21 still open (never marked done)",
-      "done ≠ shipped (CMO has no live-URL verification)",
+      "No Accept/Defer/Kill log \u2014 scorecard uses CMO done/dead (open/in_progress = not done)",
+      "All 10 THE ONE THING items Jul 20\u2013Sep 21 still open (never marked done)",
+      "done \u2260 shipped (CMO has no live-URL verification)",
       "HubSpot first/last URL never credits mid-funnel blog ships (Pulse: 0/496)"
     ],
     "brief_impact": {
       "verdict": "mixed",
       "as_of": "2026-09-23",
-      "headline": "Ops marks many mid-list content items done (46 unique). Every THE ONE THING for Jul 20–Sep 21 is still open — never marked done. No formal Defer log. Live-site ship is not verified inside CMO state.",
+      "headline": "Ops marks many mid-list content items done (46 unique). Every THE ONE THING for Jul 20\u2013Sep 21 is still open \u2014 never marked done. No formal Defer log. Live-site ship is not verified inside CMO state.",
       "layers": [
         {
           "layer": "1_priority_to_done",
           "call": "partial_proxy",
-          "note": "CMO has no Accept/Defer/Kill (unused) vocabulary. Substitute: data/synthesis-state.json open|in_progress|done|dead. Window Jul 20–Sep 21: 125 unique items → 46 done (done), 0 currently dead (Kill), 0 formal Defer (decisions-deferred.json always empty), 79 Unknown (66 open + 13 in_progress). Appearance-level across 252 brief listings: 79 done / 173 Unknown. Source report: a91c0260-31ea-408d-bd24-65c2d381854c (ignore b95b2fdd placeholder). No field records who started work — only who later marked done. Named closers: John Keever ~56 of 74; never Rachel."
+          "note": "CMO has no Accept/Defer/Kill (unused) vocabulary. Substitute: data/synthesis-state.json open|in_progress|done|dead. Window Jul 20\u2013Sep 21: 125 unique items \u2192 46 done (done), 0 currently dead (Kill), 0 formal Defer (decisions-deferred.json always empty), 79 Unknown (66 open + 13 in_progress). Appearance-level across 252 brief listings: 79 done / 173 Unknown. Source report: a91c0260-31ea-408d-bd24-65c2d381854c (ignore b95b2fdd placeholder). No field records who started work \u2014 only who later marked done. Named closers: John Keever ~56 of 74; never Rachel."
         },
         {
           "layer": "2_done_to_ship",
           "call": "unverified_in_cmo",
-          "note": "CMO state does not track paradigmlife.net URLs. Scorecard still maps done topics → sitemap lastmods externally (leaning yes for many content items). Explicit counterexample in CMO notes: IBC query re-route marked done twice without the page shipping. Generational-wealth refresh partial/unconfirmed. Treat done ≠ shipped."
+          "note": "CMO state does not track paradigmlife.net URLs. Scorecard still maps done topics \u2192 sitemap lastmods externally (leaning yes for many content items). Explicit counterexample in CMO notes: IBC query re-route marked done twice without the page shipping. Generational-wealth refresh partial/unconfirmed. Treat done \u2260 shipped."
         },
         {
           "layer": "3_ship_to_funnel",
@@ -58,14 +58,14 @@
         }
       ],
       "what_would_change_the_call": [
-        "Monday ritual: explicitly decide THE ONE THING + content items (and log done/dead — or add a real Accept field).",
-        "Wire done → live URL (slug) so ship is verified, not inferred.",
+        "Monday ritual: explicitly decide THE ONE THING + content items (and log done/dead \u2014 or add a real Accept field).",
+        "Wire done \u2192 live URL (slug) so ship is verified, not inferred.",
         "Use decisions-deferred.json when something is consciously parked.",
         "Mid-path or trinity_brief_* for MQL proof."
       ],
       "pulse_mqls_8wk": 496,
       "pulse_ship_url_matches": 0,
-      "gauge_ship_sessions_note": "21 paths × 9 weeks filled from Gauge; Sep 14 six-ship week pagePath sum now from full matrix",
+      "gauge_ship_sessions_note": "21 paths \u00d7 9 weeks filled from Gauge; Sep 14 six-ship week pagePath sum now from full matrix",
       "cmo_done": 47,
       "cmo_dead": 1,
       "cmo_strategic_defer": 0,
@@ -138,9 +138,9 @@
       },
       "caveats": [
         "Scorecard \"Done\" = CMO synthesis-state done (not an Accept vote).",
-        "done ≠ done-at-publish; no done moment is logged.",
-        "done ≠ shipped on paradigmlife.net.",
-        "Tax Strategy Q3 social was dead then reopened same day → now in_progress/Unknown, not Kill.",
+        "done \u2260 done-at-publish; no done moment is logged.",
+        "done \u2260 shipped on paradigmlife.net.",
+        "Tax Strategy Q3 social was dead then reopened same day \u2192 now in_progress/Unknown, not Kill.",
         "Rachel never appears as changed_by."
       ]
     },
@@ -149,9 +149,9 @@
   "weeks": [
     {
       "week_start": "2026-09-21",
-      "label": "Sep 21 – Sep 27, 2026 (partial)",
+      "label": "Sep 21 \u2013 Sep 27, 2026 (partial)",
       "one_thing": "Pause life Insurance | Search + WealthScore campaigns (Brief THE ONE THING)",
-      "owners": "Rachel · John",
+      "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
         "done": 0,
@@ -179,9 +179,9 @@
     },
     {
       "week_start": "2026-09-14",
-      "label": "Sep 14 – Sep 20, 2026",
+      "label": "Sep 14 \u2013 Sep 20, 2026",
       "one_thing": "Pause Infinite (Broad); hold Google Ads cap (Brief THE ONE THING)",
-      "owners": "Rachel · John",
+      "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
         "done": 3,
@@ -208,7 +208,7 @@
             "label": "Ship week",
             "week_start": "2026-09-14",
             "week_end": "2026-09-20",
-            "date_label": "Sep 14–20",
+            "date_label": "Sep 14\u201320",
             "sessions": 40,
             "incomplete": false
           },
@@ -217,21 +217,21 @@
             "label": "Week +1",
             "week_start": "2026-09-21",
             "week_end": "2026-09-23",
-            "date_label": "Sep 21–23",
+            "date_label": "Sep 21\u201323",
             "sessions": 2,
             "incomplete": true
           }
         ]
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 3 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Rewrite titles/meta on five high-impression zero-click pages; Done: Build a dedicated IBC explainer page; Done: Refresh generational wealth page with definition block. 6 ship(s); pagePath sessions sum=48 vs sitewide 2977 (Gauge). MQLs=68 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 3 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Rewrite titles/meta on five high-impression zero-click pages; Done: Build a dedicated IBC explainer page; Done: Refresh generational wealth page with definition block. 6 ship(s); pagePath sessions sum=48 vs sitewide 2977 (Gauge). MQLs=68 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
-          "title": "Infinite Banking Works. It’s Also Incomplete.",
+          "title": "Infinite Banking Works. It\u2019s Also Incomplete.",
           "slug": "infinite-banking-concept",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/infinite-banking-concept/",
           "shipped_on": "2026-09-18",
           "projected_outcome": "",
@@ -251,10 +251,10 @@
         },
         {
           "kind": "site_ship",
-          "title": "What Is Generational Wealth? Definition, Examples, and Why It’s More Than Money",
+          "title": "What Is Generational Wealth? Definition, Examples, and Why It\u2019s More Than Money",
           "slug": "generational-wealth",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/generational-wealth/",
           "shipped_on": "2026-09-16",
           "projected_outcome": "",
@@ -277,7 +277,7 @@
           "title": "Which Is True About a Spouse Term Rider?",
           "slug": "spouse-term-riders",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/spouse-term-riders/",
           "shipped_on": "2026-09-16",
           "projected_outcome": "",
@@ -297,10 +297,10 @@
         },
         {
           "kind": "site_ship",
-          "title": "The Capital That Holds When Your Portfolio Can’t",
+          "title": "The Capital That Holds When Your Portfolio Can\u2019t",
           "slug": "non-correlated-assets",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/non-correlated-assets/",
           "shipped_on": "2026-09-16",
           "projected_outcome": "",
@@ -323,7 +323,7 @@
           "title": "How to Build Generational Wealth and Protect Your Financial Legacy",
           "slug": "how-to-build-generational-wealth-and-protect-your-financial-legacy",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/how-to-build-generational-wealth-and-protect-your-financial-legacy/",
           "shipped_on": "2026-09-16",
           "projected_outcome": "",
@@ -346,7 +346,7 @@
           "title": "Direct vs Non-Direct Recognition Loans: What They Mean for Your Policy",
           "slug": "direct-vs-non-direct-recognition-loans",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/direct-vs-non-direct-recognition-loans/",
           "shipped_on": "2026-09-16",
           "projected_outcome": "",
@@ -368,9 +368,9 @@
     },
     {
       "week_start": "2026-09-07",
-      "label": "Sep 7 – Sep 13, 2026",
+      "label": "Sep 7 \u2013 Sep 13, 2026",
       "one_thing": "Cap/pause Infinite & BYOB Search (Brief THE ONE THING)",
-      "owners": "Rachel · John",
+      "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
         "done": 8,
@@ -396,7 +396,7 @@
             "label": "Ship week",
             "week_start": "2026-09-07",
             "week_end": "2026-09-13",
-            "date_label": "Sep 7–13",
+            "date_label": "Sep 7\u201313",
             "sessions": 100,
             "incomplete": false
           },
@@ -405,7 +405,7 @@
             "label": "Week +1",
             "week_start": "2026-09-14",
             "week_end": "2026-09-20",
-            "date_label": "Sep 14–20",
+            "date_label": "Sep 14\u201320",
             "sessions": 107,
             "incomplete": false
           },
@@ -414,21 +414,21 @@
             "label": "Week +2",
             "week_start": "2026-09-21",
             "week_end": "2026-09-23",
-            "date_label": "Sep 21–23",
+            "date_label": "Sep 21\u201323",
             "sessions": 28,
             "incomplete": true
           }
         ]
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 8 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Content Depth Expansion on Family Banking Guide; Done: Consolidate Cash-Flow Asset Pages (again); Done: Title Refresh on five worst low-CTR pages; Done: Generational Wealth Content Cluster Optimization. 10 ship(s); pagePath sessions sum=120 vs sitewide 2286 (Gauge). MQLs=63 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 8 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Content Depth Expansion on Family Banking Guide; Done: Consolidate Cash-Flow Asset Pages (again); Done: Title Refresh on five worst low-CTR pages; Done: Generational Wealth Content Cluster Optimization. 10 ship(s); pagePath sessions sum=120 vs sitewide 2286 (Gauge). MQLs=63 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
           "title": "You Became Your Own Banker. Why Are You Still Dependent on Your Income?",
           "slug": "ibc-vs-perpetual-wealth-strategy",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/ibc-vs-perpetual-wealth-strategy/",
           "shipped_on": "2026-09-10",
           "projected_outcome": "",
@@ -450,7 +450,7 @@
           "title": "The Guide Gives You the System. Now Find Out Whether Your Current Foundation is Ready to Run it.",
           "slug": "family-banking-guide",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/family-banking-guide/",
           "shipped_on": "2026-09-10",
           "projected_outcome": "",
@@ -472,7 +472,7 @@
           "title": "What Are Paid Up Additions (PUA) In Life Insurance?",
           "slug": "paid-additions-pua-life-insurance",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/paid-additions-pua-life-insurance/",
           "shipped_on": "2026-09-09",
           "projected_outcome": "",
@@ -491,10 +491,10 @@
         },
         {
           "kind": "site_ship",
-          "title": "Your Labor Is a Depleting Asset. These Aren’t.",
+          "title": "Your Labor Is a Depleting Asset. These Aren\u2019t.",
           "slug": "best-assets-that-produce-cash-flow",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/best-assets-that-produce-cash-flow/",
           "shipped_on": "2026-09-09",
           "projected_outcome": "",
@@ -516,7 +516,7 @@
           "title": "BOLI: The Balance Sheet Strategy Banks Use on Themselves",
           "slug": "bank-owned-life-insurance-boli-explained",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/bank-owned-life-insurance-boli-explained/",
           "shipped_on": "2026-09-09",
           "projected_outcome": "",
@@ -538,7 +538,7 @@
           "title": "An Introduction to Using Life Insurance as a Bank",
           "slug": "an-introduction-to-using-life-insurance-as-a-bank",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/an-introduction-to-using-life-insurance-as-a-bank/",
           "shipped_on": "2026-09-09",
           "projected_outcome": "",
@@ -560,7 +560,7 @@
           "title": "Guaranteed Cash Value Whole Life Insurance",
           "slug": "guaranteed-cash-value-whole-life-insurance",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/guaranteed-cash-value-whole-life-insurance/",
           "shipped_on": "2026-09-09",
           "projected_outcome": "",
@@ -582,7 +582,7 @@
           "title": "Infinite Banking Works Its Also Incomplete",
           "slug": "infinite-banking-works-its-also-incomplete",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/infinite-banking-works-its-also-incomplete/",
           "shipped_on": "2026-09-08",
           "projected_outcome": "",
@@ -604,7 +604,7 @@
           "title": "Rate Of Return During Retirement",
           "slug": "rate-of-return-during-retirement",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/rate-of-return-during-retirement/",
           "shipped_on": "2026-09-08",
           "projected_outcome": "",
@@ -626,7 +626,7 @@
           "title": "How To Calculate Short Term Disability Benefits Premiums And Rates",
           "slug": "how-to-calculate-short-term-disability-benefits-premiums-and-rates",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/how-to-calculate-short-term-disability-benefits-premiums-and-rates/",
           "shipped_on": "2026-09-08",
           "projected_outcome": "",
@@ -647,9 +647,9 @@
     },
     {
       "week_start": "2026-08-31",
-      "label": "Aug 31 – Sep 6, 2026",
-      "one_thing": "MQL→SQL conversion gap (Brief THE ONE THING)",
-      "owners": "Rachel · John",
+      "label": "Aug 31 \u2013 Sep 6, 2026",
+      "one_thing": "MQL\u2192SQL conversion gap (Brief THE ONE THING)",
+      "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
         "done": 4,
@@ -675,7 +675,7 @@
             "label": "Ship week",
             "week_start": "2026-08-31",
             "week_end": "2026-09-06",
-            "date_label": "Aug 31–Sep 6",
+            "date_label": "Aug 31\u2013Sep 6",
             "sessions": 7,
             "incomplete": false
           },
@@ -684,7 +684,7 @@
             "label": "Week +1",
             "week_start": "2026-09-07",
             "week_end": "2026-09-13",
-            "date_label": "Sep 7–13",
+            "date_label": "Sep 7\u201313",
             "sessions": 11,
             "incomplete": false
           },
@@ -693,7 +693,7 @@
             "label": "Week +2",
             "week_start": "2026-09-14",
             "week_end": "2026-09-20",
-            "date_label": "Sep 14–20",
+            "date_label": "Sep 14\u201320",
             "sessions": 2,
             "incomplete": false
           },
@@ -702,21 +702,21 @@
             "label": "Week +3",
             "week_start": "2026-09-21",
             "week_end": "2026-09-23",
-            "date_label": "Sep 21–23",
+            "date_label": "Sep 21\u201323",
             "sessions": 0,
             "incomplete": true
           }
         ]
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 4 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Address Certainty Seeker Content Gap; Done: Counter-Position Against IBC Practitioners; Done: Google Ads Account Structure Cleanup; Done: Family Guardian Content Development. 1 ship(s); pagePath sessions sum=7 vs sitewide 2274 (Gauge). MQLs=60 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 4 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Address Certainty Seeker Content Gap; Done: Counter-Position Against IBC Practitioners; Done: Google Ads Account Structure Cleanup; Done: Family Guardian Content Development. 1 ship(s); pagePath sessions sum=7 vs sitewide 2274 (Gauge). MQLs=60 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
           "title": "The Market Fluctuates And You Could Lose Everything Heres The Retirement Design Built Around A Guarantee Not A Guess",
           "slug": "the-market-fluctuates-and-you-could-lose-everything-heres-the-retirement-design-built-around-a-guarantee-not-a-guess",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/the-market-fluctuates-and-you-could-lose-everything-heres-the-retirement-design-built-around-a-guarantee-not-a-guess/",
           "shipped_on": "2026-09-04",
           "projected_outcome": "",
@@ -737,9 +737,9 @@
     },
     {
       "week_start": "2026-08-24",
-      "label": "Aug 24 – Aug 30, 2026",
-      "one_thing": "SDR technique gap — shadow Hallie (Brief THE ONE THING)",
-      "owners": "Rachel · John",
+      "label": "Aug 24 \u2013 Aug 30, 2026",
+      "one_thing": "SDR technique gap \u2014 shadow Hallie (Brief THE ONE THING)",
+      "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
         "done": 4,
@@ -765,7 +765,7 @@
             "label": "Ship week",
             "week_start": "2026-08-24",
             "week_end": "2026-08-30",
-            "date_label": "Aug 24–30",
+            "date_label": "Aug 24\u201330",
             "sessions": 7,
             "incomplete": false
           },
@@ -774,7 +774,7 @@
             "label": "Week +1",
             "week_start": "2026-08-31",
             "week_end": "2026-09-06",
-            "date_label": "Aug 31–Sep 6",
+            "date_label": "Aug 31\u2013Sep 6",
             "sessions": 2,
             "incomplete": false
           },
@@ -783,7 +783,7 @@
             "label": "Week +2",
             "week_start": "2026-09-07",
             "week_end": "2026-09-13",
-            "date_label": "Sep 7–13",
+            "date_label": "Sep 7\u201313",
             "sessions": 12,
             "incomplete": false
           },
@@ -792,7 +792,7 @@
             "label": "Week +3",
             "week_start": "2026-09-14",
             "week_end": "2026-09-20",
-            "date_label": "Sep 14–20",
+            "date_label": "Sep 14\u201320",
             "sessions": 7,
             "incomplete": false
           },
@@ -801,21 +801,21 @@
             "label": "Week +4",
             "week_start": "2026-09-21",
             "week_end": "2026-09-23",
-            "date_label": "Sep 21–23",
+            "date_label": "Sep 21\u201323",
             "sessions": 1,
             "incomplete": true
           }
         ]
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 4 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Email deliverability audit; Done: How to be your own bank quick win; Done: Student Loan Overpayment Page Title/Meta Refresh; Done: Counter-Position Fisher Investments Tax-Strategy Blitz. 1 ship(s); pagePath sessions sum=8 vs sitewide 2513 (Gauge). MQLs=67 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 4 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Email deliverability audit; Done: How to be your own bank quick win; Done: Student Loan Overpayment Page Title/Meta Refresh; Done: Counter-Position Fisher Investments Tax-Strategy Blitz. 1 ship(s); pagePath sessions sum=8 vs sitewide 2513 (Gauge). MQLs=67 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
           "title": "Student Loan Overpayment",
           "slug": "student-loan-overpayment",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/student-loan-overpayment/",
           "shipped_on": "2026-08-25",
           "projected_outcome": "",
@@ -836,9 +836,9 @@
     },
     {
       "week_start": "2026-08-17",
-      "label": "Aug 17 – Aug 23, 2026",
-      "one_thing": "SDR→SQL handoff audit (Brief THE ONE THING)",
-      "owners": "Rachel · John",
+      "label": "Aug 17 \u2013 Aug 23, 2026",
+      "one_thing": "SDR\u2192SQL handoff audit (Brief THE ONE THING)",
+      "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
         "done": 7,
@@ -866,9 +866,9 @@
     },
     {
       "week_start": "2026-08-10",
-      "label": "Aug 10 – Aug 16, 2026",
+      "label": "Aug 10 \u2013 Aug 16, 2026",
       "one_thing": "SDR PWS calibration (Brief THE ONE THING)",
-      "owners": "Rachel · John",
+      "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
         "done": 5,
@@ -896,9 +896,9 @@
     },
     {
       "week_start": "2026-08-03",
-      "label": "Aug 3 – Aug 9, 2026",
+      "label": "Aug 3 \u2013 Aug 9, 2026",
       "one_thing": "SDR qualification workshop (Brief THE ONE THING)",
-      "owners": "Rachel · John",
+      "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
         "done": 2,
@@ -926,9 +926,9 @@
     },
     {
       "week_start": "2026-07-27",
-      "label": "Jul 27 – Aug 2, 2026",
+      "label": "Jul 27 \u2013 Aug 2, 2026",
       "one_thing": "Authorize 40-50% Google Ads budget increase (reissued)",
-      "owners": "Rachel · John",
+      "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
         "done": 14,
@@ -954,7 +954,7 @@
             "label": "Ship week",
             "week_start": "2026-07-27",
             "week_end": "2026-08-02",
-            "date_label": "Jul 27–Aug 2",
+            "date_label": "Jul 27\u2013Aug 2",
             "sessions": 43,
             "incomplete": false
           },
@@ -963,7 +963,7 @@
             "label": "Week +1",
             "week_start": "2026-08-03",
             "week_end": "2026-08-09",
-            "date_label": "Aug 3–9",
+            "date_label": "Aug 3\u20139",
             "sessions": 43,
             "incomplete": false
           },
@@ -972,7 +972,7 @@
             "label": "Week +2",
             "week_start": "2026-08-10",
             "week_end": "2026-08-16",
-            "date_label": "Aug 10–16",
+            "date_label": "Aug 10\u201316",
             "sessions": 36,
             "incomplete": false
           },
@@ -981,7 +981,7 @@
             "label": "Week +3",
             "week_start": "2026-08-17",
             "week_end": "2026-08-23",
-            "date_label": "Aug 17–23",
+            "date_label": "Aug 17\u201323",
             "sessions": 37,
             "incomplete": false
           },
@@ -990,7 +990,7 @@
             "label": "Week +4",
             "week_start": "2026-08-24",
             "week_end": "2026-08-30",
-            "date_label": "Aug 24–30",
+            "date_label": "Aug 24\u201330",
             "sessions": 39,
             "incomplete": false
           },
@@ -999,7 +999,7 @@
             "label": "Week +5",
             "week_start": "2026-08-31",
             "week_end": "2026-09-06",
-            "date_label": "Aug 31–Sep 6",
+            "date_label": "Aug 31\u2013Sep 6",
             "sessions": 32,
             "incomplete": false
           },
@@ -1008,7 +1008,7 @@
             "label": "Week +6",
             "week_start": "2026-09-07",
             "week_end": "2026-09-13",
-            "date_label": "Sep 7–13",
+            "date_label": "Sep 7\u201313",
             "sessions": 37,
             "incomplete": false
           },
@@ -1017,7 +1017,7 @@
             "label": "Week +7",
             "week_start": "2026-09-14",
             "week_end": "2026-09-20",
-            "date_label": "Sep 14–20",
+            "date_label": "Sep 14\u201320",
             "sessions": 44,
             "incomplete": false
           },
@@ -1026,21 +1026,21 @@
             "label": "Week +8",
             "week_start": "2026-09-21",
             "week_end": "2026-09-23",
-            "date_label": "Sep 21–23",
+            "date_label": "Sep 21\u201323",
             "sessions": 2,
             "incomplete": true
           }
         ]
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 14 marked done, 1 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Cash flow assets SEO cluster consolidation; Done: Title A/B on /great-american-banking-families/; Done: Title A/B on /rate-of-return-during-retirement/; Done: Title A/B on /student-loan-overpayment/. Folded CMO week 2026-07-20 into this board week (9 done, 1 dead). 3 ship(s); pagePath sessions sum=46 vs sitewide 3733 (Gauge). MQLs=48 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 14 marked done, 1 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Cash flow assets SEO cluster consolidation; Done: Title A/B on /great-american-banking-families/; Done: Title A/B on /rate-of-return-during-retirement/; Done: Title A/B on /student-loan-overpayment/. Folded CMO week 2026-07-20 into this board week (9 done, 1 dead). 3 ship(s); pagePath sessions sum=46 vs sitewide 3733 (Gauge). MQLs=48 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
           "title": "Your Estate Plan Coordinates What Youve Built But Whats It Built On",
           "slug": "your-estate-plan-coordinates-what-youve-built-but-whats-it-built-on",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/your-estate-plan-coordinates-what-youve-built-but-whats-it-built-on/",
           "shipped_on": "2026-07-31",
           "projected_outcome": "",
@@ -1062,7 +1062,7 @@
           "title": "Family Banking Capital Architecture",
           "slug": "family-banking-capital-architecture",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/family-banking-capital-architecture/",
           "shipped_on": "2026-07-29",
           "projected_outcome": "",
@@ -1084,7 +1084,7 @@
           "title": "Great American Banking Families",
           "slug": "great-american-banking-families",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/great-american-banking-families/",
           "shipped_on": "2026-07-29",
           "projected_outcome": "",
@@ -1112,7 +1112,7 @@
     "cohorts": [
       {
         "week_start": "2026-09-14",
-        "label": "Sep 14 – Sep 20, 2026",
+        "label": "Sep 14 \u2013 Sep 20, 2026",
         "published_count": 6,
         "sessions_ship_week": 40,
         "sessions_30d": 42,
@@ -1123,7 +1123,7 @@
         "notes": "30d incomplete; 90d incomplete",
         "ships": [
           {
-            "title": "Infinite Banking Works. It’s Also Incomplete.",
+            "title": "Infinite Banking Works. It\u2019s Also Incomplete.",
             "path": "/infinite-banking-concept/",
             "url": "https://paradigmlife.net/infinite-banking-concept/",
             "shipped_on": "2026-09-18",
@@ -1135,7 +1135,7 @@
             "window_90d_complete": false
           },
           {
-            "title": "What Is Generational Wealth? Definition, Examples, and Why It’s More Than Money",
+            "title": "What Is Generational Wealth? Definition, Examples, and Why It\u2019s More Than Money",
             "path": "/generational-wealth/",
             "url": "https://paradigmlife.net/generational-wealth/",
             "shipped_on": "2026-09-16",
@@ -1159,7 +1159,7 @@
             "window_90d_complete": false
           },
           {
-            "title": "The Capital That Holds When Your Portfolio Can’t",
+            "title": "The Capital That Holds When Your Portfolio Can\u2019t",
             "path": "/non-correlated-assets/",
             "url": "https://paradigmlife.net/non-correlated-assets/",
             "shipped_on": "2026-09-16",
@@ -1198,7 +1198,7 @@
       },
       {
         "week_start": "2026-09-07",
-        "label": "Sep 7 – Sep 13, 2026",
+        "label": "Sep 7 \u2013 Sep 13, 2026",
         "published_count": 10,
         "sessions_ship_week": 100,
         "sessions_30d": 235,
@@ -1245,7 +1245,7 @@
             "window_90d_complete": false
           },
           {
-            "title": "Your Labor Is a Depleting Asset. These Aren’t.",
+            "title": "Your Labor Is a Depleting Asset. These Aren\u2019t.",
             "path": "/best-assets-that-produce-cash-flow/",
             "url": "https://paradigmlife.net/best-assets-that-produce-cash-flow/",
             "shipped_on": "2026-09-09",
@@ -1332,7 +1332,7 @@
       },
       {
         "week_start": "2026-08-31",
-        "label": "Aug 31 – Sep 6, 2026",
+        "label": "Aug 31 \u2013 Sep 6, 2026",
         "published_count": 1,
         "sessions_ship_week": 7,
         "sessions_30d": 20,
@@ -1358,7 +1358,7 @@
       },
       {
         "week_start": "2026-08-24",
-        "label": "Aug 24 – Aug 30, 2026",
+        "label": "Aug 24 \u2013 Aug 30, 2026",
         "published_count": 1,
         "sessions_ship_week": 7,
         "sessions_30d": 29,
@@ -1384,7 +1384,7 @@
       },
       {
         "week_start": "2026-07-27",
-        "label": "Jul 27 – Aug 2, 2026",
+        "label": "Jul 27 \u2013 Aug 2, 2026",
         "published_count": 3,
         "sessions_ship_week": 43,
         "sessions_30d": 180,
@@ -1433,5 +1433,2253 @@
         ]
       }
     ]
+  },
+  "organic_mql": {
+    "window": {
+      "start": "2026-07-26",
+      "end": "2026-09-23",
+      "timezone": "America/Denver",
+      "label": "Jul 26 \u2013 Sep 23, 2026 (60 days, America/Denver)",
+      "days": 60
+    },
+    "definitions": {
+      "ga4_channels_included": [
+        "Organic Search",
+        "Organic Social",
+        "Referral",
+        "Direct",
+        "AI Assistant",
+        "Organic Video"
+      ],
+      "ga4_channels_excluded": [
+        "Paid Search",
+        "Paid Social",
+        "Paid Video",
+        "Paid Other",
+        "Cross-network",
+        "Email",
+        "Unassigned"
+      ],
+      "ga4_dimension": "landingPagePlusQueryString (path normalized; query stripped)",
+      "ga4_property_id": "256670786",
+      "hubspot_mql_property": "hs_v2_date_entered_marketingqualifiedlead",
+      "hubspot_organic_sources": [
+        "DIRECT_TRAFFIC",
+        "ORGANIC_SEARCH",
+        "ORGANIC_SOCIAL",
+        "OTHER_CAMPAIGNS",
+        "REFERRALS",
+        "SOCIAL_MEDIA"
+      ],
+      "hubspot_paid_sources_excluded": [
+        "PAID_OTHER",
+        "PAID_SEARCH",
+        "PAID_SOCIAL",
+        "PAID_VIDEO"
+      ],
+      "hubspot_other_sources_not_in_organic": [
+        "OFFLINE"
+      ],
+      "content_scope": "paradigmlife.net paths classified as content (blog/guides/evergreen); learn/academy included when first/last URL and non-noise; thank-you/portal/paid-LP noise excluded from table",
+      "caveats": [
+        "HubSpot MCP exposes first + last URL only \u2014 mid-funnel content views are invisible.",
+        "GA4 sessions \u2260 HubSpot contacts; do not equate page sessions with MQL counts.",
+        "Paid MQLs (PAID_SOCIAL / PAID_SEARCH / PAID_OTHER / PAID_VIDEO) are excluded from Organic MQLs and from content-attributed counts.",
+        "Direct landing-page long-tail is truncated at top 250 GA4 rows (~54% of Direct sessions in the page table); channel totals remain complete.",
+        "Organic Search landing coverage ~99% of channel sessions in the page table.",
+        "Most MQLs in this window are paid social \u2192 learn.paradigmlife.net form LPs \u2014 organic content\u2192MQL may be sparse."
+      ]
+    },
+    "summary": {
+      "organic_sessions": 16209,
+      "organic_users": 14397,
+      "organic_mqls": 33,
+      "content_attributed_mqls": 40,
+      "organic_content_attributed_mqls": 18,
+      "paid_mqls_excluded": 466,
+      "other_mqls_not_organic": 33,
+      "total_mqls_in_window": 532,
+      "mql_by_source": {
+        "PAID_SOCIAL": 364,
+        "PAID_SEARCH": 102,
+        "OFFLINE": 33,
+        "DIRECT_TRAFFIC": 23,
+        "ORGANIC_SEARCH": 6,
+        "SOCIAL_MEDIA": 3,
+        "OTHER_CAMPAIGNS": 1
+      },
+      "ga4_channel_totals": {
+        "Direct": {
+          "sessions": 12117,
+          "users": 11441
+        },
+        "Organic Search": {
+          "sessions": 3747,
+          "users": 2706
+        },
+        "Paid Social": {
+          "sessions": 3291,
+          "users": 3019
+        },
+        "Paid Search": {
+          "sessions": 2383,
+          "users": 2069
+        },
+        "Unassigned": {
+          "sessions": 603,
+          "users": 144
+        },
+        "Email": {
+          "sessions": 351,
+          "users": 203
+        },
+        "Referral": {
+          "sessions": 162,
+          "users": 82
+        },
+        "Organic Social": {
+          "sessions": 160,
+          "users": 154
+        },
+        "Cross-network": {
+          "sessions": 29,
+          "users": 29
+        },
+        "AI Assistant": {
+          "sessions": 19,
+          "users": 11
+        },
+        "Organic Video": {
+          "sessions": 4,
+          "users": 3
+        },
+        "Paid Video": {
+          "sessions": 1,
+          "users": 1
+        }
+      },
+      "home_landing_sessions_organic": 2758,
+      "noise_or_paid_lp_landing_sessions": 208
+    },
+    "coverage": [
+      {
+        "channel": "Organic Search",
+        "landing_rows": 250,
+        "landing_sessions_captured": 3393,
+        "channel_total": 3747,
+        "coverage_pct": 90.6
+      },
+      {
+        "channel": "Direct",
+        "landing_rows": 250,
+        "landing_sessions_captured": 6163,
+        "channel_total": 12117,
+        "coverage_pct": 50.9
+      },
+      {
+        "channel": "Organic Social",
+        "landing_rows": 132,
+        "landing_sessions_captured": 158,
+        "channel_total": 160,
+        "coverage_pct": 98.8
+      },
+      {
+        "channel": "Referral",
+        "landing_rows": 49,
+        "landing_sessions_captured": 143,
+        "channel_total": 162,
+        "coverage_pct": 88.3
+      },
+      {
+        "channel": "AI Assistant",
+        "landing_rows": 9,
+        "landing_sessions_captured": 14,
+        "channel_total": 19,
+        "coverage_pct": 73.7
+      },
+      {
+        "channel": "Organic Video",
+        "landing_rows": 3,
+        "landing_sessions_captured": 3,
+        "channel_total": 4,
+        "coverage_pct": 75.0
+      }
+    ],
+    "pages": [
+      {
+        "path": "/limitless-2026-b/",
+        "title": "Limitless 2026 B",
+        "url": "https://learn.paradigmlife.net/limitless-2026-b/",
+        "host": "learn.paradigmlife.net",
+        "subdomain_label": "learn",
+        "organic_sessions": 1,
+        "organic_users": 1,
+        "mqls_first_or_last": 20,
+        "mqls_as_first": 20,
+        "mqls_as_last": 19,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 1
+          }
+        ],
+        "channel_mix_label": "Organic Search 1",
+        "hs_sources": {
+          "OFFLINE": 18,
+          "DIRECT_TRAFFIC": 2
+        }
+      },
+      {
+        "path": "/limitless-2026-a/",
+        "title": "Limitless 2026 A",
+        "url": "https://learn.paradigmlife.net/limitless-2026-a/",
+        "host": "learn.paradigmlife.net",
+        "subdomain_label": "learn",
+        "organic_sessions": 32,
+        "organic_users": 26,
+        "mqls_first_or_last": 6,
+        "mqls_as_first": 6,
+        "mqls_as_last": 6,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 31
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 1
+          }
+        ],
+        "channel_mix_label": "Direct 31, Organic Search 1",
+        "hs_sources": {
+          "DIRECT_TRAFFIC": 6
+        }
+      },
+      {
+        "path": "/perpetual-wealth-strategy/",
+        "title": "Perpetual Wealth Strategy",
+        "url": "https://learn.paradigmlife.net/perpetual-wealth-strategy/",
+        "host": "learn.paradigmlife.net",
+        "subdomain_label": "learn",
+        "organic_sessions": 90,
+        "organic_users": 67,
+        "mqls_first_or_last": 4,
+        "mqls_as_first": 1,
+        "mqls_as_last": 3,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 58
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 30
+          },
+          {
+            "channel": "Organic Social",
+            "sessions": 2
+          }
+        ],
+        "channel_mix_label": "Direct 58, Organic Search 30, Organic Social 2",
+        "hs_sources": {
+          "ORGANIC_SEARCH": 2,
+          "DIRECT_TRAFFIC": 2
+        }
+      },
+      {
+        "path": "/path-player/",
+        "title": "Path Player",
+        "url": "https://academy.paradigmlife.net/path-player/",
+        "host": "academy.paradigmlife.net",
+        "subdomain_label": "academy",
+        "organic_sessions": 0,
+        "organic_users": 0,
+        "mqls_first_or_last": 4,
+        "mqls_as_first": 2,
+        "mqls_as_last": 2,
+        "channel_mix": [],
+        "channel_mix_label": "",
+        "hs_sources": {
+          "OFFLINE": 4
+        }
+      },
+      {
+        "path": "/how-the-rich-use-life-insurance/",
+        "title": "How The Rich Use Life Insurance",
+        "url": "https://paradigmlife.net/how-the-rich-use-life-insurance/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 55,
+        "organic_users": 44,
+        "mqls_first_or_last": 1,
+        "mqls_as_first": 0,
+        "mqls_as_last": 1,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 45
+          },
+          {
+            "channel": "Direct",
+            "sessions": 10
+          }
+        ],
+        "channel_mix_label": "Organic Search 45, Direct 10",
+        "hs_sources": {
+          "DIRECT_TRAFFIC": 1
+        }
+      },
+      {
+        "path": "/whole-life-insurance/",
+        "title": "Whole Life Insurance",
+        "url": "https://learn.paradigmlife.net/whole-life-insurance/",
+        "host": "learn.paradigmlife.net",
+        "subdomain_label": "learn",
+        "organic_sessions": 51,
+        "organic_users": 43,
+        "mqls_first_or_last": 1,
+        "mqls_as_first": 0,
+        "mqls_as_last": 1,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 39
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 12
+          }
+        ],
+        "channel_mix_label": "Direct 39, Organic Search 12",
+        "hs_sources": {
+          "ORGANIC_SEARCH": 1
+        }
+      },
+      {
+        "path": "/annuities/",
+        "title": "Annuities",
+        "url": "https://paradigmlife.net/annuities/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 38,
+        "organic_users": 33,
+        "mqls_first_or_last": 1,
+        "mqls_as_first": 1,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 37
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 1
+          }
+        ],
+        "channel_mix_label": "Direct 37, Organic Search 1",
+        "hs_sources": {
+          "DIRECT_TRAFFIC": 1
+        }
+      },
+      {
+        "path": "/infinite-banking-system/",
+        "title": "Infinite Banking System",
+        "url": "https://paradigmlife.net/infinite-banking-system/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 16,
+        "organic_users": 16,
+        "mqls_first_or_last": 1,
+        "mqls_as_first": 1,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 9
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 7
+          }
+        ],
+        "channel_mix_label": "Direct 9, Organic Search 7",
+        "hs_sources": {
+          "OTHER_CAMPAIGNS": 1
+        }
+      },
+      {
+        "path": "/cash-value-and-whole-life-insurance/",
+        "title": "Cash Value And Whole Life Insurance",
+        "url": "https://paradigmlife.net/cash-value-and-whole-life-insurance/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 13,
+        "organic_users": 13,
+        "mqls_first_or_last": 1,
+        "mqls_as_first": 1,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 13
+          }
+        ],
+        "channel_mix_label": "Direct 13",
+        "hs_sources": {
+          "ORGANIC_SEARCH": 1
+        }
+      },
+      {
+        "path": "/course/business-owners-guide-to-wealth/",
+        "title": "Business Owners Guide To Wealth",
+        "url": "https://academy.paradigmlife.net/course/business-owners-guide-to-wealth/",
+        "host": "academy.paradigmlife.net",
+        "subdomain_label": "academy",
+        "organic_sessions": 0,
+        "organic_users": 0,
+        "mqls_first_or_last": 1,
+        "mqls_as_first": 1,
+        "mqls_as_last": 0,
+        "channel_mix": [],
+        "channel_mix_label": "",
+        "hs_sources": {
+          "OFFLINE": 1
+        }
+      },
+      {
+        "path": "/course/mastering-wealth/",
+        "title": "Mastering Wealth",
+        "url": "https://academy.paradigmlife.net/course/mastering-wealth/",
+        "host": "academy.paradigmlife.net",
+        "subdomain_label": "academy",
+        "organic_sessions": 0,
+        "organic_users": 0,
+        "mqls_first_or_last": 1,
+        "mqls_as_first": 0,
+        "mqls_as_last": 1,
+        "channel_mix": [],
+        "channel_mix_label": "",
+        "hs_sources": {
+          "OFFLINE": 1
+        }
+      },
+      {
+        "path": "/course/the-perpetual-wealth-strategy-masterclass/",
+        "title": "The Perpetual Wealth Strategy Masterclass",
+        "url": "https://academy.paradigmlife.net/course/the-perpetual-wealth-strategy-masterclass/",
+        "host": "academy.paradigmlife.net",
+        "subdomain_label": "academy",
+        "organic_sessions": 0,
+        "organic_users": 0,
+        "mqls_first_or_last": 1,
+        "mqls_as_first": 0,
+        "mqls_as_last": 1,
+        "channel_mix": [],
+        "channel_mix_label": "",
+        "hs_sources": {
+          "OFFLINE": 1
+        }
+      },
+      {
+        "path": "/june-newsletter-2025/",
+        "title": "June Newsletter 2025",
+        "url": "https://learn.paradigmlife.net/june-newsletter-2025/",
+        "host": "learn.paradigmlife.net",
+        "subdomain_label": "learn",
+        "organic_sessions": 0,
+        "organic_users": 0,
+        "mqls_first_or_last": 1,
+        "mqls_as_first": 0,
+        "mqls_as_last": 1,
+        "channel_mix": [],
+        "channel_mix_label": "",
+        "hs_sources": {
+          "OFFLINE": 1
+        }
+      },
+      {
+        "path": "/live-stream-registration-06-13-24-0/",
+        "title": "Live Stream Registration 06 13 24 0",
+        "url": "https://learn.paradigmlife.net/live-stream-registration-06-13-24-0/",
+        "host": "learn.paradigmlife.net",
+        "subdomain_label": "learn",
+        "organic_sessions": 0,
+        "organic_users": 0,
+        "mqls_first_or_last": 1,
+        "mqls_as_first": 1,
+        "mqls_as_last": 0,
+        "channel_mix": [],
+        "channel_mix_label": "",
+        "hs_sources": {
+          "OFFLINE": 1
+        }
+      },
+      {
+        "path": "/membership-access-page1593019682263/",
+        "title": "Membership Access Page1593019682263",
+        "url": "https://toolkit.paradigmlife.net/membership-access-page1593019682263/",
+        "host": "toolkit.paradigmlife.net",
+        "subdomain_label": "toolkit",
+        "organic_sessions": 0,
+        "organic_users": 0,
+        "mqls_first_or_last": 1,
+        "mqls_as_first": 1,
+        "mqls_as_last": 0,
+        "channel_mix": [],
+        "channel_mix_label": "",
+        "hs_sources": {
+          "DIRECT_TRAFFIC": 1
+        }
+      },
+      {
+        "path": "/perpetual-wealth-strategy-the-step/",
+        "title": "Perpetual Wealth Strategy The Step",
+        "url": "https://learn.paradigmlife.net/perpetual-wealth-strategy-the-step/",
+        "host": "learn.paradigmlife.net",
+        "subdomain_label": "learn",
+        "organic_sessions": 0,
+        "organic_users": 0,
+        "mqls_first_or_last": 1,
+        "mqls_as_first": 0,
+        "mqls_as_last": 1,
+        "channel_mix": [],
+        "channel_mix_label": "",
+        "hs_sources": {
+          "OTHER_CAMPAIGNS": 1
+        }
+      },
+      {
+        "path": "/wealth-score/",
+        "title": "Wealth Score",
+        "url": "https://paradigmlife.net/wealth-score/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 0,
+        "organic_users": 0,
+        "mqls_first_or_last": 1,
+        "mqls_as_first": 1,
+        "mqls_as_last": 0,
+        "channel_mix": [],
+        "channel_mix_label": "",
+        "hs_sources": {
+          "DIRECT_TRAFFIC": 1
+        }
+      },
+      {
+        "path": "/ready-to-get-depressed-how-many-different-taxes-do-i-pay/",
+        "title": "Ready To Get Depressed How Many Different Taxes Do I Pay",
+        "url": "https://paradigmlife.net/ready-to-get-depressed-how-many-different-taxes-do-i-pay/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 356,
+        "organic_users": 305,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 307
+          },
+          {
+            "channel": "Direct",
+            "sessions": 41
+          },
+          {
+            "channel": "Organic Social",
+            "sessions": 7
+          },
+          {
+            "channel": "Referral",
+            "sessions": 1
+          }
+        ],
+        "channel_mix_label": "Organic Search 307, Direct 41, Organic Social 7, Referral 1",
+        "hs_sources": {}
+      },
+      {
+        "path": "/how-to-calculate-short-term-disability-benefits-premiums-and-rates/",
+        "title": "How To Calculate Short Term Disability Benefits Premiums And Rates",
+        "url": "https://paradigmlife.net/how-to-calculate-short-term-disability-benefits-premiums-and-rates/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 271,
+        "organic_users": 239,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 226
+          },
+          {
+            "channel": "Direct",
+            "sessions": 44
+          },
+          {
+            "channel": "Referral",
+            "sessions": 1
+          }
+        ],
+        "channel_mix_label": "Organic Search 226, Direct 44, Referral 1",
+        "hs_sources": {}
+      },
+      {
+        "path": "/5-businesses-saved-cash-value-life-insurance/",
+        "title": "5 Businesses Saved Cash Value Life Insurance",
+        "url": "https://paradigmlife.net/5-businesses-saved-cash-value-life-insurance/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 259,
+        "organic_users": 103,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 131
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 122
+          },
+          {
+            "channel": "Referral",
+            "sessions": 5
+          },
+          {
+            "channel": "AI Assistant",
+            "sessions": 1
+          }
+        ],
+        "channel_mix_label": "Direct 131, Organic Search 122, Referral 5, AI Assistant 1",
+        "hs_sources": {}
+      },
+      {
+        "path": "/great-american-banking-families/",
+        "title": "Great American Banking Families",
+        "url": "https://paradigmlife.net/great-american-banking-families/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 232,
+        "organic_users": 212,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 185
+          },
+          {
+            "channel": "Direct",
+            "sessions": 46
+          },
+          {
+            "channel": "Organic Social",
+            "sessions": 1
+          }
+        ],
+        "channel_mix_label": "Organic Search 185, Direct 46, Organic Social 1",
+        "hs_sources": {}
+      },
+      {
+        "path": "/best-assets-that-produce-cash-flow/",
+        "title": "Best Assets That Produce Cash Flow",
+        "url": "https://paradigmlife.net/best-assets-that-produce-cash-flow/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 177,
+        "organic_users": 165,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 97
+          },
+          {
+            "channel": "Direct",
+            "sessions": 79
+          },
+          {
+            "channel": "Referral",
+            "sessions": 1
+          }
+        ],
+        "channel_mix_label": "Organic Search 97, Direct 79, Referral 1",
+        "hs_sources": {}
+      },
+      {
+        "path": "/decoding-boli-coli/",
+        "title": "Decoding Boli Coli",
+        "url": "https://paradigmlife.net/decoding-boli-coli/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 166,
+        "organic_users": 85,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 147
+          },
+          {
+            "channel": "Direct",
+            "sessions": 19
+          }
+        ],
+        "channel_mix_label": "Organic Search 147, Direct 19",
+        "hs_sources": {}
+      },
+      {
+        "path": "/preparing-narrow-hikes/",
+        "title": "Preparing Narrow Hikes",
+        "url": "https://paradigmlife.net/preparing-narrow-hikes/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 105,
+        "organic_users": 99,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 92
+          },
+          {
+            "channel": "Direct",
+            "sessions": 13
+          }
+        ],
+        "channel_mix_label": "Organic Search 92, Direct 13",
+        "hs_sources": {}
+      },
+      {
+        "path": "/bank-owned-life-insurance-boli-explained/",
+        "title": "Bank Owned Life Insurance Boli Explained",
+        "url": "https://paradigmlife.net/bank-owned-life-insurance-boli-explained/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 97,
+        "organic_users": 95,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 78
+          },
+          {
+            "channel": "Direct",
+            "sessions": 19
+          }
+        ],
+        "channel_mix_label": "Organic Search 78, Direct 19",
+        "hs_sources": {}
+      },
+      {
+        "path": "/paid-additions-pua-life-insurance/",
+        "title": "Paid Additions Pua Life Insurance",
+        "url": "https://paradigmlife.net/paid-additions-pua-life-insurance/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 81,
+        "organic_users": 81,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 75
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 6
+          }
+        ],
+        "channel_mix_label": "Direct 75, Organic Search 6",
+        "hs_sources": {}
+      },
+      {
+        "path": "/webinars/basics-of-ibc/",
+        "title": "Basics Of Ibc",
+        "url": "https://paradigmlife.net/webinars/basics-of-ibc/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 79,
+        "organic_users": 78,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 68
+          },
+          {
+            "channel": "Direct",
+            "sessions": 10
+          },
+          {
+            "channel": "AI Assistant",
+            "sessions": 1
+          }
+        ],
+        "channel_mix_label": "Organic Search 68, Direct 10, AI Assistant 1",
+        "hs_sources": {}
+      },
+      {
+        "path": "/how-much-can-i-borrow-from-my-whole-life-insurance/",
+        "title": "How Much Can I Borrow From My Whole Life Insurance",
+        "url": "https://paradigmlife.net/how-much-can-i-borrow-from-my-whole-life-insurance/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 76,
+        "organic_users": 75,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 57
+          },
+          {
+            "channel": "Direct",
+            "sessions": 19
+          }
+        ],
+        "channel_mix_label": "Organic Search 57, Direct 19",
+        "hs_sources": {}
+      },
+      {
+        "path": "/family-bank-strategy/",
+        "title": "Family Bank Strategy",
+        "url": "https://paradigmlife.net/family-bank-strategy/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 71,
+        "organic_users": 69,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 64
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 7
+          }
+        ],
+        "channel_mix_label": "Direct 64, Organic Search 7",
+        "hs_sources": {}
+      },
+      {
+        "path": "/an-introduction-to-using-life-insurance-as-a-bank/",
+        "title": "An Introduction To Using Life Insurance As A Bank",
+        "url": "https://paradigmlife.net/an-introduction-to-using-life-insurance-as-a-bank/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 67,
+        "organic_users": 66,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 58
+          },
+          {
+            "channel": "Direct",
+            "sessions": 9
+          }
+        ],
+        "channel_mix_label": "Organic Search 58, Direct 9",
+        "hs_sources": {}
+      },
+      {
+        "path": "/family-banking-guide/",
+        "title": "Family Banking Guide",
+        "url": "https://paradigmlife.net/family-banking-guide/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 61,
+        "organic_users": 49,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 32
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 27
+          },
+          {
+            "channel": "Referral",
+            "sessions": 2
+          }
+        ],
+        "channel_mix_label": "Direct 32, Organic Search 27, Referral 2",
+        "hs_sources": {}
+      },
+      {
+        "path": "/rate-of-return-during-retirement/",
+        "title": "Rate Of Return During Retirement",
+        "url": "https://paradigmlife.net/rate-of-return-during-retirement/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 58,
+        "organic_users": 54,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 45
+          },
+          {
+            "channel": "Direct",
+            "sessions": 13
+          }
+        ],
+        "channel_mix_label": "Organic Search 45, Direct 13",
+        "hs_sources": {}
+      },
+      {
+        "path": "/top-infinite-banking-books/",
+        "title": "Top Infinite Banking Books",
+        "url": "https://paradigmlife.net/top-infinite-banking-books/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 54,
+        "organic_users": 45,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 42
+          },
+          {
+            "channel": "Direct",
+            "sessions": 12
+          }
+        ],
+        "channel_mix_label": "Organic Search 42, Direct 12",
+        "hs_sources": {}
+      },
+      {
+        "path": "/15-ways-to-generate-multi-income-streams/",
+        "title": "15 Ways To Generate Multi Income Streams",
+        "url": "https://paradigmlife.net/15-ways-to-generate-multi-income-streams/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 53,
+        "organic_users": 52,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 29
+          },
+          {
+            "channel": "Direct",
+            "sessions": 24
+          }
+        ],
+        "channel_mix_label": "Organic Search 29, Direct 24",
+        "hs_sources": {}
+      },
+      {
+        "path": "/non-correlated-assets/",
+        "title": "Non Correlated Assets",
+        "url": "https://paradigmlife.net/non-correlated-assets/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 51,
+        "organic_users": 50,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 27
+          },
+          {
+            "channel": "Direct",
+            "sessions": 24
+          }
+        ],
+        "channel_mix_label": "Organic Search 27, Direct 24",
+        "hs_sources": {}
+      },
+      {
+        "path": "/how-to-borrow-from-yourself-with-infinite-banking/",
+        "title": "How To Borrow From Yourself With Infinite Banking",
+        "url": "https://paradigmlife.net/how-to-borrow-from-yourself-with-infinite-banking/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 47,
+        "organic_users": 46,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 30
+          },
+          {
+            "channel": "Direct",
+            "sessions": 17
+          }
+        ],
+        "channel_mix_label": "Organic Search 30, Direct 17",
+        "hs_sources": {}
+      },
+      {
+        "path": "/student-loan-overpayment/",
+        "title": "Student Loan Overpayment",
+        "url": "https://paradigmlife.net/student-loan-overpayment/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 46,
+        "organic_users": 36,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 46
+          }
+        ],
+        "channel_mix_label": "Organic Search 46",
+        "hs_sources": {}
+      },
+      {
+        "path": "/understanding-the-basics-of-infinite-banking/",
+        "title": "Understanding The Basics Of Infinite Banking",
+        "url": "https://paradigmlife.net/understanding-the-basics-of-infinite-banking/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 46,
+        "organic_users": 44,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 32
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 14
+          }
+        ],
+        "channel_mix_label": "Direct 32, Organic Search 14",
+        "hs_sources": {}
+      },
+      {
+        "path": "/7-secrets-keeping-wealth-stealth/",
+        "title": "7 Secrets Keeping Wealth Stealth",
+        "url": "https://paradigmlife.net/7-secrets-keeping-wealth-stealth/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 45,
+        "organic_users": 39,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 29
+          },
+          {
+            "channel": "Direct",
+            "sessions": 16
+          }
+        ],
+        "channel_mix_label": "Organic Search 29, Direct 16",
+        "hs_sources": {}
+      },
+      {
+        "path": "/glance-history-life-insurance/",
+        "title": "Glance History Life Insurance",
+        "url": "https://paradigmlife.net/glance-history-life-insurance/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 43,
+        "organic_users": 37,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 23
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 20
+          }
+        ],
+        "channel_mix_label": "Direct 23, Organic Search 20",
+        "hs_sources": {}
+      },
+      {
+        "path": "/5-warren-buffett-rules-to-make-you-rich/",
+        "title": "5 Warren Buffett Rules To Make You Rich",
+        "url": "https://paradigmlife.net/5-warren-buffett-rules-to-make-you-rich/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 41,
+        "organic_users": 41,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 24
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 17
+          }
+        ],
+        "channel_mix_label": "Direct 24, Organic Search 17",
+        "hs_sources": {}
+      },
+      {
+        "path": "/how-the-wealthy-use-life-insurance/",
+        "title": "How The Wealthy Use Life Insurance",
+        "url": "https://paradigmlife.net/how-the-wealthy-use-life-insurance/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 40,
+        "organic_users": 30,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 18
+          },
+          {
+            "channel": "Direct",
+            "sessions": 15
+          },
+          {
+            "channel": "Referral",
+            "sessions": 7
+          }
+        ],
+        "channel_mix_label": "Organic Search 18, Direct 15, Referral 7",
+        "hs_sources": {}
+      },
+      {
+        "path": "/ray-dalio-principles-to-determine-asset-correlation/",
+        "title": "Ray Dalio Principles To Determine Asset Correlation",
+        "url": "https://paradigmlife.net/ray-dalio-principles-to-determine-asset-correlation/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 40,
+        "organic_users": 33,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 29
+          },
+          {
+            "channel": "Direct",
+            "sessions": 10
+          },
+          {
+            "channel": "Referral",
+            "sessions": 1
+          }
+        ],
+        "channel_mix_label": "Organic Search 29, Direct 10, Referral 1",
+        "hs_sources": {}
+      },
+      {
+        "path": "/blog/tag/economy/page/3/",
+        "title": "3",
+        "url": "https://paradigmlife.net/blog/tag/economy/page/3/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 39,
+        "organic_users": 39,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 39
+          }
+        ],
+        "channel_mix_label": "Direct 39",
+        "hs_sources": {}
+      },
+      {
+        "path": "/how-does-whole-life-insurance-build-cash-value/",
+        "title": "How Does Whole Life Insurance Build Cash Value",
+        "url": "https://paradigmlife.net/how-does-whole-life-insurance-build-cash-value/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 38,
+        "organic_users": 29,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 21
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 16
+          },
+          {
+            "channel": "Referral",
+            "sessions": 1
+          }
+        ],
+        "channel_mix_label": "Direct 21, Organic Search 16, Referral 1",
+        "hs_sources": {}
+      },
+      {
+        "path": "/cash-flow-assets/",
+        "title": "Cash Flow Assets",
+        "url": "https://paradigmlife.net/cash-flow-assets/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 37,
+        "organic_users": 37,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 37
+          }
+        ],
+        "channel_mix_label": "Direct 37",
+        "hs_sources": {}
+      },
+      {
+        "path": "/estate/",
+        "title": "Estate",
+        "url": "https://paradigmlife.net/estate/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 37,
+        "organic_users": 31,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 31
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 6
+          }
+        ],
+        "channel_mix_label": "Direct 31, Organic Search 6",
+        "hs_sources": {}
+      },
+      {
+        "path": "/disability-insurance/",
+        "title": "Disability Insurance",
+        "url": "https://paradigmlife.net/disability-insurance/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 35,
+        "organic_users": 33,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 30
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 4
+          },
+          {
+            "channel": "Referral",
+            "sessions": 1
+          }
+        ],
+        "channel_mix_label": "Direct 30, Organic Search 4, Referral 1",
+        "hs_sources": {}
+      },
+      {
+        "path": "/building-wealth-with-low-income/",
+        "title": "Building Wealth With Low Income",
+        "url": "https://paradigmlife.net/building-wealth-with-low-income/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 34,
+        "organic_users": 33,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 20
+          },
+          {
+            "channel": "Direct",
+            "sessions": 14
+          }
+        ],
+        "channel_mix_label": "Organic Search 20, Direct 14",
+        "hs_sources": {}
+      },
+      {
+        "path": "/generational-wealth/",
+        "title": "Generational Wealth",
+        "url": "https://paradigmlife.net/generational-wealth/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 34,
+        "organic_users": 31,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 16
+          },
+          {
+            "channel": "Direct",
+            "sessions": 15
+          },
+          {
+            "channel": "Referral",
+            "sessions": 2
+          },
+          {
+            "channel": "AI Assistant",
+            "sessions": 1
+          }
+        ],
+        "channel_mix_label": "Organic Search 16, Direct 15, Referral 2, AI Assistant 1",
+        "hs_sources": {}
+      },
+      {
+        "path": "/active-vs-passive-capital/",
+        "title": "Active Vs Passive Capital",
+        "url": "https://paradigmlife.net/active-vs-passive-capital/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 33,
+        "organic_users": 30,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 18
+          },
+          {
+            "channel": "Direct",
+            "sessions": 15
+          }
+        ],
+        "channel_mix_label": "Organic Search 18, Direct 15",
+        "hs_sources": {}
+      },
+      {
+        "path": "/eye-opening-look-using-game-theory-markets/",
+        "title": "Eye Opening Look Using Game Theory Markets",
+        "url": "https://paradigmlife.net/eye-opening-look-using-game-theory-markets/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 32,
+        "organic_users": 31,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 21
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 11
+          }
+        ],
+        "channel_mix_label": "Direct 21, Organic Search 11",
+        "hs_sources": {}
+      },
+      {
+        "path": "/how-to-use-debt-to-build-wealth/",
+        "title": "How To Use Debt To Build Wealth",
+        "url": "https://paradigmlife.net/how-to-use-debt-to-build-wealth/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 32,
+        "organic_users": 24,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 18
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 14
+          }
+        ],
+        "channel_mix_label": "Direct 18, Organic Search 14",
+        "hs_sources": {}
+      },
+      {
+        "path": "/worth-dead-alive/",
+        "title": "Worth Dead Alive",
+        "url": "https://paradigmlife.net/worth-dead-alive/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 32,
+        "organic_users": 30,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 17
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 15
+          }
+        ],
+        "channel_mix_label": "Direct 17, Organic Search 15",
+        "hs_sources": {}
+      },
+      {
+        "path": "/5-ways-to-use-life-insurance-dividends/",
+        "title": "5 Ways To Use Life Insurance Dividends",
+        "url": "https://paradigmlife.net/5-ways-to-use-life-insurance-dividends/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 31,
+        "organic_users": 31,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 28
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 3
+          }
+        ],
+        "channel_mix_label": "Direct 28, Organic Search 3",
+        "hs_sources": {}
+      },
+      {
+        "path": "/blog/tag/retirement/",
+        "title": "Retirement",
+        "url": "https://paradigmlife.net/blog/tag/retirement/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 31,
+        "organic_users": 31,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 31
+          }
+        ],
+        "channel_mix_label": "Direct 31",
+        "hs_sources": {}
+      },
+      {
+        "path": "/difference-between-budget-and-cash-flow/",
+        "title": "Difference Between Budget And Cash Flow",
+        "url": "https://paradigmlife.net/difference-between-budget-and-cash-flow/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 31,
+        "organic_users": 30,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 15
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 12
+          },
+          {
+            "channel": "Organic Social",
+            "sessions": 3
+          },
+          {
+            "channel": "Referral",
+            "sessions": 1
+          }
+        ],
+        "channel_mix_label": "Direct 15, Organic Search 12, Organic Social 3, Referral 1",
+        "hs_sources": {}
+      },
+      {
+        "path": "/be-your-own-banker/",
+        "title": "Be Your Own Banker",
+        "url": "https://paradigmlife.net/be-your-own-banker/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 30,
+        "organic_users": 30,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 18
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 12
+          }
+        ],
+        "channel_mix_label": "Direct 18, Organic Search 12",
+        "hs_sources": {}
+      },
+      {
+        "path": "/dividend-paying-whole-life-insurance-explained/",
+        "title": "Dividend Paying Whole Life Insurance Explained",
+        "url": "https://paradigmlife.net/dividend-paying-whole-life-insurance-explained/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 30,
+        "organic_users": 30,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 26
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 4
+          }
+        ],
+        "channel_mix_label": "Direct 26, Organic Search 4",
+        "hs_sources": {}
+      },
+      {
+        "path": "/premium-financing/",
+        "title": "Premium Financing",
+        "url": "https://paradigmlife.net/premium-financing/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 30,
+        "organic_users": 26,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 20
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 9
+          },
+          {
+            "channel": "Organic Social",
+            "sessions": 1
+          }
+        ],
+        "channel_mix_label": "Direct 20, Organic Search 9, Organic Social 1",
+        "hs_sources": {}
+      },
+      {
+        "path": "/8-six-figure-careers/",
+        "title": "8 Six Figure Careers",
+        "url": "https://paradigmlife.net/8-six-figure-careers/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 29,
+        "organic_users": 29,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 15
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 14
+          }
+        ],
+        "channel_mix_label": "Direct 15, Organic Search 14",
+        "hs_sources": {}
+      },
+      {
+        "path": "/cash-flow-assets-2/",
+        "title": "Cash Flow Assets 2",
+        "url": "https://paradigmlife.net/cash-flow-assets-2/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 29,
+        "organic_users": 29,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 29
+          }
+        ],
+        "channel_mix_label": "Direct 29",
+        "hs_sources": {}
+      },
+      {
+        "path": "/how-to-generate-cash-flow/",
+        "title": "How To Generate Cash Flow",
+        "url": "https://paradigmlife.net/how-to-generate-cash-flow/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 28,
+        "organic_users": 27,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 17
+          },
+          {
+            "channel": "Direct",
+            "sessions": 11
+          }
+        ],
+        "channel_mix_label": "Organic Search 17, Direct 11",
+        "hs_sources": {}
+      },
+      {
+        "path": "/passive-vs-nonpassive-income/",
+        "title": "Passive Vs Nonpassive Income",
+        "url": "https://paradigmlife.net/passive-vs-nonpassive-income/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 28,
+        "organic_users": 26,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 28
+          }
+        ],
+        "channel_mix_label": "Organic Search 28",
+        "hs_sources": {}
+      },
+      {
+        "path": "/warren-buffetts-secret-weapon-massive-profits/",
+        "title": "Warren Buffetts Secret Weapon Massive Profits",
+        "url": "https://paradigmlife.net/warren-buffetts-secret-weapon-massive-profits/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 28,
+        "organic_users": 28,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 17
+          },
+          {
+            "channel": "Direct",
+            "sessions": 11
+          }
+        ],
+        "channel_mix_label": "Organic Search 17, Direct 11",
+        "hs_sources": {}
+      },
+      {
+        "path": "/how-to-use-a-770-account-to-grow-your-wealth/",
+        "title": "How To Use A 770 Account To Grow Your Wealth",
+        "url": "https://paradigmlife.net/how-to-use-a-770-account-to-grow-your-wealth/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 27,
+        "organic_users": 23,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 14
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 13
+          }
+        ],
+        "channel_mix_label": "Direct 14, Organic Search 13",
+        "hs_sources": {}
+      },
+      {
+        "path": "/real-estate-passive-income/",
+        "title": "Real Estate Passive Income",
+        "url": "https://paradigmlife.net/real-estate-passive-income/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 27,
+        "organic_users": 24,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 25
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 2
+          }
+        ],
+        "channel_mix_label": "Direct 25, Organic Search 2",
+        "hs_sources": {}
+      },
+      {
+        "path": "/term-life-insurance/",
+        "title": "Term Life Insurance",
+        "url": "https://paradigmlife.net/term-life-insurance/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 27,
+        "organic_users": 27,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 24
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 2
+          },
+          {
+            "channel": "Referral",
+            "sessions": 1
+          }
+        ],
+        "channel_mix_label": "Direct 24, Organic Search 2, Referral 1",
+        "hs_sources": {}
+      },
+      {
+        "path": "/blog/tag/life-insurance/",
+        "title": "Life Insurance",
+        "url": "https://paradigmlife.net/blog/tag/life-insurance/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 26,
+        "organic_users": 26,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 26
+          }
+        ],
+        "channel_mix_label": "Direct 26",
+        "hs_sources": {}
+      },
+      {
+        "path": "/find-money-personality/",
+        "title": "Find Money Personality",
+        "url": "https://paradigmlife.net/find-money-personality/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 26,
+        "organic_users": 18,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 13
+          },
+          {
+            "channel": "Referral",
+            "sessions": 11
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 2
+          }
+        ],
+        "channel_mix_label": "Direct 13, Referral 11, Organic Search 2",
+        "hs_sources": {}
+      },
+      {
+        "path": "/personal-family-banking-system/",
+        "title": "Personal Family Banking System",
+        "url": "https://paradigmlife.net/personal-family-banking-system/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 26,
+        "organic_users": 25,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 16
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 9
+          },
+          {
+            "channel": "Referral",
+            "sessions": 1
+          }
+        ],
+        "channel_mix_label": "Direct 16, Organic Search 9, Referral 1",
+        "hs_sources": {}
+      },
+      {
+        "path": "/vigilance-key-prosperity/",
+        "title": "Vigilance Key Prosperity",
+        "url": "https://paradigmlife.net/vigilance-key-prosperity/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 25,
+        "organic_users": 15,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 13
+          },
+          {
+            "channel": "Direct",
+            "sessions": 12
+          }
+        ],
+        "channel_mix_label": "Organic Search 13, Direct 12",
+        "hs_sources": {}
+      },
+      {
+        "path": "/direct-vs-non-direct-recognition-loans/",
+        "title": "Direct Vs Non Direct Recognition Loans",
+        "url": "https://paradigmlife.net/direct-vs-non-direct-recognition-loans/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 24,
+        "organic_users": 24,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 15
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 9
+          }
+        ],
+        "channel_mix_label": "Direct 15, Organic Search 9",
+        "hs_sources": {}
+      },
+      {
+        "path": "/need-know-economic-implications-mega-mergers/",
+        "title": "Need Know Economic Implications Mega Mergers",
+        "url": "https://paradigmlife.net/need-know-economic-implications-mega-mergers/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 24,
+        "organic_users": 16,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 24
+          }
+        ],
+        "channel_mix_label": "Direct 24",
+        "hs_sources": {}
+      },
+      {
+        "path": "/the-impact-of-de-dollarization-on-life-insurance/",
+        "title": "The Impact Of De Dollarization On Life Insurance",
+        "url": "https://paradigmlife.net/the-impact-of-de-dollarization-on-life-insurance/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 24,
+        "organic_users": 21,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Organic Search",
+            "sessions": 14
+          },
+          {
+            "channel": "Direct",
+            "sessions": 10
+          }
+        ],
+        "channel_mix_label": "Organic Search 14, Direct 10",
+        "hs_sources": {}
+      },
+      {
+        "path": "/what-is-a-cash-flow-insurance-policy/",
+        "title": "What Is A Cash Flow Insurance Policy",
+        "url": "https://paradigmlife.net/what-is-a-cash-flow-insurance-policy/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 24,
+        "organic_users": 24,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 14
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 10
+          }
+        ],
+        "channel_mix_label": "Direct 14, Organic Search 10",
+        "hs_sources": {}
+      },
+      {
+        "path": "/family-banking-capital-architecture/",
+        "title": "Family Banking Capital Architecture",
+        "url": "https://paradigmlife.net/family-banking-capital-architecture/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 23,
+        "organic_users": 16,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 14
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 9
+          }
+        ],
+        "channel_mix_label": "Direct 14, Organic Search 9",
+        "hs_sources": {}
+      },
+      {
+        "path": "/how-to-reset-after-a-financial-setback/",
+        "title": "How To Reset After A Financial Setback",
+        "url": "https://paradigmlife.net/how-to-reset-after-a-financial-setback/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 23,
+        "organic_users": 21,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 13
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 10
+          }
+        ],
+        "channel_mix_label": "Direct 13, Organic Search 10",
+        "hs_sources": {}
+      },
+      {
+        "path": "/limited-pay-life-insurance/",
+        "title": "Limited Pay Life Insurance",
+        "url": "https://paradigmlife.net/limited-pay-life-insurance/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 23,
+        "organic_users": 19,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 23
+          }
+        ],
+        "channel_mix_label": "Direct 23",
+        "hs_sources": {}
+      },
+      {
+        "path": "/critical-illness-insurance-benefits-alternatives/",
+        "title": "Critical Illness Insurance Benefits Alternatives",
+        "url": "https://paradigmlife.net/critical-illness-insurance-benefits-alternatives/",
+        "host": "paradigmlife.net",
+        "subdomain_label": null,
+        "organic_sessions": 22,
+        "organic_users": 22,
+        "mqls_first_or_last": 0,
+        "mqls_as_first": 0,
+        "mqls_as_last": 0,
+        "channel_mix": [
+          {
+            "channel": "Direct",
+            "sessions": 19
+          },
+          {
+            "channel": "Organic Search",
+            "sessions": 3
+          }
+        ],
+        "channel_mix_label": "Direct 19, Organic Search 3",
+        "hs_sources": {}
+      }
+    ],
+    "top_by_organic_sessions": [
+      {
+        "path": "/ready-to-get-depressed-how-many-different-taxes-do-i-pay/",
+        "title": "Ready To Get Depressed How Many Different Taxes Do I Pay",
+        "url": "https://paradigmlife.net/ready-to-get-depressed-how-many-different-taxes-do-i-pay/",
+        "sessions": 356,
+        "mqls": 0
+      },
+      {
+        "path": "/how-to-calculate-short-term-disability-benefits-premiums-and-rates/",
+        "title": "How To Calculate Short Term Disability Benefits Premiums And Rates",
+        "url": "https://paradigmlife.net/how-to-calculate-short-term-disability-benefits-premiums-and-rates/",
+        "sessions": 271,
+        "mqls": 0
+      },
+      {
+        "path": "/5-businesses-saved-cash-value-life-insurance/",
+        "title": "5 Businesses Saved Cash Value Life Insurance",
+        "url": "https://paradigmlife.net/5-businesses-saved-cash-value-life-insurance/",
+        "sessions": 259,
+        "mqls": 0
+      },
+      {
+        "path": "/great-american-banking-families/",
+        "title": "Great American Banking Families",
+        "url": "https://paradigmlife.net/great-american-banking-families/",
+        "sessions": 232,
+        "mqls": 0
+      },
+      {
+        "path": "/best-assets-that-produce-cash-flow/",
+        "title": "Best Assets That Produce Cash Flow",
+        "url": "https://paradigmlife.net/best-assets-that-produce-cash-flow/",
+        "sessions": 177,
+        "mqls": 0
+      },
+      {
+        "path": "/decoding-boli-coli/",
+        "title": "Decoding Boli Coli",
+        "url": "https://paradigmlife.net/decoding-boli-coli/",
+        "sessions": 166,
+        "mqls": 0
+      },
+      {
+        "path": "/preparing-narrow-hikes/",
+        "title": "Preparing Narrow Hikes",
+        "url": "https://paradigmlife.net/preparing-narrow-hikes/",
+        "sessions": 105,
+        "mqls": 0
+      },
+      {
+        "path": "/bank-owned-life-insurance-boli-explained/",
+        "title": "Bank Owned Life Insurance Boli Explained",
+        "url": "https://paradigmlife.net/bank-owned-life-insurance-boli-explained/",
+        "sessions": 97,
+        "mqls": 0
+      },
+      {
+        "path": "/perpetual-wealth-strategy/",
+        "title": "Perpetual Wealth Strategy",
+        "url": "https://learn.paradigmlife.net/perpetual-wealth-strategy/",
+        "sessions": 90,
+        "mqls": 4
+      },
+      {
+        "path": "/paid-additions-pua-life-insurance/",
+        "title": "Paid Additions Pua Life Insurance",
+        "url": "https://paradigmlife.net/paid-additions-pua-life-insurance/",
+        "sessions": 81,
+        "mqls": 0
+      }
+    ],
+    "top_by_mql_attribution": [
+      {
+        "path": "/limitless-2026-b/",
+        "title": "Limitless 2026 B",
+        "url": "https://learn.paradigmlife.net/limitless-2026-b/",
+        "sessions": 1,
+        "mqls": 20,
+        "host": "learn.paradigmlife.net"
+      },
+      {
+        "path": "/limitless-2026-a/",
+        "title": "Limitless 2026 A",
+        "url": "https://learn.paradigmlife.net/limitless-2026-a/",
+        "sessions": 32,
+        "mqls": 6,
+        "host": "learn.paradigmlife.net"
+      },
+      {
+        "path": "/perpetual-wealth-strategy/",
+        "title": "Perpetual Wealth Strategy",
+        "url": "https://learn.paradigmlife.net/perpetual-wealth-strategy/",
+        "sessions": 90,
+        "mqls": 4,
+        "host": "learn.paradigmlife.net"
+      },
+      {
+        "path": "/path-player/",
+        "title": "Path Player",
+        "url": "https://academy.paradigmlife.net/path-player/",
+        "sessions": 0,
+        "mqls": 4,
+        "host": "academy.paradigmlife.net"
+      },
+      {
+        "path": "/how-the-rich-use-life-insurance/",
+        "title": "How The Rich Use Life Insurance",
+        "url": "https://paradigmlife.net/how-the-rich-use-life-insurance/",
+        "sessions": 55,
+        "mqls": 1,
+        "host": "paradigmlife.net"
+      },
+      {
+        "path": "/whole-life-insurance/",
+        "title": "Whole Life Insurance",
+        "url": "https://learn.paradigmlife.net/whole-life-insurance/",
+        "sessions": 51,
+        "mqls": 1,
+        "host": "learn.paradigmlife.net"
+      },
+      {
+        "path": "/annuities/",
+        "title": "Annuities",
+        "url": "https://paradigmlife.net/annuities/",
+        "sessions": 38,
+        "mqls": 1,
+        "host": "paradigmlife.net"
+      },
+      {
+        "path": "/infinite-banking-system/",
+        "title": "Infinite Banking System",
+        "url": "https://paradigmlife.net/infinite-banking-system/",
+        "sessions": 16,
+        "mqls": 1,
+        "host": "paradigmlife.net"
+      },
+      {
+        "path": "/cash-value-and-whole-life-insurance/",
+        "title": "Cash Value And Whole Life Insurance",
+        "url": "https://paradigmlife.net/cash-value-and-whole-life-insurance/",
+        "sessions": 13,
+        "mqls": 1,
+        "host": "paradigmlife.net"
+      },
+      {
+        "path": "/course/business-owners-guide-to-wealth/",
+        "title": "Business Owners Guide To Wealth",
+        "url": "https://academy.paradigmlife.net/course/business-owners-guide-to-wealth/",
+        "sessions": 0,
+        "mqls": 1,
+        "host": "academy.paradigmlife.net"
+      }
+    ],
+    "pulled_at": "2026-09-24 ~10:00 AM MT"
   }
 }
