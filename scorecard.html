@@ -81,7 +81,10 @@
  .cohorts .cap{color:var(--muted);font-size:.85rem;margin:0 0 .75rem}
  .cohorts table{margin-top:0;font-size:.88rem}
  .cohorts th,.cohorts td{padding:.5rem .65rem}
- .cohorts td.num{text-align:right;font-variant-numeric:tabular-nums}
+ .cohorts table{width:100%;table-layout:fixed}
+ .cohorts th:first-child,.cohorts td:first-child{width:28%;text-align:left}
+ .cohorts th.num,.cohorts td.num{text-align:right;font-variant-numeric:tabular-nums}
+ .cohorts th.num{width:14.4%}
  .cohorts .note-tag{font-size:.72rem;color:var(--warn)}
 
  .trail{display:flex;flex-wrap:wrap;gap:.4rem;margin:.6rem 0 0}
@@ -120,7 +123,7 @@
 <section class="cohorts" id="cohortsStrip" aria-label="Brief-shipped cohorts">
  <div class="card">
  <h2>Brief-shipped cohorts</h2>
- <p class="cap">Sessions on that week’s Published URLs only — not sitewide. 30d / 60d / 90d / all-time start at each URL’s publish date.</p>
+ <p class="cap">Sessions on that week’s Published URLs only — not sitewide. 30d / 60d / 90d / all-time start at each URL’s publish date. Recent weeks often match across columns until those windows complete.</p>
  <div id="cohortsTable"><p class="muted">Loading cohorts…</p></div>
  </div>
 </section>
@@ -184,24 +187,38 @@
  el.innerHTML='<p class="muted">No Published ship cohorts yet.</p>';
  return;
  }
+ const asOf=block.as_of||'';
  const rows=block.cohorts.map(c=>{
  const s60=c.sessions_60d!=null?c.sessions_60d:'—';
+ const mark=(flag,label)=>{
+  if(flag===false) return ` <span class="note-tag" title="${label} window not complete yet">partial</span>`;
+  return '';
+ };
  return `<tr>
  <td>${c.label||c.week_start}</td>
- <td class="num">${c.published_count}</td>
- <td class="num">${c.sessions_30d}</td>
- <td class="num">${s60}</td>
- <td class="num">${c.sessions_90d}</td>
- <td class="num">${c.sessions_all_time}</td>
+ <td class="num">${c.published_count ?? '—'}</td>
+ <td class="num">${c.sessions_30d ?? '—'}${mark(c.window_30d_complete,'30d')}</td>
+ <td class="num">${s60}${mark(c.window_60d_complete,'60d')}</td>
+ <td class="num">${c.sessions_90d ?? '—'}${mark(c.window_90d_complete,'90d')}</td>
+ <td class="num">${c.sessions_all_time ?? '—'}</td>
  </tr>`;
  }).join('');
  el.innerHTML=`<table>
+ <colgroup>
+  <col style="width:28%"/><col style="width:12%"/>
+  <col style="width:15%"/><col style="width:15%"/><col style="width:15%"/><col style="width:15%"/>
+ </colgroup>
  <thead><tr>
- <th>Published week</th><th>Published</th>
- <th>30d</th><th>60d</th><th>90d</th><th>All-time</th>
+ <th>Published week</th>
+ <th class="num">Published</th>
+ <th class="num">30d</th>
+ <th class="num">60d</th>
+ <th class="num">90d</th>
+ <th class="num">All-time</th>
  </tr></thead>
  <tbody>${rows}</tbody>
- </table>`;
+ </table>
+ <p class="muted" style="font-size:.78rem;margin:.4rem 0 0">As of ${asOf||'—'}. “partial” means that window hasn’t fully elapsed since publish — so 30d can equal 60d/90d/all-time until enough days pass.</p>`;
  }
 
  let data=null; let organicRaw=null; let active=0; let board='briefs'; let organicSort='sessions';
