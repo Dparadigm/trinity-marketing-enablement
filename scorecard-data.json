@@ -1,55 +1,55 @@
 {
   "meta": {
     "title": "Trinity Marketing Scorecard",
-    "subtitle": "Done (CMO state) → Published on paradigmlife.net → brief impact on those URLs",
+    "subtitle": "Done (CMO state) \u2192 Published on paradigmlife.net \u2192 brief impact on those URLs",
     "updated": "2026-09-24 ~11:30 AM MT",
     "status": "draft",
     "how_to_use": [
       "Monday: mark Synthesis items done / dead / leave open in CMO state.",
       "When a done item ships, paste the live paradigmlife.net URL.",
-      "Friday: for each Published URL, set Call to Keep, Change, or Kill — with one sentence why. Leave blank until someone actually decides.",
-      "Brief impact = sessions on that week’s Published URLs (ship week + since publish) + brief-linked MQLs only.",
-      "Sitewide sessions, ads, and sitewide MQLs are context under the week — never brief credit."
+      "Friday: for each Published URL, set Call to Keep, Change, or Kill \u2014 with one sentence why. Leave blank until someone actually decides.",
+      "Brief impact = sessions on that week\u2019s Published URLs (ship week + since publish) + brief-linked MQLs only.",
+      "Sitewide sessions, ads, and sitewide MQLs are context under the week \u2014 never brief credit."
     ],
-    "attribution": "Brief impact is sessions and MQLs on URLs this board Published. Sitewide traffic and MQLs are context only. A Call is Keep / Change / Kill after Friday review — blank means no decision yet.",
+    "attribution": "Brief impact is sessions and MQLs on URLs this board Published. Sitewide traffic and MQLs are context only. A Call is Keep / Change / Kill after Friday review \u2014 blank means no decision yet.",
     "sources": [
-      "CMO report a91c0260 (252 rows): no Accept/Defer/Kill vocab (using done/dead); 46 unique done / 0 dead / 0 defer / 79 unknown; all 10 THE ONE THING still open; done≠shipped",
-      "Ava/CMO synthesis-state.json _history (2026-07-20→09-21): 47→done, 1→dead; no L10 Accept event; decisions-deferred.json empty",
-      "Gauge GA4 property 256670786 pagePath+sitewide sessions for 21 ships × 9 week Mondays (Sep 21 partial)",
-      "Pulse HubSpot MQL weekly rollup 2026-07-27→09-20: 496 MQLs; path tops=learn.paradigmlife.net paid LPs; Synthesis ship URL matches=0",
-      "Synthesis Briefs (Drive, dtorsak): weekly force-rank Jul 20–Sep 21 2026 — THE ONE THING is usually paid/SDR; content/SEO items mid-list",
-      "Brief→ship map (60d): content recommendations recur; matching paradigmlife.net lastmods land within ~1–3 weeks for several SEO/title/cluster items",
-      "HubSpot MQLs sample ~300 contacts Jul 27–Sep 23 window: 0 first/last URL on scorecard ships; learn.paradigmlife.net paid LPs dominate; trinity_brief_* UTMs = 0",
+      "CMO report a91c0260 (252 rows): no Accept/Defer/Kill vocab (using done/dead); 46 unique done / 0 dead / 0 defer / 79 unknown; all 10 THE ONE THING still open; done\u2260shipped",
+      "Ava/CMO synthesis-state.json _history (2026-07-20\u219209-21): 47\u2192done, 1\u2192dead; no L10 Accept event; decisions-deferred.json empty",
+      "Gauge GA4 property 256670786 pagePath+sitewide sessions for 21 ships \u00d7 9 week Mondays (Sep 21 partial)",
+      "Pulse HubSpot MQL weekly rollup 2026-07-27\u219209-20: 496 MQLs; path tops=learn.paradigmlife.net paid LPs; Synthesis ship URL matches=0",
+      "Synthesis Briefs (Drive, dtorsak): weekly force-rank Jul 20\u2013Sep 21 2026 \u2014 THE ONE THING is usually paid/SDR; content/SEO items mid-list",
+      "Brief\u2192ship map (60d): content recommendations recur; matching paradigmlife.net lastmods land within ~1\u20133 weeks for several SEO/title/cluster items",
+      "HubSpot MQLs sample ~300 contacts Jul 27\u2013Sep 23 window: 0 first/last URL on scorecard ships; learn.paradigmlife.net paid LPs dominate; trinity_brief_* UTMs = 0",
       "paradigmlife.net post sitemap lastmod (verified 2026-09-23)",
       "Sep 7 Synthesis brief examples (marked example)",
-      "GA4 site sessions via CMO Weekly Marketing Summary (reports@ → Drive) for completed weeks",
+      "GA4 site sessions via CMO Weekly Marketing Summary (reports@ \u2192 Drive) for completed weeks",
       "Google Ads clicks/CTR via Metricool brand Paradigm Life (week-matched)",
-      "HubSpot MCP: contacts hs_v2_date_entered_marketingqualifiedlead (America/Denver Mon–Sun)",
-      "brief_assisted_mqls: utm_campaign prefix trinity_brief_ (none yet → 0)",
+      "HubSpot MCP: contacts hs_v2_date_entered_marketingqualifiedlead (America/Denver Mon\u2013Sun)",
+      "brief_assisted_mqls: utm_campaign prefix trinity_brief_ (none yet \u2192 0)",
       "GA4 pagePath sessions via Gauge mcp-ga4 property 256670786 (ruby-drive-access SA)",
-      "GA4 pagePath daily series (property 256670786) for Brief-shipped cohorts strip — 21 paths Jul 27–Sep 23"
+      "GA4 pagePath daily series (property 256670786) for Brief-shipped cohorts strip \u2014 21 paths Jul 27\u2013Sep 23"
     ],
     "funnel_as_of": "2026-09-23 ~4:30 PM MT",
     "blockers": [
-      "No Accept/Defer/Kill log — scorecard uses CMO done/dead (open/in_progress = not done)",
-      "All 10 THE ONE THING items Jul 20–Sep 21 still open (never marked done)",
-      "done ≠ shipped (CMO has no live-URL verification)",
+      "No Accept/Defer/Kill log \u2014 scorecard uses CMO done/dead (open/in_progress = not done)",
+      "All 10 THE ONE THING items Jul 20\u2013Sep 21 still open (never marked done)",
+      "done \u2260 shipped (CMO has no live-URL verification)",
       "HubSpot first/last URL never credits mid-funnel blog ships (Pulse: 0/496)"
     ],
     "brief_impact": {
       "verdict": "mixed",
       "as_of": "2026-09-23",
-      "headline": "Ops marks many mid-list content items done (46 unique). Every THE ONE THING for Jul 20–Sep 21 is still open — never marked done. No formal Defer log. Live-site ship is not verified inside CMO state.",
+      "headline": "Ops marks many mid-list content items done (46 unique). Every THE ONE THING for Jul 20\u2013Sep 21 is still open \u2014 never marked done. No formal Defer log. Live-site ship is not verified inside CMO state.",
       "layers": [
         {
           "layer": "1_priority_to_done",
           "call": "partial_proxy",
-          "note": "CMO has no Accept/Defer/Kill (unused) vocabulary. Substitute: data/synthesis-state.json open|in_progress|done|dead. Window Jul 20–Sep 21: 125 unique items → 46 done (done), 0 currently dead (Kill), 0 formal Defer (decisions-deferred.json always empty), 79 Unknown (66 open + 13 in_progress). Appearance-level across 252 brief listings: 79 done / 173 Unknown. Source report: a91c0260-31ea-408d-bd24-65c2d381854c (ignore b95b2fdd placeholder). No field records who started work — only who later marked done. Named closers: John Keever ~56 of 74; never Rachel."
+          "note": "CMO has no Accept/Defer/Kill (unused) vocabulary. Substitute: data/synthesis-state.json open|in_progress|done|dead. Window Jul 20\u2013Sep 21: 125 unique items \u2192 46 done (done), 0 currently dead (Kill), 0 formal Defer (decisions-deferred.json always empty), 79 Unknown (66 open + 13 in_progress). Appearance-level across 252 brief listings: 79 done / 173 Unknown. Source report: a91c0260-31ea-408d-bd24-65c2d381854c (ignore b95b2fdd placeholder). No field records who started work \u2014 only who later marked done. Named closers: John Keever ~56 of 74; never Rachel."
         },
         {
           "layer": "2_done_to_ship",
           "call": "unverified_in_cmo",
-          "note": "CMO state does not track paradigmlife.net URLs. Scorecard still maps done topics → sitemap lastmods externally (leaning yes for many content items). Explicit counterexample in CMO notes: IBC query re-route marked done twice without the page shipping. Generational-wealth refresh partial/unconfirmed. Treat done ≠ shipped."
+          "note": "CMO state does not track paradigmlife.net URLs. Scorecard still maps done topics \u2192 sitemap lastmods externally (leaning yes for many content items). Explicit counterexample in CMO notes: IBC query re-route marked done twice without the page shipping. Generational-wealth refresh partial/unconfirmed. Treat done \u2260 shipped."
         },
         {
           "layer": "3_ship_to_funnel",
@@ -58,14 +58,14 @@
         }
       ],
       "what_would_change_the_call": [
-        "Monday ritual: explicitly decide THE ONE THING + content items (and log done/dead — or add a real Accept field).",
-        "Wire done → live URL (slug) so ship is verified, not inferred.",
+        "Monday ritual: explicitly decide THE ONE THING + content items (and log done/dead \u2014 or add a real Accept field).",
+        "Wire done \u2192 live URL (slug) so ship is verified, not inferred.",
         "Use decisions-deferred.json when something is consciously parked.",
         "Mid-path or trinity_brief_* for MQL proof."
       ],
       "pulse_mqls_8wk": 496,
       "pulse_ship_url_matches": 0,
-      "gauge_ship_sessions_note": "21 paths × 9 weeks filled from Gauge; Sep 14 six-ship week pagePath sum now from full matrix",
+      "gauge_ship_sessions_note": "21 paths \u00d7 9 weeks filled from Gauge; Sep 14 six-ship week pagePath sum now from full matrix",
       "cmo_done": 47,
       "cmo_dead": 1,
       "cmo_strategic_defer": 0,
@@ -138,9 +138,9 @@
       },
       "caveats": [
         "Scorecard \"Done\" = CMO synthesis-state done (not an Accept vote).",
-        "done ≠ done-at-publish; no done moment is logged.",
-        "done ≠ shipped on paradigmlife.net.",
-        "Tax Strategy Q3 social was dead then reopened same day → now in_progress/Unknown, not Kill.",
+        "done \u2260 done-at-publish; no done moment is logged.",
+        "done \u2260 shipped on paradigmlife.net.",
+        "Tax Strategy Q3 social was dead then reopened same day \u2192 now in_progress/Unknown, not Kill.",
         "Rachel never appears as changed_by."
       ]
     },
@@ -149,9 +149,9 @@
   "weeks": [
     {
       "week_start": "2026-09-21",
-      "label": "Sep 21 – Sep 27, 2026 (partial)",
+      "label": "Sep 21 \u2013 Sep 27, 2026 (partial)",
       "one_thing": "Pause life Insurance | Search + WealthScore campaigns (Brief THE ONE THING)",
-      "owners": "Rachel · John",
+      "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
         "done": 0,
@@ -179,9 +179,9 @@
     },
     {
       "week_start": "2026-09-14",
-      "label": "Sep 14 – Sep 20, 2026",
+      "label": "Sep 14 \u2013 Sep 20, 2026",
       "one_thing": "Pause Infinite (Broad); hold Google Ads cap (Brief THE ONE THING)",
-      "owners": "Rachel · John",
+      "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
         "done": 3,
@@ -208,7 +208,7 @@
             "label": "Ship week",
             "week_start": "2026-09-14",
             "week_end": "2026-09-20",
-            "date_label": "Sep 14–20",
+            "date_label": "Sep 14\u201320",
             "sessions": 40,
             "incomplete": false
           },
@@ -217,21 +217,21 @@
             "label": "Week +1",
             "week_start": "2026-09-21",
             "week_end": "2026-09-23",
-            "date_label": "Sep 21–23",
+            "date_label": "Sep 21\u201323",
             "sessions": 2,
             "incomplete": true
           }
         ]
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 3 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Rewrite titles/meta on five high-impression zero-click pages; Done: Build a dedicated IBC explainer page; Done: Refresh generational wealth page with definition block. 6 ship(s); pagePath sessions sum=48 vs sitewide 2977 (Gauge). MQLs=68 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 3 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Rewrite titles/meta on five high-impression zero-click pages; Done: Build a dedicated IBC explainer page; Done: Refresh generational wealth page with definition block. 6 ship(s); pagePath sessions sum=48 vs sitewide 2977 (Gauge). MQLs=68 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
-          "title": "Infinite Banking Works. It’s Also Incomplete.",
+          "title": "Infinite Banking Works. It\u2019s Also Incomplete.",
           "slug": "infinite-banking-concept",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/infinite-banking-concept/",
           "shipped_on": "2026-09-18",
           "projected_outcome": "",
@@ -251,10 +251,10 @@
         },
         {
           "kind": "site_ship",
-          "title": "What Is Generational Wealth? Definition, Examples, and Why It’s More Than Money",
+          "title": "What Is Generational Wealth? Definition, Examples, and Why It\u2019s More Than Money",
           "slug": "generational-wealth",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/generational-wealth/",
           "shipped_on": "2026-09-16",
           "projected_outcome": "",
@@ -277,7 +277,7 @@
           "title": "Which Is True About a Spouse Term Rider?",
           "slug": "spouse-term-riders",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/spouse-term-riders/",
           "shipped_on": "2026-09-16",
           "projected_outcome": "",
@@ -297,10 +297,10 @@
         },
         {
           "kind": "site_ship",
-          "title": "The Capital That Holds When Your Portfolio Can’t",
+          "title": "The Capital That Holds When Your Portfolio Can\u2019t",
           "slug": "non-correlated-assets",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/non-correlated-assets/",
           "shipped_on": "2026-09-16",
           "projected_outcome": "",
@@ -323,7 +323,7 @@
           "title": "How to Build Generational Wealth and Protect Your Financial Legacy",
           "slug": "how-to-build-generational-wealth-and-protect-your-financial-legacy",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/how-to-build-generational-wealth-and-protect-your-financial-legacy/",
           "shipped_on": "2026-09-16",
           "projected_outcome": "",
@@ -346,7 +346,7 @@
           "title": "Direct vs Non-Direct Recognition Loans: What They Mean for Your Policy",
           "slug": "direct-vs-non-direct-recognition-loans",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/direct-vs-non-direct-recognition-loans/",
           "shipped_on": "2026-09-16",
           "projected_outcome": "",
@@ -368,9 +368,9 @@
     },
     {
       "week_start": "2026-09-07",
-      "label": "Sep 7 – Sep 13, 2026",
+      "label": "Sep 7 \u2013 Sep 13, 2026",
       "one_thing": "Cap/pause Infinite & BYOB Search (Brief THE ONE THING)",
-      "owners": "Rachel · John",
+      "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
         "done": 8,
@@ -396,7 +396,7 @@
             "label": "Ship week",
             "week_start": "2026-09-07",
             "week_end": "2026-09-13",
-            "date_label": "Sep 7–13",
+            "date_label": "Sep 7\u201313",
             "sessions": 100,
             "incomplete": false
           },
@@ -405,7 +405,7 @@
             "label": "Week +1",
             "week_start": "2026-09-14",
             "week_end": "2026-09-20",
-            "date_label": "Sep 14–20",
+            "date_label": "Sep 14\u201320",
             "sessions": 107,
             "incomplete": false
           },
@@ -414,21 +414,21 @@
             "label": "Week +2",
             "week_start": "2026-09-21",
             "week_end": "2026-09-23",
-            "date_label": "Sep 21–23",
+            "date_label": "Sep 21\u201323",
             "sessions": 28,
             "incomplete": true
           }
         ]
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 8 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Content Depth Expansion on Family Banking Guide; Done: Consolidate Cash-Flow Asset Pages (again); Done: Title Refresh on five worst low-CTR pages; Done: Generational Wealth Content Cluster Optimization. 10 ship(s); pagePath sessions sum=120 vs sitewide 2286 (Gauge). MQLs=63 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 8 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Content Depth Expansion on Family Banking Guide; Done: Consolidate Cash-Flow Asset Pages (again); Done: Title Refresh on five worst low-CTR pages; Done: Generational Wealth Content Cluster Optimization. 10 ship(s); pagePath sessions sum=120 vs sitewide 2286 (Gauge). MQLs=63 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
           "title": "You Became Your Own Banker. Why Are You Still Dependent on Your Income?",
           "slug": "ibc-vs-perpetual-wealth-strategy",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/ibc-vs-perpetual-wealth-strategy/",
           "shipped_on": "2026-09-10",
           "projected_outcome": "",
@@ -450,7 +450,7 @@
           "title": "The Guide Gives You the System. Now Find Out Whether Your Current Foundation is Ready to Run it.",
           "slug": "family-banking-guide",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/family-banking-guide/",
           "shipped_on": "2026-09-10",
           "projected_outcome": "",
@@ -472,7 +472,7 @@
           "title": "What Are Paid Up Additions (PUA) In Life Insurance?",
           "slug": "paid-additions-pua-life-insurance",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/paid-additions-pua-life-insurance/",
           "shipped_on": "2026-09-09",
           "projected_outcome": "",
@@ -491,10 +491,10 @@
         },
         {
           "kind": "site_ship",
-          "title": "Your Labor Is a Depleting Asset. These Aren’t.",
+          "title": "Your Labor Is a Depleting Asset. These Aren\u2019t.",
           "slug": "best-assets-that-produce-cash-flow",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/best-assets-that-produce-cash-flow/",
           "shipped_on": "2026-09-09",
           "projected_outcome": "",
@@ -516,7 +516,7 @@
           "title": "BOLI: The Balance Sheet Strategy Banks Use on Themselves",
           "slug": "bank-owned-life-insurance-boli-explained",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/bank-owned-life-insurance-boli-explained/",
           "shipped_on": "2026-09-09",
           "projected_outcome": "",
@@ -538,7 +538,7 @@
           "title": "An Introduction to Using Life Insurance as a Bank",
           "slug": "an-introduction-to-using-life-insurance-as-a-bank",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/an-introduction-to-using-life-insurance-as-a-bank/",
           "shipped_on": "2026-09-09",
           "projected_outcome": "",
@@ -560,7 +560,7 @@
           "title": "Guaranteed Cash Value Whole Life Insurance",
           "slug": "guaranteed-cash-value-whole-life-insurance",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/guaranteed-cash-value-whole-life-insurance/",
           "shipped_on": "2026-09-09",
           "projected_outcome": "",
@@ -582,7 +582,7 @@
           "title": "Infinite Banking Works Its Also Incomplete",
           "slug": "infinite-banking-works-its-also-incomplete",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/infinite-banking-works-its-also-incomplete/",
           "shipped_on": "2026-09-08",
           "projected_outcome": "",
@@ -604,7 +604,7 @@
           "title": "Rate Of Return During Retirement",
           "slug": "rate-of-return-during-retirement",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/rate-of-return-during-retirement/",
           "shipped_on": "2026-09-08",
           "projected_outcome": "",
@@ -626,7 +626,7 @@
           "title": "How To Calculate Short Term Disability Benefits Premiums And Rates",
           "slug": "how-to-calculate-short-term-disability-benefits-premiums-and-rates",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/how-to-calculate-short-term-disability-benefits-premiums-and-rates/",
           "shipped_on": "2026-09-08",
           "projected_outcome": "",
@@ -647,9 +647,9 @@
     },
     {
       "week_start": "2026-08-31",
-      "label": "Aug 31 – Sep 6, 2026",
-      "one_thing": "MQL→SQL conversion gap (Brief THE ONE THING)",
-      "owners": "Rachel · John",
+      "label": "Aug 31 \u2013 Sep 6, 2026",
+      "one_thing": "MQL\u2192SQL conversion gap (Brief THE ONE THING)",
+      "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
         "done": 4,
@@ -675,7 +675,7 @@
             "label": "Ship week",
             "week_start": "2026-08-31",
             "week_end": "2026-09-06",
-            "date_label": "Aug 31–Sep 6",
+            "date_label": "Aug 31\u2013Sep 6",
             "sessions": 7,
             "incomplete": false
           },
@@ -684,7 +684,7 @@
             "label": "Week +1",
             "week_start": "2026-09-07",
             "week_end": "2026-09-13",
-            "date_label": "Sep 7–13",
+            "date_label": "Sep 7\u201313",
             "sessions": 11,
             "incomplete": false
           },
@@ -693,7 +693,7 @@
             "label": "Week +2",
             "week_start": "2026-09-14",
             "week_end": "2026-09-20",
-            "date_label": "Sep 14–20",
+            "date_label": "Sep 14\u201320",
             "sessions": 2,
             "incomplete": false
           },
@@ -702,21 +702,21 @@
             "label": "Week +3",
             "week_start": "2026-09-21",
             "week_end": "2026-09-23",
-            "date_label": "Sep 21–23",
+            "date_label": "Sep 21\u201323",
             "sessions": 0,
             "incomplete": true
           }
         ]
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 4 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Address Certainty Seeker Content Gap; Done: Counter-Position Against IBC Practitioners; Done: Google Ads Account Structure Cleanup; Done: Family Guardian Content Development. 1 ship(s); pagePath sessions sum=7 vs sitewide 2274 (Gauge). MQLs=60 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 4 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Address Certainty Seeker Content Gap; Done: Counter-Position Against IBC Practitioners; Done: Google Ads Account Structure Cleanup; Done: Family Guardian Content Development. 1 ship(s); pagePath sessions sum=7 vs sitewide 2274 (Gauge). MQLs=60 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
           "title": "The Market Fluctuates And You Could Lose Everything Heres The Retirement Design Built Around A Guarantee Not A Guess",
           "slug": "the-market-fluctuates-and-you-could-lose-everything-heres-the-retirement-design-built-around-a-guarantee-not-a-guess",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/the-market-fluctuates-and-you-could-lose-everything-heres-the-retirement-design-built-around-a-guarantee-not-a-guess/",
           "shipped_on": "2026-09-04",
           "projected_outcome": "",
@@ -737,9 +737,9 @@
     },
     {
       "week_start": "2026-08-24",
-      "label": "Aug 24 – Aug 30, 2026",
-      "one_thing": "SDR technique gap — shadow Hallie (Brief THE ONE THING)",
-      "owners": "Rachel · John",
+      "label": "Aug 24 \u2013 Aug 30, 2026",
+      "one_thing": "SDR technique gap \u2014 shadow Hallie (Brief THE ONE THING)",
+      "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
         "done": 4,
@@ -765,7 +765,7 @@
             "label": "Ship week",
             "week_start": "2026-08-24",
             "week_end": "2026-08-30",
-            "date_label": "Aug 24–30",
+            "date_label": "Aug 24\u201330",
             "sessions": 7,
             "incomplete": false
           },
@@ -774,7 +774,7 @@
             "label": "Week +1",
             "week_start": "2026-08-31",
             "week_end": "2026-09-06",
-            "date_label": "Aug 31–Sep 6",
+            "date_label": "Aug 31\u2013Sep 6",
             "sessions": 2,
             "incomplete": false
           },
@@ -783,7 +783,7 @@
             "label": "Week +2",
             "week_start": "2026-09-07",
             "week_end": "2026-09-13",
-            "date_label": "Sep 7–13",
+            "date_label": "Sep 7\u201313",
             "sessions": 12,
             "incomplete": false
           },
@@ -792,7 +792,7 @@
             "label": "Week +3",
             "week_start": "2026-09-14",
             "week_end": "2026-09-20",
-            "date_label": "Sep 14–20",
+            "date_label": "Sep 14\u201320",
             "sessions": 7,
             "incomplete": false
           },
@@ -801,21 +801,21 @@
             "label": "Week +4",
             "week_start": "2026-09-21",
             "week_end": "2026-09-23",
-            "date_label": "Sep 21–23",
+            "date_label": "Sep 21\u201323",
             "sessions": 1,
             "incomplete": true
           }
         ]
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 4 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Email deliverability audit; Done: How to be your own bank quick win; Done: Student Loan Overpayment Page Title/Meta Refresh; Done: Counter-Position Fisher Investments Tax-Strategy Blitz. 1 ship(s); pagePath sessions sum=8 vs sitewide 2513 (Gauge). MQLs=67 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 4 marked done, 0 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Email deliverability audit; Done: How to be your own bank quick win; Done: Student Loan Overpayment Page Title/Meta Refresh; Done: Counter-Position Fisher Investments Tax-Strategy Blitz. 1 ship(s); pagePath sessions sum=8 vs sitewide 2513 (Gauge). MQLs=67 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
           "title": "Student Loan Overpayment",
           "slug": "student-loan-overpayment",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/student-loan-overpayment/",
           "shipped_on": "2026-08-25",
           "projected_outcome": "",
@@ -836,9 +836,9 @@
     },
     {
       "week_start": "2026-08-17",
-      "label": "Aug 17 – Aug 23, 2026",
-      "one_thing": "SDR→SQL handoff audit (Brief THE ONE THING)",
-      "owners": "Rachel · John",
+      "label": "Aug 17 \u2013 Aug 23, 2026",
+      "one_thing": "SDR\u2192SQL handoff audit (Brief THE ONE THING)",
+      "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
         "done": 7,
@@ -866,9 +866,9 @@
     },
     {
       "week_start": "2026-08-10",
-      "label": "Aug 10 – Aug 16, 2026",
+      "label": "Aug 10 \u2013 Aug 16, 2026",
       "one_thing": "SDR PWS calibration (Brief THE ONE THING)",
-      "owners": "Rachel · John",
+      "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
         "done": 5,
@@ -896,9 +896,9 @@
     },
     {
       "week_start": "2026-08-03",
-      "label": "Aug 3 – Aug 9, 2026",
+      "label": "Aug 3 \u2013 Aug 9, 2026",
       "one_thing": "SDR qualification workshop (Brief THE ONE THING)",
-      "owners": "Rachel · John",
+      "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
         "done": 2,
@@ -926,9 +926,9 @@
     },
     {
       "week_start": "2026-07-27",
-      "label": "Jul 27 – Aug 2, 2026",
+      "label": "Jul 27 \u2013 Aug 2, 2026",
       "one_thing": "Authorize 40-50% Google Ads budget increase (reissued)",
-      "owners": "Rachel · John",
+      "owners": "Rachel \u00b7 John",
       "counts": {
         "surfaced": null,
         "done": 14,
@@ -954,7 +954,7 @@
             "label": "Ship week",
             "week_start": "2026-07-27",
             "week_end": "2026-08-02",
-            "date_label": "Jul 27–Aug 2",
+            "date_label": "Jul 27\u2013Aug 2",
             "sessions": 43,
             "incomplete": false
           },
@@ -963,7 +963,7 @@
             "label": "Week +1",
             "week_start": "2026-08-03",
             "week_end": "2026-08-09",
-            "date_label": "Aug 3–9",
+            "date_label": "Aug 3\u20139",
             "sessions": 43,
             "incomplete": false
           },
@@ -972,7 +972,7 @@
             "label": "Week +2",
             "week_start": "2026-08-10",
             "week_end": "2026-08-16",
-            "date_label": "Aug 10–16",
+            "date_label": "Aug 10\u201316",
             "sessions": 36,
             "incomplete": false
           },
@@ -981,7 +981,7 @@
             "label": "Week +3",
             "week_start": "2026-08-17",
             "week_end": "2026-08-23",
-            "date_label": "Aug 17–23",
+            "date_label": "Aug 17\u201323",
             "sessions": 37,
             "incomplete": false
           },
@@ -990,7 +990,7 @@
             "label": "Week +4",
             "week_start": "2026-08-24",
             "week_end": "2026-08-30",
-            "date_label": "Aug 24–30",
+            "date_label": "Aug 24\u201330",
             "sessions": 39,
             "incomplete": false
           },
@@ -999,7 +999,7 @@
             "label": "Week +5",
             "week_start": "2026-08-31",
             "week_end": "2026-09-06",
-            "date_label": "Aug 31–Sep 6",
+            "date_label": "Aug 31\u2013Sep 6",
             "sessions": 32,
             "incomplete": false
           },
@@ -1008,7 +1008,7 @@
             "label": "Week +6",
             "week_start": "2026-09-07",
             "week_end": "2026-09-13",
-            "date_label": "Sep 7–13",
+            "date_label": "Sep 7\u201313",
             "sessions": 37,
             "incomplete": false
           },
@@ -1017,7 +1017,7 @@
             "label": "Week +7",
             "week_start": "2026-09-14",
             "week_end": "2026-09-20",
-            "date_label": "Sep 14–20",
+            "date_label": "Sep 14\u201320",
             "sessions": 44,
             "incomplete": false
           },
@@ -1026,21 +1026,21 @@
             "label": "Week +8",
             "week_start": "2026-09-21",
             "week_end": "2026-09-23",
-            "date_label": "Sep 21–23",
+            "date_label": "Sep 21\u201323",
             "sessions": 2,
             "incomplete": true
           }
         ]
       },
       "impact_call": "yes_ops",
-      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 14 marked done, 1 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Cash flow assets SEO cluster consolidation; Done: Title A/B on /great-american-banking-families/; Done: Title A/B on /rate-of-return-during-retirement/; Done: Title A/B on /student-loan-overpayment/. Folded CMO week 2026-07-20 into this board week (9 done, 1 dead). 3 ship(s); pagePath sessions sum=46 vs sitewide 3733 (Gauge). MQLs=48 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations → ships visible; MQL attribution not provable.",
+      "impact_note": "THE ONE THING still open (never marked done in synthesis-state). CMO state (done/dead  -  not a Monday Accept ritual): 14 marked done, 1 dead (synthesis-state _history; mostly John Keever via Slack). Examples  -  Done: Cash flow assets SEO cluster consolidation; Done: Title A/B on /great-american-banking-families/; Done: Title A/B on /rate-of-return-during-retirement/; Done: Title A/B on /student-loan-overpayment/. Folded CMO week 2026-07-20 into this board week (9 done, 1 dead). 3 ship(s); pagePath sessions sum=46 vs sitewide 3733 (Gauge). MQLs=48 (Pulse); ship first/last URL matches=0; brief-assisted UTMs=0. Brief impact: content recommendations \u2192 ships visible; MQL attribution not provable.",
       "items": [
         {
           "kind": "site_ship",
           "title": "Your Estate Plan Coordinates What Youve Built But Whats It Built On",
           "slug": "your-estate-plan-coordinates-what-youve-built-but-whats-it-built-on",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/your-estate-plan-coordinates-what-youve-built-but-whats-it-built-on/",
           "shipped_on": "2026-07-31",
           "projected_outcome": "",
@@ -1062,7 +1062,7 @@
           "title": "Family Banking Capital Architecture",
           "slug": "family-banking-capital-architecture",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/family-banking-capital-architecture/",
           "shipped_on": "2026-07-29",
           "projected_outcome": "",
@@ -1084,7 +1084,7 @@
           "title": "Great American Banking Families",
           "slug": "great-american-banking-families",
           "decision": "shipped",
-          "owner": "—",
+          "owner": "\u2014",
           "url": "https://paradigmlife.net/great-american-banking-families/",
           "shipped_on": "2026-07-29",
           "projected_outcome": "",
@@ -1107,398 +1107,405 @@
   "cohorts": {
     "updated": "2026-09-23",
     "as_of": "2026-09-23",
-    "definition": "Sessions on that week’s Published URLs only — not sitewide. 30d / 60d / 90d / all-time start at each URL’s publish date.",
+    "definition": "Sessions on that week\u2019s Published URLs only \u2014 not sitewide. W1, W2, W3\u2026 are stacked weekly buckets from each URL\u2019s publish date (non-overlapping). All-time is the only cumulative total since publish.",
     "property_id": "256670786",
     "cohorts": [
       {
         "week_start": "2026-09-14",
-        "label": "Sep 14 – Sep 20, 2026",
+        "label": "Sep 14 \u2013 Sep 20, 2026",
         "published_count": 6,
-        "sessions_ship_week": 40,
-        "sessions_30d": 42,
-        "sessions_90d": 42,
-        "sessions_all_time": 42,
-        "window_30d_complete": false,
-        "window_90d_complete": false,
-        "notes": "",
-        "ships": [
+        "weekly_stacks": [
           {
-            "title": "Infinite Banking Works. It’s Also Incomplete.",
-            "path": "/infinite-banking-concept/",
-            "url": "https://paradigmlife.net/infinite-banking-concept/",
-            "shipped_on": "2026-09-18",
-            "sessions_ship_week": 7,
-            "sessions_30d": 7,
-            "sessions_90d": 7,
-            "sessions_all_time": 7,
-            "window_30d_complete": false,
-            "window_90d_complete": false,
-            "sessions_60d": 7,
-            "window_60d_complete": false
+            "w": 1,
+            "sessions": 41,
+            "status": "in_progress"
           },
           {
-            "title": "What Is Generational Wealth? Definition, Examples, and Why It’s More Than Money",
-            "path": "/generational-wealth/",
-            "url": "https://paradigmlife.net/generational-wealth/",
-            "shipped_on": "2026-09-16",
-            "sessions_ship_week": 11,
-            "sessions_30d": 11,
-            "sessions_90d": 11,
-            "sessions_all_time": 11,
-            "window_30d_complete": false,
-            "window_90d_complete": false,
-            "sessions_60d": 11,
-            "window_60d_complete": false
+            "w": 2,
+            "sessions": 1,
+            "status": "in_progress"
           },
           {
-            "title": "Which Is True About a Spouse Term Rider?",
-            "path": "/spouse-term-riders/",
-            "url": "https://paradigmlife.net/spouse-term-riders/",
-            "shipped_on": "2026-09-16",
-            "sessions_ship_week": 5,
-            "sessions_30d": 6,
-            "sessions_90d": 6,
-            "sessions_all_time": 6,
-            "window_30d_complete": false,
-            "window_90d_complete": false,
-            "sessions_60d": 6,
-            "window_60d_complete": false
+            "w": 3,
+            "sessions": null,
+            "status": "not_started"
           },
           {
-            "title": "The Capital That Holds When Your Portfolio Can’t",
-            "path": "/non-correlated-assets/",
-            "url": "https://paradigmlife.net/non-correlated-assets/",
-            "shipped_on": "2026-09-16",
-            "sessions_ship_week": 7,
-            "sessions_30d": 7,
-            "sessions_90d": 7,
-            "sessions_all_time": 7,
-            "window_30d_complete": false,
-            "window_90d_complete": false,
-            "sessions_60d": 7,
-            "window_60d_complete": false
+            "w": 4,
+            "sessions": null,
+            "status": "not_started"
           },
           {
-            "title": "How to Build Generational Wealth and Protect Your Financial Legacy",
-            "path": "/how-to-build-generational-wealth-and-protect-your-financial-legacy/",
-            "url": "https://paradigmlife.net/how-to-build-generational-wealth-and-protect-your-financial-legacy/",
-            "shipped_on": "2026-09-16",
-            "sessions_ship_week": 3,
-            "sessions_30d": 3,
-            "sessions_90d": 3,
-            "sessions_all_time": 3,
-            "window_30d_complete": false,
-            "window_90d_complete": false,
-            "sessions_60d": 3,
-            "window_60d_complete": false
+            "w": 5,
+            "sessions": null,
+            "status": "not_started"
           },
           {
-            "title": "Direct vs Non-Direct Recognition Loans: What They Mean for Your Policy",
-            "path": "/direct-vs-non-direct-recognition-loans/",
-            "url": "https://paradigmlife.net/direct-vs-non-direct-recognition-loans/",
-            "shipped_on": "2026-09-16",
-            "sessions_ship_week": 7,
-            "sessions_30d": 8,
-            "sessions_90d": 8,
-            "sessions_all_time": 8,
-            "window_30d_complete": false,
-            "window_90d_complete": false,
-            "sessions_60d": 8,
-            "window_60d_complete": false
+            "w": 6,
+            "sessions": null,
+            "status": "not_started"
+          },
+          {
+            "w": 7,
+            "sessions": null,
+            "status": "not_started"
+          },
+          {
+            "w": 8,
+            "sessions": null,
+            "status": "not_started"
+          },
+          {
+            "w": 9,
+            "sessions": null,
+            "status": "not_started"
           }
         ],
-        "sessions_60d": 42,
-        "window_60d_complete": false
+        "sessions_all_time": 42,
+        "ships": [
+          {
+            "path": "/infinite-banking-concept/",
+            "shipped_on": "2026-09-18",
+            "title": "Infinite Banking Works. It\u2019s Also Incomplete."
+          },
+          {
+            "path": "/generational-wealth/",
+            "shipped_on": "2026-09-16",
+            "title": "What Is Generational Wealth? Definition, Examples, and Why It\u2019s More Than Money"
+          },
+          {
+            "path": "/spouse-term-riders/",
+            "shipped_on": "2026-09-16",
+            "title": "Which Is True About a Spouse Term Rider?"
+          },
+          {
+            "path": "/non-correlated-assets/",
+            "shipped_on": "2026-09-16",
+            "title": "The Capital That Holds When Your Portfolio Can\u2019t"
+          },
+          {
+            "path": "/how-to-build-generational-wealth-and-protect-your-financial-legacy/",
+            "shipped_on": "2026-09-16",
+            "title": "How to Build Generational Wealth and Protect Your Financial Legacy"
+          },
+          {
+            "path": "/direct-vs-non-direct-recognition-loans/",
+            "shipped_on": "2026-09-16",
+            "title": "Direct vs Non-Direct Recognition Loans: What They Mean for Your Policy"
+          }
+        ]
       },
       {
         "week_start": "2026-09-07",
-        "label": "Sep 7 – Sep 13, 2026",
+        "label": "Sep 7 \u2013 Sep 13, 2026",
         "published_count": 10,
-        "sessions_ship_week": 100,
-        "sessions_30d": 235,
-        "sessions_90d": 235,
-        "sessions_all_time": 235,
-        "window_30d_complete": false,
-        "window_90d_complete": false,
-        "notes": "",
-        "ships": [
+        "weekly_stacks": [
           {
-            "title": "You Became Your Own Banker. Why Are You Still Dependent on Your Income?",
-            "path": "/ibc-vs-perpetual-wealth-strategy/",
-            "url": "https://paradigmlife.net/ibc-vs-perpetual-wealth-strategy/",
-            "shipped_on": "2026-09-10",
-            "sessions_ship_week": 7,
-            "sessions_30d": 13,
-            "sessions_90d": 13,
-            "sessions_all_time": 13,
-            "window_30d_complete": false,
-            "window_90d_complete": false,
-            "sessions_60d": 13,
-            "window_60d_complete": false
+            "w": 1,
+            "sessions": 131,
+            "status": "complete"
           },
           {
-            "title": "The Guide Gives You the System. Now Find Out Whether Your Current Foundation is Ready to Run it.",
-            "path": "/family-banking-guide/",
-            "url": "https://paradigmlife.net/family-banking-guide/",
-            "shipped_on": "2026-09-10",
-            "sessions_ship_week": 6,
-            "sessions_30d": 28,
-            "sessions_90d": 28,
-            "sessions_all_time": 28,
-            "window_30d_complete": false,
-            "window_90d_complete": false,
-            "sessions_60d": 28,
-            "window_60d_complete": false
+            "w": 2,
+            "sessions": 91,
+            "status": "complete"
           },
           {
-            "title": "What Are Paid Up Additions (PUA) In Life Insurance?",
-            "path": "/paid-additions-pua-life-insurance/",
-            "url": "https://paradigmlife.net/paid-additions-pua-life-insurance/",
-            "shipped_on": "2026-09-09",
-            "sessions_ship_week": 8,
-            "sessions_30d": 18,
-            "sessions_90d": 18,
-            "sessions_all_time": 18,
-            "window_30d_complete": false,
-            "window_90d_complete": false,
-            "sessions_60d": 18,
-            "window_60d_complete": false
+            "w": 3,
+            "sessions": 13,
+            "status": "in_progress"
           },
           {
-            "title": "Your Labor Is a Depleting Asset. These Aren’t.",
-            "path": "/best-assets-that-produce-cash-flow/",
-            "url": "https://paradigmlife.net/best-assets-that-produce-cash-flow/",
-            "shipped_on": "2026-09-09",
-            "sessions_ship_week": 18,
-            "sessions_30d": 38,
-            "sessions_90d": 38,
-            "sessions_all_time": 38,
-            "window_30d_complete": false,
-            "window_90d_complete": false,
-            "sessions_60d": 38,
-            "window_60d_complete": false
+            "w": 4,
+            "sessions": null,
+            "status": "not_started"
           },
           {
-            "title": "BOLI: The Balance Sheet Strategy Banks Use on Themselves",
-            "path": "/bank-owned-life-insurance-boli-explained/",
-            "url": "https://paradigmlife.net/bank-owned-life-insurance-boli-explained/",
-            "shipped_on": "2026-09-09",
-            "sessions_ship_week": 10,
-            "sessions_30d": 20,
-            "sessions_90d": 20,
-            "sessions_all_time": 20,
-            "window_30d_complete": false,
-            "window_90d_complete": false,
-            "sessions_60d": 20,
-            "window_60d_complete": false
+            "w": 5,
+            "sessions": null,
+            "status": "not_started"
           },
           {
-            "title": "An Introduction to Using Life Insurance as a Bank",
-            "path": "/an-introduction-to-using-life-insurance-as-a-bank/",
-            "url": "https://paradigmlife.net/an-introduction-to-using-life-insurance-as-a-bank/",
-            "shipped_on": "2026-09-09",
-            "sessions_ship_week": 8,
-            "sessions_30d": 14,
-            "sessions_90d": 14,
-            "sessions_all_time": 14,
-            "window_30d_complete": false,
-            "window_90d_complete": false,
-            "sessions_60d": 14,
-            "window_60d_complete": false
+            "w": 6,
+            "sessions": null,
+            "status": "not_started"
           },
           {
-            "title": "Guaranteed Cash Value Whole Life Insurance",
-            "path": "/guaranteed-cash-value-whole-life-insurance/",
-            "url": "https://paradigmlife.net/guaranteed-cash-value-whole-life-insurance/",
-            "shipped_on": "2026-09-09",
-            "sessions_ship_week": 11,
-            "sessions_30d": 16,
-            "sessions_90d": 16,
-            "sessions_all_time": 16,
-            "window_30d_complete": false,
-            "window_90d_complete": false,
-            "sessions_60d": 16,
-            "window_60d_complete": false
+            "w": 7,
+            "sessions": null,
+            "status": "not_started"
           },
           {
-            "title": "Infinite Banking Works Its Also Incomplete",
-            "path": "/infinite-banking-works-its-also-incomplete/",
-            "url": "https://paradigmlife.net/infinite-banking-works-its-also-incomplete/",
-            "shipped_on": "2026-09-08",
-            "sessions_ship_week": 6,
-            "sessions_30d": 16,
-            "sessions_90d": 16,
-            "sessions_all_time": 16,
-            "window_30d_complete": false,
-            "window_90d_complete": false,
-            "sessions_60d": 16,
-            "window_60d_complete": false
+            "w": 8,
+            "sessions": null,
+            "status": "not_started"
           },
           {
-            "title": "Rate Of Return During Retirement",
-            "path": "/rate-of-return-during-retirement/",
-            "url": "https://paradigmlife.net/rate-of-return-during-retirement/",
-            "shipped_on": "2026-09-08",
-            "sessions_ship_week": 3,
-            "sessions_30d": 6,
-            "sessions_90d": 6,
-            "sessions_all_time": 6,
-            "window_30d_complete": false,
-            "window_90d_complete": false,
-            "sessions_60d": 6,
-            "window_60d_complete": false
-          },
-          {
-            "title": "How To Calculate Short Term Disability Benefits Premiums And Rates",
-            "path": "/how-to-calculate-short-term-disability-benefits-premiums-and-rates/",
-            "url": "https://paradigmlife.net/how-to-calculate-short-term-disability-benefits-premiums-and-rates/",
-            "shipped_on": "2026-09-08",
-            "sessions_ship_week": 23,
-            "sessions_30d": 66,
-            "sessions_90d": 66,
-            "sessions_all_time": 66,
-            "window_30d_complete": false,
-            "window_90d_complete": false,
-            "sessions_60d": 66,
-            "window_60d_complete": false
+            "w": 9,
+            "sessions": null,
+            "status": "not_started"
           }
         ],
-        "sessions_60d": 235,
-        "window_60d_complete": false
+        "sessions_all_time": 235,
+        "ships": [
+          {
+            "path": "/ibc-vs-perpetual-wealth-strategy/",
+            "shipped_on": "2026-09-10",
+            "title": "You Became Your Own Banker. Why Are You Still Dependent on Your Income?"
+          },
+          {
+            "path": "/family-banking-guide/",
+            "shipped_on": "2026-09-10",
+            "title": "The Guide Gives You the System. Now Find Out Whether Your Current Foundation is Ready to Run it."
+          },
+          {
+            "path": "/paid-additions-pua-life-insurance/",
+            "shipped_on": "2026-09-09",
+            "title": "What Are Paid Up Additions (PUA) In Life Insurance?"
+          },
+          {
+            "path": "/best-assets-that-produce-cash-flow/",
+            "shipped_on": "2026-09-09",
+            "title": "Your Labor Is a Depleting Asset. These Aren\u2019t."
+          },
+          {
+            "path": "/bank-owned-life-insurance-boli-explained/",
+            "shipped_on": "2026-09-09",
+            "title": "BOLI: The Balance Sheet Strategy Banks Use on Themselves"
+          },
+          {
+            "path": "/an-introduction-to-using-life-insurance-as-a-bank/",
+            "shipped_on": "2026-09-09",
+            "title": "An Introduction to Using Life Insurance as a Bank"
+          },
+          {
+            "path": "/guaranteed-cash-value-whole-life-insurance/",
+            "shipped_on": "2026-09-09",
+            "title": "Guaranteed Cash Value Whole Life Insurance"
+          },
+          {
+            "path": "/infinite-banking-works-its-also-incomplete/",
+            "shipped_on": "2026-09-08",
+            "title": "Infinite Banking Works Its Also Incomplete"
+          },
+          {
+            "path": "/rate-of-return-during-retirement/",
+            "shipped_on": "2026-09-08",
+            "title": "Rate Of Return During Retirement"
+          },
+          {
+            "path": "/how-to-calculate-short-term-disability-benefits-premiums-and-rates/",
+            "shipped_on": "2026-09-08",
+            "title": "How To Calculate Short Term Disability Benefits Premiums And Rates"
+          }
+        ]
       },
       {
         "week_start": "2026-08-31",
-        "label": "Aug 31 – Sep 6, 2026",
+        "label": "Aug 31 \u2013 Sep 6, 2026",
         "published_count": 1,
-        "sessions_ship_week": 7,
-        "sessions_30d": 20,
-        "sessions_90d": 20,
-        "sessions_all_time": 20,
-        "window_30d_complete": false,
-        "window_90d_complete": false,
-        "notes": "",
-        "ships": [
+        "weekly_stacks": [
           {
-            "title": "The Market Fluctuates And You Could Lose Everything Heres The Retirement Design Built Around A Guarantee Not A Guess",
-            "path": "/the-market-fluctuates-and-you-could-lose-everything-heres-the-retirement-design-built-around-a-guarantee-not-a-guess/",
-            "url": "https://paradigmlife.net/the-market-fluctuates-and-you-could-lose-everything-heres-the-retirement-design-built-around-a-guarantee-not-a-guess/",
-            "shipped_on": "2026-09-04",
-            "sessions_ship_week": 7,
-            "sessions_30d": 20,
-            "sessions_90d": 20,
-            "sessions_all_time": 20,
-            "window_30d_complete": false,
-            "window_90d_complete": false,
-            "sessions_60d": 20,
-            "window_60d_complete": false
+            "w": 1,
+            "sessions": 15,
+            "status": "complete"
+          },
+          {
+            "w": 2,
+            "sessions": 4,
+            "status": "complete"
+          },
+          {
+            "w": 3,
+            "sessions": 1,
+            "status": "in_progress"
+          },
+          {
+            "w": 4,
+            "sessions": null,
+            "status": "not_started"
+          },
+          {
+            "w": 5,
+            "sessions": null,
+            "status": "not_started"
+          },
+          {
+            "w": 6,
+            "sessions": null,
+            "status": "not_started"
+          },
+          {
+            "w": 7,
+            "sessions": null,
+            "status": "not_started"
+          },
+          {
+            "w": 8,
+            "sessions": null,
+            "status": "not_started"
+          },
+          {
+            "w": 9,
+            "sessions": null,
+            "status": "not_started"
           }
         ],
-        "sessions_60d": 20,
-        "window_60d_complete": false
+        "sessions_all_time": 20,
+        "ships": [
+          {
+            "path": "/the-market-fluctuates-and-you-could-lose-everything-heres-the-retirement-design-built-around-a-guarantee-not-a-guess/",
+            "shipped_on": "2026-09-04",
+            "title": "The Market Fluctuates And You Could Lose Everything Heres The Retirement Design Built Around A Guarantee Not A Guess"
+          }
+        ]
       },
       {
         "week_start": "2026-08-24",
-        "label": "Aug 24 – Aug 30, 2026",
+        "label": "Aug 24 \u2013 Aug 30, 2026",
         "published_count": 1,
-        "sessions_ship_week": 7,
-        "sessions_30d": 29,
-        "sessions_90d": 29,
-        "sessions_all_time": 29,
-        "window_30d_complete": false,
-        "window_90d_complete": false,
-        "notes": "",
-        "ships": [
+        "weekly_stacks": [
           {
-            "title": "Student Loan Overpayment",
-            "path": "/student-loan-overpayment/",
-            "url": "https://paradigmlife.net/student-loan-overpayment/",
-            "shipped_on": "2026-08-25",
-            "sessions_ship_week": 7,
-            "sessions_30d": 29,
-            "sessions_90d": 29,
-            "sessions_all_time": 29,
-            "window_30d_complete": false,
-            "window_90d_complete": false,
-            "sessions_60d": 29,
-            "window_60d_complete": false
+            "w": 1,
+            "sessions": 7,
+            "status": "complete"
+          },
+          {
+            "w": 2,
+            "sessions": 5,
+            "status": "complete"
+          },
+          {
+            "w": 3,
+            "sessions": 10,
+            "status": "complete"
+          },
+          {
+            "w": 4,
+            "sessions": 7,
+            "status": "complete"
+          },
+          {
+            "w": 5,
+            "sessions": 0,
+            "status": "in_progress"
+          },
+          {
+            "w": 6,
+            "sessions": null,
+            "status": "not_started"
+          },
+          {
+            "w": 7,
+            "sessions": null,
+            "status": "not_started"
+          },
+          {
+            "w": 8,
+            "sessions": null,
+            "status": "not_started"
+          },
+          {
+            "w": 9,
+            "sessions": null,
+            "status": "not_started"
           }
         ],
-        "sessions_60d": 29,
-        "window_60d_complete": false
+        "sessions_all_time": 29,
+        "ships": [
+          {
+            "path": "/student-loan-overpayment/",
+            "shipped_on": "2026-08-25",
+            "title": "Student Loan Overpayment"
+          }
+        ]
       },
       {
         "week_start": "2026-07-27",
-        "label": "Jul 27 – Aug 2, 2026",
+        "label": "Jul 27 \u2013 Aug 2, 2026",
         "published_count": 3,
-        "sessions_ship_week": 43,
-        "sessions_30d": 180,
-        "sessions_90d": 313,
-        "sessions_all_time": 313,
-        "window_30d_complete": true,
-        "window_90d_complete": false,
-        "notes": "",
-        "ships": [
+        "weekly_stacks": [
           {
-            "title": "Your Estate Plan Coordinates What Youve Built But Whats It Built On",
-            "path": "/your-estate-plan-coordinates-what-youve-built-but-whats-it-built-on/",
-            "url": "https://paradigmlife.net/your-estate-plan-coordinates-what-youve-built-but-whats-it-built-on/",
-            "shipped_on": "2026-07-31",
-            "sessions_ship_week": 9,
-            "sessions_30d": 29,
-            "sessions_90d": 29,
-            "sessions_all_time": 29,
-            "window_30d_complete": true,
-            "window_90d_complete": false,
-            "sessions_60d": 29,
-            "window_60d_complete": false
+            "w": 1,
+            "sessions": 56,
+            "status": "complete"
           },
           {
-            "title": "Family Banking Capital Architecture",
-            "path": "/family-banking-capital-architecture/",
-            "url": "https://paradigmlife.net/family-banking-capital-architecture/",
-            "shipped_on": "2026-07-29",
-            "sessions_ship_week": 8,
-            "sessions_30d": 45,
-            "sessions_90d": 45,
-            "sessions_all_time": 45,
-            "window_30d_complete": true,
-            "window_90d_complete": false,
-            "sessions_60d": 45,
-            "window_60d_complete": false
+            "w": 2,
+            "sessions": 42,
+            "status": "complete"
           },
           {
-            "title": "Great American Banking Families",
-            "path": "/great-american-banking-families/",
-            "url": "https://paradigmlife.net/great-american-banking-families/",
-            "shipped_on": "2026-07-29",
-            "sessions_ship_week": 26,
-            "sessions_30d": 239,
-            "sessions_90d": 239,
-            "sessions_all_time": 239,
-            "window_30d_complete": true,
-            "window_90d_complete": false,
-            "sessions_60d": 239,
-            "window_60d_complete": false
+            "w": 3,
+            "sessions": 36,
+            "status": "complete"
+          },
+          {
+            "w": 4,
+            "sessions": 37,
+            "status": "complete"
+          },
+          {
+            "w": 5,
+            "sessions": 34,
+            "status": "complete"
+          },
+          {
+            "w": 6,
+            "sessions": 35,
+            "status": "complete"
+          },
+          {
+            "w": 7,
+            "sessions": 42,
+            "status": "complete"
+          },
+          {
+            "w": 8,
+            "sessions": 30,
+            "status": "in_progress"
+          },
+          {
+            "w": 9,
+            "sessions": 1,
+            "status": "in_progress"
           }
         ],
-        "sessions_60d": 313,
-        "window_60d_complete": false
+        "sessions_all_time": 313,
+        "ships": [
+          {
+            "path": "/your-estate-plan-coordinates-what-youve-built-but-whats-it-built-on/",
+            "shipped_on": "2026-07-31",
+            "title": "Your Estate Plan Coordinates What Youve Built But Whats It Built On"
+          },
+          {
+            "path": "/family-banking-capital-architecture/",
+            "shipped_on": "2026-07-29",
+            "title": "Family Banking Capital Architecture"
+          },
+          {
+            "path": "/great-american-banking-families/",
+            "shipped_on": "2026-07-29",
+            "title": "Great American Banking Families"
+          }
+        ]
       }
-    ]
+    ],
+    "week_columns": 9
   },
   "organic_mql": {
     "available_window": {
       "start": "2026-03-28",
       "end": "2026-09-23",
       "timezone": "America/Denver",
-      "label": "Mar 28 – Sep 23, 2026 (180 days loaded)",
+      "label": "Mar 28 \u2013 Sep 23, 2026 (180 days loaded)",
       "days": 180
     },
     "window": {
       "start": "2026-07-26",
       "end": "2026-09-23",
       "timezone": "America/Denver",
-      "label": "Jul 26 – Sep 23, 2026 (60 days, America/Denver)",
+      "label": "Jul 26 \u2013 Sep 23, 2026 (60 days, America/Denver)",
       "days": 60
     },
     "definitions": {
@@ -1542,13 +1549,13 @@
       ],
       "content_scope": "paradigmlife.net paths classified as content (blog/guides/evergreen); learn/academy included when first/last URL and non-noise; thank-you/portal/paid-LP noise excluded from table",
       "caveats": [
-        "HubSpot MCP exposes first + last URL only — mid-funnel content views are invisible.",
-        "GA4 sessions ≠ HubSpot contacts; do not equate page sessions with MQL counts.",
+        "HubSpot MCP exposes first + last URL only \u2014 mid-funnel content views are invisible.",
+        "GA4 sessions \u2260 HubSpot contacts; do not equate page sessions with MQL counts.",
         "Paid MQLs (PAID_SOCIAL / PAID_SEARCH / PAID_OTHER / PAID_VIDEO) are excluded from Organic MQLs and from content-attributed counts.",
-        "Summary organic sessions/users come from complete GA4 channel×day totals. Page table rows are truncated by GA4 thresholding (esp. Direct long-tail); channel totals remain complete.",
+        "Summary organic sessions/users come from complete GA4 channel\u00d7day totals. Page table rows are truncated by GA4 thresholding (esp. Direct long-tail); channel totals remain complete.",
         "AI Assistant / Organic Video page-level daily rows were omitted (tiny volume); their sessions still count in summary via channel totals.",
-        "Most MQLs in recent windows are paid social → learn.paradigmlife.net form LPs — organic content→MQL may be sparse.",
-        "Date filter re-aggregates in the browser from cached daily/contact records — no live GA4/HubSpot calls."
+        "Most MQLs in recent windows are paid social \u2192 learn.paradigmlife.net form LPs \u2014 organic content\u2192MQL may be sparse.",
+        "Date filter re-aggregates in the browser from cached daily/contact records \u2014 no live GA4/HubSpot calls."
       ],
       "noise_rules": {
         "exact": [
@@ -3208,7 +3215,7 @@
         "mqls_as_first": 0,
         "mqls_as_last": 3,
         "channel_mix": [],
-        "channel_mix_label": "—",
+        "channel_mix_label": "\u2014",
         "hs_sources": {
           "PAID_SOCIAL": 3
         }
@@ -3225,7 +3232,7 @@
         "mqls_as_first": 0,
         "mqls_as_last": 1,
         "channel_mix": [],
-        "channel_mix_label": "—",
+        "channel_mix_label": "\u2014",
         "hs_sources": {
           "PAID_SEARCH": 1
         }
@@ -3242,7 +3249,7 @@
         "mqls_as_first": 1,
         "mqls_as_last": 0,
         "channel_mix": [],
-        "channel_mix_label": "—",
+        "channel_mix_label": "\u2014",
         "hs_sources": {
           "DIRECT_TRAFFIC": 1
         }
