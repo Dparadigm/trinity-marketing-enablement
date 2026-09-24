@@ -123,7 +123,7 @@
 <section class="cohorts" id="cohortsStrip" aria-label="Brief-shipped cohorts">
  <div class="card">
  <h2>Brief-shipped cohorts</h2>
- <p class="cap">Sessions on that week’s Published URLs only — not sitewide. Columns are nested windows on the same URLs from each publish date: 30d is inside 60d, which is inside 90d, which is inside all-time. They are not separate weeks added together. Young posts show the same number in every column until enough days pass for the windows to differ.</p>
+ <p class="cap">Sessions on that week’s Published URLs only — not sitewide. <strong>W1, W2, W3…</strong> are stacked weekly buckets from each URL’s publish date (they add up). <strong>All-time</strong> is the only cumulative total.</p>
  <div id="cohortsTable"><p class="muted">Loading cohorts…</p></div>
  </div>
 </section>
@@ -187,33 +187,39 @@
  return;
  }
  const asOf=block.as_of||'';
+ const colN=block.week_columns||Math.max(...block.cohorts.map(c=>(c.weekly_stacks||[]).length),0);
+ const weekHeaders=Array.from({length:colN},(_,i)=>`<th class="num">W${i+1}</th>`).join('');
  const rows=block.cohorts.map(c=>{
- const s60=c.sessions_60d!=null?c.sessions_60d:'—';
+ const stacks=c.weekly_stacks||[];
+ const cells=Array.from({length:colN},(_,i)=>{
+  const w=stacks[i];
+  if(!w || w.sessions==null || w.status==='not_started') return '<td class="num muted">—</td>';
+  const title=w.status==='in_progress'?' title="Week still in progress"':'';
+  return `<td class="num"${title}>${w.sessions}</td>`;
+ }).join('');
  return `<tr>
  <td>${c.label||c.week_start}</td>
  <td class="num">${c.published_count ?? '—'}</td>
- <td class="num">${c.sessions_30d ?? '—'}</td>
- <td class="num">${s60}</td>
- <td class="num">${c.sessions_90d ?? '—'}</td>
- <td class="num">${c.sessions_all_time ?? '—'}</td>
+ ${cells}
+ <td class="num"><strong>${c.sessions_all_time ?? '—'}</strong></td>
  </tr>`;
  }).join('');
+ const weekWidth=colN>0?Math.max(6, Math.floor(48/colN)):8;
  el.innerHTML=`<table>
  <colgroup>
-  <col style="width:28%"/><col style="width:12%"/>
-  <col style="width:15%"/><col style="width:15%"/><col style="width:15%"/><col style="width:15%"/>
+  <col style="width:22%"/><col style="width:8%"/>
+  ${Array.from({length:colN},()=>`<col style="width:${weekWidth}%"/>`).join('')}
+  <col style="width:10%"/>
  </colgroup>
  <thead><tr>
  <th>Published week</th>
  <th class="num">Published</th>
- <th class="num">30d</th>
- <th class="num">60d</th>
- <th class="num">90d</th>
+ ${weekHeaders}
  <th class="num">All-time</th>
  </tr></thead>
  <tbody>${rows}</tbody>
  </table>
- <p class="muted" style="font-size:.78rem;margin:.4rem 0 0">As of ${asOf||'—'}. Example: Sep 14 ships have only been live a few days, so their 30d / 60d / 90d / all-time are the same total so far (42) — not three separate weeks of 42.</p>`;
+ <p class="muted" style="font-size:.78rem;margin:.4rem 0 0">As of ${asOf||'—'}. W1 = first 7 days after each URL’s publish date, W2 = next 7 days, and so on. Those weeks stack (add). All-time is the running total — not another window stacked on top.</p>`;
  }
 
  let data=null; let organicRaw=null; let active=0; let board='briefs'; let organicSort='sessions';
