@@ -32,7 +32,8 @@
  .board-switch{display:flex;gap:.5rem;flex-wrap:wrap;max-width:1100px;margin:0 auto;padding:0 1.5rem .75rem}
  .board-tab{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:10px;padding:.55rem 1rem;cursor:pointer;font:inherit;font-size:.92rem}
  .board-tab[aria-selected="true"]{background:var(--accent2);color:#fff;border-color:var(--accent2);font-weight:600}
- .weeks{display:flex;gap:.5rem;flex-wrap:wrap;max-width:1100px;margin:0 auto;padding:0 1.5rem 1rem}
+ .weeks{display:flex;gap:.5rem;flex-wrap:wrap;max-width:1100px;margin:0 auto;padding:.65rem 1.5rem;position:sticky;top:0;z-index:40;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:0 1px 0 rgba(0,0,0,.04)}
+.weeks.is-stuck{box-shadow:0 6px 16px rgba(0,0,0,.12)}
  .week-tab{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;padding:.4rem .85rem;cursor:pointer;font:inherit;font-size:.88rem}
  .week-tab[aria-selected="true"]{background:var(--accent);color:var(--chip-fg);border-color:var(--accent);font-weight:600}
  main{max-width:1100px;margin:0 auto;padding:0 1.5rem 3rem}
@@ -119,7 +120,7 @@
 <section class="cohorts" id="cohortsStrip" aria-label="Brief-shipped cohorts">
  <div class="card">
  <h2>Brief-shipped cohorts</h2>
- <p class="cap">Sessions on that week’s Published URLs only - not sitewide. 30d / 90d / all-time start at each URL’s publish date.</p>
+ <p class="cap">Sessions on that week’s Published URLs only — not sitewide. 30d / 60d / 90d / all-time start at each URL’s publish date.</p>
  <div id="cohortsTable"><p class="muted">Loading cohorts…</p></div>
  </div>
 </section>
@@ -184,24 +185,20 @@
  return;
  }
  const rows=block.cohorts.map(c=>{
- const notes=c.notes||'';
- const noteHtml=notes&&notes!=='Windows complete'
- ?`<span class="note-tag">${notes}</span>`
- :`<span class="muted" style="font-size:.72rem">${notes||'n/a'}</span>`;
+ const s60=c.sessions_60d!=null?c.sessions_60d:'—';
  return `<tr>
  <td>${c.label||c.week_start}</td>
  <td class="num">${c.published_count}</td>
- <td class="num">${c.sessions_ship_week}</td>
  <td class="num">${c.sessions_30d}</td>
+ <td class="num">${s60}</td>
  <td class="num">${c.sessions_90d}</td>
  <td class="num">${c.sessions_all_time}</td>
- <td>${noteHtml}</td>
  </tr>`;
  }).join('');
  el.innerHTML=`<table>
  <thead><tr>
- <th>Ship week</th><th>Published</th><th>Ship week sess</th>
- <th>30d</th><th>90d</th><th>All-time</th><th>Notes</th>
+ <th>Published week</th><th>Published</th>
+ <th>30d</th><th>60d</th><th>90d</th><th>All-time</th>
  </tr></thead>
  <tbody>${rows}</tbody>
  </table>`;
