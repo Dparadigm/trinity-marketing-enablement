@@ -90,6 +90,12 @@
  .trail .tcell.partial{opacity:.7}
  .trail-label{font-size:.8rem;color:var(--muted);margin:.75rem 0 .25rem}
  .hidden{display:none !important}
+
+ .date-bar{display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;margin:0 0 1rem;padding:.75rem 1rem;background:var(--panel);border:1px solid var(--line);border-radius:10px}
+ .date-bar label{font-size:.82rem;color:var(--muted);display:flex;flex-direction:column;gap:.2rem}
+ .date-bar input[type=date]{font:inherit;font-size:.9rem;padding:.35rem .5rem;border:1px solid var(--line);border-radius:8px;background:var(--panel2);color:var(--text)}
+ .date-bar .hint{font-size:.8rem;color:var(--muted);flex:1;min-width:12rem}
+ .date-bar .clamp-note{font-size:.8rem;color:var(--warn)}
 </style>
 </head>
 <body>
@@ -201,7 +207,9 @@
  </table>`;
  }
 
- let data=null; let active=0; let board='briefs'; let organicSort='sessions';
+ let data=null; let organicRaw=null; let active=0; let board='briefs'; let organicSort='sessions';
+ let orgStart=null; let orgEnd=null; let orgClampNote=''; let orgDebounce=null;
+
 
  function renderBriefWeek(){
  const w=data.weeks[active];
@@ -249,10 +257,212 @@
  `;
  }
 
+
+ function gaInclude(){return (organicRaw&&organicRaw.definitions&&organicRaw.definitions.ga4_channels_included)||['Organic Search','Organic Social','Referral','Direct','AI Assistant','Organic Video'];}
+ function hsOrg(){return new Set((organicRaw&&organicRaw.definitions&&organicRaw.definitions.hubspot_organic_sources)||[]);}
+ function hsPaid(){return new Set((organicRaw&&organicRaw.definitions&&organicRaw.definitions.hubspot_paid_sources_excluded)||[]);}
+ function noiseRules(){
+  const d=(organicRaw&&organicRaw.definitions&&organicRaw.definitions.noise_rules)||{};
+  return {
+   exact:new Set(d.exact||[]),
+   prefix:d.prefix||[],
+  };
+ }
+ function isNoisePath(path){
+  if(!path) return true;
+  const pl=String(path).toLowerCase();
+  const nr=noiseRules();
+  if(nr.exact.has(pl)||nr.exact.has(pl.replace(/\/$/,'')+'/')) return true;
+  const stripped=pl.replace(/\/$/,'');
+  if(['/wealthscore','/aspire','/4321'].includes(stripped)) return true;
+  if((nr.prefix||[]).some(p=>pl.startsWith(p))) return true;
+  if(pl.includes('thank')) return true;
+  if(/(google|meta|youtube|fb|facebook|tiktok)-\d/.test(pl)) return true;
+  if(pl.includes('membership-access')) return true;
+  if(/^\/infinite-banking(-\d+)?\/$/.test(pl)) return true;
+  if(/^\/infinite-banking-(google|meta|fb|facebook|youtube)-\d+\/$/.test(pl)) return true;
+  return false;
+ }
+ function subdomainLabel(host){
+  if(!host||host==='paradigmlife.net') return null;
+  if(host.endsWith('.paradigmlife.net')) return host.split('.')[0];
+  return null;
+ }
+ function titleFromPath(path){
+  if(!path||path==='/') return 'Home';
+  const slug=path.replace(/^\/|\/$/g,'').split('/').pop()||path;
+  return slug.replace(/[-_]+/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
+ }
+ function daysInclusive(a,b){
+  const ms=86400000;
+  return Math.round((Date.parse(b+'T00:00:00')-Date.parse(a+'T00:00:00'))/ms)+1;
+ }
+ function labelRange(a,b){
+  const opts={month:'short',day:'numeric'};
+  const fa=new Date(a+'T12:00:00').toLocaleDateString('en-US',opts);
+  const fb=new Date(b+'T12:00:00').toLocaleDateString('en-US',opts);
+  const n=daysInclusive(a,b);
+  return fa+' – '+fb+', 2026 ('+n+' days, America/Denver)';
+ }
+ function clampDates(start,end){
+  const avail=organicRaw.available_window;
+  let note='';
+  let s=start, e=end;
+  if(s>e){const t=s;s=e;e=t; note='Start/end swapped. ';}
+  if(s<avail.start){s=avail.start; note+='Clamped to loaded data. ';}
+  if(e>avail.end){e=avail.end; note+='Clamped to loaded data. ';}
+  if(s>e){s=avail.start;e=avail.end; note='Reset to full loaded window. ';}
+  return {start:s,end:e,note:note.trim()};
+ }
+ function aggregateOrganic(start,end){
+  const include=new Set(gaInclude());
+  const org=hsOrg(); const paid=hsPaid();
+  const chRows=(organicRaw.daily&&organicRaw.daily.channels)||[];
+  const pRows=(organicRaw.daily&&organicRaw.daily.pages)||[];
+  const mqls=organicRaw.mqls||[];
+
+  let sess=0, users=0;
+  const allTotals={};
+  const gaTotals={};
+  chRows.forEach(r=>{
+   if(r.d<start||r.d>end) return;
+   if(!allTotals[r.c]) allTotals[r.c]={sessions:0,users:0};
+   allTotals[r.c].sessions+=r.s; allTotals[r.c].users+=r.u;
+   if(include.has(r.c)){
+    sess+=r.s; users+=r.u;
+    if(!gaTotals[r.c]) gaTotals[r.c]={sessions:0,users:0};
+    gaTotals[r.c].sessions+=r.s; gaTotals[r.c].users+=r.u;
+   }
+  });
+
+  const pageStats={};
+  let homeOrganic=0, noiseSess=0;
+  const pageCaptured={};
+  pRows.forEach(r=>{
+   if(r.d<start||r.d>end) return;
+   if(!include.has(r.c)) return;
+   pageCaptured[r.c]=(pageCaptured[r.c]||0)+r.s;
+   if(r.p==='/'){homeOrganic+=r.s; return;}
+   if(isNoisePath(r.p)){noiseSess+=r.s; return;}
+   if(!pageStats[r.p]) pageStats[r.p]={sessions:0,users:0,mix:{},hosts:{},mql_first:0,mql_last:0,mql_either:0,hs_sources:{}};
+   pageStats[r.p].sessions+=r.s; pageStats[r.p].users+=r.u;
+   pageStats[r.p].mix[r.c]=(pageStats[r.p].mix[r.c]||0)+r.s;
+  });
+
+  const contentPaths=new Set(Object.keys(pageStats));
+  const rangeMqls=mqls.filter(m=>m.d>=start&&m.d<=end);
+  const mqlBySource={};
+  let organicMqls=0, paidExcluded=0, otherNot=0;
+  rangeMqls.forEach(m=>{
+   const src=m.src||'(none)';
+   mqlBySource[src]=(mqlBySource[src]||0)+1;
+   if(paid.has(src)) paidExcluded++;
+   else if(org.has(src)) organicMqls++;
+   else otherNot++;
+   [[m.fh,m.fp],[m.lh,m.lp]].forEach(([host,path])=>{
+    if(!path||!host||!String(host).includes('paradigmlife')) return;
+    if(String(host).includes('portal')||String(host).startsWith('uat-')) return;
+    if(isNoisePath(path)) return;
+    contentPaths.add(path);
+    if(!pageStats[path]) pageStats[path]={sessions:0,users:0,mix:{},hosts:{},mql_first:0,mql_last:0,mql_either:0,hs_sources:{}};
+    pageStats[path].hosts[host]=(pageStats[path].hosts[host]||0)+1;
+   });
+  });
+
+  rangeMqls.forEach(m=>{
+   const touched=new Set();
+   if(m.fp&&contentPaths.has(m.fp)){pageStats[m.fp].mql_first++; touched.add(m.fp);}
+   if(m.lp&&contentPaths.has(m.lp)){pageStats[m.lp].mql_last++; touched.add(m.lp);}
+   touched.forEach(path=>{
+    pageStats[path].mql_either++;
+    const src=m.src||'(none)';
+    pageStats[path].hs_sources[src]=(pageStats[path].hs_sources[src]||0)+1;
+   });
+  });
+
+  let contentAttr=0, orgContentAttr=0;
+  rangeMqls.forEach(m=>{
+   if(paid.has(m.src||'')) return;
+   const hit=(m.fp&&contentPaths.has(m.fp))||(m.lp&&contentPaths.has(m.lp));
+   if(!hit) return;
+   contentAttr++;
+   if(org.has(m.src||'')) orgContentAttr++;
+  });
+
+  let pages=[];
+  contentPaths.forEach(path=>{
+   const st=pageStats[path]; if(!st) return;
+   if(!st.sessions&&!st.mql_either) return;
+   const hostEntries=Object.entries(st.hosts||{}).sort((a,b)=>b[1]-a[1]);
+   const host=hostEntries.length?hostEntries[0][0]:'paradigmlife.net';
+   const mix=Object.entries(st.mix||{}).sort((a,b)=>b[1]-a[1]).map(([channel,sessions])=>({channel,sessions}));
+   pages.push({
+    path, title:titleFromPath(path), url:'https://'+host+path, host,
+    subdomain_label:subdomainLabel(host),
+    organic_sessions:st.sessions, organic_users:st.users,
+    mqls_first_or_last:st.mql_either, mqls_as_first:st.mql_first, mqls_as_last:st.mql_last,
+    channel_mix:mix, channel_mix_label:mix.length?mix.slice(0,3).map(m=>m.channel+' '+m.sessions).join(', '):'—',
+    hs_sources:st.hs_sources
+   });
+  });
+  pages.sort((a,b)=>(b.organic_sessions-a.organic_sessions)||(b.mqls_first_or_last-a.mqls_first_or_last)||a.path.localeCompare(b.path));
+  const PAGE_CAP=80;
+  let top=pages.slice(0,PAGE_CAP);
+  const topPaths=new Set(top.map(p=>p.path));
+  pages.slice(PAGE_CAP).forEach(p=>{
+   if(p.mqls_first_or_last>0&&!topPaths.has(p.path)){top.push(p); topPaths.add(p.path);}
+  });
+  if(top.length>PAGE_CAP){
+   const must=top.filter(p=>p.mqls_first_or_last>0);
+   const rest=top.filter(p=>!p.mqls_first_or_last).sort((a,b)=>b.organic_sessions-a.organic_sessions);
+   top=must.concat(rest).slice(0,PAGE_CAP);
+   top.sort((a,b)=>(b.organic_sessions-a.organic_sessions)||(b.mqls_first_or_last-a.mqls_first_or_last)||a.path.localeCompare(b.path));
+  }
+
+  const coverage=gaInclude().map(ch=>{
+   const total=(allTotals[ch]&&allTotals[ch].sessions)||0;
+   const captured=pageCaptured[ch]||0;
+   return {channel:ch, landing_sessions_captured:captured, channel_total:total, coverage_pct:total?Math.round(1000*captured/total)/10:null};
+  });
+
+  return {
+   window:{start,end,timezone:'America/Denver',label:labelRange(start,end),days:daysInclusive(start,end)},
+   summary:{
+    organic_sessions:sess, organic_users:users, organic_mqls:organicMqls,
+    content_attributed_mqls:contentAttr, organic_content_attributed_mqls:orgContentAttr,
+    paid_mqls_excluded:paidExcluded, other_mqls_not_organic:otherNot,
+    total_mqls_in_window:rangeMqls.length, mql_by_source:mqlBySource,
+    ga4_channel_totals:allTotals, home_landing_sessions_organic:homeOrganic,
+    noise_or_paid_lp_landing_sessions:noiseSess
+   },
+   coverage, pages:top,
+   definitions:organicRaw.definitions,
+   available_window:organicRaw.available_window,
+   pulled_at:organicRaw.pulled_at
+  };
+ }
+
+ function applyOrganicDates(start,end,reRender){
+  const c=clampDates(start,end);
+  orgStart=c.start; orgEnd=c.end; orgClampNote=c.note;
+  const agg=aggregateOrganic(orgStart, orgEnd);
+  // merge into data.organic_mql for render
+  data.organic_mql=Object.assign({}, data.organic_mql||{}, agg, {
+   available_window:organicRaw.available_window,
+   definitions:organicRaw.definitions,
+   pulled_at:organicRaw.pulled_at
+  });
+  if(reRender!==false && board==='organic') renderOrganic();
+ }
+
  function renderOrganic(){
  const o=data.organic_mql;
  if(!o){
-  document.getElementById('main').innerHTML='<p class="muted">No organic → MQL data in scorecard-data.json yet.</p>';
+  document.getElementById('main').innerHTML='<p class="muted">No organic → MQL data yet.</p>';
+  return;
+ }
+ if(!organicRaw){
+  document.getElementById('main').innerHTML='<p class="muted">Loading filterable organic data…</p>';
   return;
  }
  const s=o.summary;
@@ -265,18 +475,28 @@
  const srcBits=Object.entries(s.mql_by_source||{}).map(([k,v])=>`${k} ${v}`).join(' · ');
  const caveats=(o.definitions&&o.definitions.caveats)||[];
  const incl=(o.definitions&&o.definitions.ga4_channels_included||[]).join(', ');
- const hsOrg=(o.definitions&&o.definitions.hubspot_organic_sources||[]).join(', ');
+ const hsOrgList=(o.definitions&&o.definitions.hubspot_organic_sources||[]).join(', ');
+ const avail=o.available_window||organicRaw.available_window;
+ const availLabel=avail?(avail.start+' → '+avail.end):'';
+ const startVal=orgStart||o.window.start;
+ const endVal=orgEnd||o.window.end;
 
  document.getElementById('main').innerHTML=`
  <h2 style="margin:0 0 .25rem">Organic content → MQLs</h2>
  <p class="muted" style="margin:0 0 .75rem">Which non-paid site landings drive traffic, and which content URLs show up as HubSpot first or last touch on MQLs. <strong>${o.window.label}</strong>.</p>
+ <div class="date-bar">
+  <label>Start<input type="date" id="orgStart" value="${startVal}" min="${avail.start}" max="${avail.end}"/></label>
+  <label>End<input type="date" id="orgEnd" value="${endVal}" min="${avail.start}" max="${avail.end}"/></label>
+  <div class="hint">Data loaded: <strong>${avail.label||availLabel}</strong>. Pick any range inside — summary + table recompute in-browser.</div>
+  ${orgClampNote?`<div class="clamp-note">${orgClampNote}</div>`:''}
+ </div>
  <div class="stats four">
   <div class="stat"><div class="n">${fmt(s.organic_sessions)}</div><div class="l">Organic sessions</div></div>
   <div class="stat"><div class="n">${fmt(s.organic_mqls)}</div><div class="l">Organic MQLs</div></div>
   <div class="stat"><div class="n">${fmt(s.content_attributed_mqls)}</div><div class="l">Content-attributed MQLs</div></div>
   <div class="stat"><div class="n">${fmt(s.paid_mqls_excluded)}</div><div class="l">Paid MQLs excluded</div></div>
  </div>
- <p class="muted" style="font-size:.85rem;margin:.25rem 0 0">GA4 non-paid channels: ${incl}. HubSpot organic sources: ${hsOrg}. Window total MQLs: ${fmt(s.total_mqls_in_window)} (${srcBits}).</p>
+ <p class="muted" style="font-size:.85rem;margin:.25rem 0 0">GA4 non-paid channels: ${incl}. HubSpot organic sources: ${hsOrgList}. Window total MQLs: ${fmt(s.total_mqls_in_window)} (${srcBits}).</p>
  <div class="sort-bar">
   <span class="muted" style="font-size:.82rem">Rank table by</span>
   <button type="button" data-osort="sessions" aria-pressed="${organicSort==='sessions'}">Organic sessions</button>
@@ -311,6 +531,19 @@
    renderOrganic();
   });
  });
+ const onDate=()=>{
+  clearTimeout(orgDebounce);
+  orgDebounce=setTimeout(()=>{
+   const sEl=document.getElementById('orgStart');
+   const eEl=document.getElementById('orgEnd');
+   if(!sEl||!eEl) return;
+   applyOrganicDates(sEl.value, eEl.value, true);
+  }, 150);
+ };
+ const sEl=document.getElementById('orgStart');
+ const eEl=document.getElementById('orgEnd');
+ if(sEl) sEl.addEventListener('change', onDate);
+ if(eEl) eEl.addEventListener('change', onDate);
  }
 
  function setBoard(next){
@@ -330,13 +563,33 @@
   }
  }
 
- fetch('./scorecard-data.json?t='+Date.now()).then(r=>r.json()).then(d=>{
+ Promise.all([
+  fetch('./scorecard-data.json?t='+Date.now()).then(r=>r.json()),
+  fetch('./organic-mql-data.json?t='+Date.now()).then(r=>r.json()).catch(()=>null)
+ ]).then(([d, om])=>{
  data=d;
+ if(om && om.daily && om.mqls){
+  organicRaw=om;
+  orgStart=om.window.start; orgEnd=om.window.end;
+  // ensure data.organic_mql mirrors default aggregate from filterable file
+  data.organic_mql=Object.assign({}, d.organic_mql||{}, {
+   available_window:om.available_window,
+   window:om.window,
+   definitions:om.definitions,
+   summary:om.summary,
+   coverage:om.coverage,
+   pages:om.pages,
+   top_by_organic_sessions:om.top_by_organic_sessions,
+   top_by_mql_attribution:om.top_by_mql_attribution,
+   pulled_at:om.pulled_at
+  });
+ } else if(d.organic_mql){
+  organicRaw=null;
+ }
  document.getElementById('updated').textContent='Updated '+d.meta.updated;
  renderCohorts(d);
 
  const tabs=document.getElementById('tabs');
- // default to first week that has ships
  active=Math.max(0, d.weeks.findIndex(w=>w.counts.shipped>0));
  tabs.innerHTML=d.weeks.map((w,i)=>`<button type="button" class="week-tab" role="tab" aria-selected="${i===active}" data-i="${i}">${w.label.split(',')[0]} · ${w.counts.shipped} published</button>`).join('');
  tabs.querySelectorAll('.week-tab').forEach(btn=>btn.addEventListener('click',()=>{
@@ -349,9 +602,8 @@
   btn.addEventListener('click',()=>setBoard(btn.getAttribute('data-board')));
  });
 
- // deep-link ?board=organic
  const q=new URLSearchParams(location.search).get('board');
- if(q==='organic' && d.organic_mql) setBoard('organic');
+ if(q==='organic' && data.organic_mql) setBoard('organic');
  else setBoard('briefs');
  }).catch(e=>{
  document.getElementById('main').innerHTML='<p class="muted">Could not load scorecard-data.json</p>';
