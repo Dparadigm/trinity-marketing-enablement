@@ -100,10 +100,6 @@
  .date-bar input[type=date]{font:inherit;font-size:.9rem;padding:.35rem .5rem;border:1px solid var(--line);border-radius:8px;background:var(--panel2);color:var(--text)}
  .date-bar .hint{font-size:.8rem;color:var(--muted);flex:1;min-width:12rem}
  .date-bar .clamp-note{font-size:.8rem;color:var(--warn)}
- .nl-block{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1rem 1.25rem;margin:0 0 1.25rem}
- .nl-block h2{margin:0 0 .25rem;font-size:1.15rem;color:var(--accent)}
- .nl-block .cap{color:var(--muted);font-size:.85rem;margin:0 0 .75rem}
- .nl-block table{margin-top:.5rem}
 </style>
 </head>
 <body>
@@ -121,7 +117,7 @@
 
 <div class="board-switch" id="boardSwitch" role="tablist" aria-label="Scorecard board">
  <button type="button" class="board-tab" role="tab" data-board="briefs" aria-selected="true">Brief weeks</button>
- <button type="button" class="board-tab" role="tab" data-board="newsletters" aria-selected="false">Newsletters</button>
+ <!-- Newsletters board deferred to HubSpot-only layer; newsletter-data.json kept in repo for later. -->
  <button type="button" class="board-tab" role="tab" data-board="organic" aria-selected="false">Organic → MQLs</button>
 </div>
 
@@ -227,7 +223,7 @@
  <p class="muted" style="font-size:.78rem;margin:.4rem 0 0">As of ${asOf||'—'}. W1 = first 7 days after each URL’s publish date, W2 = next 7 days, and so on. Those weeks stack (add). All-time is the running total — not another window stacked on top.</p>`;
  }
 
- let data=null; let organicRaw=null; let newsletterRaw=null; let active=0; let board='briefs'; let organicSort='sessions';
+ let data=null; let organicRaw=null; let active=0; let board='briefs'; let organicSort='sessions';
  let orgStart=null; let orgEnd=null; let orgClampNote=''; let orgDebounce=null;
 
 
@@ -582,108 +578,9 @@
  }
 
 
- function cell(v){
-  if(v===null||v===undefined) return '<span class="empty">n/a</span>';
-  return fmt(v);
- }
-
- function renderNewsletters(){
-  const d=newsletterRaw;
-  if(!d){
-   document.getElementById('main').innerHTML='<p class="muted">Loading newsletter data…</p>';
-   return;
-  }
-  const m=d.meta||{};
-  const p=d.prospects||{}; const c=d.clients||{};
-  const ps=p.summary||{}; const cs=c.summary||{};
-  const ctx=m.sitewide_context||{};
-  const prow=(p.sends_or_campaigns||[]).map(r=>`<tr>
-   <td>${r.label||''}<div class="muted" style="font-size:.75rem">${r.ga4_campaign||''}</div></td>
-   <td>${r.month||'—'}</td>
-   <td class="num">${cell(r.sessions)}</td>
-   <td class="num">${cell(r.engaged_sessions)}</td>
-   <td class="num">${cell(r.mqls)}</td>
-   <td class="num">${cell(r.appointments)}</td>
-  </tr>`).join('');
-  const crow=(c.sends_or_campaigns||[]).map(r=>`<tr>
-   <td>${r.label||''}<div class="muted" style="font-size:.75rem">${r.ga4_campaign||''}</div></td>
-   <td>${r.month||'—'}</td>
-   <td class="num">${cell(r.sessions)}</td>
-   <td class="num">${cell(r.engaged_sessions)}</td>
-   <td class="num">${cell(r.users)}</td>
-  </tr>`).join('');
-  const unk=(d.unknown_or_legacy||[]).map(r=>`<tr>
-   <td>${r.label||''}</td>
-   <td class="num">${cell(r.sessions)}</td>
-   <td>${r.notes||''}</td>
-  </tr>`).join('');
-  const crm=(c.crm_send_names_seen||[]).map(r=>`<tr>
-   <td>${r.label||''}</td>
-   <td>${r.month||'—'}</td>
-   <td>${r.notes||''}</td>
-  </tr>`).join('');
-
-  document.getElementById('main').innerHTML=`
- <p class="call warn" style="margin-top:0">Influence via <strong>GA4 campaign sessions</strong> + <strong>HubSpot CRM</strong> only — not HubSpot Marketing Email open/click rates (scopes blocked). Window ${m.window_start||'?'} → ${m.window_end||'?'} (${m.timezone||'America/Denver'}).</p>
-
- <div class="nl-block">
-  <h2>Prospects newsletter → MQLs &amp; appointments</h2>
-  <p class="cap">Named prospect campaigns (incl. <code>37270118-2026 Newsletter</code>). MQLs = newsletter-tied CRM contacts (UTM / first-last URL / EMAIL_MARKETING), not sitewide.</p>
-  <div class="stats four">
-   <div class="stat"><div class="n">${fmt(ps.sessions)}</div><div class="l">GA4 sessions</div></div>
-   <div class="stat"><div class="n">${fmt(ps.engaged_sessions)}</div><div class="l">Engaged sessions</div></div>
-   <div class="stat"><div class="n">${fmt(ps.mqls)}</div><div class="l">Newsletter-tied MQLs</div></div>
-   <div class="stat"><div class="n">${fmt(ps.appointments)}</div><div class="l">NL-tied appointments</div></div>
-  </div>
-  <p class="muted" style="font-size:.85rem;margin:.25rem 0 0">Sitewide MQLs in window (context): ${fmt(ctx.mqls_in_window)}. EMAIL_MARKETING original source: ${fmt(ps.mqls_email_marketing_source)}. Named prospect campaigns: ${fmt(ps.campaigns_named)}.</p>
-  <table>
-   <thead><tr><th>Campaign / send</th><th>Month</th><th class="num">Sessions</th><th class="num">Engaged</th><th class="num">MQLs</th><th class="num">Appts</th></tr></thead>
-   <tbody>${prow||'<tr><td colspan="6" class="muted">No prospect campaign rows</td></tr>'}</tbody>
-  </table>
- </div>
-
- <div class="nl-block">
-  <h2>Existing clients newsletter → engagement</h2>
-  <p class="cap">GA4 Client*Newsletter* campaigns (primary). CRM open/click proxies are secondary — last email name + any-email last open, not Marketing Email API rates.</p>
-  <div class="stats four">
-   <div class="stat"><div class="n">${fmt(cs.sessions)}</div><div class="l">GA4 sessions</div></div>
-   <div class="stat"><div class="n">${fmt(cs.engaged_sessions)}</div><div class="l">Engaged sessions</div></div>
-   <div class="stat"><div class="n">${fmt(cs.engagement_opens_proxy)}</div><div class="l">Open proxy (CRM)</div></div>
-   <div class="stat"><div class="n">${fmt(cs.engagement_clicks_proxy)}</div><div class="l">Click proxy (CRM)</div></div>
-  </div>
-  <table>
-   <thead><tr><th>GA4 campaign</th><th>Month</th><th class="num">Sessions</th><th class="num">Engaged</th><th class="num">Users</th></tr></thead>
-   <tbody>${crow||'<tr><td colspan="5" class="muted">No client campaign rows</td></tr>'}</tbody>
-  </table>
-  <h3 style="margin:1.1rem 0 .35rem;font-size:1rem;color:var(--accent2)">CRM Client Newsletter send names seen</h3>
-  <p class="muted" style="font-size:.82rem;margin:0 0 .35rem">From <code>hs_email_last_email_name</code> on customer contacts — not deliverability/open rates.</p>
-  <table>
-   <thead><tr><th>Send name</th><th>Month</th><th>Notes</th></tr></thead>
-   <tbody>${crm||'<tr><td colspan="3" class="muted">None</td></tr>'}</tbody>
-  </table>
- </div>
-
- <div class="nl-block">
-  <h2>Unknown / legacy newsletter campaigns</h2>
-  <p class="cap">Not classified prospect or client — excluded from summaries above.</p>
-  <table>
-   <thead><tr><th>Campaign</th><th class="num">Sessions</th><th>Notes</th></tr></thead>
-   <tbody>${unk||'<tr><td colspan="3" class="muted">None</td></tr>'}</tbody>
-  </table>
- </div>
-
- <div class="caveat">
-  <strong>Attribution honesty</strong>
-  <ul>
-   <li>${(m.attribution_notes||'').slice(0,480)}${(m.attribution_notes||'').length>480?'…':''}</li>
-   <li>Unnamed <code>hs_email</code> / (not set) email sessions in window: ${fmt(ctx.email_medium_hs_email_not_set_sessions)} (kept separate).</li>
-   <li>Updated ${m.updated||'—'} · method: ${m.method||''}</li>
-  </ul>
- </div>`;
- }
 
  function setBoard(next){
-  board=next;
+  board=(next==='organic')?'organic':'briefs';
   document.querySelectorAll('#boardSwitch .board-tab').forEach(b=>{
    b.setAttribute('aria-selected', b.getAttribute('data-board')===board?'true':'false');
   });
@@ -692,10 +589,6 @@
    briefEls.forEach(el=>el && el.classList.remove('hidden'));
    document.getElementById('headerSub').textContent='Done (CMO state) → Published on paradigmlife.net → brief impact on those URLs';
    renderBriefWeek();
-  } else if(board==='newsletters'){
-   briefEls.forEach(el=>el && el.classList.add('hidden'));
-   document.getElementById('headerSub').textContent='Newsletter influence via GA4 campaigns + HubSpot CRM (not Marketing Email open rates)';
-   renderNewsletters();
   } else {
    briefEls.forEach(el=>el && el.classList.add('hidden'));
    document.getElementById('headerSub').textContent='Non-paid traffic → which content URLs show up on MQLs (first/last touch)';
@@ -705,11 +598,9 @@
 
  Promise.all([
   fetch('./scorecard-data.json?t='+Date.now()).then(r=>r.json()),
-  fetch('./organic-mql-data.json?t='+Date.now()).then(r=>r.json()).catch(()=>null),
-  fetch('./newsletter-data.json?t='+Date.now()).then(r=>r.json()).catch(()=>null)
- ]).then(([d, om, nl])=>{
+  fetch('./organic-mql-data.json?t='+Date.now()).then(r=>r.json()).catch(()=>null)
+ ]).then(([d, om])=>{
  data=d;
- newsletterRaw=nl;
  if(om && om.daily && om.mqls){
   organicRaw=om;
   orgStart=om.window.start; orgEnd=om.window.end;
@@ -745,8 +636,8 @@
  });
 
  const q=new URLSearchParams(location.search).get('board');
+ // ?board=newsletters deferred — no-op to briefs (HubSpot-only layer later)
  if(q==='organic' && data.organic_mql) setBoard('organic');
- else if(q==='newsletters' && newsletterRaw) setBoard('newsletters');
  else setBoard('briefs');
  }).catch(e=>{
  document.getElementById('main').innerHTML='<p class="muted">Could not load scorecard-data.json</p>';
