@@ -1,0 +1,322 @@
+{
+  "meta": {
+    "updated": "2026-09-25 09:23 MT",
+    "as_of": "2026-09-24",
+    "window_start": "2026-03-25",
+    "window_end": "2026-09-24",
+    "timezone": "America/Denver",
+    "ga4_property_id": "256670786",
+    "hubspot_portal_id": "20222891",
+    "method": "GA4 campaign sessions + HubSpot CRM (no Marketing Email scopes)",
+    "classification_rules": [
+      "Prospect: sessionCampaignName contains 'Prospect' (case-insensitive), OR equals/contains '37270118-2026 Newsletter' (primary 2026 prospect UTM campaign; HubSpot send names are '* Prospect Newsletter*').",
+      "Client: sessionCampaignName contains 'Client' (case-insensitive).",
+      "Unknown: other *Newsletter* names without Prospect/Client (legacy combined livestream titles, Revue, unspecified month newsletters).",
+      "Prefer literal name match over heuristics; document unknowns separately."
+    ],
+    "attribution_notes": "No HubSpot Marketing Email API scopes \u2014 cannot report send open/click rates from marketing email objects. Prospect influence: GA4 sessions by named campaign are primary. HubSpot MQLs use hs_v2_date_entered_marketingqualifiedlead. Newsletter-tied MQLs = contacts whose first/last URL, utm_campaign, or hs_analytics_source_data_1 contains '37270118' / Newsletter campaign in the window (N=6); of those, EMAIL_MARKETING original source N=1. hs_email_last_email_name matching Prospect/Client Newsletter is NOT treated as MQL attribution (too many paid/offline MQLs also received those emails). Scheduled appointments: HubSpot appointments object empty; meetings (Calendly Strategy/1st Appointment) are plentiful sitewide but no defensible newsletter\u2192meeting link via contact associations for the EMAIL_MARKETING newsletter MQL (0 meetings). Newsletter-tied appointments reported as 0. Sitewide meeting census not fully paginated for v1 (null). Client engagement primary = GA4 sessions on Client*Newsletter* campaigns (thin in-window; mostly residual 2025 campaigns). Secondary CRM proxy = lifecyclestage=customer AND hs_email_last_email_name contains Client+Newsletter AND hs_email_last_open_date in window (N=2205); click_date populated N=1370. Caveat: last_open_date is any-email last open, not proven open of that newsletter send. Separate email traffic: sessionMedium=email + sessionSource=hs_email + campaign (not set) = 531 sessions \u2014 not attributed to named newsletters.",
+    "sitewide_context": {
+      "mqls_in_window": 1171,
+      "mqls_email_marketing_source": 1,
+      "mqls_newsletter_tied": 6,
+      "mqls_newsletter_tied_definition": "first_url OR last_url OR utm_campaign OR source_data_1 contains 37270118 / Newsletter campaign UTM",
+      "strategy_or_1st_meetings_in_window": null,
+      "strategy_or_1st_meetings_note": "Hundreds of Calendly Strategy / 1st Appointment meetings in window; full census not completed for v1. Newsletter-tied appointments = 0.",
+      "email_medium_hs_email_not_set_sessions": 531
+    }
+  },
+  "prospects": {
+    "summary": {
+      "sessions": 261,
+      "engaged_sessions": 231,
+      "mqls": 6,
+      "mqls_email_marketing_source": 1,
+      "appointments": 0,
+      "campaigns_named": 2
+    },
+    "sends_or_campaigns": [
+      {
+        "label": "2026 Newsletter (37270118)",
+        "month": "2026-04",
+        "kind": "prospect",
+        "ga4_campaign": "37270118-2026 Newsletter",
+        "sessions": 3,
+        "engaged_sessions": 2,
+        "users": 3,
+        "mqls": null,
+        "appointments": null,
+        "notes": "GA4 sessions only"
+      },
+      {
+        "label": "2026 Newsletter (37270118)",
+        "month": "2026-05",
+        "kind": "prospect",
+        "ga4_campaign": "37270118-2026 Newsletter",
+        "sessions": 42,
+        "engaged_sessions": 40,
+        "users": 30,
+        "mqls": null,
+        "appointments": null,
+        "notes": "GA4 sessions only"
+      },
+      {
+        "label": "2026 Newsletter (37270118)",
+        "month": "2026-06",
+        "kind": "prospect",
+        "ga4_campaign": "37270118-2026 Newsletter",
+        "sessions": 21,
+        "engaged_sessions": 21,
+        "users": 19,
+        "mqls": 1,
+        "appointments": 0,
+        "notes": "1 EMAIL_MARKETING MQL with utm_campaign=37270118-2026 Newsletter (MQL date 2026-06-26)"
+      },
+      {
+        "label": "May Prospect Newsletter",
+        "month": "2026-06",
+        "kind": "prospect",
+        "ga4_campaign": "13199876-May Prospect Newsletter",
+        "sessions": 4,
+        "engaged_sessions": 0,
+        "users": 1,
+        "mqls": null,
+        "appointments": null,
+        "notes": "Named Prospect campaign; residual traffic"
+      },
+      {
+        "label": "2026 Newsletter (37270118)",
+        "month": "2026-07",
+        "kind": "prospect",
+        "ga4_campaign": "37270118-2026 Newsletter",
+        "sessions": 70,
+        "engaged_sessions": 65,
+        "users": 42,
+        "mqls": null,
+        "appointments": null,
+        "notes": "GA4 sessions only"
+      },
+      {
+        "label": "May Prospect Newsletter",
+        "month": "2026-07",
+        "kind": "prospect",
+        "ga4_campaign": "13199876-May Prospect Newsletter",
+        "sessions": 1,
+        "engaged_sessions": 0,
+        "users": 1,
+        "mqls": null,
+        "appointments": null,
+        "notes": "Named Prospect campaign; residual traffic"
+      },
+      {
+        "label": "2026 Newsletter (37270118)",
+        "month": "2026-08",
+        "kind": "prospect",
+        "ga4_campaign": "37270118-2026 Newsletter",
+        "sessions": 45,
+        "engaged_sessions": 39,
+        "users": 29,
+        "mqls": null,
+        "appointments": null,
+        "notes": "GA4 sessions only"
+      },
+      {
+        "label": "2026 Newsletter (37270118)",
+        "month": "2026-09",
+        "kind": "prospect",
+        "ga4_campaign": "37270118-2026 Newsletter",
+        "sessions": 75,
+        "engaged_sessions": 64,
+        "users": 19,
+        "mqls": null,
+        "appointments": null,
+        "notes": "Through 2026-09-24 MT"
+      }
+    ]
+  },
+  "clients": {
+    "summary": {
+      "sessions": 7,
+      "engaged_sessions": 5,
+      "engagement_opens_proxy": 2205,
+      "engagement_clicks_proxy": 1370,
+      "campaigns_named_ga4": 2
+    },
+    "sends_or_campaigns": [
+      {
+        "label": "September 2025 Client Newsletter",
+        "month": "2026-03",
+        "kind": "client",
+        "ga4_campaign": "22917670-September 2025 Client Newsletter",
+        "sessions": 4,
+        "engaged_sessions": 3,
+        "users": 1,
+        "engagement_opens_proxy": null,
+        "notes": "GA4 residual from 2025 send"
+      },
+      {
+        "label": "August Client Newsletter 2025",
+        "month": "2026-04",
+        "kind": "client",
+        "ga4_campaign": "18106231-August Client Newsletter 2025",
+        "sessions": 1,
+        "engaged_sessions": 1,
+        "users": 1,
+        "engagement_opens_proxy": null,
+        "notes": "GA4 residual from 2025 send"
+      },
+      {
+        "label": "September 2025 Client Newsletter",
+        "month": "2026-05",
+        "kind": "client",
+        "ga4_campaign": "22917670-September 2025 Client Newsletter",
+        "sessions": 1,
+        "engaged_sessions": 0,
+        "users": 1,
+        "engagement_opens_proxy": null,
+        "notes": "GA4 residual"
+      },
+      {
+        "label": "September 2025 Client Newsletter",
+        "month": "2026-06",
+        "kind": "client",
+        "ga4_campaign": "22917670-September 2025 Client Newsletter",
+        "sessions": 1,
+        "engaged_sessions": 1,
+        "users": 1,
+        "engagement_opens_proxy": null,
+        "notes": "GA4 residual"
+      }
+    ],
+    "crm_send_names_seen": [
+      {
+        "label": "March 20 2026 Client Newsletter 2",
+        "month": "2026-03",
+        "kind": "client",
+        "ga4_campaign": null,
+        "sessions": null,
+        "engaged_sessions": null,
+        "users": null,
+        "engagement_opens_proxy": null,
+        "notes": "CRM send name seen; per-send open census unavailable without Marketing Email scopes"
+      },
+      {
+        "label": "April 17 2026 Client Newsletter 2",
+        "month": "2026-04",
+        "kind": "client",
+        "ga4_campaign": null,
+        "sessions": null,
+        "engaged_sessions": null,
+        "users": null,
+        "engagement_opens_proxy": null,
+        "notes": "CRM send name present"
+      },
+      {
+        "label": "May 1 2026 Client Newsletter 1",
+        "month": "2026-05",
+        "kind": "client",
+        "ga4_campaign": null,
+        "sessions": null,
+        "engaged_sessions": null,
+        "users": null,
+        "engagement_opens_proxy": null,
+        "notes": "CRM send name present"
+      },
+      {
+        "label": "June 12 / June 26 2026 Client Newsletter",
+        "month": "2026-06",
+        "kind": "client",
+        "ga4_campaign": null,
+        "sessions": null,
+        "engaged_sessions": null,
+        "users": null,
+        "engagement_opens_proxy": null,
+        "notes": "CRM send names present"
+      },
+      {
+        "label": "July 10 / July 24 2026 Client Newsletter",
+        "month": "2026-07",
+        "kind": "client",
+        "ga4_campaign": null,
+        "sessions": null,
+        "engaged_sessions": null,
+        "users": null,
+        "engagement_opens_proxy": null,
+        "notes": "CRM send names present"
+      },
+      {
+        "label": "August 7 / August 21 2026 Client Newsletter",
+        "month": "2026-08",
+        "kind": "client",
+        "ga4_campaign": null,
+        "sessions": null,
+        "engaged_sessions": null,
+        "users": null,
+        "engagement_opens_proxy": null,
+        "notes": "CRM send names present"
+      },
+      {
+        "label": "Sep 4 / Sep 18 2026 Client Newsletter",
+        "month": "2026-09",
+        "kind": "client",
+        "ga4_campaign": null,
+        "sessions": null,
+        "engaged_sessions": null,
+        "users": null,
+        "engagement_opens_proxy": null,
+        "notes": "Sep 18 2026 Client Newsletter 2 dominates last_email_name among customers"
+      }
+    ]
+  },
+  "unknown_or_legacy": [
+    {
+      "label": "June Newsletter & July Live Stream 2024",
+      "month": null,
+      "kind": "unknown",
+      "ga4_campaign": "June Newsletter & July Live Stream 2024",
+      "sessions": 4,
+      "engaged_sessions": 2,
+      "users": 4,
+      "notes": "Legacy combined name \u2014 not classified prospect/client"
+    },
+    {
+      "label": "May Newsletter & June Live Stream 2024",
+      "month": null,
+      "kind": "unknown",
+      "ga4_campaign": "May Newsletter & June Live Stream 2024",
+      "sessions": 2,
+      "engaged_sessions": 2,
+      "users": 2,
+      "notes": "Legacy combined name"
+    },
+    {
+      "label": "December Newsletter",
+      "month": null,
+      "kind": "unknown",
+      "ga4_campaign": "3753864-December Newsletter",
+      "sessions": 1,
+      "engaged_sessions": 0,
+      "users": 1,
+      "notes": "Unspecified audience"
+    },
+    {
+      "label": "March 2025 Newsletter",
+      "month": null,
+      "kind": "unknown",
+      "ga4_campaign": "9986860-March 2025 Newsletter",
+      "sessions": 1,
+      "engaged_sessions": 0,
+      "users": 1,
+      "notes": "Unspecified audience"
+    },
+    {
+      "label": "Revue newsletter",
+      "month": null,
+      "kind": "unknown",
+      "ga4_campaign": "Revue newsletter",
+      "sessions": 1,
+      "engaged_sessions": 1,
+      "users": 1,
+      "notes": "External Revue; not PL send"
+    }
+  ]
+}
